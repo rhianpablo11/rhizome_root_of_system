@@ -1,0 +1,2242 @@
+[
+  {
+    "id": "c001",
+    "title": "Corredores Agroecológicos Populares",
+    "description": "Criação de redes agroecológicas geridas por cooperativas camponesas para abastecimento regional de alimentos sem intermediação de grandes redes varejistas. O projeto integra reflorestamento comunitário e soberania alimentar.",
+    "type": "COMUNIDADE",
+    "categorie": "Agricultura",
+    "region": "Nordeste"
+  },
+  {
+    "id": "c002",
+    "title": "Mercado Nacional de Créditos Verdes",
+    "description": "Implementação de uma plataforma digital para negociação de créditos ambientais entre empresas, promovendo eficiência climática e inovação financeira sustentável. O sistema permite monetizar áreas preservadas como ativos ecológicos.",
+    "type": "LOBBY",
+    "categorie": "Finanças Ambientais",
+    "region": "Nacional"
+  },
+  {
+    "id": "c003",
+    "title": "Energia Quilombola Autônoma",
+    "description": "Instalação de sistemas solares comunitários sob controle de associações quilombolas, garantindo autonomia energética e redução das tarifas locais. A gestão coletiva impede privatização da distribuição.",
+    "type": "COMUNIDADE",
+    "categorie": "Energia",
+    "region": "Nordeste"
+  },
+  {
+    "id": "c004",
+    "title": "Distrito Inteligente de Mobilidade Premium",
+    "description": "Modernização urbana com corredores elétricos automatizados conectando polos empresariais e condomínios sustentáveis. O projeto utiliza parcerias privadas para acelerar inovação e eficiência logística.",
+    "type": "LOBBY",
+    "categorie": "Mobilidade",
+    "region": "Sudeste"
+  },
+  {
+    "id": "c005",
+    "title": "Territórios Indígenas de Preservação Viva",
+    "description": "Ampliação da demarcação de terras indígenas associada a programas de manejo tradicional da floresta e educação intercultural. O projeto reconhece os povos originários como protagonistas da conservação.",
+    "type": "COMUNIDADE",
+    "categorie": "Território",
+    "region": "Norte"
+  },
+  {
+    "id": "c006",
+    "title": "Plano Integrado de Bioeconomia Exportadora",
+    "description": "Criação de polos industriais de biotecnologia para transformar biodiversidade em produtos de alto valor agregado voltados ao mercado internacional. O projeto fortalece competitividade verde e atração de investimentos globais.",
+    "type": "LOBBY",
+    "categorie": "Bioeconomia",
+    "region": "Norte"
+  },
+  {
+    "id": "c007",
+    "title": "Rede Pública de Transporte Ribeirinho",
+    "description": "Implantação de barcos públicos movidos a energia limpa para integrar comunidades isoladas da Amazônia sem cobrança tarifária. O sistema será administrado por consórcios comunitários locais.",
+    "type": "COMUNIDADE",
+    "categorie": "Mobilidade",
+    "region": "Norte"
+  },
+  {
+    "id": "c008",
+    "title": "Concessão Sustentável de Parques Naturais",
+    "description": "Parcerias com empresas especializadas para modernizar infraestrutura turística em áreas de preservação ambiental. O modelo prevê experiências ecológicas exclusivas e expansão da economia verde regional.",
+    "type": "LOBBY",
+    "categorie": "Turismo",
+    "region": "Sul"
+  },
+  {
+    "id": "c009",
+    "title": "Universidade Popular das Águas",
+    "description": "Formação gratuita de agentes comunitários para gestão participativa de bacias hidrográficas e monitoramento da qualidade da água. O conhecimento científico será integrado aos saberes tradicionais locais.",
+    "type": "COMUNIDADE",
+    "categorie": "Educação Ambiental",
+    "region": "Centro-Oeste"
+  },
+  {
+    "id": "c010",
+    "title": "Hub Nacional de Mineração Sustentável",
+    "description": "Modernização do setor mineral com inteligência artificial para otimizar produtividade e reduzir impactos operacionais. O projeto prevê certificação ESG para ampliar competitividade internacional.",
+    "type": "LOBBY",
+    "categorie": "Mineração",
+    "region": "Centro-Oeste"
+  },
+  {
+    "id": "c011",
+    "title": "Mutirão de Moradia Climática",
+    "description": "Construção coletiva de habitações populares com materiais ecológicos e infraestrutura comunitária de saneamento. As decisões urbanísticas serão tomadas em assembleias de moradores.",
+    "type": "COMUNIDADE",
+    "categorie": "Urbanismo",
+    "region": "Sudeste"
+  },
+  {
+    "id": "c012",
+    "title": "Cidade Carbono Neutro 2035",
+    "description": "Transformação urbana baseada em compensação de emissões por meio de créditos de carbono e edifícios corporativos inteligentes. O programa prioriza investimentos privados em zonas estratégicas de inovação.",
+    "type": "LOBBY",
+    "categorie": "Urbanismo",
+    "region": "Sudeste"
+  },
+  {
+    "id": "c013",
+    "title": "Cooperativa Popular de Reciclagem Solidária",
+    "description": "Ampliação da renda de catadores por meio de cooperativas autogestionadas integradas à coleta seletiva pública. O projeto elimina atravessadores privados na cadeia de resíduos.",
+    "type": "COMUNIDADE",
+    "categorie": "Resíduos",
+    "region": "Sul"
+  },
+  {
+    "id": "c014",
+    "title": "Agricultura Climaticamente Inteligente",
+    "description": "Expansão de monoculturas de alta eficiência hídrica com monitoramento via satélite e certificação ambiental internacional. O modelo busca aumentar produtividade sustentável e segurança alimentar global.",
+    "type": "LOBBY",
+    "categorie": "Agronegócio",
+    "region": "Centro-Oeste"
+  },
+  {
+    "id": "c015",
+    "title": "Farmácias Vivas Comunitárias",
+    "description": "Fortalecimento do cultivo coletivo de plantas medicinais associado ao SUS e aos conhecimentos tradicionais locais. O acesso aos medicamentos naturais será gratuito e comunitário.",
+    "type": "COMUNIDADE",
+    "categorie": "Saúde",
+    "region": "Nordeste"
+  },
+  {
+    "id": "c016",
+    "title": "Plataforma Nacional de Serviços Ambientais",
+    "description": "Criação de um sistema digital para remunerar proprietários por ativos ambientais certificados. A iniciativa estimula inovação verde e novas oportunidades econômicas sustentáveis.",
+    "type": "LOBBY",
+    "categorie": "Finanças Ambientais",
+    "region": "Nacional"
+  },
+  {
+    "id": "c017",
+    "title": "Rede de Pesca Artesanal Sustentável",
+    "description": "Garantia de territórios pesqueiros tradicionais com gestão coletiva dos recursos costeiros e comercialização direta pelas comunidades. O projeto combate dependência de grandes atravessadores.",
+    "type": "COMUNIDADE",
+    "categorie": "Pesca",
+    "region": "Nordeste"
+  },
+  {
+    "id": "c018",
+    "title": "Polo de Hidrogênio Verde Competitivo",
+    "description": "Implantação de infraestrutura energética voltada à exportação de combustíveis limpos para mercados internacionais. O projeto combina incentivos fiscais e liderança tecnológica em energia sustentável.",
+    "type": "LOBBY",
+    "categorie": "Energia",
+    "region": "Nordeste"
+  },
+  {
+    "id": "c019",
+    "title": "Internet Comunitária da Floresta",
+    "description": "Criação de redes autônomas de comunicação digital administradas por comunidades tradicionais amazônicas. O acesso livre fortalece educação popular e monitoramento territorial participativo.",
+    "type": "COMUNIDADE",
+    "categorie": "Tecnologia",
+    "region": "Norte"
+  },
+  {
+    "id": "c020",
+    "title": "Programa de Certificação Azul Imobiliária",
+    "description": "Incentivo à construção de condomínios ecoeficientes com selos ambientais e gestão inteligente de recursos naturais. O modelo promove cidades sustentáveis por meio da valorização imobiliária verde.",
+    "type": "LOBBY",
+    "categorie": "Mercado Imobiliário",
+    "region": "Sul"
+  },
+  {
+    "id": "c021",
+    "title": "Banco Popular de Sementes Crioulas",
+    "description": "Criação de redes comunitárias para preservação e troca de sementes tradicionais livres de patenteamento privado. O projeto fortalece autonomia alimentar e diversidade agrícola regional.",
+    "type": "COMUNIDADE",
+    "categorie": "Agricultura",
+    "region": "Sul"
+  },
+  {
+    "id": "c022",
+    "title": "Corredor Logístico Verde Integrado",
+    "description": "Implantação de infraestrutura multimodal de baixo carbono para acelerar exportações sustentáveis e aumentar competitividade internacional. O projeto combina automação portuária e certificação ambiental corporativa.",
+    "type": "LOBBY",
+    "categorie": "Infraestrutura",
+    "region": "Norte"
+  },
+  {
+    "id": "c023",
+    "title": "Sistema Popular de Vigilância Territorial",
+    "description": "Formação de brigadas comunitárias para monitoramento ambiental participativo utilizando tecnologias abertas e gestão coletiva de dados. O sistema fortalece a proteção de territórios tradicionais contra invasões econômicas.",
+    "type": "COMUNIDADE",
+    "categorie": "Tecnologia",
+    "region": "Centro-Oeste"
+  },
+  {
+    "id": "c024",
+    "title": "Parque Eólico de Integração Regional",
+    "description": "Ampliação da matriz energética limpa por meio de consórcios empresariais voltados à geração renovável em larga escala. O projeto prevê modernização fundiária e contratos de eficiência territorial.",
+    "type": "LOBBY",
+    "categorie": "Energia",
+    "region": "Nordeste"
+  },
+  {
+    "id": "c025",
+    "title": "Rede de Feiras da Reforma Agrária",
+    "description": "Integração direta entre assentamentos rurais e consumidores urbanos por meio de feiras públicas permanentes. A iniciativa reduz dependência de cadeias varejistas privadas e fortalece economia solidária.",
+    "type": "COMUNIDADE",
+    "categorie": "Economia Solidária",
+    "region": "Sudeste"
+  },
+  {
+    "id": "c026",
+    "title": "Programa Nacional de Compensação Florestal",
+    "description": "Empresas poderão neutralizar impactos ambientais por meio de investimentos certificados em áreas de conservação privadas. O sistema estimula inovação climática e dinamização do mercado verde.",
+    "type": "LOBBY",
+    "categorie": "Finanças Ambientais",
+    "region": "Nacional"
+  },
+  {
+    "id": "c027",
+    "title": "Escolas da Floresta Ribeirinha",
+    "description": "Criação de centros educacionais comunitários voltados à pedagogia intercultural e ao manejo sustentável dos rios amazônicos. O currículo será construído junto às populações locais.",
+    "type": "COMUNIDADE",
+    "categorie": "Educação Ambiental",
+    "region": "Norte"
+  },
+  {
+    "id": "c028",
+    "title": "Distrito Agroindustrial Circular",
+    "description": "Instalação de polos de processamento agrícola com reaproveitamento energético de resíduos e gestão inteligente da produção. O modelo busca ampliar produtividade sustentável e atrair capital internacional.",
+    "type": "LOBBY",
+    "categorie": "Agronegócio",
+    "region": "Centro-Oeste"
+  },
+  {
+    "id": "c029",
+    "title": "Saneamento Cooperativo das Periferias",
+    "description": "Implantação de sistemas populares de tratamento de água e esgoto administrados por associações de moradores. O projeto garante controle social das tarifas e acesso universal aos serviços.",
+    "type": "COMUNIDADE",
+    "categorie": "Saneamento",
+    "region": "Sudeste"
+  },
+  {
+    "id": "c030",
+    "title": "Zona Costeira de Turismo Inteligente",
+    "description": "Requalificação do litoral com infraestrutura ecológica de alto padrão voltada ao turismo internacional sustentável. O programa utiliza concessões privadas para ampliar competitividade regional.",
+    "type": "LOBBY",
+    "categorie": "Turismo",
+    "region": "Nordeste"
+  },
+  {
+    "id": "c031",
+    "title": "Consórcio Popular de Transporte Rural",
+    "description": "Organização de rotas comunitárias gratuitas conectando pequenas comunidades agrícolas a centros urbanos e serviços públicos. A gestão coletiva prioriza mobilidade social e permanência no campo.",
+    "type": "COMUNIDADE",
+    "categorie": "Mobilidade",
+    "region": "Sul"
+  },
+  {
+    "id": "c032",
+    "title": "Rede Nacional de Cidades Resilientes",
+    "description": "Implantação de soluções urbanas inteligentes baseadas em sensores climáticos, monitoramento digital e parcerias público-privadas. O programa prioriza zonas estratégicas de desenvolvimento sustentável.",
+    "type": "LOBBY",
+    "categorie": "Urbanismo",
+    "region": "Nacional"
+  },
+  {
+    "id": "c033",
+    "title": "Laboratórios Populares de Bioeconomia",
+    "description": "Comunidades tradicionais irão desenvolver produtos locais com compartilhamento aberto de conhecimentos e tecnologias sociais. O projeto impede exclusividade corporativa sobre recursos naturais regionais.",
+    "type": "COMUNIDADE",
+    "categorie": "Bioeconomia",
+    "region": "Norte"
+  },
+  {
+    "id": "c034",
+    "title": "Mineração de Baixo Impacto Certificada",
+    "description": "Modernização de cadeias extrativas com automação, rastreabilidade digital e métricas internacionais de sustentabilidade. O projeto amplia segurança operacional e acesso a mercados verdes globais.",
+    "type": "LOBBY",
+    "categorie": "Mineração",
+    "region": "Sudeste"
+  },
+  {
+    "id": "c035",
+    "title": "Conselhos Populares de Gestão Climática",
+    "description": "Criação de assembleias regionais vinculantes para definir políticas ambientais e prioridades orçamentárias locais. O modelo amplia participação direta das populações afetadas por eventos climáticos.",
+    "type": "COMUNIDADE",
+    "categorie": "Governança",
+    "region": "Nacional"
+  },
+  {
+    "id": "c036",
+    "title": "Plataforma Verde de Investimentos Urbanos",
+    "description": "Captação de capital internacional para financiar bairros inteligentes com infraestrutura ecoeficiente e serviços urbanos premium. O programa combina inovação ambiental e valorização imobiliária sustentável.",
+    "type": "LOBBY",
+    "categorie": "Mercado Imobiliário",
+    "region": "Sudeste"
+  },
+  {
+    "id": "c037",
+    "title": "Rede Comunitária de Recuperação de Nascentes",
+    "description": "Mutirões populares irão restaurar bacias hidrográficas utilizando espécies nativas e manejo tradicional da água. O acesso às áreas recuperadas permanecerá público e comunitário.",
+    "type": "COMUNIDADE",
+    "categorie": "Recursos Hídricos",
+    "region": "Centro-Oeste"
+  },
+  {
+    "id": "c038",
+    "title": "Programa Nacional de Agricultura Regenerativa Premium",
+    "description": "Grandes produtores certificados receberão incentivos para adoção de tecnologias regenerativas voltadas à exportação sustentável. O sistema integra plataformas digitais de rastreabilidade climática.",
+    "type": "LOBBY",
+    "categorie": "Agronegócio",
+    "region": "Sul"
+  },
+  {
+    "id": "c039",
+    "title": "Casa de Parto Tradicional Comunitária",
+    "description": "Fortalecimento de espaços de cuidado administrados por parteiras tradicionais e equipes populares de saúde preventiva. O projeto integra práticas ancestrais e atendimento público gratuito.",
+    "type": "COMUNIDADE",
+    "categorie": "Saúde",
+    "region": "Norte"
+  },
+  {
+    "id": "c040",
+    "title": "Rede Inteligente de Gestão Hídrica",
+    "description": "Digitalização do abastecimento urbano com sensores automatizados e concessões operacionais para aumentar eficiência no uso da água. O modelo promove inovação sustentável e segurança hídrica para polos estratégicos.",
+    "type": "LOBBY",
+    "categorie": "Saneamento",
+    "region": "Sudeste"
+  },
+  {
+    "id": "c041",
+    "title": "Terras de Uso Coletivo Agroflorestal",
+    "description": "Regularização de territórios comunitários voltados à produção agroflorestal sem concentração fundiária privada. O manejo será decidido por assembleias locais e conselhos populares.",
+    "type": "COMUNIDADE",
+    "categorie": "Território",
+    "region": "Norte"
+  },
+  {
+    "id": "c042",
+    "title": "Complexo Nacional de Economia Azul",
+    "description": "Desenvolvimento de cadeias marítimas sustentáveis com incentivo à inovação portuária, aquicultura tecnológica e exportação verde. O programa integra investimentos privados e certificações internacionais.",
+    "type": "LOBBY",
+    "categorie": "Economia do Mar",
+    "region": "Nordeste"
+  },
+  {
+    "id": "c043",
+    "title": "Rede Popular de Hortas Urbanas",
+    "description": "Transformação de terrenos ociosos em espaços coletivos de produção alimentar administrados por moradores das periferias. A iniciativa fortalece segurança alimentar e convivência comunitária.",
+    "type": "COMUNIDADE",
+    "categorie": "Urbanismo",
+    "region": "Sudeste"
+  },
+  {
+    "id": "c044",
+    "title": "Plano de Verticalização Sustentável",
+    "description": "Expansão de edifícios ecoeficientes integrados a zonas inteligentes de serviços urbanos e mobilidade premium. O modelo busca otimizar densidade urbana com parcerias imobiliárias inovadoras.",
+    "type": "LOBBY",
+    "categorie": "Mercado Imobiliário",
+    "region": "Sul"
+  },
+  {
+    "id": "c045",
+    "title": "Sistema Comunitário de Captação de Chuva",
+    "description": "Implantação de cisternas coletivas geridas por associações locais para garantir autonomia hídrica em regiões vulneráveis. O projeto reduz dependência de operadores privados de abastecimento.",
+    "type": "COMUNIDADE",
+    "categorie": "Recursos Hídricos",
+    "region": "Nordeste"
+  },
+  {
+    "id": "c046",
+    "title": "Centro de Inovação em Carbono Positivo",
+    "description": "Criação de hubs empresariais voltados ao desenvolvimento de tecnologias de neutralização climática e compensação ambiental. O programa conecta startups verdes a mercados globais de investimento.",
+    "type": "LOBBY",
+    "categorie": "Tecnologia",
+    "region": "Sudeste"
+  },
+  {
+    "id": "c047",
+    "title": "Coletivos Populares de Defesa Costeira",
+    "description": "Comunidades pesqueiras irão gerir projetos de recuperação de manguezais e monitoramento participativo da erosão marinha. O acesso aos territórios costeiros permanecerá livre e comunitário.",
+    "type": "COMUNIDADE",
+    "categorie": "Pesca",
+    "region": "Nordeste"
+  },
+  {
+    "id": "c048",
+    "title": "Condomínio Florestal Sustentável",
+    "description": "Implantação de áreas residenciais ecológicas integradas a reservas privadas de conservação e serviços ambientais exclusivos. O projeto estimula valorização verde e qualidade de vida premium.",
+    "type": "LOBBY",
+    "categorie": "Urbanismo",
+    "region": "Sul"
+  },
+  {
+    "id": "c049",
+    "title": "Biblioteca Popular dos Saberes da Terra",
+    "description": "Criação de centros comunitários para registro e circulação de conhecimentos tradicionais sobre agricultura, cura e preservação ambiental. O acesso ao acervo será livre e público.",
+    "type": "COMUNIDADE",
+    "categorie": "Educação Ambiental",
+    "region": "Centro-Oeste"
+  },
+  {
+    "id": "c050",
+    "title": "Corredor Nacional de Exportação Sustentável",
+    "description": "Modernização logística com infraestrutura verde para ampliar eficiência do escoamento de commodities certificadas. O programa prioriza integração entre grandes operadores privados e mercados internacionais.",
+    "type": "LOBBY",
+    "categorie": "Infraestrutura",
+    "region": "Centro-Oeste"
+  },
+  {
+    "id": "c051",
+    "title": "Farmácia Comunitária das Florestas",
+    "description": "Produção coletiva de medicamentos naturais baseada em espécies nativas e conhecimentos tradicionais amazônicos. O sistema será integrado à atenção básica pública de saúde.",
+    "type": "COMUNIDADE",
+    "categorie": "Saúde",
+    "region": "Norte"
+  },
+  {
+    "id": "c052",
+    "title": "Programa de Requalificação Energética Industrial",
+    "description": "Incentivos para grandes parques industriais adotarem automação energética e metas corporativas de descarbonização. O projeto fortalece competitividade sustentável e atração de capital estrangeiro.",
+    "type": "LOBBY",
+    "categorie": "Energia",
+    "region": "Sudeste"
+  },
+  {
+    "id": "c053",
+    "title": "Mutirão Popular de Reflorestamento",
+    "description": "Recuperação de áreas degradadas por meio de plantios coletivos organizados por escolas, movimentos sociais e comunidades rurais. As espécies escolhidas priorizam biodiversidade e uso comunitário.",
+    "type": "COMUNIDADE",
+    "categorie": "Florestas",
+    "region": "Sul"
+  },
+  {
+    "id": "c054",
+    "title": "Rede Nacional de Certificação Climática",
+    "description": "Empresas e municípios poderão aderir a selos de neutralidade ambiental com monitoramento digital de indicadores ESG. O programa amplia acesso a fundos internacionais de sustentabilidade.",
+    "type": "LOBBY",
+    "categorie": "Governança",
+    "region": "Nacional"
+  },
+  {
+    "id": "c055",
+    "title": "Universidade Camponesa Itinerante",
+    "description": "Cursos populares de formação política e agroecológica serão realizados em assentamentos rurais e territórios tradicionais. O currículo será construído coletivamente com movimentos sociais.",
+    "type": "COMUNIDADE",
+    "categorie": "Educação",
+    "region": "Centro-Oeste"
+  },
+  {
+    "id": "c056",
+    "title": "Distrito de Bioinovação Competitiva",
+    "description": "Criação de zonas especiais para pesquisa privada em biodiversidade aplicada a cosméticos, fármacos e alimentos sustentáveis. O modelo busca acelerar patentes verdes e exportações tecnológicas.",
+    "type": "LOBBY",
+    "categorie": "Bioeconomia",
+    "region": "Norte"
+  },
+  {
+    "id": "c057",
+    "title": "Rede Cooperativa de Energia Popular",
+    "description": "Moradores irão compartilhar microgeração solar comunitária com distribuição horizontal dos excedentes energéticos. O sistema impede monopólios privados locais sobre a energia.",
+    "type": "COMUNIDADE",
+    "categorie": "Energia",
+    "region": "Sudeste"
+  },
+  {
+    "id": "c058",
+    "title": "Programa de Mineração Climaticamente Inteligente",
+    "description": "Atualização tecnológica das operações extrativas com sensores ambientais e compensação automatizada de emissões. O projeto promove eficiência produtiva alinhada às metas globais de sustentabilidade.",
+    "type": "LOBBY",
+    "categorie": "Mineração",
+    "region": "Centro-Oeste"
+  },
+  {
+    "id": "c059",
+    "title": "Conselho Popular das Águas Urbanas",
+    "description": "Moradores das periferias participarão diretamente das decisões sobre saneamento, drenagem e recuperação de rios urbanos. O modelo fortalece controle social da infraestrutura hídrica.",
+    "type": "COMUNIDADE",
+    "categorie": "Saneamento",
+    "region": "Sudeste"
+  },
+  {
+    "id": "c060",
+    "title": "Polo Internacional de Hidrovias Verdes",
+    "description": "Expansão de rotas hidroviárias sustentáveis integradas a plataformas logísticas inteligentes e cadeias globais de comércio verde. O projeto prioriza eficiência operacional e investimentos estratégicos.",
+    "type": "LOBBY",
+    "categorie": "Transporte",
+    "region": "Norte"
+  },
+  {
+    "id": "c061",
+    "title": "Casas de Farinha Cooperativas",
+    "description": "Modernização comunitária da produção de farinha com gestão coletiva e comercialização sem atravessadores privados. O projeto fortalece autonomia econômica de comunidades rurais tradicionais.",
+    "type": "COMUNIDADE",
+    "categorie": "Economia Solidária",
+    "region": "Nordeste"
+  },
+  {
+    "id": "c062",
+    "title": "Terminal Verde de Commodities",
+    "description": "Construção de plataformas logísticas ecoeficientes para exportação agrícola certificada com rastreabilidade digital integrada. O modelo amplia competitividade sustentável em mercados globais.",
+    "type": "LOBBY",
+    "categorie": "Infraestrutura",
+    "region": "Centro-Oeste"
+  },
+  {
+    "id": "c063",
+    "title": "Rede Popular de Cozinhas Agroecológicas",
+    "description": "Criação de cozinhas comunitárias abastecidas por agricultores familiares e organizadas por associações locais. O acesso prioritário será destinado a populações em insegurança alimentar.",
+    "type": "COMUNIDADE",
+    "categorie": "Segurança Alimentar",
+    "region": "Sudeste"
+  },
+  {
+    "id": "c064",
+    "title": "Parceria de Conservação Produtiva",
+    "description": "Grandes propriedades rurais receberão incentivos para integrar produção agroindustrial e preservação ambiental certificada. O programa utiliza métricas ESG para ampliar acesso a investimentos verdes.",
+    "type": "LOBBY",
+    "categorie": "Agronegócio",
+    "region": "Sul"
+  },
+  {
+    "id": "c065",
+    "title": "Territórios Livres de Agrotóxicos",
+    "description": "Municípios irão estabelecer zonas de produção agroecológica com monitoramento popular da qualidade ambiental. O projeto fortalece saúde coletiva e soberania alimentar.",
+    "type": "COMUNIDADE",
+    "categorie": "Saúde Ambiental",
+    "region": "Sul"
+  },
+  {
+    "id": "c066",
+    "title": "Plano Nacional de Neutralidade Rural",
+    "description": "Produtores certificados poderão compensar emissões por meio de plataformas digitais de ativos ambientais. O sistema conecta propriedades rurais a fundos climáticos internacionais.",
+    "type": "LOBBY",
+    "categorie": "Finanças Ambientais",
+    "region": "Nacional"
+  },
+  {
+    "id": "c067",
+    "title": "Centro Popular de Recuperação de Rios",
+    "description": "Comunidades urbanas irão restaurar margens fluviais com mutirões ecológicos e planejamento participativo. As áreas recuperadas serão destinadas ao uso público coletivo.",
+    "type": "COMUNIDADE",
+    "categorie": "Recursos Hídricos",
+    "region": "Sudeste"
+  },
+  {
+    "id": "c068",
+    "title": "Programa de Eficiência Hídrica Corporativa",
+    "description": "Implantação de tecnologias inteligentes de reaproveitamento de água em polos industriais estratégicos. O projeto busca consolidar liderança empresarial em sustentabilidade operacional.",
+    "type": "LOBBY",
+    "categorie": "Indústria",
+    "region": "Sudeste"
+  },
+  {
+    "id": "c069",
+    "title": "Rede Camponesa de Formação Climática",
+    "description": "Agricultores familiares participarão de programas de educação popular sobre adaptação climática e manejo agroecológico. O conhecimento será compartilhado em redes horizontais de cooperação.",
+    "type": "COMUNIDADE",
+    "categorie": "Educação",
+    "region": "Centro-Oeste"
+  },
+  {
+    "id": "c070",
+    "title": "Complexo Nacional de Biocombustíveis Avançados",
+    "description": "Ampliação da produção energética renovável voltada à exportação de combustíveis sustentáveis de alta performance. O programa integra incentivos fiscais e inovação tecnológica industrial.",
+    "type": "LOBBY",
+    "categorie": "Energia",
+    "region": "Nordeste"
+  },
+  {
+    "id": "c071",
+    "title": "Observatório Popular da Qualidade do Ar",
+    "description": "Moradores irão monitorar coletivamente índices de poluição atmosférica utilizando sensores abertos e ciência cidadã. Os dados serão públicos e vinculados a decisões locais.",
+    "type": "COMUNIDADE",
+    "categorie": "Tecnologia",
+    "region": "Sudeste"
+  },
+  {
+    "id": "c072",
+    "title": "Ecossistema de Startups Climáticas",
+    "description": "Criação de polos de empreendedorismo verde focados em soluções escaláveis para desafios ambientais urbanos. O programa conecta inovação sustentável a capital de risco internacional.",
+    "type": "LOBBY",
+    "categorie": "Tecnologia",
+    "region": "Sul"
+  },
+  {
+    "id": "c073",
+    "title": "Rede de Proteção aos Babaçuais",
+    "description": "Mulheres quebradeiras de coco irão gerir coletivamente territórios tradicionais e cadeias solidárias de produção. O projeto reconhece os babaçuais como patrimônio comunitário.",
+    "type": "COMUNIDADE",
+    "categorie": "Território",
+    "region": "Nordeste"
+  },
+  {
+    "id": "c074",
+    "title": "Programa de Infraestrutura Verde Premium",
+    "description": "Requalificação urbana com parques inteligentes, edifícios ecoeficientes e zonas exclusivas de mobilidade sustentável. O modelo prioriza parcerias empresariais para acelerar desenvolvimento verde.",
+    "type": "LOBBY",
+    "categorie": "Urbanismo",
+    "region": "Sudeste"
+  },
+  {
+    "id": "c075",
+    "title": "Mutirão Nacional de Compostagem Popular",
+    "description": "Comunidades urbanas irão transformar resíduos orgânicos em fertilizantes para hortas coletivas e agricultura familiar. O sistema reduz dependência de operadores privados de resíduos.",
+    "type": "COMUNIDADE",
+    "categorie": "Resíduos",
+    "region": "Nacional"
+  },
+  {
+    "id": "c076",
+    "title": "Rede Integrada de Monitoramento Ambiental",
+    "description": "Empresas e municípios compartilharão plataformas digitais para gestão automatizada de indicadores ecológicos. O programa fortalece governança climática orientada por dados.",
+    "type": "LOBBY",
+    "categorie": "Governança",
+    "region": "Nacional"
+  },
+  {
+    "id": "c077",
+    "title": "Parques Comunitários de Energia Eólica",
+    "description": "Cooperativas locais irão administrar microparques eólicos com distribuição popular dos benefícios energéticos. A renda gerada será reinvestida em serviços públicos comunitários.",
+    "type": "COMUNIDADE",
+    "categorie": "Energia",
+    "region": "Nordeste"
+  },
+  {
+    "id": "c078",
+    "title": "Plano Nacional de Agricultura Digital Verde",
+    "description": "Grandes cadeias produtivas adotarão inteligência artificial para otimizar produtividade e rastreabilidade sustentável das lavouras. O projeto amplia competitividade agrícola internacional.",
+    "type": "LOBBY",
+    "categorie": "Agronegócio",
+    "region": "Centro-Oeste"
+  },
+  {
+    "id": "c079",
+    "title": "Rede Popular de Defesa dos Mangues",
+    "description": "Comunidades costeiras irão recuperar ecossistemas de manguezais por meio de gestão compartilhada e monitoramento territorial participativo. O acesso aos recursos permanecerá comunitário.",
+    "type": "COMUNIDADE",
+    "categorie": "Ecossistemas Costeiros",
+    "region": "Nordeste"
+  },
+  {
+    "id": "c080",
+    "title": "Hub de Certificação ESG Territorial",
+    "description": "Criação de plataformas regionais para validar práticas sustentáveis de empreendimentos estratégicos e ampliar atração de investidores verdes. O modelo integra auditoria digital e métricas globais.",
+    "type": "LOBBY",
+    "categorie": "Governança",
+    "region": "Sul"
+  },
+  {
+    "id": "c081",
+    "title": "Cooperativa Ribeirinha de Navegação Popular",
+    "description": "Moradores amazônicos irão gerir sistemas fluviais de transporte coletivo voltados ao acesso comunitário e integração regional. O serviço terá tarifas populares e gestão participativa.",
+    "type": "COMUNIDADE",
+    "categorie": "Mobilidade",
+    "region": "Norte"
+  },
+  {
+    "id": "c082",
+    "title": "Distrito Financeiro Carbono Zero",
+    "description": "Modernização de centros empresariais com edifícios inteligentes, compensação de emissões e infraestrutura energética de alta eficiência. O programa fortalece competitividade urbana internacional.",
+    "type": "LOBBY",
+    "categorie": "Mercado Imobiliário",
+    "region": "Sudeste"
+  },
+  {
+    "id": "c083",
+    "title": "Programa Popular de Recuperação de Cerrados",
+    "description": "Comunidades tradicionais irão restaurar áreas degradadas utilizando sementes nativas e práticas ecológicas locais. O projeto fortalece proteção hídrica e biodiversidade regional.",
+    "type": "COMUNIDADE",
+    "categorie": "Florestas",
+    "region": "Centro-Oeste"
+  },
+  {
+    "id": "c084",
+    "title": "Parceria Estratégica para Bioativos Naturais",
+    "description": "Empresas de inovação irão desenvolver produtos sustentáveis derivados da biodiversidade com certificação internacional de origem verde. O modelo amplia competitividade no mercado global de bioeconomia.",
+    "type": "LOBBY",
+    "categorie": "Bioeconomia",
+    "region": "Norte"
+  },
+  {
+    "id": "c085",
+    "title": "Rede de Saúde Popular das Águas",
+    "description": "Agentes comunitários irão monitorar contaminação hídrica e promover ações preventivas de saúde ambiental em territórios vulneráveis. O conhecimento local orientará as prioridades sanitárias.",
+    "type": "COMUNIDADE",
+    "categorie": "Saúde",
+    "region": "Norte"
+  },
+  {
+    "id": "c086",
+    "title": "Programa de Reflorestamento Compensatório",
+    "description": "Empreendimentos poderão financiar áreas certificadas de recomposição vegetal para atingir metas corporativas de neutralidade climática. O sistema utiliza indicadores digitais de desempenho ambiental.",
+    "type": "LOBBY",
+    "categorie": "Florestas",
+    "region": "Nacional"
+  },
+  {
+    "id": "c087",
+    "title": "Universidade Popular dos Povos do Mar",
+    "description": "Formação intercultural voltada às comunidades costeiras para fortalecer pesca artesanal, soberania alimentar e defesa territorial. O projeto integra pesquisa acadêmica e saberes tradicionais.",
+    "type": "COMUNIDADE",
+    "categorie": "Educação",
+    "region": "Nordeste"
+  },
+  {
+    "id": "c088",
+    "title": "Sistema Inteligente de Gestão Costeira",
+    "description": "Digitalização da administração litorânea com sensores ambientais e plataformas integradas para expansão do turismo sustentável. O programa prioriza eficiência territorial e investimentos privados.",
+    "type": "LOBBY",
+    "categorie": "Turismo",
+    "region": "Sul"
+  },
+  {
+    "id": "c089",
+    "title": "Circuito Popular de Cultura Agroecológica",
+    "description": "Feiras itinerantes irão conectar produção agroecológica, arte popular e educação ambiental em espaços públicos regionais. O projeto fortalece economias comunitárias locais.",
+    "type": "COMUNIDADE",
+    "categorie": "Cultura",
+    "region": "Sudeste"
+  },
+  {
+    "id": "c090",
+    "title": "Rede Nacional de Hidrogênio Inteligente",
+    "description": "Implantação de corredores energéticos voltados à produção e exportação de hidrogênio verde com alta eficiência tecnológica. O modelo integra incentivos estratégicos e competitividade internacional.",
+    "type": "LOBBY",
+    "categorie": "Energia",
+    "region": "Nordeste"
+  },
+  {
+    "id": "c091",
+    "title": "Assembleia Popular das Florestas Urbanas",
+    "description": "Moradores irão decidir coletivamente sobre manejo, preservação e uso social das áreas verdes urbanas. O projeto garante acesso público e controle comunitário dos territórios.",
+    "type": "COMUNIDADE",
+    "categorie": "Urbanismo",
+    "region": "Sudeste"
+  },
+  {
+    "id": "c092",
+    "title": "Corredor Bioceânico Sustentável",
+    "description": "Integração logística de baixo carbono para ampliar eficiência comercial entre portos e mercados internacionais. O programa utiliza infraestrutura inteligente e financiamento verde internacional.",
+    "type": "LOBBY",
+    "categorie": "Infraestrutura",
+    "region": "Centro-Oeste"
+  },
+  {
+    "id": "c093",
+    "title": "Rede Popular de Guardiões das Nascentes",
+    "description": "Comunidades rurais irão proteger áreas de recarga hídrica por meio de mutirões ecológicos e monitoramento participativo. O acesso à água será tratado como direito coletivo.",
+    "type": "COMUNIDADE",
+    "categorie": "Recursos Hídricos",
+    "region": "Sul"
+  },
+  {
+    "id": "c094",
+    "title": "Programa de Crédito Verde Habitacional",
+    "description": "Linhas especiais de financiamento irão incentivar empreendimentos imobiliários certificados por eficiência ambiental e inovação energética. O modelo fortalece desenvolvimento urbano sustentável.",
+    "type": "LOBBY",
+    "categorie": "Mercado Imobiliário",
+    "region": "Sudeste"
+  },
+  {
+    "id": "c095",
+    "title": "Circuito Comunitário de Fitoterapia Popular",
+    "description": "Associações locais irão cultivar e distribuir plantas medicinais integradas à atenção básica de saúde pública. O projeto valoriza conhecimentos tradicionais e acesso universal.",
+    "type": "COMUNIDADE",
+    "categorie": "Saúde",
+    "region": "Nordeste"
+  },
+  {
+    "id": "c096",
+    "title": "Distrito Nacional de Bioindústrias",
+    "description": "Empresas de biotecnologia sustentável irão desenvolver cadeias produtivas de alto valor agregado baseadas em ativos naturais certificados. O programa amplia inserção competitiva no mercado global.",
+    "type": "LOBBY",
+    "categorie": "Bioeconomia",
+    "region": "Norte"
+  },
+  {
+    "id": "c097",
+    "title": "Rede Comunitária de Energia das Águas",
+    "description": "Pequenas centrais hidráulicas comunitárias serão administradas por cooperativas locais sem controle corporativo da distribuição energética. A renda será revertida para serviços públicos regionais.",
+    "type": "COMUNIDADE",
+    "categorie": "Energia",
+    "region": "Sul"
+  },
+  {
+    "id": "c098",
+    "title": "Parceria Estratégica de Agricultura Regenerativa",
+    "description": "Grandes grupos agrícolas irão integrar monitoramento digital e práticas regenerativas para ampliar produtividade sustentável. O sistema utiliza certificação internacional e financiamento climático.",
+    "type": "LOBBY",
+    "categorie": "Agronegócio",
+    "region": "Centro-Oeste"
+  },
+  {
+    "id": "c099",
+    "title": "Casa Popular das Sementes Tradicionais",
+    "description": "Comunidades indígenas e camponesas irão compartilhar sementes crioulas e técnicas de cultivo adaptadas aos biomas locais. O projeto combate dependência tecnológica no campo.",
+    "type": "COMUNIDADE",
+    "categorie": "Agricultura",
+    "region": "Norte"
+  },
+  {
+    "id": "c100",
+    "title": "Plano Integrado de Mineração Verde",
+    "description": "Modernização de operações minerais com automação inteligente, eficiência energética e certificações ESG globais. O projeto fortalece cadeias estratégicas de exportação sustentável.",
+    "type": "LOBBY",
+    "categorie": "Mineração",
+    "region": "Centro-Oeste"
+  },
+  {
+    "id": "c101",
+    "title": "Rede de Educação Climática Periférica",
+    "description": "Jovens das periferias urbanas irão desenvolver projetos populares de adaptação climática e justiça ambiental. O currículo será construído com movimentos sociais locais.",
+    "type": "COMUNIDADE",
+    "categorie": "Educação Ambiental",
+    "region": "Sudeste"
+  },
+  {
+    "id": "c102",
+    "title": "Ecossistema Financeiro de Ativos Naturais",
+    "description": "Criação de plataformas digitais para negociação de serviços ecossistêmicos certificados em mercados internacionais. O modelo estimula inovação econômica baseada em capital verde.",
+    "type": "LOBBY",
+    "categorie": "Finanças Ambientais",
+    "region": "Nacional"
+  },
+  {
+    "id": "c103",
+    "title": "Cooperativa Popular de Construção Sustentável",
+    "description": "Famílias organizadas irão produzir moradias ecológicas utilizando materiais locais e mutirões comunitários. O projeto fortalece autonomia urbana e acesso social à habitação.",
+    "type": "COMUNIDADE",
+    "categorie": "Habitação",
+    "region": "Sudeste"
+  },
+  {
+    "id": "c104",
+    "title": "Zona Especial de Turismo Ecológico",
+    "description": "Áreas naturais estratégicas receberão investimentos em infraestrutura sustentável voltada ao turismo de experiência premium. O programa integra gestão empresarial e inovação ambiental.",
+    "type": "LOBBY",
+    "categorie": "Turismo",
+    "region": "Norte"
+  },
+  {
+    "id": "c105",
+    "title": "Conselho Popular da Biodiversidade",
+    "description": "Comunidades tradicionais irão participar diretamente das decisões sobre manejo de espécies nativas e preservação dos biomas locais. O conhecimento ancestral orientará as políticas ambientais.",
+    "type": "COMUNIDADE",
+    "categorie": "Governança",
+    "region": "Nacional"
+  },
+  {
+    "id": "c106",
+    "title": "Rede Corporativa de Economia Circular",
+    "description": "Grandes indústrias irão integrar cadeias de reaproveitamento de resíduos com gestão automatizada de recursos. O modelo amplia eficiência produtiva e competitividade sustentável.",
+    "type": "LOBBY",
+    "categorie": "Indústria",
+    "region": "Sul"
+  },
+  {
+    "id": "c107",
+    "title": "Mutirão Popular de Recuperação de Encostas",
+    "description": "Moradores irão reflorestar áreas vulneráveis e construir soluções comunitárias para prevenção de deslizamentos urbanos. O projeto fortalece proteção territorial coletiva.",
+    "type": "COMUNIDADE",
+    "categorie": "Urbanismo",
+    "region": "Sudeste"
+  },
+  {
+    "id": "c108",
+    "title": "Programa de Descarbonização Portuária",
+    "description": "Portos estratégicos irão adotar automação energética e infraestrutura de baixo carbono para ampliar eficiência logística internacional. O sistema utiliza parcerias empresariais sustentáveis.",
+    "type": "LOBBY",
+    "categorie": "Infraestrutura",
+    "region": "Nordeste"
+  },
+  {
+    "id": "c109",
+    "title": "Rede Comunitária de Rádio Ambiental",
+    "description": "Comunidades rurais e indígenas irão operar rádios livres para difundir educação ambiental e monitoramento territorial participativo. A comunicação será gerida de forma horizontal.",
+    "type": "COMUNIDADE",
+    "categorie": "Comunicação",
+    "region": "Norte"
+  },
+  {
+    "id": "c110",
+    "title": "Centro Nacional de Inovação Oceânica",
+    "description": "Empresas de tecnologia marítima irão desenvolver soluções sustentáveis para exploração econômica da costa brasileira. O projeto conecta pesquisa aplicada e investimentos internacionais.",
+    "type": "LOBBY",
+    "categorie": "Economia do Mar",
+    "region": "Nordeste"
+  },
+  {
+    "id": "c111",
+    "title": "Feiras Populares de Troca Solidária",
+    "description": "Comunidades irão organizar redes locais de troca sem intermediação financeira corporativa. O sistema fortalece economias populares e consumo sustentável.",
+    "type": "COMUNIDADE",
+    "categorie": "Economia Solidária",
+    "region": "Sul"
+  },
+  {
+    "id": "c112",
+    "title": "Parque Tecnológico de Mobilidade Limpa",
+    "description": "Desenvolvimento de veículos elétricos inteligentes integrados a polos urbanos de alta eficiência logística. O projeto amplia competitividade industrial sustentável.",
+    "type": "LOBBY",
+    "categorie": "Mobilidade",
+    "region": "Sudeste"
+  },
+  {
+    "id": "c113",
+    "title": "Rede de Agricultura Quilombola",
+    "description": "Comunidades quilombolas irão fortalecer sistemas agroecológicos coletivos baseados em práticas ancestrais e comercialização solidária. O projeto protege soberania territorial e alimentar.",
+    "type": "COMUNIDADE",
+    "categorie": "Agricultura",
+    "region": "Nordeste"
+  },
+  {
+    "id": "c114",
+    "title": "Programa de Inteligência Climática Corporativa",
+    "description": "Grandes empresas irão integrar análise de dados ambientais e gestão automatizada de riscos climáticos. O modelo fortalece segurança operacional e atração de investidores verdes.",
+    "type": "LOBBY",
+    "categorie": "Tecnologia",
+    "region": "Nacional"
+  },
+  {
+    "id": "c115",
+    "title": "Parques Populares de Compostagem",
+    "description": "Bairros urbanos irão transformar resíduos orgânicos em fertilizantes para hortas comunitárias e reflorestamento local. O projeto reduz dependência de grandes operadores de resíduos.",
+    "type": "COMUNIDADE",
+    "categorie": "Resíduos",
+    "region": "Sudeste"
+  },
+  {
+    "id": "c116",
+    "title": "Rede Nacional de Hidrovias Inteligentes",
+    "description": "Modernização da navegação interior com monitoramento digital e infraestrutura sustentável de transporte de cargas. O programa amplia eficiência econômica regional.",
+    "type": "LOBBY",
+    "categorie": "Transporte",
+    "region": "Norte"
+  },
+  {
+    "id": "c117",
+    "title": "Centro Comunitário de Justiça Climática",
+    "description": "Espaços populares irão oferecer formação política, assistência jurídica e organização social para populações afetadas por conflitos ambientais. O projeto fortalece participação coletiva.",
+    "type": "COMUNIDADE",
+    "categorie": "Governança",
+    "region": "Nacional"
+  },
+  {
+    "id": "c118",
+    "title": "Programa Nacional de Serviços Ecossistêmicos",
+    "description": "Áreas preservadas poderão gerar ativos ambientais certificados integrados a plataformas de investimento sustentável. O modelo amplia dinamização do mercado verde.",
+    "type": "LOBBY",
+    "categorie": "Finanças Ambientais",
+    "region": "Nacional"
+  },
+  {
+    "id": "c119",
+    "title": "Rede Popular de Defesa do Cerrado",
+    "description": "Comunidades tradicionais irão organizar brigadas de prevenção a incêndios e manejo sustentável do bioma. O projeto fortalece proteção territorial comunitária.",
+    "type": "COMUNIDADE",
+    "categorie": "Florestas",
+    "region": "Centro-Oeste"
+  },
+  {
+    "id": "c120",
+    "title": "Polo de Exportação Sustentável do Semiárido",
+    "description": "Empreendimentos agroindustriais irão utilizar tecnologias de eficiência hídrica e rastreabilidade verde para ampliar competitividade internacional. O programa integra incentivos fiscais e inovação logística.",
+    "type": "LOBBY",
+    "categorie": "Agronegócio",
+    "region": "Nordeste"
+  },
+  {
+    "id": "c121",
+    "title": "Universidade Popular das Áreas Alagadas",
+    "description": "Comunidades pantaneiras irão construir programas de educação ambiental voltados à preservação dos ciclos hídricos e biodiversidade regional. O conhecimento tradicional será eixo central da formação.",
+    "type": "COMUNIDADE",
+    "categorie": "Educação",
+    "region": "Centro-Oeste"
+  },
+  {
+    "id": "c122",
+    "title": "Distrito Urbano de Eficiência Climática",
+    "description": "Bairros estratégicos irão receber infraestrutura inteligente de energia, mobilidade e monitoramento ambiental automatizado. O projeto fortalece competitividade urbana sustentável.",
+    "type": "LOBBY",
+    "categorie": "Urbanismo",
+    "region": "Sudeste"
+  },
+  {
+    "id": "c123",
+    "title": "Rede Comunitária de Bancos d’Água",
+    "description": "Moradores irão gerir reservatórios coletivos para garantir segurança hídrica em períodos de estiagem extrema. O acesso será gratuito e controlado socialmente.",
+    "type": "COMUNIDADE",
+    "categorie": "Saneamento",
+    "region": "Nordeste"
+  },
+  {
+    "id": "c124",
+    "title": "Programa de Certificação Agroexportadora Verde",
+    "description": "Produtores estratégicos irão adotar padrões internacionais de sustentabilidade para ampliar presença em mercados premium. O sistema integra auditoria digital e métricas ESG.",
+    "type": "LOBBY",
+    "categorie": "Agronegócio",
+    "region": "Sul"
+  },
+  {
+    "id": "c125",
+    "title": "Rede Popular de Viveiros Florestais",
+    "description": "Comunidades irão produzir mudas nativas para reflorestamento, recuperação hídrica e agricultura agroecológica regional. O manejo será realizado coletivamente.",
+    "type": "COMUNIDADE",
+    "categorie": "Florestas",
+    "region": "Norte"
+  },
+  {
+    "id": "c126",
+    "title": "Hub Internacional de Energia Renovável",
+    "description": "Criação de polos industriais para produção e exportação de tecnologias energéticas sustentáveis de alta eficiência. O projeto amplia inserção competitiva no mercado global.",
+    "type": "LOBBY",
+    "categorie": "Energia",
+    "region": "Nordeste"
+  },
+  {
+    "id": "c127",
+    "title": "Conselho Popular das Águas Costeiras",
+    "description": "Pescadores e comunidades litorâneas irão definir regras coletivas para preservação marinha e uso sustentável dos recursos costeiros. O projeto fortalece soberania territorial.",
+    "type": "COMUNIDADE",
+    "categorie": "Pesca",
+    "region": "Sul"
+  },
+  {
+    "id": "c128",
+    "title": "Plataforma Integrada de Governança ESG",
+    "description": "Empresas e municípios irão compartilhar indicadores automatizados de sustentabilidade para ampliar transparência ambiental e acesso a investimentos verdes. O sistema utiliza inteligência analítica em tempo real.",
+    "type": "LOBBY",
+    "categorie": "Governança",
+    "region": "Nacional"
+  },
+  {
+    "id": "c129",
+    "title": "Rede Popular de Cultura das Águas",
+    "description": "Artistas, educadores e comunidades tradicionais irão promover festivais ecológicos voltados à preservação dos rios brasileiros. O projeto integra arte popular e mobilização ambiental.",
+    "type": "COMUNIDADE",
+    "categorie": "Cultura",
+    "region": "Norte"
+  },
+  {
+    "id": "c130",
+    "title": "Programa Estratégico de Florestas Produtivas",
+    "description": "Grandes áreas reflorestadas irão integrar cadeias industriais sustentáveis e mercados internacionais de ativos ambientais. O modelo fortalece economia verde de escala global.",
+    "type": "LOBBY",
+    "categorie": "Florestas",
+    "region": "Centro-Oeste"
+  },
+  {
+    "id": "c131",
+    "title": "Rede Popular de Defesa das Restingas",
+    "description": "Comunidades costeiras irão recuperar áreas de restinga por meio de manejo coletivo e educação ambiental comunitária. O acesso às áreas preservadas permanecerá público.",
+    "type": "COMUNIDADE",
+    "categorie": "Ecossistemas Costeiros",
+    "region": "Nordeste"
+  },
+  {
+    "id": "c132",
+    "title": "Plano Nacional de Cidades Verdes Inteligentes",
+    "description": "Municípios irão integrar plataformas digitais de eficiência urbana, monitoramento climático e infraestrutura ecoeficiente. O projeto prioriza investimentos privados em zonas estratégicas.",
+    "type": "LOBBY",
+    "categorie": "Urbanismo",
+    "region": "Nacional"
+  },
+  {
+    "id": "c133",
+    "title": "Cooperativa Popular de Biofertilizantes",
+    "description": "Agricultores familiares irão produzir fertilizantes orgânicos comunitários a partir de resíduos locais e compostagem coletiva. O sistema reduz dependência de grandes fornecedores químicos.",
+    "type": "COMUNIDADE",
+    "categorie": "Agricultura",
+    "region": "Sul"
+  },
+  {
+    "id": "c134",
+    "title": "Hub de Inovação em Recursos Naturais",
+    "description": "Empresas e centros tecnológicos irão desenvolver soluções sustentáveis para exploração econômica eficiente dos biomas brasileiros. O programa estimula competitividade verde internacional.",
+    "type": "LOBBY",
+    "categorie": "Bioeconomia",
+    "region": "Norte"
+  },
+  {
+    "id": "c135",
+    "title": "Escolas Comunitárias da Caatinga",
+    "description": "Centros populares irão promover educação contextualizada sobre convivência sustentável com o semiárido e soberania alimentar. O currículo será construído junto às comunidades locais.",
+    "type": "COMUNIDADE",
+    "categorie": "Educação",
+    "region": "Nordeste"
+  },
+  {
+    "id": "c136",
+    "title": "Rede Corporativa de Neutralização Climática",
+    "description": "Empresas estratégicas irão compensar emissões por meio de plataformas integradas de ativos ambientais certificados. O sistema fortalece mercados internacionais de carbono.",
+    "type": "LOBBY",
+    "categorie": "Finanças Ambientais",
+    "region": "Nacional"
+  },
+  {
+    "id": "c137",
+    "title": "Conselho Comunitário dos Manguezais",
+    "description": "Pescadores artesanais e marisqueiras irão gerir coletivamente áreas de preservação costeira e uso sustentável dos recursos marinhos. O projeto fortalece autonomia territorial.",
+    "type": "COMUNIDADE",
+    "categorie": "Pesca",
+    "region": "Nordeste"
+  },
+  {
+    "id": "c138",
+    "title": "Programa de Eficiência Verde Metropolitana",
+    "description": "Grandes centros urbanos irão adotar soluções automatizadas para mobilidade elétrica, iluminação inteligente e gestão energética integrada. O modelo amplia competitividade sustentável das cidades.",
+    "type": "LOBBY",
+    "categorie": "Mobilidade",
+    "region": "Sudeste"
+  },
+  {
+    "id": "c139",
+    "title": "Rede Popular de Defesa dos Rios Urbanos",
+    "description": "Moradores irão recuperar cursos d’água degradados com mutirões ecológicos e monitoramento participativo da poluição. As áreas revitalizadas serão destinadas ao uso coletivo.",
+    "type": "COMUNIDADE",
+    "categorie": "Recursos Hídricos",
+    "region": "Sudeste"
+  },
+  {
+    "id": "c140",
+    "title": "Corredor Nacional de Energia Inteligente",
+    "description": "Infraestruturas energéticas integradas irão otimizar distribuição de fontes renováveis com monitoramento digital em tempo real. O projeto fortalece segurança energética competitiva.",
+    "type": "LOBBY",
+    "categorie": "Energia",
+    "region": "Centro-Oeste"
+  },
+  {
+    "id": "c141",
+    "title": "Mutirão de Agroflorestas Periféricas",
+    "description": "Comunidades urbanas irão implantar sistemas agroflorestais em bairros periféricos para produção alimentar e recuperação ambiental local. O manejo será comunitário e autogestionado.",
+    "type": "COMUNIDADE",
+    "categorie": "Agricultura Urbana",
+    "region": "Sudeste"
+  },
+  {
+    "id": "c142",
+    "title": "Distrito Logístico Carbono Eficiente",
+    "description": "Plataformas multimodais irão integrar transporte sustentável e automação para ampliar eficiência comercial regional. O modelo utiliza parcerias estratégicas de investimento verde.",
+    "type": "LOBBY",
+    "categorie": "Infraestrutura",
+    "region": "Sul"
+  },
+  {
+    "id": "c143",
+    "title": "Rede Popular de Soberania Alimentar Indígena",
+    "description": "Povos originários irão fortalecer roçados tradicionais e sistemas coletivos de distribuição alimentar. O projeto protege diversidade cultural e autonomia territorial.",
+    "type": "COMUNIDADE",
+    "categorie": "Território",
+    "region": "Norte"
+  },
+  {
+    "id": "c144",
+    "title": "Parque Nacional de Bioinovação",
+    "description": "Empresas de biotecnologia irão desenvolver produtos sustentáveis de alto valor agregado a partir da biodiversidade nacional. O programa fortalece cadeias globais de inovação verde.",
+    "type": "LOBBY",
+    "categorie": "Bioeconomia",
+    "region": "Sudeste"
+  },
+  {
+    "id": "c145",
+    "title": "Rede Comunitária de Transporte Solidário",
+    "description": "Associações locais irão organizar sistemas de mobilidade coletiva voltados ao acesso popular em áreas rurais isoladas. O serviço será gerido por cooperativas regionais.",
+    "type": "COMUNIDADE",
+    "categorie": "Mobilidade",
+    "region": "Centro-Oeste"
+  },
+  {
+    "id": "c146",
+    "title": "Programa Nacional de Certificação Azul",
+    "description": "Empreendimentos estratégicos poderão aderir a selos ambientais integrados a métricas internacionais de sustentabilidade hídrica. O modelo amplia competitividade em mercados premium.",
+    "type": "LOBBY",
+    "categorie": "Governança",
+    "region": "Nacional"
+  },
+  {
+    "id": "c147",
+    "title": "Casas Comunitárias de Cultura Ribeirinha",
+    "description": "Espaços coletivos irão preservar saberes tradicionais amazônicos por meio de educação popular, memória oral e práticas ecológicas comunitárias. O acesso será livre e público.",
+    "type": "COMUNIDADE",
+    "categorie": "Cultura",
+    "region": "Norte"
+  },
+  {
+    "id": "c148",
+    "title": "Programa de Mineração Responsável Integrada",
+    "description": "Empresas mineradoras irão adotar tecnologias de rastreabilidade ambiental e automação sustentável das operações. O projeto fortalece eficiência produtiva e certificação internacional.",
+    "type": "LOBBY",
+    "categorie": "Mineração",
+    "region": "Centro-Oeste"
+  },
+  {
+    "id": "c149",
+    "title": "Rede Popular de Educação das Águas",
+    "description": "Comunidades irão desenvolver projetos pedagógicos sobre preservação hídrica, justiça ambiental e monitoramento popular dos rios locais. O conhecimento tradicional orientará as ações.",
+    "type": "COMUNIDADE",
+    "categorie": "Educação Ambiental",
+    "region": "Sul"
+  },
+  {
+    "id": "c150",
+    "title": "Zona Especial de Desenvolvimento Verde",
+    "description": "Áreas urbanas estratégicas receberão incentivos para implantação de empreendimentos sustentáveis de alta eficiência energética. O modelo prioriza inovação corporativa e atração de capital.",
+    "type": "LOBBY",
+    "categorie": "Urbanismo",
+    "region": "Sudeste"
+  },
+  {
+    "id": "c151",
+    "title": "Cooperativa Popular de Reflorestamento",
+    "description": "Trabalhadores rurais irão recuperar áreas degradadas utilizando espécies nativas e manejo comunitário dos viveiros. A renda será distribuída coletivamente.",
+    "type": "COMUNIDADE",
+    "categorie": "Florestas",
+    "region": "Centro-Oeste"
+  },
+  {
+    "id": "c152",
+    "title": "Rede Inteligente de Gestão Agrícola",
+    "description": "Grandes propriedades rurais irão utilizar sensores e inteligência artificial para maximizar produtividade sustentável das lavouras. O programa fortalece cadeias globais de abastecimento verde.",
+    "type": "LOBBY",
+    "categorie": "Agronegócio",
+    "region": "Sul"
+  },
+  {
+    "id": "c153",
+    "title": "Universidade Popular da Agroecologia",
+    "description": "Movimentos sociais e agricultores familiares irão construir centros de formação voltados à soberania alimentar e produção ecológica coletiva. O ensino será gratuito e participativo.",
+    "type": "COMUNIDADE",
+    "categorie": "Educação",
+    "region": "Nordeste"
+  },
+  {
+    "id": "c154",
+    "title": "Plataforma Nacional de Compensação Verde",
+    "description": "Empresas poderão converter ações ambientais certificadas em ativos financeiros negociáveis em mercados sustentáveis. O sistema amplia dinamização econômica da agenda climática.",
+    "type": "LOBBY",
+    "categorie": "Finanças Ambientais",
+    "region": "Nacional"
+  },
+  {
+    "id": "c155",
+    "title": "Rede Comunitária de Cuidados Climáticos",
+    "description": "Bairros periféricos irão organizar brigadas populares de apoio a populações vulneráveis durante eventos climáticos extremos. O projeto fortalece solidariedade territorial.",
+    "type": "COMUNIDADE",
+    "categorie": "Saúde Ambiental",
+    "region": "Sudeste"
+  },
+  {
+    "id": "c156",
+    "title": "Polo Estratégico de Energia Offshore",
+    "description": "Consórcios empresariais irão desenvolver infraestrutura marítima renovável voltada à expansão energética sustentável. O programa integra inovação tecnológica e competitividade internacional.",
+    "type": "LOBBY",
+    "categorie": "Energia",
+    "region": "Sul"
+  },
+  {
+    "id": "c157",
+    "title": "Rede Popular de Turismo de Base Comunitária",
+    "description": "Comunidades tradicionais irão organizar experiências turísticas voltadas à preservação cultural e gestão coletiva dos territórios. A renda será distribuída localmente.",
+    "type": "COMUNIDADE",
+    "categorie": "Turismo",
+    "region": "Norte"
+  },
+  {
+    "id": "c158",
+    "title": "Programa de Modernização Hídrica Inteligente",
+    "description": "Sistemas urbanos de abastecimento irão adotar automação digital para aumentar eficiência operacional e segurança hídrica. O modelo utiliza concessões estratégicas sustentáveis.",
+    "type": "LOBBY",
+    "categorie": "Saneamento",
+    "region": "Sudeste"
+  },
+  {
+    "id": "c159",
+    "title": "Conselho Popular do Clima",
+    "description": "Comunidades afetadas por eventos extremos irão participar diretamente da definição de políticas de adaptação climática regional. O projeto fortalece controle social das decisões ambientais.",
+    "type": "COMUNIDADE",
+    "categorie": "Governança",
+    "region": "Nacional"
+  },
+  {
+    "id": "c160",
+    "title": "Hub Nacional de Economia Circular",
+    "description": "Indústrias estratégicas irão integrar cadeias produtivas baseadas em reaproveitamento inteligente de resíduos e eficiência material. O programa amplia competitividade verde corporativa.",
+    "type": "LOBBY",
+    "categorie": "Indústria",
+    "region": "Sudeste"
+  },
+  {
+    "id": "c161",
+    "title": "Rede de Guardiãs das Sementes Nativas",
+    "description": "Mulheres camponesas irão preservar variedades agrícolas tradicionais e compartilhar conhecimentos de cultivo agroecológico. O projeto combate erosão genética e dependência comercial.",
+    "type": "COMUNIDADE",
+    "categorie": "Agricultura",
+    "region": "Sul"
+  },
+  {
+    "id": "c162",
+    "title": "Programa Nacional de Bioativos Sustentáveis",
+    "description": "Empresas farmacêuticas e cosméticas irão desenvolver cadeias produtivas verdes baseadas em recursos naturais certificados. O modelo fortalece exportações de inovação sustentável.",
+    "type": "LOBBY",
+    "categorie": "Bioeconomia",
+    "region": "Norte"
+  },
+  {
+    "id": "c163",
+    "title": "Rede Popular de Monitoramento Costeiro",
+    "description": "Comunidades litorâneas irão utilizar tecnologias abertas para monitorar erosão, poluição e impactos ambientais na costa brasileira. Os dados serão públicos e comunitários.",
+    "type": "COMUNIDADE",
+    "categorie": "Tecnologia",
+    "region": "Nordeste"
+  },
+  {
+    "id": "c164",
+    "title": "Programa de Infraestrutura Sustentável Integrada",
+    "description": "Grandes corredores de transporte irão combinar automação logística, eficiência energética e certificações internacionais de sustentabilidade. O projeto amplia competitividade regional.",
+    "type": "LOBBY",
+    "categorie": "Transporte",
+    "region": "Centro-Oeste"
+  },
+  {
+    "id": "c165",
+    "title": "Mutirão Popular de Recuperação de Dunas",
+    "description": "Comunidades costeiras irão restaurar ecossistemas dunares utilizando espécies nativas e manejo comunitário. O projeto protege territórios vulneráveis à erosão climática.",
+    "type": "COMUNIDADE",
+    "categorie": "Ecossistemas Costeiros",
+    "region": "Nordeste"
+  },
+  {
+    "id": "c166",
+    "title": "Plataforma ESG de Desenvolvimento Territorial",
+    "description": "Municípios e empresas irão integrar indicadores automatizados de sustentabilidade para ampliar acesso a fundos internacionais verdes. O sistema fortalece governança baseada em métricas.",
+    "type": "LOBBY",
+    "categorie": "Governança",
+    "region": "Nacional"
+  },
+  {
+    "id": "c167",
+    "title": "Rede Popular de Alimentação Escolar Agroecológica",
+    "description": "Escolas públicas irão adquirir alimentos diretamente de cooperativas da agricultura familiar local. O projeto fortalece soberania alimentar e economia solidária.",
+    "type": "COMUNIDADE",
+    "categorie": "Segurança Alimentar",
+    "region": "Sul"
+  },
+  {
+    "id": "c168",
+    "title": "Programa de Exportação Verde Competitiva",
+    "description": "Cadeias produtivas estratégicas irão adotar certificações ambientais e rastreabilidade digital para ampliar acesso a mercados premium internacionais. O modelo integra inovação logística sustentável.",
+    "type": "LOBBY",
+    "categorie": "Infraestrutura",
+    "region": "Nordeste"
+  },
+  {
+    "id": "c169",
+    "title": "Cooperativa Popular das Águas da Chuva",
+    "description": "Moradores irão gerir sistemas coletivos de captação e distribuição de água pluvial em áreas urbanas vulneráveis. O acesso será comunitário e autônomo.",
+    "type": "COMUNIDADE",
+    "categorie": "Recursos Hídricos",
+    "region": "Nordeste"
+  },
+  {
+    "id": "c170",
+    "title": "Distrito Internacional de Tecnologia Verde",
+    "description": "Empresas inovadoras irão desenvolver soluções urbanas sustentáveis integradas a plataformas inteligentes de gestão climática. O projeto fortalece competitividade tecnológica global.",
+    "type": "LOBBY",
+    "categorie": "Tecnologia",
+    "region": "Sudeste"
+  },
+  {
+    "id": "c171",
+    "title": "Rede Popular de Museus da Natureza",
+    "description": "Comunidades tradicionais irão preservar memórias ecológicas e conhecimentos territoriais em espaços culturais autogestionados. O acesso será gratuito e educativo.",
+    "type": "COMUNIDADE",
+    "categorie": "Cultura",
+    "region": "Norte"
+  },
+  {
+    "id": "c172",
+    "title": "Programa de Gestão Florestal Certificada",
+    "description": "Empreendimentos estratégicos irão integrar rastreabilidade digital e padrões internacionais de manejo sustentável dos recursos florestais. O modelo amplia inserção no mercado verde.",
+    "type": "LOBBY",
+    "categorie": "Florestas",
+    "region": "Norte"
+  },
+  {
+    "id": "c173",
+    "title": "Rede Comunitária de Saúde das Florestas",
+    "description": "Agentes populares irão atuar na prevenção de doenças ambientais e fortalecimento de práticas tradicionais de cuidado em territórios amazônicos. O projeto integra saúde e preservação.",
+    "type": "COMUNIDADE",
+    "categorie": "Saúde",
+    "region": "Norte"
+  },
+  {
+    "id": "c174",
+    "title": "Programa de Eficiência Energética Industrial",
+    "description": "Parques industriais irão adotar sistemas automatizados de redução de consumo energético e monitoramento climático corporativo. O projeto amplia competitividade sustentável das cadeias produtivas.",
+    "type": "LOBBY",
+    "categorie": "Indústria",
+    "region": "Sudeste"
+  },
+  {
+    "id": "c175",
+    "title": "Conselho Comunitário das Áreas Verdes",
+    "description": "Moradores irão definir coletivamente o uso social e ecológico dos parques urbanos regionais. O projeto fortalece gestão pública participativa.",
+    "type": "COMUNIDADE",
+    "categorie": "Urbanismo",
+    "region": "Sudeste"
+  },
+  {
+    "id": "c176",
+    "title": "Hub Integrado de Agricultura Sustentável",
+    "description": "Grandes produtores irão utilizar plataformas digitais para monitoramento ambiental e aumento da produtividade regenerativa. O programa conecta agronegócio a mercados verdes internacionais.",
+    "type": "LOBBY",
+    "categorie": "Agronegócio",
+    "region": "Centro-Oeste"
+  },
+  {
+    "id": "c177",
+    "title": "Rede Popular de Economia das Florestas",
+    "description": "Comunidades extrativistas irão comercializar produtos florestais por meio de cooperativas solidárias e cadeias curtas de distribuição. O projeto fortalece autonomia econômica local.",
+    "type": "COMUNIDADE",
+    "categorie": "Economia Solidária",
+    "region": "Norte"
+  },
+  {
+    "id": "c178",
+    "title": "Programa Nacional de Créditos de Biodiversidade",
+    "description": "Áreas preservadas poderão gerar certificados ambientais negociáveis em plataformas digitais de investimento sustentável. O sistema amplia valorização econômica dos ecossistemas.",
+    "type": "LOBBY",
+    "categorie": "Finanças Ambientais",
+    "region": "Nacional"
+  },
+  {
+    "id": "c179",
+    "title": "Universidade Popular dos Biomas Brasileiros",
+    "description": "Movimentos sociais e comunidades tradicionais irão desenvolver formação intercultural voltada à defesa dos territórios e justiça ambiental. O ensino será comunitário e participativo.",
+    "type": "COMUNIDADE",
+    "categorie": "Educação Ambiental",
+    "region": "Nacional"
+  },
+  {
+    "id": "c180",
+    "title": "Plano Estratégico de Mobilidade Sustentável",
+    "description": "Centros urbanos irão implantar corredores inteligentes de transporte limpo integrados a plataformas digitais de eficiência logística. O modelo fortalece inovação metropolitana.",
+    "type": "LOBBY",
+    "categorie": "Mobilidade",
+    "region": "Sudeste"
+  },
+  {
+    "id": "c181",
+    "title": "Rede Popular de Defesa das Serras",
+    "description": "Comunidades rurais irão proteger áreas montanhosas ameaçadas por degradação ambiental através de vigilância comunitária e reflorestamento coletivo. O projeto fortalece gestão territorial popular.",
+    "type": "COMUNIDADE",
+    "categorie": "Florestas",
+    "region": "Sul"
+  },
+  {
+    "id": "c182",
+    "title": "Programa de Desenvolvimento Azul Sustentável",
+    "description": "Consórcios empresariais irão expandir cadeias econômicas marítimas sustentáveis integradas a certificações ambientais internacionais. O projeto fortalece competitividade costeira global.",
+    "type": "LOBBY",
+    "categorie": "Economia do Mar",
+    "region": "Nordeste"
+  },
+  {
+    "id": "c183",
+    "title": "Rede Comunitária de Energia Solidária",
+    "description": "Bairros populares irão compartilhar geração renovável coletiva com gestão horizontal da distribuição energética. O projeto reduz dependência de monopólios privados.",
+    "type": "COMUNIDADE",
+    "categorie": "Energia",
+    "region": "Sudeste"
+  },
+  {
+    "id": "c184",
+    "title": "Centro Nacional de Inteligência Climática",
+    "description": "Plataformas digitais irão integrar dados ambientais para orientar estratégias empresariais de adaptação sustentável. O programa fortalece gestão baseada em métricas globais.",
+    "type": "LOBBY",
+    "categorie": "Tecnologia",
+    "region": "Nacional"
+  },
+  {
+    "id": "c185",
+    "title": "Mutirão Popular das Hortas Escolares",
+    "description": "Estudantes, famílias e agricultores locais irão construir hortas agroecológicas integradas à alimentação escolar pública. O projeto fortalece educação alimentar comunitária.",
+    "type": "COMUNIDADE",
+    "categorie": "Agricultura Urbana",
+    "region": "Centro-Oeste"
+  },
+  {
+    "id": "c186",
+    "title": "Programa Integrado de Hidrogênio Verde",
+    "description": "Polos industriais irão desenvolver cadeias energéticas renováveis voltadas à exportação sustentável e inovação tecnológica. O modelo fortalece competitividade internacional.",
+    "type": "LOBBY",
+    "categorie": "Energia",
+    "region": "Nordeste"
+  },
+  {
+    "id": "c187",
+    "title": "Rede Popular de Observação Climática",
+    "description": "Comunidades irão monitorar impactos ambientais locais por meio de ciência cidadã e tecnologias abertas de coleta de dados. As informações serão públicas e acessíveis.",
+    "type": "COMUNIDADE",
+    "categorie": "Tecnologia",
+    "region": "Sul"
+  },
+  {
+    "id": "c188",
+    "title": "Programa de Urbanização Verde Premium",
+    "description": "Áreas estratégicas irão receber empreendimentos sustentáveis integrados a parques inteligentes e serviços urbanos ecoeficientes. O projeto amplia valorização imobiliária verde.",
+    "type": "LOBBY",
+    "categorie": "Mercado Imobiliário",
+    "region": "Sudeste"
+  },
+  {
+    "id": "c189",
+    "title": "Rede Comunitária de Recuperação de Veredas",
+    "description": "Comunidades do Cerrado irão restaurar nascentes e corredores ecológicos utilizando práticas tradicionais de manejo territorial. O acesso às áreas será comunitário.",
+    "type": "COMUNIDADE",
+    "categorie": "Recursos Hídricos",
+    "region": "Centro-Oeste"
+  },
+  {
+    "id": "c190",
+    "title": "Hub de Certificação Sustentável Global",
+    "description": "Empresas brasileiras irão integrar plataformas de validação ESG para ampliar competitividade em cadeias internacionais de comércio verde. O modelo utiliza auditoria digital automatizada.",
+    "type": "LOBBY",
+    "categorie": "Governança",
+    "region": "Nacional"
+  },
+  {
+    "id": "c191",
+    "title": "Circuito Popular de Saberes da Terra",
+    "description": "Comunidades tradicionais irão compartilhar conhecimentos sobre manejo ecológico, sementes e medicina popular em encontros regionais. O projeto fortalece memória coletiva dos territórios.",
+    "type": "COMUNIDADE",
+    "categorie": "Cultura",
+    "region": "Nordeste"
+  },
+  {
+    "id": "c192",
+    "title": "Programa de Requalificação Verde Costeira",
+    "description": "Áreas litorâneas estratégicas irão receber infraestrutura turística sustentável integrada a plataformas inteligentes de gestão ambiental. O modelo fortalece desenvolvimento regional competitivo.",
+    "type": "LOBBY",
+    "categorie": "Turismo",
+    "region": "Sul"
+  },
+  {
+    "id": "c193",
+    "title": "Rede Popular de Defesa dos Territórios Tradicionais",
+    "description": "Comunidades indígenas, quilombolas e ribeirinhas irão articular monitoramento territorial participativo e formação política comunitária. O projeto fortalece soberania popular.",
+    "type": "COMUNIDADE",
+    "categorie": "Território",
+    "region": "Nacional"
+  },
+  {
+    "id": "c194",
+    "title": "Programa Nacional de Infraestrutura Climática",
+    "description": "Grandes projetos urbanos irão integrar tecnologias sustentáveis de adaptação climática e eficiência energética em regiões estratégicas. O modelo utiliza financiamento verde internacional.",
+    "type": "LOBBY",
+    "categorie": "Infraestrutura",
+    "region": "Sudeste"
+  },
+  {
+    "id": "c195",
+    "title": "Rede Popular de Alimentação dos Biomas",
+    "description": "Cooperativas locais irão distribuir alimentos tradicionais produzidos de forma agroecológica e vinculados à soberania alimentar regional. O projeto fortalece economias comunitárias.",
+    "type": "COMUNIDADE",
+    "categorie": "Segurança Alimentar",
+    "region": "Norte"
+  },
+  {
+    "id": "c196",
+    "title": "Parceria Estratégica de Conservação Produtiva",
+    "description": "Grandes empreendimentos rurais irão combinar preservação certificada e eficiência produtiva por meio de plataformas digitais de gestão ambiental. O sistema amplia competitividade sustentável.",
+    "type": "LOBBY",
+    "categorie": "Agronegócio",
+    "region": "Centro-Oeste"
+  },
+  {
+    "id": "c197",
+    "title": "Cooperativa Popular de Recarga Hídrica",
+    "description": "Moradores rurais irão restaurar áreas de infiltração e proteger nascentes utilizando mutirões ecológicos e manejo comunitário. O acesso à água será tratado como bem comum.",
+    "type": "COMUNIDADE",
+    "categorie": "Saneamento",
+    "region": "Sul"
+  },
+  {
+    "id": "c198",
+    "title": "Programa Integrado de Bioeconomia Competitiva",
+    "description": "Empresas inovadoras irão transformar recursos naturais certificados em cadeias produtivas sustentáveis de alto valor agregado. O modelo fortalece inserção internacional da economia verde.",
+    "type": "LOBBY",
+    "categorie": "Bioeconomia",
+    "region": "Norte"
+  },
+  {
+    "id": "c199",
+    "title": "Rede Comunitária de Proteção das Águas Amazônicas",
+    "description": "Povos ribeirinhos irão monitorar coletivamente rios e igarapés para prevenir contaminação e conflitos ambientais. O projeto integra ciência popular e saberes tradicionais.",
+    "type": "COMUNIDADE",
+    "categorie": "Recursos Hídricos",
+    "region": "Norte"
+  },
+  {
+    "id": "c200",
+    "title": "Programa Nacional de Mercados Climáticos",
+    "description": "Ativos ambientais certificados poderão ser integrados a plataformas financeiras sustentáveis voltadas à atração de investimentos internacionais. O sistema fortalece dinamização da economia verde.",
+    "type": "LOBBY",
+    "categorie": "Finanças Ambientais",
+    "region": "Nacional"
+  },
+  {
+    "id": "c201",
+    "title": "Rede Popular de Quintais Produtivos",
+    "description": "Famílias periféricas irão transformar áreas domésticas em espaços agroecológicos de produção alimentar e troca solidária. O projeto fortalece autonomia alimentar comunitária.",
+    "type": "COMUNIDADE",
+    "categorie": "Agricultura Urbana",
+    "region": "Nordeste"
+  },
+  {
+    "id": "c202",
+    "title": "Programa Integrado de Infraestrutura Azul",
+    "description": "Grandes centros urbanos irão implementar soluções inteligentes de drenagem sustentável e monitoramento climático automatizado. O modelo amplia resiliência urbana com financiamento verde.",
+    "type": "LOBBY",
+    "categorie": "Urbanismo",
+    "region": "Sudeste"
+  },
+  {
+    "id": "c203",
+    "title": "Conselho Popular dos Campos Sulinos",
+    "description": "Comunidades rurais irão decidir coletivamente sobre uso da terra, preservação ambiental e produção agroecológica regional. O projeto fortalece soberania territorial popular.",
+    "type": "COMUNIDADE",
+    "categorie": "Território",
+    "region": "Sul"
+  },
+  {
+    "id": "c204",
+    "title": "Distrito Nacional de Exportação Sustentável",
+    "description": "Polos industriais verdes irão integrar automação logística e certificações ambientais para ampliar competitividade internacional. O programa conecta inovação sustentável e capital global.",
+    "type": "LOBBY",
+    "categorie": "Infraestrutura",
+    "region": "Centro-Oeste"
+  },
+  {
+    "id": "c205",
+    "title": "Rede Comunitária de Vigilância Climática",
+    "description": "Moradores irão monitorar impactos ambientais locais utilizando sensores abertos e gestão participativa de dados. As informações orientarão ações coletivas de adaptação climática.",
+    "type": "COMUNIDADE",
+    "categorie": "Tecnologia",
+    "region": "Sudeste"
+  },
+  {
+    "id": "c206",
+    "title": "Hub Estratégico de Bioativos Verdes",
+    "description": "Empresas de biotecnologia irão desenvolver produtos sustentáveis de alto valor agregado a partir da biodiversidade certificada. O projeto fortalece inserção competitiva global.",
+    "type": "LOBBY",
+    "categorie": "Bioeconomia",
+    "region": "Norte"
+  },
+  {
+    "id": "c207",
+    "title": "Mutirão Popular das Nascentes Urbanas",
+    "description": "Comunidades periféricas irão recuperar áreas de nascente degradadas por meio de reflorestamento e manejo coletivo da água. O acesso será público e comunitário.",
+    "type": "COMUNIDADE",
+    "categorie": "Recursos Hídricos",
+    "region": "Sudeste"
+  },
+  {
+    "id": "c208",
+    "title": "Programa de Certificação Climática Regional",
+    "description": "Municípios e empresas poderão aderir a métricas integradas de neutralidade ambiental e eficiência energética. O sistema amplia acesso a investimentos sustentáveis internacionais.",
+    "type": "LOBBY",
+    "categorie": "Governança",
+    "region": "Nacional"
+  },
+  {
+    "id": "c209",
+    "title": "Universidade Livre dos Povos do Cerrado",
+    "description": "Comunidades tradicionais irão desenvolver formação intercultural voltada à preservação hídrica e justiça ambiental. O currículo será construído coletivamente.",
+    "type": "COMUNIDADE",
+    "categorie": "Educação",
+    "region": "Centro-Oeste"
+  },
+  {
+    "id": "c210",
+    "title": "Programa Nacional de Agricultura Inteligente",
+    "description": "Grandes cadeias agrícolas irão integrar monitoramento via satélite e plataformas digitais para aumentar eficiência produtiva sustentável. O projeto fortalece exportações verdes.",
+    "type": "LOBBY",
+    "categorie": "Agronegócio",
+    "region": "Centro-Oeste"
+  },
+  {
+    "id": "c211",
+    "title": "Rede Popular de Defesa das Lagoas",
+    "description": "Pescadores artesanais irão restaurar ecossistemas lagunares e organizar manejo coletivo dos recursos aquáticos. O projeto fortalece soberania alimentar local.",
+    "type": "COMUNIDADE",
+    "categorie": "Pesca",
+    "region": "Sul"
+  },
+  {
+    "id": "c212",
+    "title": "Parceria Estratégica de Mobilidade Verde",
+    "description": "Corredores urbanos inteligentes irão integrar transporte elétrico e gestão automatizada de tráfego sustentável. O programa amplia eficiência metropolitana competitiva.",
+    "type": "LOBBY",
+    "categorie": "Mobilidade",
+    "region": "Sudeste"
+  },
+  {
+    "id": "c213",
+    "title": "Cooperativa Popular de Energia Solar",
+    "description": "Bairros populares irão compartilhar geração fotovoltaica comunitária com distribuição horizontal dos benefícios energéticos. A gestão será realizada por assembleias locais.",
+    "type": "COMUNIDADE",
+    "categorie": "Energia",
+    "region": "Nordeste"
+  },
+  {
+    "id": "c214",
+    "title": "Programa de Mineração Climática Eficiente",
+    "description": "Empresas extrativas irão utilizar inteligência artificial para reduzir emissões operacionais e ampliar rastreabilidade ambiental. O modelo fortalece competitividade sustentável internacional.",
+    "type": "LOBBY",
+    "categorie": "Mineração",
+    "region": "Centro-Oeste"
+  },
+  {
+    "id": "c215",
+    "title": "Rede Popular de Sementes das Florestas",
+    "description": "Comunidades tradicionais irão preservar espécies nativas e compartilhar sementes adaptadas aos biomas locais. O projeto combate dependência tecnológica agrícola.",
+    "type": "COMUNIDADE",
+    "categorie": "Florestas",
+    "region": "Norte"
+  },
+  {
+    "id": "c216",
+    "title": "Distrito Financeiro Sustentável",
+    "description": "Centros empresariais irão integrar edifícios inteligentes, créditos de carbono e infraestrutura energética de alta eficiência. O projeto fortalece atração de capital verde.",
+    "type": "LOBBY",
+    "categorie": "Mercado Imobiliário",
+    "region": "Sudeste"
+  },
+  {
+    "id": "c217",
+    "title": "Circuito Popular de Saúde Ambiental",
+    "description": "Agentes comunitários irão promover prevenção de doenças associadas à contaminação ambiental em territórios vulneráveis. O projeto integra ciência popular e cuidado coletivo.",
+    "type": "COMUNIDADE",
+    "categorie": "Saúde",
+    "region": "Nordeste"
+  },
+  {
+    "id": "c218",
+    "title": "Programa Nacional de Serviços Climáticos",
+    "description": "Empreendimentos poderão integrar plataformas de compensação ambiental baseadas em indicadores digitais de sustentabilidade. O sistema amplia dinamização da economia verde.",
+    "type": "LOBBY",
+    "categorie": "Finanças Ambientais",
+    "region": "Nacional"
+  },
+  {
+    "id": "c219",
+    "title": "Rede Comunitária dos Mangues Urbanos",
+    "description": "Moradores costeiros irão restaurar manguezais degradados e monitorar coletivamente a qualidade ambiental local. O projeto fortalece proteção comunitária dos territórios.",
+    "type": "COMUNIDADE",
+    "categorie": "Ecossistemas Costeiros",
+    "region": "Nordeste"
+  },
+  {
+    "id": "c220",
+    "title": "Plano Nacional de Hidrovias Sustentáveis",
+    "description": "Corredores logísticos fluviais irão adotar infraestrutura inteligente e gestão energética eficiente para ampliar competitividade comercial. O programa integra investimentos estratégicos verdes.",
+    "type": "LOBBY",
+    "categorie": "Transporte",
+    "region": "Norte"
+  },
+  {
+    "id": "c221",
+    "title": "Mutirão Popular de Agroecologia Escolar",
+    "description": "Escolas públicas irão construir hortas coletivas integradas à alimentação estudantil e à educação ambiental crítica. O manejo será comunitário e participativo.",
+    "type": "COMUNIDADE",
+    "categorie": "Educação Ambiental",
+    "region": "Sudeste"
+  },
+  {
+    "id": "c222",
+    "title": "Programa de Conservação Produtiva Integrada",
+    "description": "Grandes propriedades rurais irão combinar produção de larga escala e preservação certificada dos ecossistemas locais. O sistema fortalece cadeias verdes internacionais.",
+    "type": "LOBBY",
+    "categorie": "Agronegócio",
+    "region": "Sul"
+  },
+  {
+    "id": "c223",
+    "title": "Rede Popular de Cultura Quilombola",
+    "description": "Comunidades quilombolas irão preservar saberes ancestrais e fortalecer economias locais por meio de espaços culturais autogestionados. O acesso será público e comunitário.",
+    "type": "COMUNIDADE",
+    "categorie": "Cultura",
+    "region": "Nordeste"
+  },
+  {
+    "id": "c224",
+    "title": "Hub Nacional de Turismo Sustentável",
+    "description": "Destinos ecológicos irão integrar plataformas digitais de gestão ambiental e infraestrutura premium de baixo impacto. O programa amplia competitividade internacional do setor.",
+    "type": "LOBBY",
+    "categorie": "Turismo",
+    "region": "Sul"
+  },
+  {
+    "id": "c225",
+    "title": "Cooperativa Popular de Reciclagem Eletrônica",
+    "description": "Trabalhadores urbanos irão reaproveitar resíduos tecnológicos em sistemas cooperativos de economia solidária. O projeto reduz dependência de grandes operadores privados.",
+    "type": "COMUNIDADE",
+    "categorie": "Resíduos",
+    "region": "Sudeste"
+  },
+  {
+    "id": "c226",
+    "title": "Programa Integrado de Portos Verdes",
+    "description": "Complexos portuários irão adotar automação energética e monitoramento climático inteligente para ampliar eficiência logística sustentável. O modelo fortalece competitividade internacional.",
+    "type": "LOBBY",
+    "categorie": "Infraestrutura",
+    "region": "Nordeste"
+  },
+  {
+    "id": "c227",
+    "title": "Rede Popular de Defensoras das Águas",
+    "description": "Mulheres de comunidades rurais irão liderar ações de preservação hídrica e gestão coletiva de nascentes locais. O projeto fortalece soberania comunitária da água.",
+    "type": "COMUNIDADE",
+    "categorie": "Recursos Hídricos",
+    "region": "Centro-Oeste"
+  },
+  {
+    "id": "c228",
+    "title": "Distrito Inteligente de Bioeconomia",
+    "description": "Empresas inovadoras irão desenvolver cadeias produtivas sustentáveis integradas a plataformas digitais de rastreabilidade ambiental. O programa amplia exportações verdes de alto valor agregado.",
+    "type": "LOBBY",
+    "categorie": "Bioeconomia",
+    "region": "Norte"
+  },
+  {
+    "id": "c229",
+    "title": "Rede Comunitária de Transporte Fluvial",
+    "description": "Comunidades amazônicas irão administrar sistemas coletivos de navegação para garantir mobilidade regional e acesso a serviços públicos. A gestão será comunitária e horizontal.",
+    "type": "COMUNIDADE",
+    "categorie": "Mobilidade",
+    "region": "Norte"
+  },
+  {
+    "id": "c230",
+    "title": "Programa Nacional de Créditos de Conservação",
+    "description": "Empresas e municípios poderão transformar áreas preservadas em ativos ambientais negociáveis em plataformas verdes internacionais. O sistema fortalece mercados sustentáveis emergentes.",
+    "type": "LOBBY",
+    "categorie": "Finanças Ambientais",
+    "region": "Nacional"
+  },
+  {
+    "id": "c231",
+    "title": "Conselho Popular da Caatinga",
+    "description": "Comunidades do semiárido irão decidir coletivamente sobre manejo territorial e estratégias de convivência ecológica regional. O projeto fortalece autonomia popular.",
+    "type": "COMUNIDADE",
+    "categorie": "Território",
+    "region": "Nordeste"
+  },
+  {
+    "id": "c232",
+    "title": "Rede Estratégica de Agricultura Climática",
+    "description": "Grandes produtores irão integrar sensores inteligentes e certificações ambientais para otimizar produtividade sustentável. O programa amplia competitividade global do setor agrícola.",
+    "type": "LOBBY",
+    "categorie": "Agronegócio",
+    "region": "Centro-Oeste"
+  },
+  {
+    "id": "c233",
+    "title": "Mutirão Popular das Áreas Verdes",
+    "description": "Moradores urbanos irão recuperar praças, parques e corredores ecológicos utilizando manejo comunitário e reflorestamento participativo. O acesso será público e coletivo.",
+    "type": "COMUNIDADE",
+    "categorie": "Urbanismo",
+    "region": "Sudeste"
+  },
+  {
+    "id": "c234",
+    "title": "Programa de Eficiência Energética Urbana",
+    "description": "Edifícios inteligentes irão integrar automação climática e sistemas avançados de gestão energética sustentável. O projeto fortalece valorização imobiliária verde.",
+    "type": "LOBBY",
+    "categorie": "Energia",
+    "region": "Sudeste"
+  },
+  {
+    "id": "c235",
+    "title": "Rede Popular de Educação Ribeirinha",
+    "description": "Comunidades fluviais irão construir centros de educação intercultural voltados à preservação ambiental e defesa territorial. O currículo integrará saberes tradicionais.",
+    "type": "COMUNIDADE",
+    "categorie": "Educação",
+    "region": "Norte"
+  },
+  {
+    "id": "c236",
+    "title": "Hub Nacional de Mineração Sustentável Avançada",
+    "description": "Operações extrativas irão adotar rastreabilidade digital e automação de baixo carbono para ampliar eficiência produtiva sustentável. O modelo fortalece cadeias minerais estratégicas.",
+    "type": "LOBBY",
+    "categorie": "Mineração",
+    "region": "Centro-Oeste"
+  },
+  {
+    "id": "c237",
+    "title": "Rede Comunitária de Guardiões da Mata",
+    "description": "Comunidades tradicionais irão monitorar áreas florestais e promover reflorestamento participativo com espécies nativas. O projeto fortalece proteção popular dos biomas.",
+    "type": "COMUNIDADE",
+    "categorie": "Florestas",
+    "region": "Sul"
+  },
+  {
+    "id": "c238",
+    "title": "Programa Nacional de Cidades Carbono Inteligente",
+    "description": "Municípios estratégicos irão implantar infraestrutura digital para gestão automatizada de emissões e eficiência urbana. O sistema fortalece investimentos em inovação sustentável.",
+    "type": "LOBBY",
+    "categorie": "Urbanismo",
+    "region": "Nacional"
+  },
+  {
+    "id": "c239",
+    "title": "Cooperativa Popular das Ervas Medicinais",
+    "description": "Agricultores familiares irão cultivar plantas medicinais integradas a práticas de saúde coletiva e distribuição comunitária. O acesso será gratuito em redes locais.",
+    "type": "COMUNIDADE",
+    "categorie": "Saúde",
+    "region": "Nordeste"
+  },
+  {
+    "id": "c240",
+    "title": "Programa Integrado de Mobilidade Corporativa",
+    "description": "Centros empresariais irão adotar corredores elétricos inteligentes e plataformas automatizadas de deslocamento sustentável. O modelo amplia eficiência logística urbana.",
+    "type": "LOBBY",
+    "categorie": "Mobilidade",
+    "region": "Sudeste"
+  },
+  {
+    "id": "c241",
+    "title": "Rede Popular de Agroecologia das Encostas",
+    "description": "Comunidades urbanas irão cultivar alimentos agroecológicos em áreas de morro utilizando manejo comunitário e reflorestamento local. O projeto fortalece segurança alimentar.",
+    "type": "COMUNIDADE",
+    "categorie": "Agricultura Urbana",
+    "region": "Sudeste"
+  },
+  {
+    "id": "c242",
+    "title": "Programa Estratégico de Exportação Verde",
+    "description": "Cadeias produtivas nacionais irão adotar plataformas digitais de rastreabilidade ambiental para ampliar acesso a mercados internacionais sustentáveis. O sistema fortalece competitividade verde.",
+    "type": "LOBBY",
+    "categorie": "Infraestrutura",
+    "region": "Sul"
+  },
+  {
+    "id": "c243",
+    "title": "Rede Comunitária dos Povos das Águas",
+    "description": "Pescadores e ribeirinhos irão organizar gestão coletiva dos territórios aquáticos e monitoramento ambiental participativo. O projeto fortalece soberania alimentar regional.",
+    "type": "COMUNIDADE",
+    "categorie": "Pesca",
+    "region": "Norte"
+  },
+  {
+    "id": "c244",
+    "title": "Centro Internacional de Economia Azul",
+    "description": "Empresas marítimas irão desenvolver cadeias sustentáveis de logística, energia e turismo costeiro integradas a certificações globais. O projeto amplia competitividade oceânica.",
+    "type": "LOBBY",
+    "categorie": "Economia do Mar",
+    "region": "Nordeste"
+  },
+  {
+    "id": "c245",
+    "title": "Mutirão Popular de Compostagem Comunitária",
+    "description": "Bairros urbanos irão transformar resíduos orgânicos em fertilizantes para hortas coletivas e reflorestamento local. O manejo será autogestionado pela comunidade.",
+    "type": "COMUNIDADE",
+    "categorie": "Resíduos",
+    "region": "Sul"
+  },
+  {
+    "id": "c246",
+    "title": "Programa Nacional de Gestão ESG Territorial",
+    "description": "Municípios e empreendimentos irão integrar plataformas automatizadas de indicadores ambientais e governança sustentável. O sistema amplia acesso a fundos internacionais.",
+    "type": "LOBBY",
+    "categorie": "Governança",
+    "region": "Nacional"
+  },
+  {
+    "id": "c247",
+    "title": "Rede Popular de Preservação das Veredas",
+    "description": "Comunidades do Cerrado irão restaurar áreas úmidas e proteger corredores ecológicos por meio de manejo coletivo tradicional. O projeto fortalece segurança hídrica regional.",
+    "type": "COMUNIDADE",
+    "categorie": "Florestas",
+    "region": "Centro-Oeste"
+  },
+  {
+    "id": "c248",
+    "title": "Hub Nacional de Hidrogênio Sustentável",
+    "description": "Polos energéticos irão produzir combustíveis limpos integrados a cadeias globais de inovação e exportação verde. O programa fortalece liderança tecnológica nacional.",
+    "type": "LOBBY",
+    "categorie": "Energia",
+    "region": "Nordeste"
+  },
+  {
+    "id": "c249",
+    "title": "Universidade Popular das Periferias Verdes",
+    "description": "Jovens urbanos irão desenvolver projetos de justiça climática, agroecologia e comunicação comunitária. O ensino será organizado de forma horizontal e participativa.",
+    "type": "COMUNIDADE",
+    "categorie": "Educação Ambiental",
+    "region": "Sudeste"
+  },
+  {
+    "id": "c250",
+    "title": "Programa Integrado de Certificação Azul",
+    "description": "Empresas costeiras irão aderir a métricas internacionais de sustentabilidade hídrica e eficiência ambiental. O modelo fortalece posicionamento competitivo no mercado global.",
+    "type": "LOBBY",
+    "categorie": "Governança",
+    "region": "Sul"
+  },
+  {
+    "id": "c251",
+    "title": "Rede Popular de Agroflorestas Escolares",
+    "description": "Escolas públicas irão integrar sistemas agroflorestais ao currículo, promovendo alimentação saudável e educação ambiental prática. O manejo será feito por estudantes e comunidades locais.",
+    "type": "COMUNIDADE",
+    "categorie": "Educação Ambiental",
+    "region": "Centro-Oeste"
+  },
+  {
+    "id": "c252",
+    "title": "Plataforma Nacional de Infraestrutura Climática Privada",
+    "description": "Grandes projetos urbanos serão financiados por fundos privados voltados à adaptação climática e eficiência energética. O sistema prioriza inovação tecnológica e retorno sustentável de investimento.",
+    "type": "LOBBY",
+    "categorie": "Urbanismo",
+    "region": "Sudeste"
+  },
+  {
+    "id": "c253",
+    "title": "Rede Comunitária de Proteção dos Babaçuais",
+    "description": "Mulheres extrativistas irão gerir territórios de babaçu com autonomia produtiva e comercialização solidária. O projeto protege saberes tradicionais e autonomia econômica.",
+    "type": "COMUNIDADE",
+    "categorie": "Território",
+    "region": "Nordeste"
+  },
+  {
+    "id": "c254",
+    "title": "Programa de Logística Verde Inteligente",
+    "description": "Corredores logísticos irão integrar automação, sensores ambientais e eficiência energética para ampliar exportações sustentáveis. O modelo fortalece cadeias globais competitivas.",
+    "type": "LOBBY",
+    "categorie": "Infraestrutura",
+    "region": "Nacional"
+  },
+  {
+    "id": "c255",
+    "title": "Mutirão Popular de Recuperação de Rios Urbanos",
+    "description": "Comunidades irão restaurar rios degradados com reflorestamento de margens e monitoramento coletivo da qualidade da água. As áreas recuperadas serão de uso público.",
+    "type": "COMUNIDADE",
+    "categorie": "Recursos Hídricos",
+    "region": "Sudeste"
+  },
+  {
+    "id": "c256",
+    "title": "Centro de Inovação em Bioeconomia Global",
+    "description": "Empresas irão desenvolver cadeias produtivas de alto valor a partir da biodiversidade brasileira com certificação internacional. O programa fortalece exportação sustentável.",
+    "type": "LOBBY",
+    "categorie": "Bioeconomia",
+    "region": "Norte"
+  },
+  {
+    "id": "c257",
+    "title": "Rede Popular de Transporte Escolar Rural",
+    "description": "Comunidades rurais irão organizar transporte coletivo gratuito para estudantes em áreas isoladas. A gestão será feita por consórcios locais autônomos.",
+    "type": "COMUNIDADE",
+    "categorie": "Mobilidade",
+    "region": "Sul"
+  },
+  {
+    "id": "c258",
+    "title": "Programa Nacional de Certificação de Carbono",
+    "description": "Empresas e propriedades poderão transformar práticas ambientais em créditos negociáveis em mercados globais. O sistema integra auditoria digital e métricas climáticas.",
+    "type": "LOBBY",
+    "categorie": "Finanças Ambientais",
+    "region": "Nacional"
+  },
+  {
+    "id": "c259",
+    "title": "Rede Popular de Sementes Crioulas",
+    "description": "Agricultores familiares irão preservar sementes tradicionais e compartilhar variedades adaptadas aos biomas locais. O projeto combate dependência de corporações agrícolas.",
+    "type": "COMUNIDADE",
+    "categorie": "Agricultura",
+    "region": "Nordeste"
+  },
+  {
+    "id": "c260",
+    "title": "Distrito Industrial de Energia Limpa",
+    "description": "Complexos industriais irão integrar geração renovável e automação energética para ampliar eficiência produtiva sustentável. O modelo atrai investimentos internacionais.",
+    "type": "LOBBY",
+    "categorie": "Energia",
+    "region": "Sudeste"
+  },
+  {
+    "id": "c261",
+    "title": "Rede Comunitária de Defesa dos Rios do Cerrado",
+    "description": "Comunidades irão monitorar nascentes e organizar mutirões de preservação hídrica no bioma Cerrado. O projeto fortalece gestão territorial coletiva da água.",
+    "type": "COMUNIDADE",
+    "categorie": "Recursos Hídricos",
+    "region": "Centro-Oeste"
+  },
+  {
+    "id": "c262",
+    "title": "Programa de Turismo Ecológico Premium",
+    "description": "Regiões naturais estratégicas irão receber infraestrutura turística de alto padrão com certificação ambiental internacional. O modelo integra conservação e economia verde.",
+    "type": "LOBBY",
+    "categorie": "Turismo",
+    "region": "Nordeste"
+  },
+  {
+    "id": "c263",
+    "title": "Cooperativa Popular de Agricultura Urbana",
+    "description": "Moradores de periferias irão produzir alimentos em hortas coletivas autogestionadas integradas a redes locais de distribuição. O projeto fortalece soberania alimentar.",
+    "type": "COMUNIDADE",
+    "categorie": "Agricultura Urbana",
+    "region": "Sudeste"
+  },
+  {
+    "id": "c264",
+    "title": "Hub de Inovação em Infraestrutura Verde",
+    "description": "Empresas irão desenvolver soluções tecnológicas para cidades inteligentes com eficiência energética e gestão automatizada de recursos. O programa fortalece competitividade urbana.",
+    "type": "LOBBY",
+    "categorie": "Urbanismo",
+    "region": "Sul"
+  },
+  {
+    "id": "c265",
+    "title": "Rede Popular de Saúde das Florestas",
+    "description": "Agentes comunitários irão integrar práticas de saúde preventiva com conhecimentos tradicionais em territórios amazônicos. O projeto valoriza cuidado coletivo e ambiental.",
+    "type": "COMUNIDADE",
+    "categorie": "Saúde",
+    "region": "Norte"
+  },
+  {
+    "id": "c266",
+    "title": "Programa Nacional de Economia Azul Sustentável",
+    "description": "Empresas costeiras irão desenvolver cadeias produtivas marítimas com certificação ambiental internacional e inovação logística. O modelo fortalece exportações globais.",
+    "type": "LOBBY",
+    "categorie": "Economia do Mar",
+    "region": "Sul"
+  },
+  {
+    "id": "c267",
+    "title": "Rede Comunitária de Reflorestamento Urbano",
+    "description": "Moradores irão plantar espécies nativas em áreas urbanas degradadas para recuperação ambiental e melhoria climática local. O projeto é autogerido pelas comunidades.",
+    "type": "COMUNIDADE",
+    "categorie": "Florestas",
+    "region": "Sudeste"
+  },
+  {
+    "id": "c268",
+    "title": "Programa de Mineração Sustentável Digital",
+    "description": "Empresas mineradoras irão integrar automação e rastreabilidade ambiental para otimizar produção e reduzir impactos. O modelo fortalece competitividade global.",
+    "type": "LOBBY",
+    "categorie": "Mineração",
+    "region": "Centro-Oeste"
+  },
+  {
+    "id": "c269",
+    "title": "Rede Popular de Educação Ambiental do Semiárido",
+    "description": "Comunidades do semiárido irão desenvolver projetos educativos sobre convivência sustentável com o clima seco. O conhecimento será construído coletivamente.",
+    "type": "COMUNIDADE",
+    "categorie": "Educação",
+    "region": "Nordeste"
+  },
+  {
+    "id": "c270",
+    "title": "Programa de Certificação de Cidades Inteligentes",
+    "description": "Municípios irão adotar métricas digitais de sustentabilidade urbana para acesso a investimentos internacionais. O sistema integra governança e inovação tecnológica.",
+    "type": "LOBBY",
+    "categorie": "Governança",
+    "region": "Nacional"
+  },
+  {
+    "id": "c271",
+    "title": "Rede Popular de Agricultura da Caatinga",
+    "description": "Agricultores familiares irão fortalecer sistemas agroecológicos adaptados ao semiárido com manejo comunitário da terra. O projeto promove soberania alimentar regional.",
+    "type": "COMUNIDADE",
+    "categorie": "Agricultura",
+    "region": "Nordeste"
+  },
+  {
+    "id": "c272",
+    "title": "Distrito de Tecnologia Climática Avançada",
+    "description": "Empresas irão desenvolver soluções digitais para monitoramento climático e gestão de riscos ambientais urbanos. O programa fortalece inovação sustentável global.",
+    "type": "LOBBY",
+    "categorie": "Tecnologia",
+    "region": "Sudeste"
+  },
+  {
+    "id": "c273",
+    "title": "Mutirão Popular de Hortas Comunitárias",
+    "description": "Bairros urbanos irão implantar hortas coletivas em terrenos ociosos para produção alimentar local e educação ambiental. O projeto é autogerido pelos moradores.",
+    "type": "COMUNIDADE",
+    "categorie": "Segurança Alimentar",
+    "region": "Sul"
+  },
+  {
+    "id": "c274",
+    "title": "Programa Nacional de Infraestrutura Logística Sustentável",
+    "description": "Grandes corredores de transporte irão integrar eficiência energética e automação para ampliar competitividade de exportação verde. O modelo atrai capital internacional.",
+    "type": "LOBBY",
+    "categorie": "Infraestrutura",
+    "region": "Centro-Oeste"
+  },
+  {
+    "id": "c275",
+    "title": "Rede Comunitária de Defesa das Dunas",
+    "description": "Comunidades costeiras irão proteger dunas e ecossistemas frágeis por meio de manejo coletivo e educação ambiental local. O acesso será comunitário.",
+    "type": "COMUNIDADE",
+    "categorie": "Ecossistemas Costeiros",
+    "region": "Nordeste"
+  },
+  {
+    "id": "c276",
+    "title": "Programa de Mercados de Carbono Integrados",
+    "description": "Empresas poderão negociar créditos de carbono em plataformas digitais globais com auditoria automatizada. O sistema fortalece economia verde internacional.",
+    "type": "LOBBY",
+    "categorie": "Finanças Ambientais",
+    "region": "Nacional"
+  },
+  {
+    "id": "c277",
+    "title": "Rede Popular de Cozinhas Solidárias",
+    "description": "Comunidades irão organizar cozinhas coletivas para distribuição gratuita de alimentos em áreas vulneráveis. O projeto combate insegurança alimentar urbana.",
+    "type": "COMUNIDADE",
+    "categorie": "Segurança Alimentar",
+    "region": "Sudeste"
+  },
+  {
+    "id": "c278",
+    "title": "Centro de Inovação em Energia Offshore",
+    "description": "Empresas irão desenvolver infraestrutura marítima de energia renovável com integração a cadeias globais sustentáveis. O modelo fortalece exportações energéticas.",
+    "type": "LOBBY",
+    "categorie": "Energia",
+    "region": "Sul"
+  },
+  {
+    "id": "c279",
+    "title": "Rede Popular de Cultura da Mata Atlântica",
+    "description": "Comunidades irão preservar saberes tradicionais e biodiversidade da Mata Atlântica por meio de ações culturais e educativas. O projeto fortalece identidade territorial.",
+    "type": "COMUNIDADE",
+    "categorie": "Cultura",
+    "region": "Sudeste"
+  },
+  {
+    "id": "c280",
+    "title": "Programa Nacional de Eficiência Industrial Verde",
+    "description": "Indústrias irão adotar automação energética e métricas ambientais para reduzir impactos e aumentar competitividade global. O sistema integra inovação tecnológica.",
+    "type": "LOBBY",
+    "categorie": "Indústria",
+    "region": "Sudeste"
+  }
+]
