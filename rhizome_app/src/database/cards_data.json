@@ -2238,1774 +2238,1765 @@
     "type": "LOBBY",
     "categorie": "Indústria",
     "region": "Sudeste"
-  }
-][
+  },
   {
     "id": "c281",
-    "titulo": "Rede Popular de Manejo das Áreas de Várzea",
-    "descricao": "Comunidades ribeirinhas irão gerir coletivamente áreas de várzea com práticas agroextrativistas sustentáveis e proteção dos ciclos naturais dos rios. O projeto fortalece soberania territorial da água.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Recursos Hídricos",
-    "regiao": "Norte"
+    "title": "Rede Popular de Manejo das Áreas de Várzea",
+    "description": "Comunidades ribeirinhas irão gerir coletivamente áreas de várzea com práticas agroextrativistas sustentáveis e proteção dos ciclos naturais dos rios. O projeto fortalece soberania territorial da água.",
+    "type": "COMUNIDADE",
+    "categorie": "Recursos Hídricos",
+    "region": "Norte"
   },
   {
     "id": "c282",
-    "titulo": "Plataforma de Governança Ambiental Integrada",
-    "descricao": "Municípios e empresas irão operar em um sistema digital unificado de indicadores ambientais e metas de sustentabilidade. O modelo amplia acesso a investimentos internacionais verdes.",
-    "tipo": "LOBBY",
-    "categoria": "Governança",
-    "regiao": "Nacional"
+    "title": "Plataforma de Governança Ambiental Integrada",
+    "description": "Municípios e empresas irão operar em um sistema digital unificado de indicadores ambientais e metas de sustentabilidade. O modelo amplia acesso a investimentos internacionais verdes.",
+    "type": "LOBBY",
+    "categorie": "Governança",
+    "region": "Nacional"
   },
   {
     "id": "c283",
-    "titulo": "Coletivo Popular de Saneamento Ecológico",
-    "descricao": "Bairros periféricos irão construir sistemas de saneamento ecológico de baixo custo com gestão comunitária e autogestão local. O projeto prioriza saúde pública e autonomia.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Infraestrutura",
-    "regiao": "Nordeste"
+    "title": "Coletivo Popular de Saneamento Ecológico",
+    "description": "Bairros periféricos irão construir sistemas de saneamento ecológico de baixo custo com gestão comunitária e autogestão local. O projeto prioriza saúde pública e autonomia.",
+    "type": "COMUNIDADE",
+    "categorie": "Infraestrutura",
+    "region": "Nordeste"
   },
   {
     "id": "c284",
-    "titulo": "Programa de Eficiência Hídrica Corporativa",
-    "descricao": "Grandes empreendimentos irão adotar sistemas inteligentes de gestão da água com monitoramento digital e certificação ambiental global. O modelo reduz riscos operacionais e amplia competitividade.",
-    "tipo": "LOBBY",
-    "categoria": "Recursos Hídricos",
-    "regiao": "Sudeste"
+    "title": "Programa de Eficiência Hídrica Corporativa",
+    "description": "Grandes empreendimentos irão adotar sistemas inteligentes de gestão da água com monitoramento digital e certificação ambiental global. O modelo reduz riscos operacionais e amplia competitividade.",
+    "type": "LOBBY",
+    "categorie": "Recursos Hídricos",
+    "region": "Sudeste"
   },
   {
     "id": "c285",
-    "titulo": "Rede Popular de Guardiões do Pantanal",
-    "descricao": "Comunidades locais irão monitorar e proteger o bioma Pantanal por meio de vigilância ambiental comunitária e manejo tradicional do território. O projeto fortalece conservação viva.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Florestas",
-    "regiao": "Centro-Oeste"
+    "title": "Rede Popular de Guardiões do Pantanal",
+    "description": "Comunidades locais irão monitorar e proteger o bioma Pantanal por meio de vigilância ambiental comunitária e manejo tradicional do território. O projeto fortalece conservação viva.",
+    "type": "COMUNIDADE",
+    "categorie": "Florestas",
+    "region": "Centro-Oeste"
   },
   {
     "id": "c286",
-    "titulo": "Distrito de Inovação em Commodities Verdes",
-    "descricao": "Empresas exportadoras irão integrar cadeias produtivas rastreáveis com certificação ambiental para acesso a mercados premium globais. O sistema fortalece competitividade internacional.",
-    "tipo": "LOBBY",
-    "categoria": "Comércio Exterior",
-    "regiao": "Centro-Oeste"
+    "title": "Distrito de Inovação em Commodities Verdes",
+    "description": "Empresas exportadoras irão integrar cadeias produtivas rastreáveis com certificação ambiental para acesso a mercados premium globais. O sistema fortalece competitividade internacional.",
+    "type": "LOBBY",
+    "categorie": "Comércio Exterior",
+    "region": "Centro-Oeste"
   },
   {
     "id": "c287",
-    "titulo": "Rede Popular de Agricultura de Base Comunitária",
-    "descricao": "Famílias agricultoras irão organizar produção alimentar coletiva com técnicas agroecológicas e distribuição solidária regional. O projeto fortalece soberania alimentar.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Agricultura",
-    "regiao": "Nordeste"
+    "title": "Rede Popular de Agricultura de Base Comunitária",
+    "description": "Famílias agricultoras irão organizar produção alimentar coletiva com técnicas agroecológicas e distribuição solidária regional. O projeto fortalece soberania alimentar.",
+    "type": "COMUNIDADE",
+    "categorie": "Agricultura",
+    "region": "Nordeste"
   },
   {
     "id": "c288",
-    "titulo": "Programa Nacional de Infraestrutura Verde Inteligente",
-    "descricao": "Cidades irão implementar sistemas automatizados de gestão ambiental urbana com integração de dados climáticos em tempo real. O modelo amplia eficiência urbana sustentável.",
-    "tipo": "LOBBY",
-    "categoria": "Urbanismo",
-    "regiao": "Sudeste"
+    "title": "Programa Nacional de Infraestrutura Verde Inteligente",
+    "description": "Cidades irão implementar sistemas automatizados de gestão ambiental urbana com integração de dados climáticos em tempo real. O modelo amplia eficiência urbana sustentável.",
+    "type": "LOBBY",
+    "categorie": "Urbanismo",
+    "region": "Sudeste"
   },
   {
     "id": "c289",
-    "titulo": "Mutirão Popular de Defesa das Serras",
-    "descricao": "Comunidades rurais irão proteger áreas de serra por meio de reflorestamento, educação ambiental e vigilância territorial coletiva. O projeto é autogerido localmente.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Florestas",
-    "regiao": "Sudeste"
+    "title": "Mutirão Popular de Defesa das Serras",
+    "description": "Comunidades rurais irão proteger áreas de serra por meio de reflorestamento, educação ambiental e vigilância territorial coletiva. O projeto é autogerido localmente.",
+    "type": "COMUNIDADE",
+    "categorie": "Florestas",
+    "region": "Sudeste"
   },
   {
     "id": "c290",
-    "titulo": "Hub Nacional de Energia de Transição",
-    "descricao": "Empresas energéticas irão desenvolver soluções híbridas de matriz renovável integradas a mercados internacionais de carbono. O programa fortalece liderança energética global.",
-    "tipo": "LOBBY",
-    "categoria": "Energia",
-    "regiao": "Nordeste"
+    "title": "Hub Nacional de Energia de Transição",
+    "description": "Empresas energéticas irão desenvolver soluções híbridas de matriz renovável integradas a mercados internacionais de carbono. O programa fortalece liderança energética global.",
+    "type": "LOBBY",
+    "categorie": "Energia",
+    "region": "Nordeste"
   },
   {
     "id": "c291",
-    "titulo": "Rede Popular de Cultura e Território Indígena",
-    "descricao": "Povos indígenas irão fortalecer práticas culturais e gestão territorial autônoma em seus territórios tradicionais. O projeto valoriza soberania cultural e ambiental.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Cultura",
-    "regiao": "Norte"
+    "title": "Rede Popular de Cultura e Território Indígena",
+    "description": "Povos indígenas irão fortalecer práticas culturais e gestão territorial autônoma em seus territórios tradicionais. O projeto valoriza soberania cultural e ambiental.",
+    "type": "COMUNIDADE",
+    "categorie": "Cultura",
+    "region": "Norte"
   },
   {
     "id": "c292",
-    "titulo": "Programa de Certificação de Cadeias Sustentáveis",
-    "descricao": "Empresas irão integrar auditoria digital e rastreabilidade ambiental para certificação global de produção sustentável. O modelo amplia acesso a mercados internacionais.",
-    "tipo": "LOBBY",
-    "categoria": "Comércio Exterior",
-    "regiao": "Nacional"
+    "title": "Programa de Certificação de Cadeias Sustentáveis",
+    "description": "Empresas irão integrar auditoria digital e rastreabilidade ambiental para certificação global de produção sustentável. O modelo amplia acesso a mercados internacionais.",
+    "type": "LOBBY",
+    "categorie": "Comércio Exterior",
+    "region": "Nacional"
   },
   {
     "id": "c293",
-    "titulo": "Rede Popular de Hortas nas Periferias",
-    "descricao": "Comunidades urbanas irão transformar terrenos ociosos em hortas coletivas para produção de alimentos saudáveis e gratuitos. O projeto fortalece segurança alimentar.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Segurança Alimentar",
-    "regiao": "Sudeste"
+    "title": "Rede Popular de Hortas nas Periferias",
+    "description": "Comunidades urbanas irão transformar terrenos ociosos em hortas coletivas para produção de alimentos saudáveis e gratuitos. O projeto fortalece segurança alimentar.",
+    "type": "COMUNIDADE",
+    "categorie": "Segurança Alimentar",
+    "region": "Sudeste"
   },
   {
     "id": "c294",
-    "titulo": "Programa de Logística Inteligente de Exportação",
-    "descricao": "Corredores logísticos irão integrar automação, rastreamento ambiental e eficiência energética para ampliar competitividade global. O sistema atrai capital internacional.",
-    "tipo": "LOBBY",
-    "categoria": "Infraestrutura",
-    "regiao": "Sul"
+    "title": "Programa de Logística Inteligente de Exportação",
+    "description": "Corredores logísticos irão integrar automação, rastreamento ambiental e eficiência energética para ampliar competitividade global. O sistema atrai capital internacional.",
+    "type": "LOBBY",
+    "categorie": "Infraestrutura",
+    "region": "Sul"
   },
   {
     "id": "c295",
-    "titulo": "Rede Popular de Defesa das Águas do Sertão",
-    "descricao": "Comunidades do semiárido irão proteger fontes hídricas e organizar sistemas coletivos de gestão da água. O projeto fortalece convivência sustentável com o clima.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Recursos Hídricos",
-    "regiao": "Nordeste"
+    "title": "Rede Popular de Defesa das Águas do Sertão",
+    "description": "Comunidades do semiárido irão proteger fontes hídricas e organizar sistemas coletivos de gestão da água. O projeto fortalece convivência sustentável com o clima.",
+    "type": "COMUNIDADE",
+    "categorie": "Recursos Hídricos",
+    "region": "Nordeste"
   },
   {
     "id": "c296",
-    "titulo": "Distrito de Economia Verde Corporativa",
-    "descricao": "Empresas irão operar em ecossistemas urbanos inteligentes com métricas de sustentabilidade integradas a mercados globais. O modelo promove inovação e investimento verde.",
-    "tipo": "LOBBY",
-    "categoria": "Economia",
-    "regiao": "Sudeste"
+    "title": "Distrito de Economia Verde Corporativa",
+    "description": "Empresas irão operar em ecossistemas urbanos inteligentes com métricas de sustentabilidade integradas a mercados globais. O modelo promove inovação e investimento verde.",
+    "type": "LOBBY",
+    "categorie": "Economia",
+    "region": "Sudeste"
   },
   {
     "id": "c297",
-    "titulo": "Mutirão Popular de Agrofloresta Urbana",
-    "descricao": "Moradores urbanos irão implementar sistemas agroflorestais em áreas públicas para regeneração ambiental e produção alimentar comunitária. O projeto é autogerido.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Agricultura Urbana",
-    "regiao": "Sul"
+    "title": "Mutirão Popular de Agrofloresta Urbana",
+    "description": "Moradores urbanos irão implementar sistemas agroflorestais em áreas públicas para regeneração ambiental e produção alimentar comunitária. O projeto é autogerido.",
+    "type": "COMUNIDADE",
+    "categorie": "Agricultura Urbana",
+    "region": "Sul"
   },
   {
     "id": "c298",
-    "titulo": "Programa Nacional de Bioeconomia de Alto Valor",
-    "descricao": "Empresas irão transformar biodiversidade em produtos biotecnológicos de alta competitividade para exportação global. O sistema fortalece cadeias econômicas verdes.",
-    "tipo": "LOBBY",
-    "categoria": "Bioeconomia",
-    "regiao": "Norte"
+    "title": "Programa Nacional de Bioeconomia de Alto Valor",
+    "description": "Empresas irão transformar biodiversidade em produtos biotecnológicos de alta competitividade para exportação global. O sistema fortalece cadeias econômicas verdes.",
+    "type": "LOBBY",
+    "categorie": "Bioeconomia",
+    "region": "Norte"
   },
   {
     "id": "c299",
-    "titulo": "Rede Popular de Educação das Águas",
-    "descricao": "Comunidades irão desenvolver educação ambiental sobre rios, nascentes e ecossistemas aquáticos com base em saberes tradicionais. O projeto é coletivo e territorial.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Educação Ambiental",
-    "regiao": "Centro-Oeste"
+    "title": "Rede Popular de Educação das Águas",
+    "description": "Comunidades irão desenvolver educação ambiental sobre rios, nascentes e ecossistemas aquáticos com base em saberes tradicionais. O projeto é coletivo e territorial.",
+    "type": "COMUNIDADE",
+    "categorie": "Educação Ambiental",
+    "region": "Centro-Oeste"
   },
   {
     "id": "c300",
-    "titulo": "Programa de Cidades Inteligentes Sustentáveis",
-    "descricao": "Municípios irão integrar infraestrutura digital, gestão automatizada e métricas ambientais para atrair investimentos globais sustentáveis. O modelo promove inovação urbana.",
-    "tipo": "LOBBY",
-    "categoria": "Urbanismo",
-    "regiao": "Nacional"
-  }
-][
+    "title": "Programa de Cidades Inteligentes Sustentáveis",
+    "description": "Municípios irão integrar infraestrutura digital, gestão automatizada e métricas ambientais para atrair investimentos globais sustentáveis. O modelo promove inovação urbana.",
+    "type": "LOBBY",
+    "categorie": "Urbanismo",
+    "region": "Nacional"
+  },
   {
     "id": "c301",
-    "titulo": "Rede Popular de Resiliência das Ilhas Fluviais",
-    "descricao": "Comunidades ribeirinhas irão organizar gestão coletiva das ilhas fluviais com práticas agroextrativistas e monitoramento ecológico contínuo. O projeto fortalece autonomia territorial dos povos das águas.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Recursos Hídricos",
-    "regiao": "Norte"
+    "title": "Rede Popular de Resiliência das Ilhas Fluviais",
+    "description": "Comunidades ribeirinhas irão organizar gestão coletiva das ilhas fluviais com práticas agroextrativistas e monitoramento ecológico contínuo. O projeto fortalece autonomia territorial dos povos das águas.",
+    "type": "COMUNIDADE",
+    "categorie": "Recursos Hídricos",
+    "region": "Norte"
   },
   {
     "id": "c302",
-    "titulo": "Programa de Infraestrutura Hídrica Inteligente",
-    "descricao": "Sistemas urbanos irão integrar sensores e automação para otimizar distribuição de água e reduzir perdas operacionais. O modelo atrai investimentos em eficiência hídrica sustentável.",
-    "tipo": "LOBBY",
-    "categoria": "Recursos Hídricos",
-    "regiao": "Sudeste"
+    "title": "Programa de Infraestrutura Hídrica Inteligente",
+    "description": "Sistemas urbanos irão integrar sensores e automação para otimizar distribuição de água e reduzir perdas operacionais. O modelo atrai investimentos em eficiência hídrica sustentável.",
+    "type": "LOBBY",
+    "categorie": "Recursos Hídricos",
+    "region": "Sudeste"
   },
   {
     "id": "c303",
-    "titulo": "Cooperativa Popular de Pescadores do Litoral Vivo",
-    "descricao": "Pescadores artesanais irão gerir coletivamente territórios costeiros com práticas tradicionais de pesca e proteção marinha. O projeto fortalece soberania alimentar costeira.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Pesca",
-    "regiao": "Nordeste"
+    "title": "Cooperativa Popular de Pescadores do Litoral Vivo",
+    "description": "Pescadores artesanais irão gerir coletivamente territórios costeiros com práticas tradicionais de pesca e proteção marinha. O projeto fortalece soberania alimentar costeira.",
+    "type": "COMUNIDADE",
+    "categorie": "Pesca",
+    "region": "Nordeste"
   },
   {
     "id": "c304",
-    "titulo": "Plataforma de Economia Azul de Alta Performance",
-    "descricao": "Empresas marítimas irão integrar logística automatizada e certificação ambiental para ampliar competitividade global do setor oceânico. O modelo impulsiona exportações sustentáveis.",
-    "tipo": "LOBBY",
-    "categoria": "Economia do Mar",
-    "regiao": "Sul"
+    "title": "Plataforma de Economia Azul de Alta Performance",
+    "description": "Empresas marítimas irão integrar logística automatizada e certificação ambiental para ampliar competitividade global do setor oceânico. O modelo impulsiona exportações sustentáveis.",
+    "type": "LOBBY",
+    "categorie": "Economia do Mar",
+    "region": "Sul"
   },
   {
     "id": "c305",
-    "titulo": "Rede Popular de Quintais Agroecológicos Urbanos",
-    "descricao": "Famílias urbanas irão cultivar alimentos em quintais produtivos com manejo agroecológico e troca solidária de excedentes. O projeto fortalece soberania alimentar local.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Agricultura Urbana",
-    "regiao": "Sudeste"
+    "title": "Rede Popular de Quintais Agroecológicos Urbanos",
+    "description": "Famílias urbanas irão cultivar alimentos em quintais produtivos com manejo agroecológico e troca solidária de excedentes. O projeto fortalece soberania alimentar local.",
+    "type": "COMUNIDADE",
+    "categorie": "Agricultura Urbana",
+    "region": "Sudeste"
   },
   {
     "id": "c306",
-    "titulo": "Programa de Certificação de Eficiência Ambiental Corporativa",
-    "descricao": "Empresas irão adotar métricas digitais de sustentabilidade para certificação internacional e acesso a fundos verdes globais. O sistema promove competitividade ESG.",
-    "tipo": "LOBBY",
-    "categoria": "Governança",
-    "regiao": "Nacional"
+    "title": "Programa de Certificação de Eficiência Ambiental Corporativa",
+    "description": "Empresas irão adotar métricas digitais de sustentabilidade para certificação internacional e acesso a fundos verdes globais. O sistema promove competitividade ESG.",
+    "type": "LOBBY",
+    "categorie": "Governança",
+    "region": "Nacional"
   },
   {
     "id": "c307",
-    "titulo": "Mutirão Popular de Recuperação do Bioma Caatinga",
-    "descricao": "Comunidades do semiárido irão restaurar áreas degradadas com espécies nativas e manejo coletivo da terra. O projeto fortalece convivência sustentável com o bioma.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Florestas",
-    "regiao": "Nordeste"
+    "title": "Mutirão Popular de Recuperação do Bioma Caatinga",
+    "description": "Comunidades do semiárido irão restaurar áreas degradadas com espécies nativas e manejo coletivo da terra. O projeto fortalece convivência sustentável com o bioma.",
+    "type": "COMUNIDADE",
+    "categorie": "Florestas",
+    "region": "Nordeste"
   },
   {
     "id": "c308",
-    "titulo": "Distrito de Inovação em Energia de Mercado Livre",
-    "descricao": "Empresas energéticas irão operar em sistemas integrados de geração renovável com comercialização flexível em mercados globais. O modelo amplia eficiência energética competitiva.",
-    "tipo": "LOBBY",
-    "categoria": "Energia",
-    "regiao": "Centro-Oeste"
+    "title": "Distrito de Inovação em Energia de Mercado Livre",
+    "description": "Empresas energéticas irão operar em sistemas integrados de geração renovável com comercialização flexível em mercados globais. O modelo amplia eficiência energética competitiva.",
+    "type": "LOBBY",
+    "categorie": "Energia",
+    "region": "Centro-Oeste"
   },
   {
     "id": "c309",
-    "titulo": "Rede Popular de Educação Ambiental das Periferias",
-    "descricao": "Jovens de comunidades urbanas irão desenvolver projetos educativos sobre justiça climática e cuidado ambiental comunitário. O processo é autogestionado e horizontal.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Educação Ambiental",
-    "regiao": "Sudeste"
+    "title": "Rede Popular de Educação Ambiental das Periferias",
+    "description": "Jovens de comunidades urbanas irão desenvolver projetos educativos sobre justiça climática e cuidado ambiental comunitário. O processo é autogestionado e horizontal.",
+    "type": "COMUNIDADE",
+    "categorie": "Educação Ambiental",
+    "region": "Sudeste"
   },
   {
     "id": "c310",
-    "titulo": "Programa Nacional de Logística de Baixo Carbono",
-    "descricao": "Corredores de transporte irão integrar automação e eficiência energética para reduzir emissões e ampliar competitividade exportadora. O modelo atrai capital internacional.",
-    "tipo": "LOBBY",
-    "categoria": "Infraestrutura",
-    "regiao": "Sul"
+    "title": "Programa Nacional de Logística de Baixo Carbono",
+    "description": "Corredores de transporte irão integrar automação e eficiência energética para reduzir emissões e ampliar competitividade exportadora. O modelo atrai capital internacional.",
+    "type": "LOBBY",
+    "categorie": "Infraestrutura",
+    "region": "Sul"
   },
   {
     "id": "c311",
-    "titulo": "Rede Popular de Defesa dos Manguezais",
-    "descricao": "Comunidades costeiras irão proteger ecossistemas de mangue com manejo tradicional e monitoramento ambiental participativo. O projeto fortalece biodiversidade local.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Ecossistemas Costeiros",
-    "regiao": "Nordeste"
+    "title": "Rede Popular de Defesa dos Manguezais",
+    "description": "Comunidades costeiras irão proteger ecossistemas de mangue com manejo tradicional e monitoramento ambiental participativo. O projeto fortalece biodiversidade local.",
+    "type": "COMUNIDADE",
+    "categorie": "Ecossistemas Costeiros",
+    "region": "Nordeste"
   },
   {
     "id": "c312",
-    "titulo": "Hub de Bioinovação em Cadeias Globais",
-    "descricao": "Empresas irão transformar recursos biológicos em produtos de alto valor agregado para mercados internacionais sustentáveis. O sistema fortalece exportação verde.",
-    "tipo": "LOBBY",
-    "categoria": "Bioeconomia",
-    "regiao": "Norte"
+    "title": "Hub de Bioinovação em Cadeias Globais",
+    "description": "Empresas irão transformar recursos biológicos em produtos de alto valor agregado para mercados internacionais sustentáveis. O sistema fortalece exportação verde.",
+    "type": "LOBBY",
+    "categorie": "Bioeconomia",
+    "region": "Norte"
   },
   {
     "id": "c313",
-    "titulo": "Rede Popular de Agroflorestas Comunitárias",
-    "descricao": "Comunidades rurais irão integrar sistemas agroflorestais com produção alimentar diversificada e regeneração ambiental. O projeto é baseado em gestão coletiva da terra.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Agricultura",
-    "regiao": "Centro-Oeste"
+    "title": "Rede Popular de Agroflorestas Comunitárias",
+    "description": "Comunidades rurais irão integrar sistemas agroflorestais com produção alimentar diversificada e regeneração ambiental. O projeto é baseado em gestão coletiva da terra.",
+    "type": "COMUNIDADE",
+    "categorie": "Agricultura",
+    "region": "Centro-Oeste"
   },
   {
     "id": "c314",
-    "titulo": "Programa de Cidades Inteligentes Integradas",
-    "descricao": "Municípios irão implementar sistemas digitais de gestão urbana com monitoramento ambiental em tempo real. O modelo amplia eficiência e atratividade econômica.",
-    "tipo": "LOBBY",
-    "categoria": "Urbanismo",
-    "regiao": "Sudeste"
+    "title": "Programa de Cidades Inteligentes Integradas",
+    "description": "Municípios irão implementar sistemas digitais de gestão urbana com monitoramento ambiental em tempo real. O modelo amplia eficiência e atratividade econômica.",
+    "type": "LOBBY",
+    "categorie": "Urbanismo",
+    "region": "Sudeste"
   },
   {
     "id": "c315",
-    "titulo": "Mutirão Popular de Proteção das Nascentes",
-    "descricao": "Comunidades irão restaurar e proteger nascentes com reflorestamento e gestão participativa dos recursos hídricos. O projeto fortalece soberania da água.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Recursos Hídricos",
-    "regiao": "Sul"
+    "title": "Mutirão Popular de Proteção das Nascentes",
+    "description": "Comunidades irão restaurar e proteger nascentes com reflorestamento e gestão participativa dos recursos hídricos. O projeto fortalece soberania da água.",
+    "type": "COMUNIDADE",
+    "categorie": "Recursos Hídricos",
+    "region": "Sul"
   },
   {
     "id": "c316",
-    "titulo": "Programa de Infraestrutura Verde Corporativa",
-    "descricao": "Empresas irão desenvolver projetos urbanos sustentáveis com foco em eficiência energética e valorização imobiliária verde. O sistema atrai investimentos globais.",
-    "tipo": "LOBBY",
-    "categoria": "Urbanismo",
-    "regiao": "Sudeste"
+    "title": "Programa de Infraestrutura Verde Corporativa",
+    "description": "Empresas irão desenvolver projetos urbanos sustentáveis com foco em eficiência energética e valorização imobiliária verde. O sistema atrai investimentos globais.",
+    "type": "LOBBY",
+    "categorie": "Urbanismo",
+    "region": "Sudeste"
   },
   {
     "id": "c317",
-    "titulo": "Rede Popular de Saúde Comunitária do Cerrado",
-    "descricao": "Comunidades irão integrar práticas de saúde com saberes tradicionais e preservação ambiental do bioma Cerrado. O projeto é autogerido localmente.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Saúde",
-    "regiao": "Centro-Oeste"
+    "title": "Rede Popular de Saúde Comunitária do Cerrado",
+    "description": "Comunidades irão integrar práticas de saúde com saberes tradicionais e preservação ambiental do bioma Cerrado. O projeto é autogerido localmente.",
+    "type": "COMUNIDADE",
+    "categorie": "Saúde",
+    "region": "Centro-Oeste"
   },
   {
     "id": "c318",
-    "titulo": "Plataforma de Mercados de Carbono Integrados",
-    "descricao": "Empresas irão negociar créditos de carbono em plataformas digitais globais com auditoria automatizada e rastreabilidade ambiental. O modelo fortalece economia verde.",
-    "tipo": "LOBBY",
-    "categoria": "Finanças Ambientais",
-    "regiao": "Nacional"
+    "title": "Plataforma de Mercados de Carbono Integrados",
+    "description": "Empresas irão negociar créditos de carbono em plataformas digitais globais com auditoria automatizada e rastreabilidade ambiental. O modelo fortalece economia verde.",
+    "type": "LOBBY",
+    "categorie": "Finanças Ambientais",
+    "region": "Nacional"
   },
   {
     "id": "c319",
-    "titulo": "Rede Popular de Cultura das Águas Interiores",
-    "descricao": "Comunidades ribeirinhas irão preservar tradições culturais ligadas aos rios e organizar atividades educativas territoriais. O projeto fortalece identidade local.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Cultura",
-    "regiao": "Norte"
+    "title": "Rede Popular de Cultura das Águas Interiores",
+    "description": "Comunidades ribeirinhas irão preservar tradições culturais ligadas aos rios e organizar atividades educativas territoriais. O projeto fortalece identidade local.",
+    "type": "COMUNIDADE",
+    "categorie": "Cultura",
+    "region": "Norte"
   },
   {
     "id": "c320",
-    "titulo": "Programa de Exportação de Commodities Verdes",
-    "descricao": "Setores produtivos irão integrar certificação ambiental e logística inteligente para ampliar competitividade global. O sistema fortalece cadeias exportadoras sustentáveis.",
-    "tipo": "LOBBY",
-    "categoria": "Comércio Exterior",
-    "regiao": "Centro-Oeste"
+    "title": "Programa de Exportação de Commodities Verdes",
+    "description": "Setores produtivos irão integrar certificação ambiental e logística inteligente para ampliar competitividade global. O sistema fortalece cadeias exportadoras sustentáveis.",
+    "type": "LOBBY",
+    "categorie": "Comércio Exterior",
+    "region": "Centro-Oeste"
   },
   {
     "id": "c321",
-    "titulo": "Rede Popular de Hortas Agroecológicas Escolares",
-    "descricao": "Escolas públicas irão implementar hortas comunitárias para educação alimentar e produção de alimentos saudáveis. O manejo será coletivo e pedagógico.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Educação Ambiental",
-    "regiao": "Sudeste"
+    "title": "Rede Popular de Hortas Agroecológicas Escolares",
+    "description": "Escolas públicas irão implementar hortas comunitárias para educação alimentar e produção de alimentos saudáveis. O manejo será coletivo e pedagógico.",
+    "type": "COMUNIDADE",
+    "categorie": "Educação Ambiental",
+    "region": "Sudeste"
   },
   {
     "id": "c322",
-    "titulo": "Distrito de Energia Renovável de Alta Escala",
-    "descricao": "Empresas energéticas irão operar sistemas integrados de geração renovável com comercialização internacional de energia limpa. O modelo fortalece competitividade global.",
-    "tipo": "LOBBY",
-    "categoria": "Energia",
-    "regiao": "Nordeste"
+    "title": "Distrito de Energia Renovável de Alta Escala",
+    "description": "Empresas energéticas irão operar sistemas integrados de geração renovável com comercialização internacional de energia limpa. O modelo fortalece competitividade global.",
+    "type": "LOBBY",
+    "categorie": "Energia",
+    "region": "Nordeste"
   },
   {
     "id": "c323",
-    "titulo": "Rede Popular de Defesa dos Campos Naturais",
-    "descricao": "Comunidades rurais irão proteger campos naturais por meio de manejo coletivo e práticas agroecológicas sustentáveis. O projeto fortalece soberania territorial.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Florestas",
-    "regiao": "Sul"
+    "title": "Rede Popular de Defesa dos Campos Naturais",
+    "description": "Comunidades rurais irão proteger campos naturais por meio de manejo coletivo e práticas agroecológicas sustentáveis. O projeto fortalece soberania territorial.",
+    "type": "COMUNIDADE",
+    "categorie": "Florestas",
+    "region": "Sul"
   },
   {
     "id": "c324",
-    "titulo": "Programa de Infraestrutura Logística Automatizada",
-    "descricao": "Corredores de transporte irão integrar inteligência artificial e eficiência energética para otimizar cadeias globais de exportação. O sistema atrai investimentos internacionais.",
-    "tipo": "LOBBY",
-    "categoria": "Infraestrutura",
-    "regiao": "Sudeste"
+    "title": "Programa de Infraestrutura Logística Automatizada",
+    "description": "Corredores de transporte irão integrar inteligência artificial e eficiência energética para otimizar cadeias globais de exportação. O sistema atrai investimentos internacionais.",
+    "type": "LOBBY",
+    "categorie": "Infraestrutura",
+    "region": "Sudeste"
   },
   {
     "id": "c325",
-    "titulo": "Rede Popular de Agricultura de Base Territorial",
-    "descricao": "Agricultores familiares irão fortalecer produção local com manejo agroecológico e comercialização solidária regional. O projeto garante soberania alimentar.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Agricultura",
-    "regiao": "Nordeste"
+    "title": "Rede Popular de Agricultura de Base Territorial",
+    "description": "Agricultores familiares irão fortalecer produção local com manejo agroecológico e comercialização solidária regional. O projeto garante soberania alimentar.",
+    "type": "COMUNIDADE",
+    "categorie": "Agricultura",
+    "region": "Nordeste"
   },
   {
     "id": "c326",
-    "titulo": "Hub de Inovação em Finanças Climáticas",
-    "descricao": "Empresas irão desenvolver instrumentos financeiros baseados em sustentabilidade ambiental e métricas ESG globais. O sistema amplia acesso a capital verde.",
-    "tipo": "LOBBY",
-    "categoria": "Finanças Ambientais",
-    "regiao": "Nacional"
+    "title": "Hub de Inovação em Finanças Climáticas",
+    "description": "Empresas irão desenvolver instrumentos financeiros baseados em sustentabilidade ambiental e métricas ESG globais. O sistema amplia acesso a capital verde.",
+    "type": "LOBBY",
+    "categorie": "Finanças Ambientais",
+    "region": "Nacional"
   },
   {
     "id": "c327",
-    "titulo": "Mutirão Popular de Reflorestamento Comunitário",
-    "descricao": "Comunidades irão restaurar áreas degradadas com espécies nativas e gestão coletiva do território ambiental. O projeto é baseado em ação direta local.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Florestas",
-    "regiao": "Sudeste"
+    "title": "Mutirão Popular de Reflorestamento Comunitário",
+    "description": "Comunidades irão restaurar áreas degradadas com espécies nativas e gestão coletiva do território ambiental. O projeto é baseado em ação direta local.",
+    "type": "COMUNIDADE",
+    "categorie": "Florestas",
+    "region": "Sudeste"
   },
   {
     "id": "c328",
-    "titulo": "Programa de Economia Azul Estratégica",
-    "descricao": "Empresas costeiras irão integrar inovação tecnológica e certificação ambiental para ampliar competitividade global marítima. O modelo fortalece exportação sustentável.",
-    "tipo": "LOBBY",
-    "categoria": "Economia do Mar",
-    "regiao": "Sul"
+    "title": "Programa de Economia Azul Estratégica",
+    "description": "Empresas costeiras irão integrar inovação tecnológica e certificação ambiental para ampliar competitividade global marítima. O modelo fortalece exportação sustentável.",
+    "type": "LOBBY",
+    "categorie": "Economia do Mar",
+    "region": "Sul"
   },
   {
     "id": "c329",
-    "titulo": "Rede Popular de Educação das Comunidades Ribeirinhas",
-    "descricao": "Comunidades irão desenvolver educação ambiental baseada em saberes tradicionais e gestão coletiva dos territórios fluviais. O projeto é autogestionado.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Educação",
-    "regiao": "Norte"
+    "title": "Rede Popular de Educação das Comunidades Ribeirinhas",
+    "description": "Comunidades irão desenvolver educação ambiental baseada em saberes tradicionais e gestão coletiva dos territórios fluviais. O projeto é autogestionado.",
+    "type": "COMUNIDADE",
+    "categorie": "Educação",
+    "region": "Norte"
   },
   {
     "id": "c330",
-    "titulo": "Programa Nacional de Cidades de Alta Eficiência",
-    "descricao": "Municípios irão adotar sistemas digitais de gestão urbana e monitoramento ambiental para atrair investimentos internacionais sustentáveis. O modelo promove inovação urbana.",
-    "tipo": "LOBBY",
-    "categoria": "Urbanismo",
-    "regiao": "Sudeste"
-  }
-][
+    "title": "Programa Nacional de Cidades de Alta Eficiência",
+    "description": "Municípios irão adotar sistemas digitais de gestão urbana e monitoramento ambiental para atrair investimentos internacionais sustentáveis. O modelo promove inovação urbana.",
+    "type": "LOBBY",
+    "categorie": "Urbanismo",
+    "region": "Sudeste"
+  },
   {
     "id": "c331",
-    "titulo": "Rede Popular de Produção de Alimentos do Sertão",
-    "descricao": "Agricultores familiares organizam sistemas agroecológicos adaptados ao semiárido com uso coletivo da terra e técnicas de convivência com a seca. O projeto fortalece soberania alimentar regional.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Agricultura",
-    "regiao": "Nordeste"
+    "title": "Rede Popular de Produção de Alimentos do Sertão",
+    "description": "Agricultores familiares organizam sistemas agroecológicos adaptados ao semiárido com uso coletivo da terra e técnicas de convivência com a seca. O projeto fortalece soberania alimentar regional.",
+    "type": "COMUNIDADE",
+    "categorie": "Agricultura",
+    "region": "Nordeste"
   },
   {
     "id": "c332",
-    "titulo": "Plataforma de Infraestrutura Climática de Alto Impacto",
-    "descricao": "Projetos urbanos passam a ser geridos por plataformas digitais de investimento climático com foco em eficiência e retorno sustentável. O modelo integra capital privado e inovação verde.",
-    "tipo": "LOBBY",
-    "categoria": "Urbanismo",
-    "regiao": "Sudeste"
+    "title": "Plataforma de Infraestrutura Climática de Alto Impacto",
+    "description": "Projetos urbanos passam a ser geridos por plataformas digitais de investimento climático com foco em eficiência e retorno sustentável. O modelo integra capital privado e inovação verde.",
+    "type": "LOBBY",
+    "categorie": "Urbanismo",
+    "region": "Sudeste"
   },
   {
     "id": "c333",
-    "titulo": "Coletivo de Defesa dos Territórios Quilombolas",
-    "descricao": "Comunidades quilombolas fortalecem a gestão coletiva de seus territórios com proteção cultural e ambiental integrada. O projeto garante autonomia territorial e preservação dos modos de vida.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Território",
-    "regiao": "Nordeste"
+    "title": "Coletivo de Defesa dos Territórios Quilombolas",
+    "description": "Comunidades quilombolas fortalecem a gestão coletiva de seus territórios com proteção cultural e ambiental integrada. O projeto garante autonomia territorial e preservação dos modos de vida.",
+    "type": "COMUNIDADE",
+    "categorie": "Território",
+    "region": "Nordeste"
   },
   {
     "id": "c334",
-    "titulo": "Programa de Eficiência Logística de Baixo Carbono",
-    "descricao": "Cadeias logísticas adotam automação avançada e métricas ambientais para reduzir emissões e ampliar competitividade global. O sistema integra inovação e sustentabilidade de mercado.",
-    "tipo": "LOBBY",
-    "categoria": "Infraestrutura",
-    "regiao": "Nacional"
+    "title": "Programa de Eficiência Logística de Baixo Carbono",
+    "description": "Cadeias logísticas adotam automação avançada e métricas ambientais para reduzir emissões e ampliar competitividade global. O sistema integra inovação e sustentabilidade de mercado.",
+    "type": "LOBBY",
+    "categorie": "Infraestrutura",
+    "region": "Nacional"
   },
   {
     "id": "c335",
-    "titulo": "Rede Popular de Hortas em Territórios Urbanos",
-    "descricao": "Comunidades urbanas transformam espaços ociosos em hortas coletivas com gestão comunitária e produção alimentar local. O projeto fortalece soberania alimentar nas periferias.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Agricultura Urbana",
-    "regiao": "Sudeste"
+    "title": "Rede Popular de Hortas em Territórios Urbanos",
+    "description": "Comunidades urbanas transformam espaços ociosos em hortas coletivas com gestão comunitária e produção alimentar local. O projeto fortalece soberania alimentar nas periferias.",
+    "type": "COMUNIDADE",
+    "categorie": "Agricultura Urbana",
+    "region": "Sudeste"
   },
   {
     "id": "c336",
-    "titulo": "Hub de Inovação em Bioeconomia Global",
-    "descricao": "Empresas desenvolvem produtos de alto valor a partir da biodiversidade com certificação internacional e rastreabilidade digital. O modelo amplia competitividade nos mercados verdes.",
-    "tipo": "LOBBY",
-    "categoria": "Bioeconomia",
-    "regiao": "Norte"
+    "title": "Hub de Inovação em Bioeconomia Global",
+    "description": "Empresas desenvolvem produtos de alto valor a partir da biodiversidade com certificação internacional e rastreabilidade digital. O modelo amplia competitividade nos mercados verdes.",
+    "type": "LOBBY",
+    "categorie": "Bioeconomia",
+    "region": "Norte"
   },
   {
     "id": "c337",
-    "titulo": "Rede Popular de Proteção das Nascentes do Cerrado",
-    "descricao": "Comunidades organizam mutirões de preservação hídrica e recuperação de nascentes com manejo coletivo do território. O projeto fortalece segurança hídrica regional.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Recursos Hídricos",
-    "regiao": "Centro-Oeste"
+    "title": "Rede Popular de Proteção das Nascentes do Cerrado",
+    "description": "Comunidades organizam mutirões de preservação hídrica e recuperação de nascentes com manejo coletivo do território. O projeto fortalece segurança hídrica regional.",
+    "type": "COMUNIDADE",
+    "categorie": "Recursos Hídricos",
+    "region": "Centro-Oeste"
   },
   {
     "id": "c338",
-    "titulo": "Programa de Certificação Global de Sustentabilidade",
-    "descricao": "Empresas adotam métricas digitais unificadas para certificação ambiental e acesso a mercados internacionais verdes. O sistema fortalece governança ESG global.",
-    "tipo": "LOBBY",
-    "categoria": "Governança",
-    "regiao": "Nacional"
+    "title": "Programa de Certificação Global de Sustentabilidade",
+    "description": "Empresas adotam métricas digitais unificadas para certificação ambiental e acesso a mercados internacionais verdes. O sistema fortalece governança ESG global.",
+    "type": "LOBBY",
+    "categorie": "Governança",
+    "region": "Nacional"
   },
   {
     "id": "c339",
-    "titulo": "Mutirão Popular de Reflorestamento Comunitário",
-    "descricao": "Comunidades restauram áreas degradadas com espécies nativas e gestão coletiva do território ambiental. O projeto promove regeneração ecológica local.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Florestas",
-    "regiao": "Sul"
+    "title": "Mutirão Popular de Reflorestamento Comunitário",
+    "description": "Comunidades restauram áreas degradadas com espécies nativas e gestão coletiva do território ambiental. O projeto promove regeneração ecológica local.",
+    "type": "COMUNIDADE",
+    "categorie": "Florestas",
+    "region": "Sul"
   },
   {
     "id": "c340",
-    "titulo": "Distrito de Energia Renovável Integrada",
-    "descricao": "Empresas energéticas operam sistemas de geração renovável com integração digital e comercialização internacional. O modelo fortalece expansão energética global.",
-    "tipo": "LOBBY",
-    "categoria": "Energia",
-    "regiao": "Nordeste"
+    "title": "Distrito de Energia Renovável Integrada",
+    "description": "Empresas energéticas operam sistemas de geração renovável com integração digital e comercialização internacional. O modelo fortalece expansão energética global.",
+    "type": "LOBBY",
+    "categorie": "Energia",
+    "region": "Nordeste"
   },
   {
     "id": "c341",
-    "titulo": "Rede Popular de Cultura das Águas Interiores",
-    "descricao": "Comunidades ribeirinhas preservam tradições culturais ligadas aos rios e organizam educação ambiental territorial. O projeto fortalece identidade local.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Cultura",
-    "regiao": "Norte"
+    "title": "Rede Popular de Cultura das Águas Interiores",
+    "description": "Comunidades ribeirinhas preservam tradições culturais ligadas aos rios e organizam educação ambiental territorial. O projeto fortalece identidade local.",
+    "type": "COMUNIDADE",
+    "categorie": "Cultura",
+    "region": "Norte"
   },
   {
     "id": "c342",
-    "titulo": "Programa de Infraestrutura Inteligente Urbana",
-    "descricao": "Cidades adotam sistemas digitais de gestão ambiental com monitoramento em tempo real e otimização de recursos urbanos. O modelo aumenta eficiência e atratividade econômica.",
-    "tipo": "LOBBY",
-    "categoria": "Urbanismo",
-    "regiao": "Sudeste"
+    "title": "Programa de Infraestrutura Inteligente Urbana",
+    "description": "Cidades adotam sistemas digitais de gestão ambiental com monitoramento em tempo real e otimização de recursos urbanos. O modelo aumenta eficiência e atratividade econômica.",
+    "type": "LOBBY",
+    "categorie": "Urbanismo",
+    "region": "Sudeste"
   },
   {
     "id": "c343",
-    "titulo": "Cooperativa Popular de Pescadores Artesanais",
-    "descricao": "Pescadores organizam gestão coletiva dos territórios costeiros com práticas tradicionais e comercialização direta. O projeto fortalece soberania alimentar marinha.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Pesca",
-    "regiao": "Nordeste"
+    "title": "Cooperativa Popular de Pescadores Artesanais",
+    "description": "Pescadores organizam gestão coletiva dos territórios costeiros com práticas tradicionais e comercialização direta. O projeto fortalece soberania alimentar marinha.",
+    "type": "COMUNIDADE",
+    "categorie": "Pesca",
+    "region": "Nordeste"
   },
   {
     "id": "c344",
-    "titulo": "Programa de Mercados de Carbono Automatizados",
-    "descricao": "Empresas negociam créditos de carbono em plataformas digitais com auditoria automatizada e integração global. O sistema fortalece economia climática.",
-    "tipo": "LOBBY",
-    "categoria": "Finanças Ambientais",
-    "regiao": "Nacional"
+    "title": "Programa de Mercados de Carbono Automatizados",
+    "description": "Empresas negociam créditos de carbono em plataformas digitais com auditoria automatizada e integração global. O sistema fortalece economia climática.",
+    "type": "LOBBY",
+    "categorie": "Finanças Ambientais",
+    "region": "Nacional"
   },
   {
     "id": "c345",
-    "titulo": "Rede Popular de Educação Ambiental das Periferias",
-    "descricao": "Jovens desenvolvem projetos de justiça climática com base em educação popular e organização comunitária. O processo é horizontal e participativo.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Educação Ambiental",
-    "regiao": "Sudeste"
+    "title": "Rede Popular de Educação Ambiental das Periferias",
+    "description": "Jovens desenvolvem projetos de justiça climática com base em educação popular e organização comunitária. O processo é horizontal e participativo.",
+    "type": "COMUNIDADE",
+    "categorie": "Educação Ambiental",
+    "region": "Sudeste"
   },
   {
     "id": "c346",
-    "titulo": "Hub de Logística Verde Internacional",
-    "descricao": "Corredores logísticos adotam automação e eficiência energética para ampliar competitividade global de exportação. O modelo integra capital e sustentabilidade.",
-    "tipo": "LOBBY",
-    "categoria": "Infraestrutura",
-    "regiao": "Sul"
+    "title": "Hub de Logística Verde Internacional",
+    "description": "Corredores logísticos adotam automação e eficiência energética para ampliar competitividade global de exportação. O modelo integra capital e sustentabilidade.",
+    "type": "LOBBY",
+    "categorie": "Infraestrutura",
+    "region": "Sul"
   },
   {
     "id": "c347",
-    "titulo": "Rede Popular de Agricultura Agroecológica do Cerrado",
-    "descricao": "Agricultores familiares implementam sistemas agroecológicos adaptados ao bioma Cerrado com gestão coletiva da terra. O projeto fortalece soberania alimentar.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Agricultura",
-    "regiao": "Centro-Oeste"
+    "title": "Rede Popular de Agricultura Agroecológica do Cerrado",
+    "description": "Agricultores familiares implementam sistemas agroecológicos adaptados ao bioma Cerrado com gestão coletiva da terra. O projeto fortalece soberania alimentar.",
+    "type": "COMUNIDADE",
+    "categorie": "Agricultura",
+    "region": "Centro-Oeste"
   },
   {
     "id": "c348",
-    "titulo": "Programa de Economia Azul de Alta Competitividade",
-    "descricao": "Empresas marítimas integram tecnologia e certificação ambiental para expansão em mercados internacionais sustentáveis. O modelo fortalece exportação oceânica.",
-    "tipo": "LOBBY",
-    "categoria": "Economia do Mar",
-    "regiao": "Sudeste"
+    "title": "Programa de Economia Azul de Alta Competitividade",
+    "description": "Empresas marítimas integram tecnologia e certificação ambiental para expansão em mercados internacionais sustentáveis. O modelo fortalece exportação oceânica.",
+    "type": "LOBBY",
+    "categorie": "Economia do Mar",
+    "region": "Sudeste"
   },
   {
     "id": "c349",
-    "titulo": "Mutirão Popular de Defesa das Águas do Semiárido",
-    "descricao": "Comunidades protegem fontes hídricas e organizam gestão coletiva da água em regiões de escassez. O projeto fortalece convivência com o clima.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Recursos Hídricos",
-    "regiao": "Nordeste"
+    "title": "Mutirão Popular de Defesa das Águas do Semiárido",
+    "description": "Comunidades protegem fontes hídricas e organizam gestão coletiva da água em regiões de escassez. O projeto fortalece convivência com o clima.",
+    "type": "COMUNIDADE",
+    "categorie": "Recursos Hídricos",
+    "region": "Nordeste"
   },
   {
     "id": "c350",
-    "titulo": "Programa de Cidades Inteligentes Integradas",
-    "descricao": "Municípios implementam sistemas digitais de governança ambiental com análise de dados urbanos em tempo real. O modelo amplia eficiência e investimentos.",
-    "tipo": "LOBBY",
-    "categoria": "Governança",
-    "regiao": "Nacional"
+    "title": "Programa de Cidades Inteligentes Integradas",
+    "description": "Municípios implementam sistemas digitais de governança ambiental com análise de dados urbanos em tempo real. O modelo amplia eficiência e investimentos.",
+    "type": "LOBBY",
+    "categorie": "Governança",
+    "region": "Nacional"
   },
   {
     "id": "c351",
-    "titulo": "Rede Popular de Hortas Comunitárias Escolares",
-    "descricao": "Escolas públicas criam hortas agroecológicas para educação alimentar e produção de alimentos saudáveis. O projeto é coletivo e pedagógico.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Educação Ambiental",
-    "regiao": "Sudeste"
+    "title": "Rede Popular de Hortas Comunitárias Escolares",
+    "description": "Escolas públicas criam hortas agroecológicas para educação alimentar e produção de alimentos saudáveis. O projeto é coletivo e pedagógico.",
+    "type": "COMUNIDADE",
+    "categorie": "Educação Ambiental",
+    "region": "Sudeste"
   },
   {
     "id": "c352",
-    "titulo": "Programa de Infraestrutura Verde de Alto Desempenho",
-    "descricao": "Empresas desenvolvem soluções urbanas sustentáveis com foco em eficiência energética e valorização imobiliária verde. O sistema atrai investimentos globais.",
-    "tipo": "LOBBY",
-    "categoria": "Urbanismo",
-    "regiao": "Sudeste"
+    "title": "Programa de Infraestrutura Verde de Alto Desempenho",
+    "description": "Empresas desenvolvem soluções urbanas sustentáveis com foco em eficiência energética e valorização imobiliária verde. O sistema atrai investimentos globais.",
+    "type": "LOBBY",
+    "categorie": "Urbanismo",
+    "region": "Sudeste"
   },
   {
     "id": "c353",
-    "titulo": "Rede Popular de Guardiões da Caatinga",
-    "descricao": "Comunidades protegem o bioma Caatinga com manejo coletivo e reflorestamento de espécies nativas. O projeto fortalece soberania ambiental regional.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Florestas",
-    "regiao": "Nordeste"
+    "title": "Rede Popular de Guardiões da Caatinga",
+    "description": "Comunidades protegem o bioma Caatinga com manejo coletivo e reflorestamento de espécies nativas. O projeto fortalece soberania ambiental regional.",
+    "type": "COMUNIDADE",
+    "categorie": "Florestas",
+    "region": "Nordeste"
   },
   {
     "id": "c354",
-    "titulo": "Hub de Inovação em Energia de Exportação",
-    "descricao": "Empresas energéticas desenvolvem sistemas renováveis integrados a mercados internacionais de energia limpa. O modelo fortalece liderança global.",
-    "tipo": "LOBBY",
-    "categoria": "Energia",
-    "regiao": "Centro-Oeste"
+    "title": "Hub de Inovação em Energia de Exportação",
+    "description": "Empresas energéticas desenvolvem sistemas renováveis integrados a mercados internacionais de energia limpa. O modelo fortalece liderança global.",
+    "type": "LOBBY",
+    "categorie": "Energia",
+    "region": "Centro-Oeste"
   },
   {
     "id": "c355",
-    "titulo": "Rede Popular de Saúde Comunitária Rural",
-    "descricao": "Comunidades integram práticas de saúde com saberes tradicionais e cuidado ambiental territorial. O projeto é autogestionado localmente.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Saúde",
-    "regiao": "Sul"
+    "title": "Rede Popular de Saúde Comunitária Rural",
+    "description": "Comunidades integram práticas de saúde com saberes tradicionais e cuidado ambiental territorial. O projeto é autogestionado localmente.",
+    "type": "COMUNIDADE",
+    "categorie": "Saúde",
+    "region": "Sul"
   },
   {
     "id": "c356",
-    "titulo": "Programa de Certificação de Cadeias Globais Sustentáveis",
-    "descricao": "Empresas adotam rastreabilidade digital para certificação ambiental e acesso a mercados internacionais verdes. O sistema fortalece competitividade global.",
-    "tipo": "LOBBY",
-    "categoria": "Comércio Exterior",
-    "regiao": "Nacional"
+    "title": "Programa de Certificação de Cadeias Globais Sustentáveis",
+    "description": "Empresas adotam rastreabilidade digital para certificação ambiental e acesso a mercados internacionais verdes. O sistema fortalece competitividade global.",
+    "type": "LOBBY",
+    "categorie": "Comércio Exterior",
+    "region": "Nacional"
   },
   {
     "id": "c357",
-    "titulo": "Rede Popular de Agricultura Urbana Periférica",
-    "descricao": "Comunidades transformam espaços urbanos em produção agroecológica coletiva com distribuição local de alimentos. O projeto fortalece soberania alimentar.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Agricultura Urbana",
-    "regiao": "Sudeste"
+    "title": "Rede Popular de Agricultura Urbana Periférica",
+    "description": "Comunidades transformam espaços urbanos em produção agroecológica coletiva com distribuição local de alimentos. O projeto fortalece soberania alimentar.",
+    "type": "COMUNIDADE",
+    "categorie": "Agricultura Urbana",
+    "region": "Sudeste"
   },
   {
     "id": "c358",
-    "titulo": "Programa de Logística Automatizada Sustentável",
-    "descricao": "Corredores logísticos utilizam inteligência artificial para otimizar transporte e reduzir emissões em cadeias globais. O modelo atrai investimentos internacionais.",
-    "tipo": "LOBBY",
-    "categoria": "Infraestrutura",
-    "regiao": "Sul"
+    "title": "Programa de Logística Automatizada Sustentável",
+    "description": "Corredores logísticos utilizam inteligência artificial para otimizar transporte e reduzir emissões em cadeias globais. O modelo atrai investimentos internacionais.",
+    "type": "LOBBY",
+    "categorie": "Infraestrutura",
+    "region": "Sul"
   },
   {
     "id": "c359",
-    "titulo": "Rede Popular de Cultura Quilombola Viva",
-    "descricao": "Comunidades quilombolas preservam cultura, memória e práticas territoriais com gestão coletiva e educação comunitária. O projeto fortalece identidade ancestral.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Cultura",
-    "regiao": "Sudeste"
+    "title": "Rede Popular de Cultura Quilombola Viva",
+    "description": "Comunidades quilombolas preservam cultura, memória e práticas territoriais com gestão coletiva e educação comunitária. O projeto fortalece identidade ancestral.",
+    "type": "COMUNIDADE",
+    "categorie": "Cultura",
+    "region": "Sudeste"
   },
   {
     "id": "c360",
-    "titulo": "Distrito de Bioeconomia de Alta Escala",
-    "descricao": "Empresas transformam biodiversidade em produtos de alto valor com certificação internacional e inovação tecnológica. O modelo amplia exportações verdes.",
-    "tipo": "LOBBY",
-    "categoria": "Bioeconomia",
-    "regiao": "Norte"
-  }
-][
+    "title": "Distrito de Bioeconomia de Alta Escala",
+    "description": "Empresas transformam biodiversidade em produtos de alto valor com certificação internacional e inovação tecnológica. O modelo amplia exportações verdes.",
+    "type": "LOBBY",
+    "categorie": "Bioeconomia",
+    "region": "Norte"
+  },
   {
     "id": "c361",
-    "titulo": "Rede Popular de Proteção das Áreas de Restinga",
-    "descricao": "Comunidades costeiras organizam manejo coletivo das restingas com restauração ecológica e uso sustentável do território. O projeto fortalece a proteção de ecossistemas frágeis litorâneos.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Ecossistemas Costeiros",
-    "regiao": "Sul"
+    "title": "Rede Popular de Proteção das Áreas de Restinga",
+    "description": "Comunidades costeiras organizam manejo coletivo das restingas com restauração ecológica e uso sustentável do território. O projeto fortalece a proteção de ecossistemas frágeis litorâneos.",
+    "type": "COMUNIDADE",
+    "categorie": "Ecossistemas Costeiros",
+    "region": "Sul"
   },
   {
     "id": "c362",
-    "titulo": "Programa de Infraestrutura de Dados Ambientais",
-    "descricao": "Plataformas digitais centralizam métricas ambientais para gestão urbana e atração de investimentos verdes. O sistema integra dados climáticos em tempo real para eficiência operacional.",
-    "tipo": "LOBBY",
-    "categoria": "Governança",
-    "regiao": "Nacional"
+    "title": "Programa de Infraestrutura de Dados Ambientais",
+    "description": "Plataformas digitais centralizam métricas ambientais para gestão urbana e atração de investimentos verdes. O sistema integra dados climáticos em tempo real para eficiência operacional.",
+    "type": "LOBBY",
+    "categorie": "Governança",
+    "region": "Nacional"
   },
   {
     "id": "c363",
-    "titulo": "Coletivo Popular de Agrofloresta do Vale do Ribeira",
-    "descricao": "Comunidades tradicionais desenvolvem sistemas agroflorestais com cultivo diversificado e manejo coletivo da terra. O projeto fortalece soberania alimentar e conservação ambiental.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Agricultura",
-    "regiao": "Sudeste"
+    "title": "Coletivo Popular de Agrofloresta do Vale do Ribeira",
+    "description": "Comunidades tradicionais desenvolvem sistemas agroflorestais com cultivo diversificado e manejo coletivo da terra. O projeto fortalece soberania alimentar e conservação ambiental.",
+    "type": "COMUNIDADE",
+    "categorie": "Agricultura",
+    "region": "Sudeste"
   },
   {
     "id": "c364",
-    "titulo": "Distrito de Energia de Alta Eficiência Corporativa",
-    "descricao": "Empresas energéticas operam redes inteligentes de geração renovável com integração a mercados globais de energia. O modelo prioriza eficiência e competitividade internacional.",
-    "tipo": "LOBBY",
-    "categoria": "Energia",
-    "regiao": "Centro-Oeste"
+    "title": "Distrito de Energia de Alta Eficiência Corporativa",
+    "description": "Empresas energéticas operam redes inteligentes de geração renovável com integração a mercados globais de energia. O modelo prioriza eficiência e competitividade internacional.",
+    "type": "LOBBY",
+    "categorie": "Energia",
+    "region": "Centro-Oeste"
   },
   {
     "id": "c365",
-    "titulo": "Rede Popular de Defesa dos Brejos Interiores",
-    "descricao": "Comunidades rurais protegem áreas úmidas interiores com gestão coletiva da água e reflorestamento de nascentes. O projeto fortalece segurança hídrica regional.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Recursos Hídricos",
-    "regiao": "Nordeste"
+    "title": "Rede Popular de Defesa dos Brejos Interiores",
+    "description": "Comunidades rurais protegem áreas úmidas interiores com gestão coletiva da água e reflorestamento de nascentes. O projeto fortalece segurança hídrica regional.",
+    "type": "COMUNIDADE",
+    "categorie": "Recursos Hídricos",
+    "region": "Nordeste"
   },
   {
     "id": "c366",
-    "titulo": "Hub de Inovação em Commodities Sustentáveis",
-    "descricao": "Empresas integram rastreabilidade digital e certificação ambiental para ampliar exportação de commodities verdes. O sistema fortalece competitividade global do agronegócio.",
-    "tipo": "LOBBY",
-    "categoria": "Comércio Exterior",
-    "regiao": "Centro-Oeste"
+    "title": "Hub de Inovação em Commodities Sustentáveis",
+    "description": "Empresas integram rastreabilidade digital e certificação ambiental para ampliar exportação de commodities verdes. O sistema fortalece competitividade global do agronegócio.",
+    "type": "LOBBY",
+    "categorie": "Comércio Exterior",
+    "region": "Centro-Oeste"
   },
   {
     "id": "c367",
-    "titulo": "Mutirão Popular de Reflorestamento das Encostas Urbanas",
-    "descricao": "Comunidades urbanas recuperam encostas degradadas com plantio coletivo de espécies nativas e manejo participativo. O projeto reduz riscos ambientais locais.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Florestas",
-    "regiao": "Sudeste"
+    "title": "Mutirão Popular de Reflorestamento das Encostas Urbanas",
+    "description": "Comunidades urbanas recuperam encostas degradadas com plantio coletivo de espécies nativas e manejo participativo. O projeto reduz riscos ambientais locais.",
+    "type": "COMUNIDADE",
+    "categorie": "Florestas",
+    "region": "Sudeste"
   },
   {
     "id": "c368",
-    "titulo": "Programa de Logística Inteligente Multimodal",
-    "descricao": "Corredores logísticos integram automação e eficiência energética para otimizar cadeias de exportação global. O modelo reduz custos e aumenta competitividade.",
-    "tipo": "LOBBY",
-    "categoria": "Infraestrutura",
-    "regiao": "Sul"
+    "title": "Programa de Logística Inteligente Multimodal",
+    "description": "Corredores logísticos integram automação e eficiência energética para otimizar cadeias de exportação global. O modelo reduz custos e aumenta competitividade.",
+    "type": "LOBBY",
+    "categorie": "Infraestrutura",
+    "region": "Sul"
   },
   {
     "id": "c369",
-    "titulo": "Rede Popular de Educação Ambiental Indígena",
-    "descricao": "Povos indígenas desenvolvem projetos educativos baseados em cosmologias tradicionais e gestão territorial coletiva. O processo fortalece autonomia cultural.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Educação Ambiental",
-    "regiao": "Norte"
+    "title": "Rede Popular de Educação Ambiental Indígena",
+    "description": "Povos indígenas desenvolvem projetos educativos baseados em cosmologias tradicionais e gestão territorial coletiva. O processo fortalece autonomia cultural.",
+    "type": "COMUNIDADE",
+    "categorie": "Educação Ambiental",
+    "region": "Norte"
   },
   {
     "id": "c370",
-    "titulo": "Programa de Certificação de Impacto Climático Corporativo",
-    "descricao": "Empresas adotam sistemas digitais de avaliação de impacto ambiental para acesso a mercados internacionais sustentáveis. O modelo fortalece governança ESG.",
-    "tipo": "LOBBY",
-    "categoria": "Governança",
-    "regiao": "Nacional"
+    "title": "Programa de Certificação de Impacto Climático Corporativo",
+    "description": "Empresas adotam sistemas digitais de avaliação de impacto ambiental para acesso a mercados internacionais sustentáveis. O modelo fortalece governança ESG.",
+    "type": "LOBBY",
+    "categorie": "Governança",
+    "region": "Nacional"
   },
   {
     "id": "c371",
-    "titulo": "Rede Popular de Agricultura de Quintais Produtivos",
-    "descricao": "Famílias rurais e urbanas cultivam alimentos em quintais com manejo agroecológico e troca solidária de sementes. O projeto fortalece soberania alimentar.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Agricultura",
-    "regiao": "Nordeste"
+    "title": "Rede Popular de Agricultura de Quintais Produtivos",
+    "description": "Famílias rurais e urbanas cultivam alimentos em quintais com manejo agroecológico e troca solidária de sementes. O projeto fortalece soberania alimentar.",
+    "type": "COMUNIDADE",
+    "categorie": "Agricultura",
+    "region": "Nordeste"
   },
   {
     "id": "c372",
-    "titulo": "Distrito de Inovação em Energia Offshore",
-    "descricao": "Empresas desenvolvem infraestrutura de energia marinha integrada a mercados internacionais de energia limpa. O sistema amplia competitividade energética global.",
-    "tipo": "LOBBY",
-    "categoria": "Energia",
-    "regiao": "Sul"
+    "title": "Distrito de Inovação em Energia Offshore",
+    "description": "Empresas desenvolvem infraestrutura de energia marinha integrada a mercados internacionais de energia limpa. O sistema amplia competitividade energética global.",
+    "type": "LOBBY",
+    "categorie": "Energia",
+    "region": "Sul"
   },
   {
     "id": "c373",
-    "titulo": "Rede Popular de Proteção das Veredas do Cerrado",
-    "descricao": "Comunidades protegem veredas com manejo tradicional e recuperação de áreas úmidas essenciais ao bioma. O projeto fortalece equilíbrio ecológico regional.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Florestas",
-    "regiao": "Centro-Oeste"
+    "title": "Rede Popular de Proteção das Veredas do Cerrado",
+    "description": "Comunidades protegem veredas com manejo tradicional e recuperação de áreas úmidas essenciais ao bioma. O projeto fortalece equilíbrio ecológico regional.",
+    "type": "COMUNIDADE",
+    "categorie": "Florestas",
+    "region": "Centro-Oeste"
   },
   {
     "id": "c374",
-    "titulo": "Programa de Infraestrutura Urbana Digital Verde",
-    "descricao": "Cidades implementam sistemas digitais de gestão ambiental e otimização de recursos urbanos em tempo real. O modelo atrai investimentos sustentáveis.",
-    "tipo": "LOBBY",
-    "categoria": "Urbanismo",
-    "regiao": "Sudeste"
+    "title": "Programa de Infraestrutura Urbana Digital Verde",
+    "description": "Cidades implementam sistemas digitais de gestão ambiental e otimização de recursos urbanos em tempo real. O modelo atrai investimentos sustentáveis.",
+    "type": "LOBBY",
+    "categorie": "Urbanismo",
+    "region": "Sudeste"
   },
   {
     "id": "c375",
-    "titulo": "Coletivo Popular de Saúde Integrada do Semiárido",
-    "descricao": "Comunidades combinam saberes tradicionais e práticas de saúde preventiva com cuidado ambiental coletivo. O projeto é autogestionado regionalmente.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Saúde",
-    "regiao": "Nordeste"
+    "title": "Coletivo Popular de Saúde Integrada do Semiárido",
+    "description": "Comunidades combinam saberes tradicionais e práticas de saúde preventiva com cuidado ambiental coletivo. O projeto é autogestionado regionalmente.",
+    "type": "COMUNIDADE",
+    "categorie": "Saúde",
+    "region": "Nordeste"
   },
   {
     "id": "c376",
-    "titulo": "Programa de Mercados Globais de Carbono Digital",
-    "descricao": "Empresas negociam créditos de carbono em plataformas digitais com auditoria automatizada e integração internacional. O sistema fortalece economia climática.",
-    "tipo": "LOBBY",
-    "categoria": "Finanças Ambientais",
-    "regiao": "Nacional"
+    "title": "Programa de Mercados Globais de Carbono Digital",
+    "description": "Empresas negociam créditos de carbono em plataformas digitais com auditoria automatizada e integração internacional. O sistema fortalece economia climática.",
+    "type": "LOBBY",
+    "categorie": "Finanças Ambientais",
+    "region": "Nacional"
   },
   {
     "id": "c377",
-    "titulo": "Rede Popular de Agricultura do Pantanal Vivo",
-    "descricao": "Comunidades pantaneiras desenvolvem práticas agroextrativistas sustentáveis com gestão coletiva do território. O projeto preserva biodiversidade local.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Agricultura",
-    "regiao": "Centro-Oeste"
+    "title": "Rede Popular de Agricultura do Pantanal Vivo",
+    "description": "Comunidades pantaneiras desenvolvem práticas agroextrativistas sustentáveis com gestão coletiva do território. O projeto preserva biodiversidade local.",
+    "type": "COMUNIDADE",
+    "categorie": "Agricultura",
+    "region": "Centro-Oeste"
   },
   {
     "id": "c378",
-    "titulo": "Hub de Bioeconomia de Exportação Avançada",
-    "descricao": "Empresas transformam biodiversidade em produtos biotecnológicos de alto valor com certificação internacional. O modelo fortalece mercados globais verdes.",
-    "tipo": "LOBBY",
-    "categoria": "Bioeconomia",
-    "regiao": "Norte"
+    "title": "Hub de Bioeconomia de Exportação Avançada",
+    "description": "Empresas transformam biodiversidade em produtos biotecnológicos de alto valor com certificação internacional. O modelo fortalece mercados globais verdes.",
+    "type": "LOBBY",
+    "categorie": "Bioeconomia",
+    "region": "Norte"
   },
   {
     "id": "c379",
-    "titulo": "Rede Popular de Educação das Águas Costeiras",
-    "descricao": "Comunidades costeiras desenvolvem educação ambiental baseada em práticas tradicionais e gestão coletiva dos ecossistemas marinhos. O projeto é comunitário.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Educação Ambiental",
-    "regiao": "Nordeste"
+    "title": "Rede Popular de Educação das Águas Costeiras",
+    "description": "Comunidades costeiras desenvolvem educação ambiental baseada em práticas tradicionais e gestão coletiva dos ecossistemas marinhos. O projeto é comunitário.",
+    "type": "COMUNIDADE",
+    "categorie": "Educação Ambiental",
+    "region": "Nordeste"
   },
   {
     "id": "c380",
-    "titulo": "Programa de Cidades Inteligentes de Alta Performance",
-    "descricao": "Municípios integram sistemas digitais de gestão urbana com análise ambiental avançada e atração de investimentos globais. O modelo promove eficiência urbana.",
-    "tipo": "LOBBY",
-    "categoria": "Urbanismo",
-    "regiao": "Sudeste"
-  }
-][
+    "title": "Programa de Cidades Inteligentes de Alta Performance",
+    "description": "Municípios integram sistemas digitais de gestão urbana com análise ambiental avançada e atração de investimentos globais. O modelo promove eficiência urbana.",
+    "type": "LOBBY",
+    "categorie": "Urbanismo",
+    "region": "Sudeste"
+  },
   {
     "id": "c381",
-    "titulo": "Rede Popular de Agroecologia das Chapadas",
-    "descricao": "Comunidades rurais organizam sistemas agroecológicos em áreas de chapada com manejo coletivo do solo e produção diversificada. O projeto fortalece soberania alimentar regional.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Agricultura",
-    "regiao": "Centro-Oeste"
+    "title": "Rede Popular de Agroecologia das Chapadas",
+    "description": "Comunidades rurais organizam sistemas agroecológicos em áreas de chapada com manejo coletivo do solo e produção diversificada. O projeto fortalece soberania alimentar regional.",
+    "type": "COMUNIDADE",
+    "categorie": "Agricultura",
+    "region": "Centro-Oeste"
   },
   {
     "id": "c382",
-    "titulo": "Programa de Otimização de Ativos Ambientais",
-    "descricao": "Territórios preservados são integrados a plataformas digitais que convertem conservação em ativos econômicos globais. O sistema amplia investimentos em sustentabilidade de mercado.",
-    "tipo": "LOBBY",
-    "categoria": "Finanças Ambientais",
-    "regiao": "Nacional"
+    "title": "Programa de Otimização de Ativos Ambientais",
+    "description": "Territórios preservados são integrados a plataformas digitais que convertem conservação em ativos econômicos globais. O sistema amplia investimentos em sustentabilidade de mercado.",
+    "type": "LOBBY",
+    "categorie": "Finanças Ambientais",
+    "region": "Nacional"
   },
   {
     "id": "c383",
-    "titulo": "Mutirão Popular de Proteção das Lagoas Costeiras",
-    "descricao": "Comunidades litorâneas realizam ações coletivas de recuperação de lagoas e proteção de ecossistemas frágeis. O projeto fortalece gestão ambiental comunitária.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Ecossistemas Costeiros",
-    "regiao": "Nordeste"
+    "title": "Mutirão Popular de Proteção das Lagoas Costeiras",
+    "description": "Comunidades litorâneas realizam ações coletivas de recuperação de lagoas e proteção de ecossistemas frágeis. O projeto fortalece gestão ambiental comunitária.",
+    "type": "COMUNIDADE",
+    "categorie": "Ecossistemas Costeiros",
+    "region": "Nordeste"
   },
   {
     "id": "c384",
-    "titulo": "Distrito de Inovação em Logística Sustentável",
-    "descricao": "Corredores logísticos adotam automação inteligente e métricas de eficiência ambiental para ampliar competitividade global. O modelo integra tecnologia e sustentabilidade.",
-    "tipo": "LOBBY",
-    "categoria": "Infraestrutura",
-    "regiao": "Sudeste"
+    "title": "Distrito de Inovação em Logística Sustentável",
+    "description": "Corredores logísticos adotam automação inteligente e métricas de eficiência ambiental para ampliar competitividade global. O modelo integra tecnologia e sustentabilidade.",
+    "type": "LOBBY",
+    "categorie": "Infraestrutura",
+    "region": "Sudeste"
   },
   {
     "id": "c385",
-    "titulo": "Rede Popular de Defesa dos Rios Urbanos",
-    "descricao": "Moradores organizam mutirões de limpeza e reflorestamento das margens de rios urbanos com gestão comunitária contínua. O projeto fortalece bem-estar ambiental local.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Recursos Hídricos",
-    "regiao": "Sul"
+    "title": "Rede Popular de Defesa dos Rios Urbanos",
+    "description": "Moradores organizam mutirões de limpeza e reflorestamento das margens de rios urbanos com gestão comunitária contínua. O projeto fortalece bem-estar ambiental local.",
+    "type": "COMUNIDADE",
+    "categorie": "Recursos Hídricos",
+    "region": "Sul"
   },
   {
     "id": "c386",
-    "titulo": "Programa de Infraestrutura Verde Corporativa Integrada",
-    "descricao": "Empresas desenvolvem projetos urbanos sustentáveis com automação energética e valorização imobiliária verde. O sistema atrai capital internacional.",
-    "tipo": "LOBBY",
-    "categoria": "Urbanismo",
-    "regiao": "Sudeste"
+    "title": "Programa de Infraestrutura Verde Corporativa Integrada",
+    "description": "Empresas desenvolvem projetos urbanos sustentáveis com automação energética e valorização imobiliária verde. O sistema atrai capital internacional.",
+    "type": "LOBBY",
+    "categorie": "Urbanismo",
+    "region": "Sudeste"
   },
   {
     "id": "c387",
-    "titulo": "Rede Popular de Educação Ambiental Quilombola",
-    "descricao": "Comunidades quilombolas constroem processos educativos baseados em saberes tradicionais e gestão territorial coletiva. O projeto fortalece identidade cultural.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Educação Ambiental",
-    "regiao": "Nordeste"
+    "title": "Rede Popular de Educação Ambiental Quilombola",
+    "description": "Comunidades quilombolas constroem processos educativos baseados em saberes tradicionais e gestão territorial coletiva. O projeto fortalece identidade cultural.",
+    "type": "COMUNIDADE",
+    "categorie": "Educação Ambiental",
+    "region": "Nordeste"
   },
   {
     "id": "c388",
-    "titulo": "Programa de Energia Renovável de Exportação",
-    "descricao": "Empresas energéticas integram redes de geração renovável com comercialização internacional de energia limpa. O modelo fortalece competitividade global.",
-    "tipo": "LOBBY",
-    "categoria": "Energia",
-    "regiao": "Centro-Oeste"
+    "title": "Programa de Energia Renovável de Exportação",
+    "description": "Empresas energéticas integram redes de geração renovável com comercialização internacional de energia limpa. O modelo fortalece competitividade global.",
+    "type": "LOBBY",
+    "categorie": "Energia",
+    "region": "Centro-Oeste"
   },
   {
     "id": "c389",
-    "titulo": "Rede Popular de Agricultura do Vale Amazônico",
-    "descricao": "Comunidades amazônicas desenvolvem sistemas agroflorestais com manejo coletivo e preservação da biodiversidade local. O projeto fortalece soberania alimentar.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Agricultura",
-    "regiao": "Norte"
+    "title": "Rede Popular de Agricultura do Vale Amazônico",
+    "description": "Comunidades amazônicas desenvolvem sistemas agroflorestais com manejo coletivo e preservação da biodiversidade local. O projeto fortalece soberania alimentar.",
+    "type": "COMUNIDADE",
+    "categorie": "Agricultura",
+    "region": "Norte"
   },
   {
     "id": "c390",
-    "titulo": "Hub de Certificação Ambiental Global",
-    "descricao": "Empresas adotam sistemas digitais de certificação ESG para acesso a mercados internacionais sustentáveis. O modelo integra governança ambiental global.",
-    "tipo": "LOBBY",
-    "categoria": "Governança",
-    "regiao": "Nacional"
+    "title": "Hub de Certificação Ambiental Global",
+    "description": "Empresas adotam sistemas digitais de certificação ESG para acesso a mercados internacionais sustentáveis. O modelo integra governança ambiental global.",
+    "type": "LOBBY",
+    "categorie": "Governança",
+    "region": "Nacional"
   },
   {
     "id": "c391",
-    "titulo": "Mutirão Popular de Reflorestamento das Matas Ciliares",
-    "descricao": "Comunidades restauram matas ciliares com plantio de espécies nativas e gestão coletiva dos rios. O projeto fortalece equilíbrio ecológico regional.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Florestas",
-    "regiao": "Sudeste"
+    "title": "Mutirão Popular de Reflorestamento das Matas Ciliares",
+    "description": "Comunidades restauram matas ciliares com plantio de espécies nativas e gestão coletiva dos rios. O projeto fortalece equilíbrio ecológico regional.",
+    "type": "COMUNIDADE",
+    "categorie": "Florestas",
+    "region": "Sudeste"
   },
   {
     "id": "c392",
-    "titulo": "Programa de Economia Azul de Alta Eficiência",
-    "descricao": "Empresas marítimas integram automação e certificação ambiental para ampliar exportações sustentáveis globais. O sistema fortalece competitividade oceânica.",
-    "tipo": "LOBBY",
-    "categoria": "Economia do Mar",
-    "regiao": "Sul"
+    "title": "Programa de Economia Azul de Alta Eficiência",
+    "description": "Empresas marítimas integram automação e certificação ambiental para ampliar exportações sustentáveis globais. O sistema fortalece competitividade oceânica.",
+    "type": "LOBBY",
+    "categorie": "Economia do Mar",
+    "region": "Sul"
   },
   {
     "id": "c393",
-    "titulo": "Rede Popular de Saúde e Território do Cerrado",
-    "descricao": "Comunidades integram práticas de saúde com manejo ambiental coletivo e uso de saberes tradicionais do Cerrado. O projeto é autogestionado.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Saúde",
-    "regiao": "Centro-Oeste"
+    "title": "Rede Popular de Saúde e Território do Cerrado",
+    "description": "Comunidades integram práticas de saúde com manejo ambiental coletivo e uso de saberes tradicionais do Cerrado. O projeto é autogestionado.",
+    "type": "COMUNIDADE",
+    "categorie": "Saúde",
+    "region": "Centro-Oeste"
   },
   {
     "id": "c394",
-    "titulo": "Programa de Logística Verde Automatizada",
-    "descricao": "Corredores logísticos utilizam inteligência artificial para otimizar transporte e reduzir emissões em cadeias globais. O modelo fortalece exportações.",
-    "tipo": "LOBBY",
-    "categoria": "Infraestrutura",
-    "regiao": "Sudeste"
+    "title": "Programa de Logística Verde Automatizada",
+    "description": "Corredores logísticos utilizam inteligência artificial para otimizar transporte e reduzir emissões em cadeias globais. O modelo fortalece exportações.",
+    "type": "LOBBY",
+    "categorie": "Infraestrutura",
+    "region": "Sudeste"
   },
   {
     "id": "c395",
-    "titulo": "Rede Popular de Agricultura de Base Familiar",
-    "descricao": "Agricultores familiares organizam produção coletiva de alimentos com práticas agroecológicas e distribuição solidária regional. O projeto fortalece soberania alimentar.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Agricultura",
-    "regiao": "Nordeste"
+    "title": "Rede Popular de Agricultura de Base Familiar",
+    "description": "Agricultores familiares organizam produção coletiva de alimentos com práticas agroecológicas e distribuição solidária regional. O projeto fortalece soberania alimentar.",
+    "type": "COMUNIDADE",
+    "categorie": "Agricultura",
+    "region": "Nordeste"
   },
   {
     "id": "c396",
-    "titulo": "Distrito de Bioinovação e Exportação Verde",
-    "descricao": "Empresas transformam biodiversidade em produtos de alto valor com rastreabilidade digital e certificação internacional. O modelo amplia mercados globais sustentáveis.",
-    "tipo": "LOBBY",
-    "categoria": "Bioeconomia",
-    "regiao": "Norte"
+    "title": "Distrito de Bioinovação e Exportação Verde",
+    "description": "Empresas transformam biodiversidade em produtos de alto valor com rastreabilidade digital e certificação internacional. O modelo amplia mercados globais sustentáveis.",
+    "type": "LOBBY",
+    "categorie": "Bioeconomia",
+    "region": "Norte"
   },
   {
     "id": "c397",
-    "titulo": "Rede Popular de Proteção das Áreas de Cerradão",
-    "descricao": "Comunidades rurais protegem áreas de transição ecológica com manejo coletivo e reflorestamento nativo. O projeto fortalece equilíbrio ambiental regional.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Florestas",
-    "regiao": "Centro-Oeste"
+    "title": "Rede Popular de Proteção das Áreas de Cerradão",
+    "description": "Comunidades rurais protegem áreas de transição ecológica com manejo coletivo e reflorestamento nativo. O projeto fortalece equilíbrio ambiental regional.",
+    "type": "COMUNIDADE",
+    "categorie": "Florestas",
+    "region": "Centro-Oeste"
   },
   {
     "id": "c398",
-    "titulo": "Programa de Cidades Inteligentes de Alta Escala",
-    "descricao": "Municípios implementam sistemas digitais de governança urbana com monitoramento ambiental e gestão automatizada de recursos. O modelo atrai investimentos globais.",
-    "tipo": "LOBBY",
-    "categoria": "Urbanismo",
-    "regiao": "Sudeste"
+    "title": "Programa de Cidades Inteligentes de Alta Escala",
+    "description": "Municípios implementam sistemas digitais de governança urbana com monitoramento ambiental e gestão automatizada de recursos. O modelo atrai investimentos globais.",
+    "type": "LOBBY",
+    "categorie": "Urbanismo",
+    "region": "Sudeste"
   },
   {
     "id": "c399",
-    "titulo": "Rede Popular de Educação Ambiental das Comunidades do Mar",
-    "descricao": "Comunidades costeiras desenvolvem processos educativos baseados em práticas tradicionais e gestão coletiva dos ecossistemas marinhos. O projeto é comunitário.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Educação Ambiental",
-    "regiao": "Nordeste"
+    "title": "Rede Popular de Educação Ambiental das Comunidades do Mar",
+    "description": "Comunidades costeiras desenvolvem processos educativos baseados em práticas tradicionais e gestão coletiva dos ecossistemas marinhos. O projeto é comunitário.",
+    "type": "COMUNIDADE",
+    "categorie": "Educação Ambiental",
+    "region": "Nordeste"
   },
   {
     "id": "c400",
-    "titulo": "Programa de Infraestrutura Climática Integrada",
-    "descricao": "Cidades adotam plataformas digitais de gestão ambiental e eficiência urbana com foco em inovação e competitividade global. O sistema atrai capital sustentável.",
-    "tipo": "LOBBY",
-    "categoria": "Urbanismo",
-    "regiao": "Nacional"
-  }
-][
+    "title": "Programa de Infraestrutura Climática Integrada",
+    "description": "Cidades adotam plataformas digitais de gestão ambiental e eficiência urbana com foco em inovação e competitividade global. O sistema atrai capital sustentável.",
+    "type": "LOBBY",
+    "categorie": "Urbanismo",
+    "region": "Nacional"
+  },
   {
     "id": "c401",
-    "titulo": "Rede Popular de Agroflorestas do Semiárido",
-    "descricao": "Comunidades rurais organizam sistemas agroflorestais adaptados ao clima semiárido com manejo coletivo da terra e conservação da biodiversidade. O projeto fortalece soberania alimentar regional.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Agricultura",
-    "regiao": "Nordeste"
+    "title": "Rede Popular de Agroflorestas do Semiárido",
+    "description": "Comunidades rurais organizam sistemas agroflorestais adaptados ao clima semiárido com manejo coletivo da terra e conservação da biodiversidade. O projeto fortalece soberania alimentar regional.",
+    "type": "COMUNIDADE",
+    "categorie": "Agricultura",
+    "region": "Nordeste"
   },
   {
     "id": "c402",
-    "titulo": "Plataforma de Gestão de Ativos Naturais",
-    "descricao": "Territórios com vegetação preservada são integrados a sistemas digitais de valorização econômica de serviços ambientais. O modelo conecta conservação a mercados globais sustentáveis.",
-    "tipo": "LOBBY",
-    "categoria": "Finanças Ambientais",
-    "regiao": "Nacional"
+    "title": "Plataforma de Gestão de Ativos Naturais",
+    "description": "Territórios com vegetação preservada são integrados a sistemas digitais de valorização econômica de serviços ambientais. O modelo conecta conservação a mercados globais sustentáveis.",
+    "type": "LOBBY",
+    "categorie": "Finanças Ambientais",
+    "region": "Nacional"
   },
   {
     "id": "c403",
-    "titulo": "Mutirão Popular de Proteção das Nascentes Urbanas",
-    "descricao": "Moradores urbanos realizam ações coletivas de recuperação e preservação de nascentes em áreas degradadas. O projeto fortalece o cuidado comunitário da água.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Recursos Hídricos",
-    "regiao": "Sudeste"
+    "title": "Mutirão Popular de Proteção das Nascentes Urbanas",
+    "description": "Moradores urbanos realizam ações coletivas de recuperação e preservação de nascentes em áreas degradadas. O projeto fortalece o cuidado comunitário da água.",
+    "type": "COMUNIDADE",
+    "categorie": "Recursos Hídricos",
+    "region": "Sudeste"
   },
   {
     "id": "c404",
-    "titulo": "Programa de Logística Verde de Alta Eficiência",
-    "descricao": "Corredores logísticos utilizam automação e análise de dados ambientais para reduzir emissões e otimizar cadeias globais de transporte. O sistema amplia competitividade internacional.",
-    "tipo": "LOBBY",
-    "categoria": "Infraestrutura",
-    "regiao": "Sul"
+    "title": "Programa de Logística Verde de Alta Eficiência",
+    "description": "Corredores logísticos utilizam automação e análise de dados ambientais para reduzir emissões e otimizar cadeias globais de transporte. O sistema amplia competitividade internacional.",
+    "type": "LOBBY",
+    "categorie": "Infraestrutura",
+    "region": "Sul"
   },
   {
     "id": "c405",
-    "titulo": "Rede Popular de Agricultura Quilombola",
-    "descricao": "Comunidades quilombolas desenvolvem sistemas agrícolas tradicionais com gestão coletiva da terra e preservação de sementes crioulas. O projeto fortalece autonomia territorial.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Agricultura",
-    "regiao": "Nordeste"
+    "title": "Rede Popular de Agricultura Quilombola",
+    "description": "Comunidades quilombolas desenvolvem sistemas agrícolas tradicionais com gestão coletiva da terra e preservação de sementes crioulas. O projeto fortalece autonomia territorial.",
+    "type": "COMUNIDADE",
+    "categorie": "Agricultura",
+    "region": "Nordeste"
   },
   {
     "id": "c406",
-    "titulo": "Distrito de Energia de Mercado Livre Renovável",
-    "descricao": "Empresas energéticas operam redes de geração renovável integradas a mercados globais de energia com negociação flexível. O modelo impulsiona competitividade energética.",
-    "tipo": "LOBBY",
-    "categoria": "Energia",
-    "regiao": "Centro-Oeste"
+    "title": "Distrito de Energia de Mercado Livre Renovável",
+    "description": "Empresas energéticas operam redes de geração renovável integradas a mercados globais de energia com negociação flexível. O modelo impulsiona competitividade energética.",
+    "type": "LOBBY",
+    "categorie": "Energia",
+    "region": "Centro-Oeste"
   },
   {
     "id": "c407",
-    "titulo": "Rede Popular de Defesa dos Manguezais",
-    "descricao": "Comunidades costeiras protegem ecossistemas de mangue com manejo tradicional e monitoramento ambiental contínuo. O projeto fortalece biodiversidade litorânea.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Ecossistemas Costeiros",
-    "regiao": "Nordeste"
+    "title": "Rede Popular de Defesa dos Manguezais",
+    "description": "Comunidades costeiras protegem ecossistemas de mangue com manejo tradicional e monitoramento ambiental contínuo. O projeto fortalece biodiversidade litorânea.",
+    "type": "COMUNIDADE",
+    "categorie": "Ecossistemas Costeiros",
+    "region": "Nordeste"
   },
   {
     "id": "c408",
-    "titulo": "Programa de Certificação Global de Sustentabilidade Corporativa",
-    "descricao": "Empresas adotam padrões digitais de avaliação ambiental para acesso a mercados internacionais e fundos verdes. O sistema fortalece governança ESG global.",
-    "tipo": "LOBBY",
-    "categoria": "Governança",
-    "regiao": "Nacional"
+    "title": "Programa de Certificação Global de Sustentabilidade Corporativa",
+    "description": "Empresas adotam padrões digitais de avaliação ambiental para acesso a mercados internacionais e fundos verdes. O sistema fortalece governança ESG global.",
+    "type": "LOBBY",
+    "categorie": "Governança",
+    "region": "Nacional"
   },
   {
     "id": "c409",
-    "titulo": "Mutirão Popular de Reflorestamento das Áreas Urbanas",
-    "descricao": "Comunidades urbanas restauram áreas degradadas com plantio de espécies nativas e gestão coletiva de espaços verdes. O projeto melhora qualidade ambiental local.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Florestas",
-    "regiao": "Sudeste"
+    "title": "Mutirão Popular de Reflorestamento das Áreas Urbanas",
+    "description": "Comunidades urbanas restauram áreas degradadas com plantio de espécies nativas e gestão coletiva de espaços verdes. O projeto melhora qualidade ambiental local.",
+    "type": "COMUNIDADE",
+    "categorie": "Florestas",
+    "region": "Sudeste"
   },
   {
     "id": "c410",
-    "titulo": "Programa de Infraestrutura Urbana Inteligente",
-    "descricao": "Cidades implementam sistemas digitais de gestão ambiental com automação de recursos e análise climática em tempo real. O modelo atrai investimentos globais.",
-    "tipo": "LOBBY",
-    "categoria": "Urbanismo",
-    "regiao": "Sudeste"
+    "title": "Programa de Infraestrutura Urbana Inteligente",
+    "description": "Cidades implementam sistemas digitais de gestão ambiental com automação de recursos e análise climática em tempo real. O modelo atrai investimentos globais.",
+    "type": "LOBBY",
+    "categorie": "Urbanismo",
+    "region": "Sudeste"
   },
   {
     "id": "c411",
-    "titulo": "Rede Popular de Educação Ambiental do Cerrado",
-    "descricao": "Comunidades do Cerrado desenvolvem projetos educativos baseados em saberes tradicionais e gestão coletiva do território. O projeto fortalece identidade ecológica.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Educação Ambiental",
-    "regiao": "Centro-Oeste"
+    "title": "Rede Popular de Educação Ambiental do Cerrado",
+    "description": "Comunidades do Cerrado desenvolvem projetos educativos baseados em saberes tradicionais e gestão coletiva do território. O projeto fortalece identidade ecológica.",
+    "type": "COMUNIDADE",
+    "categorie": "Educação Ambiental",
+    "region": "Centro-Oeste"
   },
   {
     "id": "c412",
-    "titulo": "Hub de Bioeconomia e Inovação Global",
-    "descricao": "Empresas transformam biodiversidade em produtos de alto valor com rastreabilidade digital e certificação internacional. O modelo amplia exportação sustentável.",
-    "tipo": "LOBBY",
-    "categoria": "Bioeconomia",
-    "regiao": "Norte"
+    "title": "Hub de Bioeconomia e Inovação Global",
+    "description": "Empresas transformam biodiversidade em produtos de alto valor com rastreabilidade digital e certificação internacional. O modelo amplia exportação sustentável.",
+    "type": "LOBBY",
+    "categorie": "Bioeconomia",
+    "region": "Norte"
   },
   {
     "id": "c413",
-    "titulo": "Rede Popular de Agricultura de Base Comunitária",
-    "descricao": "Agricultores familiares organizam produção agroecológica com distribuição solidária e gestão coletiva da terra. O projeto fortalece soberania alimentar.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Agricultura",
-    "regiao": "Nordeste"
+    "title": "Rede Popular de Agricultura de Base Comunitária",
+    "description": "Agricultores familiares organizam produção agroecológica com distribuição solidária e gestão coletiva da terra. O projeto fortalece soberania alimentar.",
+    "type": "COMUNIDADE",
+    "categorie": "Agricultura",
+    "region": "Nordeste"
   },
   {
     "id": "c414",
-    "titulo": "Programa de Logística Automatizada Global",
-    "descricao": "Corredores logísticos integram inteligência artificial para otimizar transporte e reduzir custos ambientais em cadeias globais. O modelo amplia eficiência econômica.",
-    "tipo": "LOBBY",
-    "categoria": "Infraestrutura",
-    "regiao": "Sul"
+    "title": "Programa de Logística Automatizada Global",
+    "description": "Corredores logísticos integram inteligência artificial para otimizar transporte e reduzir custos ambientais em cadeias globais. O modelo amplia eficiência econômica.",
+    "type": "LOBBY",
+    "categorie": "Infraestrutura",
+    "region": "Sul"
   },
   {
     "id": "c415",
-    "titulo": "Rede Popular de Saúde Comunitária das Águas",
-    "descricao": "Comunidades ribeirinhas integram práticas de saúde com cuidado ambiental e saberes tradicionais dos territórios aquáticos. O projeto é autogestionado.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Saúde",
-    "regiao": "Norte"
+    "title": "Rede Popular de Saúde Comunitária das Águas",
+    "description": "Comunidades ribeirinhas integram práticas de saúde com cuidado ambiental e saberes tradicionais dos territórios aquáticos. O projeto é autogestionado.",
+    "type": "COMUNIDADE",
+    "categorie": "Saúde",
+    "region": "Norte"
   },
   {
     "id": "c416",
-    "titulo": "Programa de Economia Azul de Alta Competitividade",
-    "descricao": "Empresas marítimas desenvolvem cadeias produtivas oceânicas com certificação ambiental e inovação logística global. O modelo fortalece exportações.",
-    "tipo": "LOBBY",
-    "categoria": "Economia do Mar",
-    "regiao": "Sul"
+    "title": "Programa de Economia Azul de Alta Competitividade",
+    "description": "Empresas marítimas desenvolvem cadeias produtivas oceânicas com certificação ambiental e inovação logística global. O modelo fortalece exportações.",
+    "type": "LOBBY",
+    "categorie": "Economia do Mar",
+    "region": "Sul"
   },
   {
     "id": "c417",
-    "titulo": "Mutirão Popular de Proteção das Veredas",
-    "descricao": "Comunidades do Cerrado protegem veredas com manejo coletivo e restauração ecológica de áreas úmidas. O projeto fortalece segurança hídrica regional.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Florestas",
-    "regiao": "Centro-Oeste"
+    "title": "Mutirão Popular de Proteção das Veredas",
+    "description": "Comunidades do Cerrado protegem veredas com manejo coletivo e restauração ecológica de áreas úmidas. O projeto fortalece segurança hídrica regional.",
+    "type": "COMUNIDADE",
+    "categorie": "Florestas",
+    "region": "Centro-Oeste"
   },
   {
     "id": "c418",
-    "titulo": "Programa de Infraestrutura de Baixo Carbono",
-    "descricao": "Projetos urbanos adotam soluções tecnológicas para reduzir emissões e otimizar uso de recursos energéticos. O sistema atrai capital sustentável global.",
-    "tipo": "LOBBY",
-    "categoria": "Infraestrutura",
-    "regiao": "Sudeste"
+    "title": "Programa de Infraestrutura de Baixo Carbono",
+    "description": "Projetos urbanos adotam soluções tecnológicas para reduzir emissões e otimizar uso de recursos energéticos. O sistema atrai capital sustentável global.",
+    "type": "LOBBY",
+    "categorie": "Infraestrutura",
+    "region": "Sudeste"
   },
   {
     "id": "c419",
-    "titulo": "Rede Popular de Agricultura Agroecológica Urbana",
-    "descricao": "Comunidades urbanas cultivam alimentos em espaços coletivos com manejo agroecológico e distribuição local. O projeto fortalece soberania alimentar.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Agricultura Urbana",
-    "regiao": "Sudeste"
+    "title": "Rede Popular de Agricultura Agroecológica Urbana",
+    "description": "Comunidades urbanas cultivam alimentos em espaços coletivos com manejo agroecológico e distribuição local. O projeto fortalece soberania alimentar.",
+    "type": "COMUNIDADE",
+    "categorie": "Agricultura Urbana",
+    "region": "Sudeste"
   },
   {
     "id": "c420",
-    "titulo": "Distrito de Energia de Alta Escala Sustentável",
-    "descricao": "Empresas energéticas operam sistemas integrados de energia renovável com comercialização internacional. O modelo fortalece liderança global energética.",
-    "tipo": "LOBBY",
-    "categoria": "Energia",
-    "regiao": "Nordeste"
+    "title": "Distrito de Energia de Alta Escala Sustentável",
+    "description": "Empresas energéticas operam sistemas integrados de energia renovável com comercialização internacional. O modelo fortalece liderança global energética.",
+    "type": "LOBBY",
+    "categorie": "Energia",
+    "region": "Nordeste"
   },
   {
     "id": "c421",
-    "titulo": "Rede Popular de Defesa das Áreas de Caatinga",
-    "descricao": "Comunidades protegem áreas de Caatinga com manejo coletivo e práticas agroecológicas adaptadas ao semiárido. O projeto fortalece biodiversidade local.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Florestas",
-    "regiao": "Nordeste"
+    "title": "Rede Popular de Defesa das Áreas de Caatinga",
+    "description": "Comunidades protegem áreas de Caatinga com manejo coletivo e práticas agroecológicas adaptadas ao semiárido. O projeto fortalece biodiversidade local.",
+    "type": "COMUNIDADE",
+    "categorie": "Florestas",
+    "region": "Nordeste"
   },
   {
     "id": "c422",
-    "titulo": "Plataforma de Mercados Globais de Carbono",
-    "descricao": "Empresas negociam créditos de carbono em sistemas digitais integrados com auditoria automatizada e rastreabilidade ambiental. O modelo fortalece economia verde.",
-    "tipo": "LOBBY",
-    "categoria": "Finanças Ambientais",
-    "regiao": "Nacional"
+    "title": "Plataforma de Mercados Globais de Carbono",
+    "description": "Empresas negociam créditos de carbono em sistemas digitais integrados com auditoria automatizada e rastreabilidade ambiental. O modelo fortalece economia verde.",
+    "type": "LOBBY",
+    "categorie": "Finanças Ambientais",
+    "region": "Nacional"
   },
   {
     "id": "c423",
-    "titulo": "Rede Popular de Educação Ambiental Ribeirinha",
-    "descricao": "Comunidades ribeirinhas desenvolvem educação ambiental baseada em saberes tradicionais e gestão coletiva dos rios. O projeto é comunitário.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Educação Ambiental",
-    "regiao": "Norte"
+    "title": "Rede Popular de Educação Ambiental Ribeirinha",
+    "description": "Comunidades ribeirinhas desenvolvem educação ambiental baseada em saberes tradicionais e gestão coletiva dos rios. O projeto é comunitário.",
+    "type": "COMUNIDADE",
+    "categorie": "Educação Ambiental",
+    "region": "Norte"
   },
   {
     "id": "c424",
-    "titulo": "Programa de Cidades Inteligentes Integradas",
-    "descricao": "Municípios utilizam sistemas digitais de gestão urbana e análise ambiental para otimizar recursos e atrair investimentos globais. O modelo promove inovação urbana.",
-    "tipo": "LOBBY",
-    "categoria": "Urbanismo",
-    "regiao": "Sudeste"
+    "title": "Programa de Cidades Inteligentes Integradas",
+    "description": "Municípios utilizam sistemas digitais de gestão urbana e análise ambiental para otimizar recursos e atrair investimentos globais. O modelo promove inovação urbana.",
+    "type": "LOBBY",
+    "categorie": "Urbanismo",
+    "region": "Sudeste"
   },
   {
     "id": "c425",
-    "titulo": "Rede Popular de Agricultura do Vale do São Francisco",
-    "descricao": "Agricultores familiares organizam produção agroecológica com irrigação sustentável e gestão coletiva da terra. O projeto fortalece soberania alimentar regional.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Agricultura",
-    "regiao": "Nordeste"
+    "title": "Rede Popular de Agricultura do Vale do São Francisco",
+    "description": "Agricultores familiares organizam produção agroecológica com irrigação sustentável e gestão coletiva da terra. O projeto fortalece soberania alimentar regional.",
+    "type": "COMUNIDADE",
+    "categorie": "Agricultura",
+    "region": "Nordeste"
   },
   {
     "id": "c426",
-    "titulo": "Hub de Inovação em Energia Global",
-    "descricao": "Empresas energéticas desenvolvem soluções renováveis integradas a mercados internacionais com alta eficiência tecnológica. O modelo fortalece exportação energética.",
-    "tipo": "LOBBY",
-    "categoria": "Energia",
-    "regiao": "Centro-Oeste"
+    "title": "Hub de Inovação em Energia Global",
+    "description": "Empresas energéticas desenvolvem soluções renováveis integradas a mercados internacionais com alta eficiência tecnológica. O modelo fortalece exportação energética.",
+    "type": "LOBBY",
+    "categorie": "Energia",
+    "region": "Centro-Oeste"
   },
   {
     "id": "c427",
-    "titulo": "Mutirão Popular de Recuperação de Rios",
-    "descricao": "Comunidades restauram rios urbanos e rurais com reflorestamento de margens e gestão coletiva da água. O projeto fortalece equilíbrio ecológico local.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Recursos Hídricos",
-    "regiao": "Sul"
+    "title": "Mutirão Popular de Recuperação de Rios",
+    "description": "Comunidades restauram rios urbanos e rurais com reflorestamento de margens e gestão coletiva da água. O projeto fortalece equilíbrio ecológico local.",
+    "type": "COMUNIDADE",
+    "categorie": "Recursos Hídricos",
+    "region": "Sul"
   },
   {
     "id": "c428",
-    "titulo": "Programa de Certificação de Infraestrutura Verde",
-    "descricao": "Empresas adotam padrões digitais de sustentabilidade para acesso a investimentos globais e fundos ambientais. O sistema fortalece governança ESG.",
-    "tipo": "LOBBY",
-    "categoria": "Governança",
-    "regiao": "Nacional"
+    "title": "Programa de Certificação de Infraestrutura Verde",
+    "description": "Empresas adotam padrões digitais de sustentabilidade para acesso a investimentos globais e fundos ambientais. O sistema fortalece governança ESG.",
+    "type": "LOBBY",
+    "categorie": "Governança",
+    "region": "Nacional"
   },
   {
     "id": "c429",
-    "titulo": "Rede Popular de Agricultura Tradicional Indígena",
-    "descricao": "Povos indígenas mantêm sistemas agrícolas tradicionais com manejo coletivo e preservação da biodiversidade. O projeto fortalece autonomia cultural.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Agricultura",
-    "regiao": "Norte"
+    "title": "Rede Popular de Agricultura Tradicional Indígena",
+    "description": "Povos indígenas mantêm sistemas agrícolas tradicionais com manejo coletivo e preservação da biodiversidade. O projeto fortalece autonomia cultural.",
+    "type": "COMUNIDADE",
+    "categorie": "Agricultura",
+    "region": "Norte"
   },
   {
     "id": "c430",
-    "titulo": "Programa de Logística de Alta Eficiência Global",
-    "descricao": "Cadeias logísticas integram automação e inteligência artificial para reduzir custos e emissões em transporte internacional. O modelo amplia competitividade.",
-    "tipo": "LOBBY",
-    "categoria": "Infraestrutura",
-    "regiao": "Sudeste"
-  }
-][
+    "title": "Programa de Logística de Alta Eficiência Global",
+    "description": "Cadeias logísticas integram automação e inteligência artificial para reduzir custos e emissões em transporte internacional. O modelo amplia competitividade.",
+    "type": "LOBBY",
+    "categorie": "Infraestrutura",
+    "region": "Sudeste"
+  },
   {
     "id": "c431",
-    "titulo": "Rede Popular de Agroecologia das Ilhas do Rio",
-    "descricao": "Comunidades ribeirinhas organizam produção agroecológica em ilhas fluviais com manejo coletivo da terra e preservação dos ciclos naturais. O projeto fortalece soberania alimentar e autonomia territorial.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Agricultura",
-    "regiao": "Norte"
+    "title": "Rede Popular de Agroecologia das Ilhas do Rio",
+    "description": "Comunidades ribeirinhas organizam produção agroecológica em ilhas fluviais com manejo coletivo da terra e preservação dos ciclos naturais. O projeto fortalece soberania alimentar e autonomia territorial.",
+    "type": "COMUNIDADE",
+    "categorie": "Agricultura",
+    "region": "Norte"
   },
   {
     "id": "c432",
-    "titulo": "Programa de Infraestrutura de Dados Climáticos Corporativos",
-    "descricao": "Empresas utilizam plataformas integradas de dados climáticos para otimizar operações e ampliar eficiência ambiental. O sistema conecta desempenho econômico e métricas sustentáveis globais.",
-    "tipo": "LOBBY",
-    "categoria": "Governança",
-    "regiao": "Nacional"
+    "title": "Programa de Infraestrutura de Dados Climáticos Corporativos",
+    "description": "Empresas utilizam plataformas integradas de dados climáticos para otimizar operações e ampliar eficiência ambiental. O sistema conecta desempenho econômico e métricas sustentáveis globais.",
+    "type": "LOBBY",
+    "categorie": "Governança",
+    "region": "Nacional"
   },
   {
     "id": "c433",
-    "titulo": "Mutirão Popular de Proteção das Áreas de Encosta",
-    "descricao": "Comunidades urbanas realizam reflorestamento e estabilização de encostas com espécies nativas e gestão coletiva do território. O projeto reduz riscos ambientais locais.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Florestas",
-    "regiao": "Sudeste"
+    "title": "Mutirão Popular de Proteção das Áreas de Encosta",
+    "description": "Comunidades urbanas realizam reflorestamento e estabilização de encostas com espécies nativas e gestão coletiva do território. O projeto reduz riscos ambientais locais.",
+    "type": "COMUNIDADE",
+    "categorie": "Florestas",
+    "region": "Sudeste"
   },
   {
     "id": "c434",
-    "titulo": "Distrito de Logística Verde Automatizada",
-    "descricao": "Corredores logísticos operam com inteligência artificial para otimizar transporte e reduzir emissões em cadeias globais de exportação. O modelo aumenta eficiência competitiva.",
-    "tipo": "LOBBY",
-    "categoria": "Infraestrutura",
-    "regiao": "Sul"
+    "title": "Distrito de Logística Verde Automatizada",
+    "description": "Corredores logísticos operam com inteligência artificial para otimizar transporte e reduzir emissões em cadeias globais de exportação. O modelo aumenta eficiência competitiva.",
+    "type": "LOBBY",
+    "categorie": "Infraestrutura",
+    "region": "Sul"
   },
   {
     "id": "c435",
-    "titulo": "Rede Popular de Agricultura do Pantanal",
-    "descricao": "Comunidades pantaneiras desenvolvem práticas agroextrativistas sustentáveis com gestão coletiva do território e preservação da biodiversidade. O projeto fortalece soberania alimentar.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Agricultura",
-    "regiao": "Centro-Oeste"
+    "title": "Rede Popular de Agricultura do Pantanal",
+    "description": "Comunidades pantaneiras desenvolvem práticas agroextrativistas sustentáveis com gestão coletiva do território e preservação da biodiversidade. O projeto fortalece soberania alimentar.",
+    "type": "COMUNIDADE",
+    "categorie": "Agricultura",
+    "region": "Centro-Oeste"
   },
   {
     "id": "c436",
-    "titulo": "Programa de Certificação de Ativos Ambientais Globais",
-    "descricao": "Territórios naturais são convertidos em ativos ambientais certificados para negociação em mercados internacionais. O sistema integra conservação e valorização econômica.",
-    "tipo": "LOBBY",
-    "categoria": "Finanças Ambientais",
-    "regiao": "Nacional"
+    "title": "Programa de Certificação de Ativos Ambientais Globais",
+    "description": "Territórios naturais são convertidos em ativos ambientais certificados para negociação em mercados internacionais. O sistema integra conservação e valorização econômica.",
+    "type": "LOBBY",
+    "categorie": "Finanças Ambientais",
+    "region": "Nacional"
   },
   {
     "id": "c437",
-    "titulo": "Rede Popular de Educação Ambiental das Áreas Rurais",
-    "descricao": "Comunidades rurais desenvolvem processos educativos baseados em saberes tradicionais e gestão coletiva do território. O projeto fortalece identidade ecológica local.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Educação Ambiental",
-    "regiao": "Nordeste"
+    "title": "Rede Popular de Educação Ambiental das Áreas Rurais",
+    "description": "Comunidades rurais desenvolvem processos educativos baseados em saberes tradicionais e gestão coletiva do território. O projeto fortalece identidade ecológica local.",
+    "type": "COMUNIDADE",
+    "categorie": "Educação Ambiental",
+    "region": "Nordeste"
   },
   {
     "id": "c438",
-    "titulo": "Hub de Inovação em Energia de Mercado Internacional",
-    "descricao": "Empresas energéticas integram sistemas renováveis a mercados globais com alta eficiência tecnológica e comercialização flexível. O modelo amplia competitividade energética.",
-    "tipo": "LOBBY",
-    "categoria": "Energia",
-    "regiao": "Centro-Oeste"
+    "title": "Hub de Inovação em Energia de Mercado Internacional",
+    "description": "Empresas energéticas integram sistemas renováveis a mercados globais com alta eficiência tecnológica e comercialização flexível. O modelo amplia competitividade energética.",
+    "type": "LOBBY",
+    "categorie": "Energia",
+    "region": "Centro-Oeste"
   },
   {
     "id": "c439",
-    "titulo": "Rede Popular de Defesa das Áreas de Cerrado",
-    "descricao": "Comunidades protegem o Cerrado com manejo coletivo, reflorestamento nativo e vigilância ambiental participativa. O projeto fortalece equilíbrio ecológico regional.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Florestas",
-    "regiao": "Centro-Oeste"
+    "title": "Rede Popular de Defesa das Áreas de Cerrado",
+    "description": "Comunidades protegem o Cerrado com manejo coletivo, reflorestamento nativo e vigilância ambiental participativa. O projeto fortalece equilíbrio ecológico regional.",
+    "type": "COMUNIDADE",
+    "categorie": "Florestas",
+    "region": "Centro-Oeste"
   },
   {
     "id": "c440",
-    "titulo": "Programa de Infraestrutura Urbana Inteligente Integrada",
-    "descricao": "Cidades adotam sistemas digitais de gestão ambiental e análise de dados em tempo real para otimização urbana. O modelo atrai investimentos globais sustentáveis.",
-    "tipo": "LOBBY",
-    "categoria": "Urbanismo",
-    "regiao": "Sudeste"
+    "title": "Programa de Infraestrutura Urbana Inteligente Integrada",
+    "description": "Cidades adotam sistemas digitais de gestão ambiental e análise de dados em tempo real para otimização urbana. O modelo atrai investimentos globais sustentáveis.",
+    "type": "LOBBY",
+    "categorie": "Urbanismo",
+    "region": "Sudeste"
   },
   {
     "id": "c441",
-    "titulo": "Rede Popular de Agricultura Familiar Agroecológica",
-    "descricao": "Agricultores familiares organizam produção coletiva de alimentos com práticas agroecológicas e distribuição solidária. O projeto fortalece soberania alimentar regional.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Agricultura",
-    "regiao": "Nordeste"
+    "title": "Rede Popular de Agricultura Familiar Agroecológica",
+    "description": "Agricultores familiares organizam produção coletiva de alimentos com práticas agroecológicas e distribuição solidária. O projeto fortalece soberania alimentar regional.",
+    "type": "COMUNIDADE",
+    "categorie": "Agricultura",
+    "region": "Nordeste"
   },
   {
     "id": "c442",
-    "titulo": "Programa de Economia Azul de Alta Escala Global",
-    "descricao": "Empresas marítimas desenvolvem cadeias produtivas oceânicas integradas a mercados internacionais sustentáveis. O modelo fortalece exportação e inovação.",
-    "tipo": "LOBBY",
-    "categoria": "Economia do Mar",
-    "regiao": "Sul"
+    "title": "Programa de Economia Azul de Alta Escala Global",
+    "description": "Empresas marítimas desenvolvem cadeias produtivas oceânicas integradas a mercados internacionais sustentáveis. O modelo fortalece exportação e inovação.",
+    "type": "LOBBY",
+    "categorie": "Economia do Mar",
+    "region": "Sul"
   },
   {
     "id": "c443",
-    "titulo": "Mutirão Popular de Proteção das Nascentes Rurais",
-    "descricao": "Comunidades rurais restauram nascentes com reflorestamento e gestão coletiva da água em territórios locais. O projeto fortalece segurança hídrica regional.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Recursos Hídricos",
-    "regiao": "Sudeste"
+    "title": "Mutirão Popular de Proteção das Nascentes Rurais",
+    "description": "Comunidades rurais restauram nascentes com reflorestamento e gestão coletiva da água em territórios locais. O projeto fortalece segurança hídrica regional.",
+    "type": "COMUNIDADE",
+    "categorie": "Recursos Hídricos",
+    "region": "Sudeste"
   },
   {
     "id": "c444",
-    "titulo": "Programa de Certificação ESG de Alta Performance",
-    "descricao": "Empresas adotam métricas digitais de sustentabilidade para acesso a mercados globais e fundos de investimento verde. O sistema fortalece governança ambiental.",
-    "tipo": "LOBBY",
-    "categoria": "Governança",
-    "regiao": "Nacional"
+    "title": "Programa de Certificação ESG de Alta Performance",
+    "description": "Empresas adotam métricas digitais de sustentabilidade para acesso a mercados globais e fundos de investimento verde. O sistema fortalece governança ambiental.",
+    "type": "LOBBY",
+    "categorie": "Governança",
+    "region": "Nacional"
   },
   {
     "id": "c445",
-    "titulo": "Rede Popular de Saúde Comunitária Indígena",
-    "descricao": "Povos indígenas integram práticas de saúde com saberes tradicionais e gestão coletiva do território. O projeto fortalece autonomia cultural e ambiental.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Saúde",
-    "regiao": "Norte"
+    "title": "Rede Popular de Saúde Comunitária Indígena",
+    "description": "Povos indígenas integram práticas de saúde com saberes tradicionais e gestão coletiva do território. O projeto fortalece autonomia cultural e ambiental.",
+    "type": "COMUNIDADE",
+    "categorie": "Saúde",
+    "region": "Norte"
   },
   {
     "id": "c446",
-    "titulo": "Distrito de Bioeconomia de Exportação Avançada",
-    "descricao": "Empresas transformam biodiversidade em produtos de alto valor com rastreabilidade digital e certificação internacional. O modelo amplia mercados globais sustentáveis.",
-    "tipo": "LOBBY",
-    "categoria": "Bioeconomia",
-    "regiao": "Norte"
+    "title": "Distrito de Bioeconomia de Exportação Avançada",
+    "description": "Empresas transformam biodiversidade em produtos de alto valor com rastreabilidade digital e certificação internacional. O modelo amplia mercados globais sustentáveis.",
+    "type": "LOBBY",
+    "categorie": "Bioeconomia",
+    "region": "Norte"
   },
   {
     "id": "c447",
-    "titulo": "Rede Popular de Agricultura de Base Comunitária Urbana",
-    "descricao": "Comunidades urbanas organizam produção agroecológica em espaços coletivos com distribuição local de alimentos. O projeto fortalece soberania alimentar.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Agricultura Urbana",
-    "regiao": "Sudeste"
+    "title": "Rede Popular de Agricultura de Base Comunitária Urbana",
+    "description": "Comunidades urbanas organizam produção agroecológica em espaços coletivos com distribuição local de alimentos. O projeto fortalece soberania alimentar.",
+    "type": "COMUNIDADE",
+    "categorie": "Agricultura Urbana",
+    "region": "Sudeste"
   },
   {
     "id": "c448",
-    "titulo": "Programa de Logística Inteligente Global",
-    "descricao": "Corredores logísticos utilizam automação e inteligência artificial para otimizar cadeias internacionais de transporte. O modelo reduz custos e emissões.",
-    "tipo": "LOBBY",
-    "categoria": "Infraestrutura",
-    "regiao": "Sul"
+    "title": "Programa de Logística Inteligente Global",
+    "description": "Corredores logísticos utilizam automação e inteligência artificial para otimizar cadeias internacionais de transporte. O modelo reduz custos e emissões.",
+    "type": "LOBBY",
+    "categorie": "Infraestrutura",
+    "region": "Sul"
   },
   {
     "id": "c449",
-    "titulo": "Mutirão Popular de Reflorestamento de Áreas Urbanas",
-    "descricao": "Comunidades urbanas restauram áreas degradadas com plantio de espécies nativas e gestão coletiva de espaços verdes. O projeto melhora o ambiente urbano local.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Florestas",
-    "regiao": "Sudeste"
+    "title": "Mutirão Popular de Reflorestamento de Áreas Urbanas",
+    "description": "Comunidades urbanas restauram áreas degradadas com plantio de espécies nativas e gestão coletiva de espaços verdes. O projeto melhora o ambiente urbano local.",
+    "type": "COMUNIDADE",
+    "categorie": "Florestas",
+    "region": "Sudeste"
   },
   {
     "id": "c450",
-    "titulo": "Programa de Cidades Inteligentes de Alta Eficiência",
-    "descricao": "Municípios integram sistemas digitais de gestão urbana com monitoramento ambiental e otimização de recursos. O modelo atrai investimentos globais sustentáveis.",
-    "tipo": "LOBBY",
-    "categoria": "Urbanismo",
-    "regiao": "Nacional"
-  }
-][
+    "title": "Programa de Cidades Inteligentes de Alta Eficiência",
+    "description": "Municípios integram sistemas digitais de gestão urbana com monitoramento ambiental e otimização de recursos. O modelo atrai investimentos globais sustentáveis.",
+    "type": "LOBBY",
+    "categorie": "Urbanismo",
+    "region": "Nacional"
+  },
   {
     "id": "c451",
-    "titulo": "Rede Popular de Agrofloresta das Águas Interiores",
-    "descricao": "Comunidades rurais estruturam sistemas agroflorestais em regiões de várzea com manejo coletivo e preservação dos ciclos hídricos. O projeto fortalece soberania alimentar e equilíbrio ecológico local.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Agricultura",
-    "regiao": "Norte"
+    "title": "Rede Popular de Agrofloresta das Águas Interiores",
+    "description": "Comunidades rurais estruturam sistemas agroflorestais em regiões de várzea com manejo coletivo e preservação dos ciclos hídricos. O projeto fortalece soberania alimentar e equilíbrio ecológico local.",
+    "type": "COMUNIDADE",
+    "categorie": "Agricultura",
+    "region": "Norte"
   },
   {
     "id": "c452",
-    "titulo": "Plataforma de Monitoramento de Capital Natural",
-    "descricao": "Ecossistemas são convertidos em métricas digitais de valor ambiental integradas a mercados financeiros sustentáveis globais. O sistema conecta biodiversidade a instrumentos econômicos inovadores.",
-    "tipo": "LOBBY",
-    "categoria": "Finanças Ambientais",
-    "regiao": "Nacional"
+    "title": "Plataforma de Monitoramento de Capital Natural",
+    "description": "Ecossistemas são convertidos em métricas digitais de valor ambiental integradas a mercados financeiros sustentáveis globais. O sistema conecta biodiversidade a instrumentos econômicos inovadores.",
+    "type": "LOBBY",
+    "categorie": "Finanças Ambientais",
+    "region": "Nacional"
   },
   {
     "id": "c453",
-    "titulo": "Mutirão Popular de Proteção das Dunas Litorâneas",
-    "descricao": "Comunidades costeiras realizam ações de contenção e restauração de dunas com espécies nativas e manejo coletivo do território. O projeto protege ecossistemas frágeis.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Ecossistemas Costeiros",
-    "regiao": "Nordeste"
+    "title": "Mutirão Popular de Proteção das Dunas Litorâneas",
+    "description": "Comunidades costeiras realizam ações de contenção e restauração de dunas com espécies nativas e manejo coletivo do território. O projeto protege ecossistemas frágeis.",
+    "type": "COMUNIDADE",
+    "categorie": "Ecossistemas Costeiros",
+    "region": "Nordeste"
   },
   {
     "id": "c454",
-    "titulo": "Distrito de Infraestrutura Verde Automatizada",
-    "descricao": "Sistemas urbanos utilizam inteligência artificial para otimização de energia, mobilidade e gestão ambiental integrada. O modelo atrai investimentos globais em inovação sustentável.",
-    "tipo": "LOBBY",
-    "categoria": "Urbanismo",
-    "regiao": "Sudeste"
+    "title": "Distrito de Infraestrutura Verde Automatizada",
+    "description": "Sistemas urbanos utilizam inteligência artificial para otimização de energia, mobilidade e gestão ambiental integrada. O modelo atrai investimentos globais em inovação sustentável.",
+    "type": "LOBBY",
+    "categorie": "Urbanismo",
+    "region": "Sudeste"
   },
   {
     "id": "c455",
-    "titulo": "Rede Popular de Agricultura Tradicional do Sertão",
-    "descricao": "Agricultores familiares organizam práticas adaptadas ao semiárido com manejo coletivo da terra e sementes crioulas. O projeto fortalece soberania alimentar regional.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Agricultura",
-    "regiao": "Nordeste"
+    "title": "Rede Popular de Agricultura Tradicional do Sertão",
+    "description": "Agricultores familiares organizam práticas adaptadas ao semiárido com manejo coletivo da terra e sementes crioulas. O projeto fortalece soberania alimentar regional.",
+    "type": "COMUNIDADE",
+    "categorie": "Agricultura",
+    "region": "Nordeste"
   },
   {
     "id": "c456",
-    "titulo": "Programa de Energia Renovável de Alta Escala",
-    "descricao": "Empresas energéticas integram redes de geração renovável a mercados internacionais com sistemas de comercialização global. O modelo amplia competitividade energética.",
-    "tipo": "LOBBY",
-    "categoria": "Energia",
-    "regiao": "Centro-Oeste"
+    "title": "Programa de Energia Renovável de Alta Escala",
+    "description": "Empresas energéticas integram redes de geração renovável a mercados internacionais com sistemas de comercialização global. O modelo amplia competitividade energética.",
+    "type": "LOBBY",
+    "categorie": "Energia",
+    "region": "Centro-Oeste"
   },
   {
     "id": "c457",
-    "titulo": "Rede Popular de Defesa das Áreas de Mata Atlântica",
-    "descricao": "Comunidades realizam reflorestamento e proteção de remanescentes da Mata Atlântica com gestão coletiva do território. O projeto fortalece biodiversidade regional.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Florestas",
-    "regiao": "Sudeste"
+    "title": "Rede Popular de Defesa das Áreas de Mata Atlântica",
+    "description": "Comunidades realizam reflorestamento e proteção de remanescentes da Mata Atlântica com gestão coletiva do território. O projeto fortalece biodiversidade regional.",
+    "type": "COMUNIDADE",
+    "categorie": "Florestas",
+    "region": "Sudeste"
   },
   {
     "id": "c458",
-    "titulo": "Programa de Certificação de Mercados Ambientais Globais",
-    "descricao": "Empresas utilizam plataformas digitais para certificação de impacto ambiental e acesso a mercados internacionais sustentáveis. O sistema fortalece governança ESG.",
-    "tipo": "LOBBY",
-    "categoria": "Governança",
-    "regiao": "Nacional"
+    "title": "Programa de Certificação de Mercados Ambientais Globais",
+    "description": "Empresas utilizam plataformas digitais para certificação de impacto ambiental e acesso a mercados internacionais sustentáveis. O sistema fortalece governança ESG.",
+    "type": "LOBBY",
+    "categorie": "Governança",
+    "region": "Nacional"
   },
   {
     "id": "c459",
-    "titulo": "Rede Popular de Educação Ambiental do Pantanal",
-    "descricao": "Comunidades pantaneiras desenvolvem educação ambiental baseada em saberes tradicionais e gestão coletiva dos ecossistemas. O projeto fortalece identidade territorial.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Educação Ambiental",
-    "regiao": "Centro-Oeste"
+    "title": "Rede Popular de Educação Ambiental do Pantanal",
+    "description": "Comunidades pantaneiras desenvolvem educação ambiental baseada em saberes tradicionais e gestão coletiva dos ecossistemas. O projeto fortalece identidade territorial.",
+    "type": "COMUNIDADE",
+    "categorie": "Educação Ambiental",
+    "region": "Centro-Oeste"
   },
   {
     "id": "c460",
-    "titulo": "Hub de Logística Inteligente de Exportação Verde",
-    "descricao": "Corredores logísticos utilizam automação e inteligência de dados para otimizar cadeias globais de exportação sustentável. O modelo aumenta eficiência econômica.",
-    "tipo": "LOBBY",
-    "categoria": "Infraestrutura",
-    "regiao": "Sul"
+    "title": "Hub de Logística Inteligente de Exportação Verde",
+    "description": "Corredores logísticos utilizam automação e inteligência de dados para otimizar cadeias globais de exportação sustentável. O modelo aumenta eficiência econômica.",
+    "type": "LOBBY",
+    "categorie": "Infraestrutura",
+    "region": "Sul"
   },
   {
     "id": "c461",
-    "titulo": "Rede Popular de Agricultura Urbana Comunitária",
-    "descricao": "Comunidades urbanas organizam hortas coletivas com produção agroecológica e distribuição local de alimentos frescos. O projeto fortalece soberania alimentar.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Agricultura Urbana",
-    "regiao": "Sudeste"
+    "title": "Rede Popular de Agricultura Urbana Comunitária",
+    "description": "Comunidades urbanas organizam hortas coletivas com produção agroecológica e distribuição local de alimentos frescos. O projeto fortalece soberania alimentar.",
+    "type": "COMUNIDADE",
+    "categorie": "Agricultura Urbana",
+    "region": "Sudeste"
   },
   {
     "id": "c462",
-    "titulo": "Programa de Bioeconomia de Exportação Avançada",
-    "descricao": "Empresas transformam biodiversidade em produtos de alto valor com rastreabilidade digital e integração a mercados internacionais. O modelo amplia competitividade global.",
-    "tipo": "LOBBY",
-    "categoria": "Bioeconomia",
-    "regiao": "Norte"
+    "title": "Programa de Bioeconomia de Exportação Avançada",
+    "description": "Empresas transformam biodiversidade em produtos de alto valor com rastreabilidade digital e integração a mercados internacionais. O modelo amplia competitividade global.",
+    "type": "LOBBY",
+    "categorie": "Bioeconomia",
+    "region": "Norte"
   },
   {
     "id": "c463",
-    "titulo": "Mutirão Popular de Proteção das Águas do Cerrado",
-    "descricao": "Comunidades realizam ações de preservação de nascentes e rios do Cerrado com manejo coletivo e reflorestamento nativo. O projeto fortalece segurança hídrica regional.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Recursos Hídricos",
-    "regiao": "Centro-Oeste"
+    "title": "Mutirão Popular de Proteção das Águas do Cerrado",
+    "description": "Comunidades realizam ações de preservação de nascentes e rios do Cerrado com manejo coletivo e reflorestamento nativo. O projeto fortalece segurança hídrica regional.",
+    "type": "COMUNIDADE",
+    "categorie": "Recursos Hídricos",
+    "region": "Centro-Oeste"
   },
   {
     "id": "c464",
-    "titulo": "Programa de Infraestrutura de Alta Eficiência Urbana",
-    "descricao": "Cidades implementam sistemas digitais de gestão ambiental com otimização de recursos e monitoramento climático em tempo real. O modelo atrai investimentos globais.",
-    "tipo": "LOBBY",
-    "categoria": "Urbanismo",
-    "regiao": "Sudeste"
+    "title": "Programa de Infraestrutura de Alta Eficiência Urbana",
+    "description": "Cidades implementam sistemas digitais de gestão ambiental com otimização de recursos e monitoramento climático em tempo real. O modelo atrai investimentos globais.",
+    "type": "LOBBY",
+    "categorie": "Urbanismo",
+    "region": "Sudeste"
   },
   {
     "id": "c465",
-    "titulo": "Rede Popular de Saúde Comunitária Rural Integrada",
-    "descricao": "Comunidades rurais integram práticas de saúde com saberes tradicionais e cuidado coletivo do território. O projeto fortalece autonomia local.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Saúde",
-    "regiao": "Nordeste"
+    "title": "Rede Popular de Saúde Comunitária Rural Integrada",
+    "description": "Comunidades rurais integram práticas de saúde com saberes tradicionais e cuidado coletivo do território. O projeto fortalece autonomia local.",
+    "type": "COMUNIDADE",
+    "categorie": "Saúde",
+    "region": "Nordeste"
   },
   {
     "id": "c466",
-    "titulo": "Distrito de Energia de Mercado Global Renovável",
-    "descricao": "Empresas energéticas operam sistemas de energia renovável integrados a mercados internacionais com comercialização digital. O modelo fortalece competitividade global.",
-    "tipo": "LOBBY",
-    "categoria": "Energia",
-    "regiao": "Sul"
+    "title": "Distrito de Energia de Mercado Global Renovável",
+    "description": "Empresas energéticas operam sistemas de energia renovável integrados a mercados internacionais com comercialização digital. O modelo fortalece competitividade global.",
+    "type": "LOBBY",
+    "categorie": "Energia",
+    "region": "Sul"
   },
   {
     "id": "c467",
-    "titulo": "Rede Popular de Agricultura do Vale Amazônico",
-    "descricao": "Comunidades amazônicas desenvolvem sistemas agroflorestais com manejo coletivo e preservação da biodiversidade. O projeto fortalece soberania alimentar regional.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Agricultura",
-    "regiao": "Norte"
+    "title": "Rede Popular de Agricultura do Vale Amazônico",
+    "description": "Comunidades amazônicas desenvolvem sistemas agroflorestais com manejo coletivo e preservação da biodiversidade. O projeto fortalece soberania alimentar regional.",
+    "type": "COMUNIDADE",
+    "categorie": "Agricultura",
+    "region": "Norte"
   },
   {
     "id": "c468",
-    "titulo": "Programa de Certificação ESG de Alta Escala",
-    "descricao": "Empresas adotam métricas digitais de sustentabilidade para acesso a mercados globais e fundos de investimento verde. O sistema fortalece governança ambiental.",
-    "tipo": "LOBBY",
-    "categoria": "Governança",
-    "regiao": "Nacional"
+    "title": "Programa de Certificação ESG de Alta Escala",
+    "description": "Empresas adotam métricas digitais de sustentabilidade para acesso a mercados globais e fundos de investimento verde. O sistema fortalece governança ambiental.",
+    "type": "LOBBY",
+    "categorie": "Governança",
+    "region": "Nacional"
   },
   {
     "id": "c469",
-    "titulo": "Mutirão Popular de Reflorestamento de Encostas Urbanas",
-    "descricao": "Comunidades urbanas realizam recuperação de encostas com plantio de espécies nativas e gestão coletiva de áreas verdes. O projeto reduz riscos ambientais locais.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Florestas",
-    "regiao": "Sudeste"
+    "title": "Mutirão Popular de Reflorestamento de Encostas Urbanas",
+    "description": "Comunidades urbanas realizam recuperação de encostas com plantio de espécies nativas e gestão coletiva de áreas verdes. O projeto reduz riscos ambientais locais.",
+    "type": "COMUNIDADE",
+    "categorie": "Florestas",
+    "region": "Sudeste"
   },
   {
     "id": "c470",
-    "titulo": "Programa de Logística Automatizada de Alta Performance",
-    "descricao": "Corredores logísticos utilizam inteligência artificial para otimizar transporte e reduzir custos em cadeias globais de exportação. O modelo amplia eficiência econômica.",
-    "tipo": "LOBBY",
-    "categoria": "Infraestrutura",
-    "regiao": "Sul"
+    "title": "Programa de Logística Automatizada de Alta Performance",
+    "description": "Corredores logísticos utilizam inteligência artificial para otimizar transporte e reduzir custos em cadeias globais de exportação. O modelo amplia eficiência econômica.",
+    "type": "LOBBY",
+    "categorie": "Infraestrutura",
+    "region": "Sul"
   },
   {
     "id": "c471",
-    "titulo": "Rede Popular de Educação Ambiental Indígena Amazônica",
-    "descricao": "Povos indígenas desenvolvem processos educativos baseados em cosmologias tradicionais e gestão territorial coletiva. O projeto fortalece autonomia cultural.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Educação Ambiental",
-    "regiao": "Norte"
+    "title": "Rede Popular de Educação Ambiental Indígena Amazônica",
+    "description": "Povos indígenas desenvolvem processos educativos baseados em cosmologias tradicionais e gestão territorial coletiva. O projeto fortalece autonomia cultural.",
+    "type": "COMUNIDADE",
+    "categorie": "Educação Ambiental",
+    "region": "Norte"
   },
   {
     "id": "c472",
-    "titulo": "Programa de Economia Azul de Exportação Sustentável",
-    "descricao": "Empresas marítimas integram cadeias produtivas oceânicas a mercados internacionais com certificação ambiental avançada. O modelo fortalece inovação global.",
-    "tipo": "LOBBY",
-    "categoria": "Economia do Mar",
-    "regiao": "Sul"
+    "title": "Programa de Economia Azul de Exportação Sustentável",
+    "description": "Empresas marítimas integram cadeias produtivas oceânicas a mercados internacionais com certificação ambiental avançada. O modelo fortalece inovação global.",
+    "type": "LOBBY",
+    "categorie": "Economia do Mar",
+    "region": "Sul"
   },
   {
     "id": "c473",
-    "titulo": "Rede Popular de Proteção das Áreas de Caatinga Viva",
-    "descricao": "Comunidades do semiárido realizam manejo coletivo da Caatinga com reflorestamento e preservação de espécies nativas. O projeto fortalece biodiversidade regional.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Florestas",
-    "regiao": "Nordeste"
+    "title": "Rede Popular de Proteção das Áreas de Caatinga Viva",
+    "description": "Comunidades do semiárido realizam manejo coletivo da Caatinga com reflorestamento e preservação de espécies nativas. O projeto fortalece biodiversidade regional.",
+    "type": "COMUNIDADE",
+    "categorie": "Florestas",
+    "region": "Nordeste"
   },
   {
     "id": "c474",
-    "titulo": "Plataforma de Gestão de Ativos Climáticos",
-    "descricao": "Ecossistemas são convertidos em ativos financeiros digitais negociados em mercados globais de carbono. O sistema integra conservação e valorização econômica.",
-    "tipo": "LOBBY",
-    "categoria": "Finanças Ambientais",
-    "regiao": "Nacional"
+    "title": "Plataforma de Gestão de Ativos Climáticos",
+    "description": "Ecossistemas são convertidos em ativos financeiros digitais negociados em mercados globais de carbono. O sistema integra conservação e valorização econômica.",
+    "type": "LOBBY",
+    "categorie": "Finanças Ambientais",
+    "region": "Nacional"
   },
   {
     "id": "c475",
-    "titulo": "Rede Popular de Agricultura Tradicional Ribeirinha",
-    "descricao": "Comunidades ribeirinhas mantêm práticas agrícolas tradicionais com manejo coletivo e preservação dos ciclos naturais. O projeto fortalece soberania alimentar.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Agricultura",
-    "regiao": "Norte"
+    "title": "Rede Popular de Agricultura Tradicional Ribeirinha",
+    "description": "Comunidades ribeirinhas mantêm práticas agrícolas tradicionais com manejo coletivo e preservação dos ciclos naturais. O projeto fortalece soberania alimentar.",
+    "type": "COMUNIDADE",
+    "categorie": "Agricultura",
+    "region": "Norte"
   },
   {
     "id": "c476",
-    "titulo": "Programa de Cidades Inteligentes de Alta Integração",
-    "descricao": "Municípios implementam sistemas digitais de gestão urbana com análise ambiental e automação de serviços públicos. O modelo atrai investimentos globais.",
-    "tipo": "LOBBY",
-    "categoria": "Urbanismo",
-    "regiao": "Sudeste"
+    "title": "Programa de Cidades Inteligentes de Alta Integração",
+    "description": "Municípios implementam sistemas digitais de gestão urbana com análise ambiental e automação de serviços públicos. O modelo atrai investimentos globais.",
+    "type": "LOBBY",
+    "categorie": "Urbanismo",
+    "region": "Sudeste"
   },
   {
     "id": "c477",
-    "titulo": "Mutirão Popular de Recuperação de Nascentes Urbanas",
-    "descricao": "Comunidades urbanas restauram nascentes com reflorestamento e gestão coletiva da água em áreas degradadas. O projeto fortalece equilíbrio ambiental local.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Recursos Hídricos",
-    "regiao": "Sudeste"
+    "title": "Mutirão Popular de Recuperação de Nascentes Urbanas",
+    "description": "Comunidades urbanas restauram nascentes com reflorestamento e gestão coletiva da água em áreas degradadas. O projeto fortalece equilíbrio ambiental local.",
+    "type": "COMUNIDADE",
+    "categorie": "Recursos Hídricos",
+    "region": "Sudeste"
   },
   {
     "id": "c478",
-    "titulo": "Hub de Infraestrutura Verde Global Integrada",
-    "descricao": "Empresas desenvolvem projetos urbanos sustentáveis com automação energética e integração a mercados internacionais. O modelo amplia competitividade global.",
-    "tipo": "LOBBY",
-    "categoria": "Urbanismo",
-    "regiao": "Sudeste"
+    "title": "Hub de Infraestrutura Verde Global Integrada",
+    "description": "Empresas desenvolvem projetos urbanos sustentáveis com automação energética e integração a mercados internacionais. O modelo amplia competitividade global.",
+    "type": "LOBBY",
+    "categorie": "Urbanismo",
+    "region": "Sudeste"
   },
   {
     "id": "c479",
-    "titulo": "Rede Popular de Agricultura do Semiárido Vivo",
-    "descricao": "Agricultores familiares organizam sistemas agroecológicos adaptados ao semiárido com manejo coletivo e sementes crioulas. O projeto fortalece soberania alimentar.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Agricultura",
-    "regiao": "Nordeste"
+    "title": "Rede Popular de Agricultura do Semiárido Vivo",
+    "description": "Agricultores familiares organizam sistemas agroecológicos adaptados ao semiárido com manejo coletivo e sementes crioulas. O projeto fortalece soberania alimentar.",
+    "type": "COMUNIDADE",
+    "categorie": "Agricultura",
+    "region": "Nordeste"
   },
   {
     "id": "c480",
-    "titulo": "Programa de Logística de Exportação Sustentável",
-    "descricao": "Corredores logísticos utilizam automação e inteligência de dados para otimizar cadeias globais de exportação verde. O modelo amplia eficiência econômica.",
-    "tipo": "LOBBY",
-    "categoria": "Infraestrutura",
-    "regiao": "Sul"
-  }
-][
+    "title": "Programa de Logística de Exportação Sustentável",
+    "description": "Corredores logísticos utilizam automação e inteligência de dados para otimizar cadeias globais de exportação verde. O modelo amplia eficiência econômica.",
+    "type": "LOBBY",
+    "categorie": "Infraestrutura",
+    "region": "Sul"
+  },
   {
     "id": "c481",
-    "titulo": "Rede Popular de Agroecologia das Serras",
-    "descricao": "Comunidades rurais organizam sistemas agroecológicos em áreas de serra com manejo coletivo da terra e conservação de nascentes. O projeto fortalece soberania alimentar e equilíbrio ecológico local.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Agricultura",
-    "regiao": "Sudeste"
+    "title": "Rede Popular de Agroecologia das Serras",
+    "description": "Comunidades rurais organizam sistemas agroecológicos em áreas de serra com manejo coletivo da terra e conservação de nascentes. O projeto fortalece soberania alimentar e equilíbrio ecológico local.",
+    "type": "COMUNIDADE",
+    "categorie": "Agricultura",
+    "region": "Sudeste"
   },
   {
     "id": "c482",
-    "titulo": "Programa de Certificação de Natureza como Ativo Financeiro",
-    "descricao": "Ecossistemas preservados são integrados a plataformas digitais de valorização econômica para mercados globais sustentáveis. O sistema transforma conservação em instrumento financeiro de alto desempenho.",
-    "tipo": "LOBBY",
-    "categoria": "Finanças Ambientais",
-    "regiao": "Nacional"
+    "title": "Programa de Certificação de Natureza como Ativo Financeiro",
+    "description": "Ecossistemas preservados são integrados a plataformas digitais de valorização econômica para mercados globais sustentáveis. O sistema transforma conservação em instrumento financeiro de alto desempenho.",
+    "type": "LOBBY",
+    "categorie": "Finanças Ambientais",
+    "region": "Nacional"
   },
   {
     "id": "c483",
-    "titulo": "Mutirão Popular de Proteção das Áreas de Brejo",
-    "descricao": "Comunidades rurais realizam ações coletivas de preservação de brejos com manejo tradicional e restauração ecológica. O projeto fortalece segurança hídrica regional.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Recursos Hídricos",
-    "regiao": "Nordeste"
+    "title": "Mutirão Popular de Proteção das Áreas de Brejo",
+    "description": "Comunidades rurais realizam ações coletivas de preservação de brejos com manejo tradicional e restauração ecológica. O projeto fortalece segurança hídrica regional.",
+    "type": "COMUNIDADE",
+    "categorie": "Recursos Hídricos",
+    "region": "Nordeste"
   },
   {
     "id": "c484",
-    "titulo": "Distrito de Mobilidade Inteligente Integrada",
-    "descricao": "Sistemas urbanos utilizam automação e inteligência de dados para otimizar fluxos de transporte e reduzir custos operacionais. O modelo amplia eficiência e competitividade urbana.",
-    "tipo": "LOBBY",
-    "categoria": "Mobilidade",
-    "regiao": "Sudeste"
+    "title": "Distrito de Mobilidade Inteligente Integrada",
+    "description": "Sistemas urbanos utilizam automação e inteligência de dados para otimizar fluxos de transporte e reduzir custos operacionais. O modelo amplia eficiência e competitividade urbana.",
+    "type": "LOBBY",
+    "categorie": "Mobilidade",
+    "region": "Sudeste"
   },
   {
     "id": "c485",
-    "titulo": "Rede Popular de Agricultura de Base Tradicional",
-    "descricao": "Agricultores familiares mantêm práticas tradicionais de cultivo com manejo coletivo da terra e preservação de sementes crioulas. O projeto fortalece soberania alimentar.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Agricultura",
-    "regiao": "Nordeste"
+    "title": "Rede Popular de Agricultura de Base Tradicional",
+    "description": "Agricultores familiares mantêm práticas tradicionais de cultivo com manejo coletivo da terra e preservação de sementes crioulas. O projeto fortalece soberania alimentar.",
+    "type": "COMUNIDADE",
+    "categorie": "Agricultura",
+    "region": "Nordeste"
   },
   {
     "id": "c486",
-    "titulo": "Programa de Infraestrutura Energética de Mercado Livre",
-    "descricao": "Empresas energéticas operam redes de energia renovável integradas a mercados globais com comercialização flexível. O modelo fortalece competitividade energética internacional.",
-    "tipo": "LOBBY",
-    "categoria": "Energia",
-    "regiao": "Centro-Oeste"
+    "title": "Programa de Infraestrutura Energética de Mercado Livre",
+    "description": "Empresas energéticas operam redes de energia renovável integradas a mercados globais com comercialização flexível. O modelo fortalece competitividade energética internacional.",
+    "type": "LOBBY",
+    "categorie": "Energia",
+    "region": "Centro-Oeste"
   },
   {
     "id": "c487",
-    "titulo": "Rede Popular de Defesa das Áreas de Mangue",
-    "descricao": "Comunidades costeiras realizam manejo coletivo e proteção de manguezais com restauração ecológica e vigilância ambiental. O projeto fortalece biodiversidade litorânea.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Ecossistemas Costeiros",
-    "regiao": "Nordeste"
+    "title": "Rede Popular de Defesa das Áreas de Mangue",
+    "description": "Comunidades costeiras realizam manejo coletivo e proteção de manguezais com restauração ecológica e vigilância ambiental. O projeto fortalece biodiversidade litorânea.",
+    "type": "COMUNIDADE",
+    "categorie": "Ecossistemas Costeiros",
+    "region": "Nordeste"
   },
   {
     "id": "c488",
-    "titulo": "Programa de Gestão Digital de Impacto Ambiental",
-    "descricao": "Empresas utilizam sistemas digitais para monitoramento e certificação de impacto ambiental em escala global. O modelo integra sustentabilidade e governança corporativa.",
-    "tipo": "LOBBY",
-    "categoria": "Governança",
-    "regiao": "Nacional"
+    "title": "Programa de Gestão Digital de Impacto Ambiental",
+    "description": "Empresas utilizam sistemas digitais para monitoramento e certificação de impacto ambiental em escala global. O modelo integra sustentabilidade e governança corporativa.",
+    "type": "LOBBY",
+    "categorie": "Governança",
+    "region": "Nacional"
   },
   {
     "id": "c489",
-    "titulo": "Rede Popular de Educação Ambiental das Águas do Sertão",
-    "descricao": "Comunidades do semiárido desenvolvem educação ambiental baseada em convivência com o clima e saberes tradicionais. O projeto fortalece identidade territorial.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Educação Ambiental",
-    "regiao": "Nordeste"
+    "title": "Rede Popular de Educação Ambiental das Águas do Sertão",
+    "description": "Comunidades do semiárido desenvolvem educação ambiental baseada em convivência com o clima e saberes tradicionais. O projeto fortalece identidade territorial.",
+    "type": "COMUNIDADE",
+    "categorie": "Educação Ambiental",
+    "region": "Nordeste"
   },
   {
     "id": "c490",
-    "titulo": "Hub de Logística Automatizada de Alta Escala",
-    "descricao": "Corredores logísticos utilizam inteligência artificial para otimizar cadeias globais de exportação e reduzir custos operacionais. O modelo amplia eficiência internacional.",
-    "tipo": "LOBBY",
-    "categoria": "Infraestrutura",
-    "regiao": "Sul"
+    "title": "Hub de Logística Automatizada de Alta Escala",
+    "description": "Corredores logísticos utilizam inteligência artificial para otimizar cadeias globais de exportação e reduzir custos operacionais. O modelo amplia eficiência internacional.",
+    "type": "LOBBY",
+    "categorie": "Infraestrutura",
+    "region": "Sul"
   },
   {
     "id": "c491",
-    "titulo": "Rede Popular de Agricultura Urbana Comunitária",
-    "descricao": "Comunidades urbanas organizam hortas coletivas com produção agroecológica e distribuição local de alimentos frescos. O projeto fortalece soberania alimentar.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Agricultura Urbana",
-    "regiao": "Sudeste"
+    "title": "Rede Popular de Agricultura Urbana Comunitária",
+    "description": "Comunidades urbanas organizam hortas coletivas com produção agroecológica e distribuição local de alimentos frescos. O projeto fortalece soberania alimentar.",
+    "type": "COMUNIDADE",
+    "categorie": "Agricultura Urbana",
+    "region": "Sudeste"
   },
   {
     "id": "c492",
-    "titulo": "Programa de Bioeconomia de Alta Competitividade Global",
-    "descricao": "Empresas transformam biodiversidade em produtos de alto valor com rastreabilidade digital e integração a mercados internacionais. O modelo amplia exportação sustentável.",
-    "tipo": "LOBBY",
-    "categoria": "Bioeconomia",
-    "regiao": "Norte"
+    "title": "Programa de Bioeconomia de Alta Competitividade Global",
+    "description": "Empresas transformam biodiversidade em produtos de alto valor com rastreabilidade digital e integração a mercados internacionais. O modelo amplia exportação sustentável.",
+    "type": "LOBBY",
+    "categorie": "Bioeconomia",
+    "region": "Norte"
   },
   {
     "id": "c493",
-    "titulo": "Mutirão Popular de Proteção das Nascentes do Cerrado",
-    "descricao": "Comunidades realizam restauração de nascentes com reflorestamento e gestão coletiva da água em territórios do Cerrado. O projeto fortalece segurança hídrica regional.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Recursos Hídricos",
-    "regiao": "Centro-Oeste"
+    "title": "Mutirão Popular de Proteção das Nascentes do Cerrado",
+    "description": "Comunidades realizam restauração de nascentes com reflorestamento e gestão coletiva da água em territórios do Cerrado. O projeto fortalece segurança hídrica regional.",
+    "type": "COMUNIDADE",
+    "categorie": "Recursos Hídricos",
+    "region": "Centro-Oeste"
   },
   {
     "id": "c494",
-    "titulo": "Programa de Cidades Inteligentes de Alta Eficiência",
-    "descricao": "Municípios implementam sistemas digitais de gestão urbana com automação de serviços e monitoramento ambiental em tempo real. O modelo atrai investimentos globais.",
-    "tipo": "LOBBY",
-    "categoria": "Urbanismo",
-    "regiao": "Sudeste"
+    "title": "Programa de Cidades Inteligentes de Alta Eficiência",
+    "description": "Municípios implementam sistemas digitais de gestão urbana com automação de serviços e monitoramento ambiental em tempo real. O modelo atrai investimentos globais.",
+    "type": "LOBBY",
+    "categorie": "Urbanismo",
+    "region": "Sudeste"
   },
   {
     "id": "c495",
-    "titulo": "Rede Popular de Agricultura Familiar Agroecológica",
-    "descricao": "Agricultores familiares organizam produção coletiva de alimentos com práticas agroecológicas e distribuição solidária regional. O projeto fortalece soberania alimentar.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Agricultura",
-    "regiao": "Nordeste"
+    "title": "Rede Popular de Agricultura Familiar Agroecológica",
+    "description": "Agricultores familiares organizam produção coletiva de alimentos com práticas agroecológicas e distribuição solidária regional. O projeto fortalece soberania alimentar.",
+    "type": "COMUNIDADE",
+    "categorie": "Agricultura",
+    "region": "Nordeste"
   },
   {
     "id": "c496",
-    "titulo": "Programa de Energia Renovável de Exportação Global",
-    "descricao": "Empresas energéticas integram sistemas de geração renovável a mercados internacionais com comercialização digital. O modelo fortalece competitividade energética global.",
-    "tipo": "LOBBY",
-    "categoria": "Energia",
-    "regiao": "Centro-Oeste"
+    "title": "Programa de Energia Renovável de Exportação Global",
+    "description": "Empresas energéticas integram sistemas de geração renovável a mercados internacionais com comercialização digital. O modelo fortalece competitividade energética global.",
+    "type": "LOBBY",
+    "categorie": "Energia",
+    "region": "Centro-Oeste"
   },
   {
     "id": "c497",
-    "titulo": "Rede Popular de Proteção das Áreas de Caatinga",
-    "descricao": "Comunidades do semiárido realizam manejo coletivo da Caatinga com reflorestamento e preservação de espécies nativas. O projeto fortalece biodiversidade regional.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Florestas",
-    "regiao": "Nordeste"
+    "title": "Rede Popular de Proteção das Áreas de Caatinga",
+    "description": "Comunidades do semiárido realizam manejo coletivo da Caatinga com reflorestamento e preservação de espécies nativas. O projeto fortalece biodiversidade regional.",
+    "type": "COMUNIDADE",
+    "categorie": "Florestas",
+    "region": "Nordeste"
   },
   {
     "id": "c498",
-    "titulo": "Plataforma de Ativos Ambientais de Alta Performance",
-    "descricao": "Ecossistemas são convertidos em ativos financeiros digitais para negociação em mercados globais de carbono. O sistema integra conservação e valorização econômica.",
-    "tipo": "LOBBY",
-    "categoria": "Finanças Ambientais",
-    "regiao": "Nacional"
+    "title": "Plataforma de Ativos Ambientais de Alta Performance",
+    "description": "Ecossistemas são convertidos em ativos financeiros digitais para negociação em mercados globais de carbono. O sistema integra conservação e valorização econômica.",
+    "type": "LOBBY",
+    "categorie": "Finanças Ambientais",
+    "region": "Nacional"
   },
   {
     "id": "c499",
-    "titulo": "Rede Popular de Educação Ambiental Ribeirinha Integrada",
-    "descricao": "Comunidades ribeirinhas desenvolvem educação ambiental baseada em saberes tradicionais e gestão coletiva dos rios. O projeto fortalece autonomia territorial.",
-    "tipo": "COMUNIDADE",
-    "categoria": "Educação Ambiental",
-    "regiao": "Norte"
+    "title": "Rede Popular de Educação Ambiental Ribeirinha Integrada",
+    "description": "Comunidades ribeirinhas desenvolvem educação ambiental baseada em saberes tradicionais e gestão coletiva dos rios. O projeto fortalece autonomia territorial.",
+    "type": "COMUNIDADE",
+    "categorie": "Educação Ambiental",
+    "region": "Norte"
   },
   {
     "id": "c500",
-    "titulo": "Hub de Infraestrutura Verde Global Inteligente",
-    "descricao": "Empresas desenvolvem sistemas urbanos sustentáveis com automação energética e integração a mercados internacionais de investimento verde. O modelo amplia competitividade global.",
-    "tipo": "LOBBY",
-    "categoria": "Urbanismo",
-    "regiao": "Nacional"
+    "title": "Hub de Infraestrutura Verde Global Inteligente",
+    "description": "Empresas desenvolvem sistemas urbanos sustentáveis com automação energética e integração a mercados internacionais de investimento verde. O modelo amplia competitividade global.",
+    "type": "LOBBY",
+    "categorie": "Urbanismo",
+    "region": "Nacional"
   }
 ]
