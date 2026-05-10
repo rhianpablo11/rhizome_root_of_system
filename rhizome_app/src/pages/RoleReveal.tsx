@@ -1,11 +1,19 @@
 import card from "../assets/card_show_player_function.png";
+import Button from "../components/button";
 
 function RoleReveal() {
     return (
-        <div>
-            <h1>Teste</h1>
+        <div className="w-full h-full flex flex-col items-center justify-center">
             <div className="w-[360px] h-[540px] rounded-2xl overflow-hidden">
                 <img src={card} alt="" className="w-full h-full object-cover"/>
+            </div>
+
+            <div className="flex w-full gap-y-2 fixed bottom-4 left-0 px-10">
+                <Button 
+                    onClickButtonChildren={() => {}}
+                    color="salmon"
+                    text="Próximo jogador"
+                />
             </div>
         </div>
     );
