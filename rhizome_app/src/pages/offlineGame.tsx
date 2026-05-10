@@ -1,11 +1,68 @@
+import { useState } from "react";
 import bg from "../assets/bg.png";
 import LogoType from "../components/logoType";
 import SelectNameOfPlayers from "./selectNameOfPlayers";
+import ShowPlayerFunction from "./showPlayerFunction";
 
 function OfflineGame() {
+    const [stateOfGame, setStateOfGame] = useState<"selectPlayers" | "showFunctionPlayers">("showFunctionPlayers");
+
+    const listPlayersMock = [
+        {
+            name: "Rhian Pablo",
+            playerRole: "community",
+        },
+        {
+            name: "marcio Roberto",
+            playerRole: "lobby",
+        },
+        {
+            name: "Gabriel Santos",
+            playerRole: "community",
+        },
+        {
+            name: "Viviane",
+            playerRole: "lobby",
+        },
+        {
+            name: "Pedro Joaquim",
+            playerRole: "community",
+        },
+        {
+            name: "Pedro Ricardo",
+            playerRole: "lobby",
+        },
+        {
+            name: "Roberto Fernandez",
+            playerRole: "lobby",
+        },
+        {
+            name: "Julio Balestrin",
+            playerRole: "community",
+        },
+        {
+            name: "Renato Cariani",
+            playerRole: "lobby",
+        },
+        {
+            name: "Igor Fina",
+            playerRole: "lobby",
+        },
+    ];
+
+    const handleOnFinishPlayersSeeYoursFunctions = () => {
+        console.log("ola terminei");
+    };
+
     // logical of showing components in the offline game page, like the game itself, the choices, etc.
     const componentToShow = () => {
-        return <SelectNameOfPlayers />;
+        if (stateOfGame == "selectPlayers") {
+            return <SelectNameOfPlayers />;
+        } else if (stateOfGame == "showFunctionPlayers") {
+            return (
+                <ShowPlayerFunction listPlayers={listPlayersMock} onFinish={handleOnFinishPlayersSeeYoursFunctions} />
+            );
+        }
     };
 
     return (
