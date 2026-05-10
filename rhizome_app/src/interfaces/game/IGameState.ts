@@ -6,12 +6,7 @@ export interface IPlayer {
     isLobby: boolean; // O app sorteia isso no Setup
 }
 
-export type GamePhase =
-    | "SETUP"
-    | "ELEICAO"
-    | "BASTIDORES"
-    | "PLENARIA"
-    | "FIM";
+export type GamePhase = "SETUP" | "ELEICAO" | "BASTIDORES" | "PLENARIA" | "FIM";
 
 export interface IGameState {
     gamers: IPlayer[];

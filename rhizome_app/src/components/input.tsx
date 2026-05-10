@@ -1,11 +1,8 @@
 import type { IInput } from "../interfaces/components/IInput";
 
 function Input(props: IInput) {
-    const { placeholder, usesOn } =
-        props;
-    if (
-        usesOn == "selectNameOfPlayers"
-    ) {
+    const { placeholder, usesOn, value, onChangeText } = props;
+    if (usesOn == "selectNameOfPlayers") {
         return (
             <div className="flex w-full items-center justify-center gap-x-3">
                 <div className="w-13 h-13 rounded-full bg-[#1E293B] shrink-0 flex items-center justify-center">
@@ -25,9 +22,9 @@ function Input(props: IInput) {
                 </div>
                 <input
                     className="w-full h-14 rounded-2xl bg-[#1E293B] text-white px-4 outline-none font-light text-xl placeholder:text-[#64748B]"
-                    placeholder={
-                        placeholder
-                    }
+                    placeholder={placeholder}
+                    value={value}
+                    onChange={(e) => onChangeText && onChangeText(e.target.value)}
                 />
             </div>
         );

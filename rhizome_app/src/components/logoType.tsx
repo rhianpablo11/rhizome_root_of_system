@@ -8,8 +8,7 @@ function LogoType(props: ILogoType) {
                 className={`${localOfUse == "offlinePage" ? "text-[80px] mt-6 leading-10" : "text-[100px] mt-8 leading-14"} font-hand text-[#1E293B]`}>
                 Rhizome
             </h1>
-            <h1
-                className={`${localOfUse == "offlinePage" ? "text-base" : "text-lg "} text-[#1E293B] font-light`}>
+            <h1 className={`${localOfUse == "offlinePage" ? "text-base" : "text-lg "} text-[#1E293B] font-light`}>
                 A rota do sistema
             </h1>
         </div>

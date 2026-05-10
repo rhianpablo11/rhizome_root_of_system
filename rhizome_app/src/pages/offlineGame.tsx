@@ -18,9 +18,7 @@ function OfflineGame() {
                 <div className="shrink-0">
                     <LogoType localOfUse="offlinePage" />
                 </div>
-                <div className="flex-1 overflow-hidden pt-4 px-3 w-full flex flex-col">
-                    {componentToShow()}
-                </div>
+                <div className="flex-1 overflow-hidden pt-4 px-4 w-full flex flex-col">{componentToShow()}</div>
             </div>
         </div>
     );

@@ -1,7 +1,6 @@
 @import "tailwindcss";
 
 @theme {
-    --font-hand:
-        "Just Another Hand", cursive;
+    --font-hand: "Just Another Hand", cursive;
     --font-sans: "Inter", sans-serif;
 }
