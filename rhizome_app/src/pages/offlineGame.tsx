@@ -1,11 +1,18 @@
+import { useState } from "react";
 import bg from "../assets/bg.png";
 import LogoType from "../components/logoType";
 import SelectNameOfPlayers from "./selectNameOfPlayers";
+import ShowPlayerFunction from "./showPlayerFunction";
 
 function OfflineGame() {
+    const [stateOfGame, setStateOfGame] = useState<"selectPlayers" | "showFunctionPlayers">("showFunctionPlayers");
     // logical of showing components in the offline game page, like the game itself, the choices, etc.
     const componentToShow = () => {
-        return <SelectNameOfPlayers />;
+        if (stateOfGame == "selectPlayers") {
+            return <SelectNameOfPlayers />;
+        } else if (stateOfGame == "showFunctionPlayers") {
+            return <ShowPlayerFunction />;
+        }
     };
 
     return (
