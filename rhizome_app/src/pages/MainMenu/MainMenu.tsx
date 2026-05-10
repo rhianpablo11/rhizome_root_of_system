@@ -9,7 +9,7 @@ function MainMenu() {
       </header>
 
       <div className={styles.btnWrapper}>
-        <button>Novo Jogo</button>
+        <button >Novo Jogo</button>
       </div>
 
     </section>
