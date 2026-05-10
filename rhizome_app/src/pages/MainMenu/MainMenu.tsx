@@ -5,13 +5,11 @@ function MainMenu() {
         <section
             className={
                 styles.contentWrapper
-            }
-        >
+            }>
             <header
                 className={
                     styles.header
-                }
-            >
+                }>
                 <h1>Rhizome</h1>
                 <p>
                     A rota do sistema!
@@ -21,8 +19,7 @@ function MainMenu() {
             <div
                 className={
                     styles.btnWrapper
-                }
-            >
+                }>
                 <button>
                     Novo Jogo
                 </button>
