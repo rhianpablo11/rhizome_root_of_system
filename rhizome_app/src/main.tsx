@@ -6,6 +6,7 @@ import Home from './pages/home'
 import BaseLayout from './pages/BaseLayout/BaseLayout'
 import MainMenu from './pages/MainMenu/MainMenu'
 import Navbar from './pages/Navbar/Navbar'
+import OfflineGame from './pages/offlineGame'
 
 createRoot(document.getElementById('root')!).render(
     <StrictMode>
@@ -17,6 +18,7 @@ createRoot(document.getElementById('root')!).render(
                 <Route path="/home" element={<Home />}/>
               </Route>
             </Route>
+            <Route path="/offline" element={<OfflineGame />}/>
           </Routes>
       </BrowserRouter>
     </StrictMode>
