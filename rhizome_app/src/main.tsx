@@ -22,14 +22,12 @@ createRoot(
                     path="/"
                     element={
                         <BaseLayout />
-                    }
-                >
+                    }>
                     <Route
                         path="/"
                         element={
                             <Navbar />
-                        }
-                    >
+                        }>
                         <Route
                             index
                             element={
