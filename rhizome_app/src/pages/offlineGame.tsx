@@ -5,9 +5,7 @@ import SelectNameOfPlayers from "./selectNameOfPlayers";
 function OfflineGame() {
     // logical of showing components in the offline game page, like the game itself, the choices, etc.
     const componentToShow = () => {
-        return (
-            <SelectNameOfPlayers />
-        )
+        return <SelectNameOfPlayers />;
     };
 
     return (
