@@ -5,26 +5,63 @@ import cardBg from "../assets/card_show_player_function.png";
 import type { IShowPlayerFunction } from "../interfaces/components/IShowPlayerFunction";
 
 function ShowPlayerFunction(props: IShowPlayerFunction) {
-    const { listPlayers } = props;
+    const { listPlayers, onFinish } = props;
 
-    // Estado para controlar se a carta já foi arrastada/revelada
     const [isRevealed, setIsRevealed] = useState(false);
-
-    // Variáveis mockadas por enquanto (depois você puxa da lógica do listPlayers)
-    const playerName = "Jogador 1";
-    const playerRole = "Comunidade";
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const currentPlayer = listPlayers[currentIndex];
+    const playerName = currentPlayer.name;
+    const playerRoleText = currentPlayer.playerRole == "community" ? "Comunidade" : "Lobby";
+    const lobbyAllies = listPlayers
+        .filter((player) => player.playerRole == "lobby" && player.name != currentPlayer.name)
+        .map((player) => player.name);
 
     const handleOnClickFatherNextPlayer = () => {
         console.log("Indo para o próximo jogador...");
-        // Reseta o estado pra carta descer de novo pro próximo jogador
         setIsRevealed(false);
+        if (currentIndex < listPlayers.length - 1) {
+            setTimeout(() => {
+                setCurrentIndex((prevIndex) => prevIndex + 1);
+            }, 300);
+        } else {
+            setTimeout(() => {
+                onFinish();
+            }, 300);
+        }
     };
 
     return (
         <div className="w-full flex flex-col items-center h-full">
             <div className="relative w-full h-112.5 flex justify-center items-center">
-                <div className="absolute bottom-0 w-full h-full rounded-xl bg-[#F8FAFC] rounded-b-2xl shadow-xl flex items-end justify-center pb-6 transition-all">
-                    <h2 className="text-3xl font-bold text-[#1E293B]">{playerRole}</h2>
+                <div className="absolute bottom-0 w-full h-full rounded-xl bg-[#F8FAFC] rounded-b-2xl shadow-xl flex flex-col items-center px-3 justify-end pb-2 transition-all">
+                    <h2 className="text-3xl font-bold text-[#1E293B]">{playerRoleText}</h2>
+                    {isRevealed && (
+                        <motion.div
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ delay: 0.1 }}
+                            className="text-center px-4">
+                            {currentPlayer.playerRole === "lobby" ? (
+                                <>
+                                    <p className="text-sm font-bold text-[#E05A3D] uppercase tracking-wider mt-1">
+                                        Seus Aliados:
+                                    </p>
+                                    <p className="text-md font-medium text-[#64748B]">
+                                        {lobbyAllies.length > 0 ? lobbyAllies.join(", ") : "Você está sozinho."}
+                                    </p>
+                                </>
+                            ) : (
+                                <>
+                                    <p className="text-sm font-bold text-[#78C6A3] uppercase tracking-wider mb-1">
+                                        Seu Objetivo:
+                                    </p>
+                                    <p className="text-md font-medium text-[#64748B]">
+                                        Descubra o Lobby e proteja o projeto.
+                                    </p>
+                                </>
+                            )}
+                        </motion.div>
+                    )}
                 </div>
 
                 <motion.div
@@ -32,18 +69,16 @@ function ShowPlayerFunction(props: IShowPlayerFunction) {
                     style={{ backgroundImage: `url(${cardBg})` }}
                     // CONFIGURAÇÕES DE FÍSICA DO ARRASTE
                     drag="y" // Permite arrastar apenas para cima e para baixo
-                    dragConstraints={{ top: -120, bottom: 0 }} // Limita pra não voar da tela
+                    dragConstraints={{ top: -150, bottom: 0 }} // Limita pra não voar da tela
                     dragElastic={0.1} // Dá aquela resistência de "borracha" no final
-                    // 🧠 LÓGICA: Se arrastar mais que 50px pra cima, revela a carta
+                    // LÓGICA: Se arrastar mais que 50px pra cima, revela a carta
                     onDragEnd={(event, info) => {
                         if (info.offset.y < -50) {
                             setIsRevealed(true);
-                        } else if (info.offset.y > -50) {
-                            setIsRevealed(false);
                         }
                     }}
-                    // 🎬 ANIMAÇÃO: Controla a posição Y baseada no estado isRevealed
-                    animate={{ y: isRevealed ? -100 : 0 }}
+                    // ANIMAÇÃO: Controla a posição Y baseada no estado isRevealed
+                    animate={{ y: isRevealed ? -150 : 0 }}
                     transition={{ type: "spring", stiffness: 300, damping: 20 }}>
                     {/* Nome do Jogador escrito em cima do background */}
                     <h1 className="text-3xl font-bold text-[#1E293B] mt-16 z-10">{playerName}</h1>
@@ -68,8 +103,15 @@ function ShowPlayerFunction(props: IShowPlayerFunction) {
             </div>
 
             <div className="w-full px-10 fixed bottom-8">
-                {/* Dica: Você pode fazer o botão só ficar clicável ou só aparecer SE isRevealed for true */}
-                <Button onClickButtonChildren={handleOnClickFatherNextPlayer} color="salmon" text="Próximo jogador" />
+                {isRevealed && (
+                    <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+                        <Button
+                            onClickButtonChildren={handleOnClickFatherNextPlayer}
+                            color="salmon"
+                            text={currentIndex === listPlayers.length - 1 ? "Iniciar Batalha" : "Próximo jogador"}
+                        />
+                    </motion.div>
+                )}
             </div>
         </div>
     );
