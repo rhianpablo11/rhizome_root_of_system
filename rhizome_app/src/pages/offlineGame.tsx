@@ -4,9 +4,10 @@ import LogoType from "../components/logoType";
 import SelectNameOfPlayers from "./selectNameOfPlayers";
 import ShowPlayerFunction from "./showPlayerFunction";
 import HeaderGamingPoints from "../components/headerGamingPoints";
+import AlertModal from "../components/alertModal";
 
 function OfflineGame() {
-    const [stateOfGame, setStateOfGame] = useState<"selectPlayers" | "showFunctionPlayers">("showFunctionPlayers");
+    const [stateOfGame, setStateOfGame] = useState<"selectPlayers" | "showFunctionPlayers" | "alert_test_show">("alert_test_show");
 
     const listPlayersMock = [
         {
@@ -63,6 +64,10 @@ function OfflineGame() {
             return (
                 <ShowPlayerFunction listPlayers={listPlayersMock} onFinish={handleOnFinishPlayersSeeYoursFunctions} />
             );
+        } else if(stateOfGame == 'alert_test_show'){
+            return(
+                <AlertModal text={'Já ocorreram 3 votações reprovadas! Uma carta aleatoria vai ser aprovada!'} />
+            )
         }
     };
 
