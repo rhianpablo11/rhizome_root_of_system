@@ -6,11 +6,12 @@ import ShowPlayerFunction from "./showPlayerFunction";
 import HeaderGamingPoints from "../components/headerGamingPoints";
 import AlertModal from "../components/alertModal";
 import PlenaryTimer from "../components/plenaryTimer";
+import CardModal from "../components/cardModal";
 
 function OfflineGame() {
     const [stateOfGame, setStateOfGame] = useState<
-        "selectPlayers" | "showFunctionPlayers" | "alert_test_show" | "plenary_timer_test_show"
-    >("plenary_timer_test_show");
+        "selectPlayers" | "showFunctionPlayers" | "alert_test_show" | "plenary_timer_test_show" | "modal_front_card"
+    >("modal_front_card");
 
     const listPlayersMock = [
         {
@@ -75,6 +76,11 @@ function OfflineGame() {
             return <AlertModal text={"Já ocorreram 3 votações reprovadas! Uma carta aleatoria vai ser aprovada!"} />;
         } else if (stateOfGame == "plenary_timer_test_show") {
             return <PlenaryTimer onFinish={handleOnFinishPlenaryTimer} />;
+        } else if(stateOfGame == "modal_front_card"){
+            return <PlenaryTimer onFinish={handleOnFinishPlenaryTimer} />
+            return <CardModal title="Corredores Agroecológicos Populares"
+                              description="Criação de redes agroecológicas geridas por cooperativas camponesas para abastecimento regional de alimentos sem intermediação de grandes redes varejistas. O projeto integra reflorestamento comunitário e soberania alimentar."
+                               />
         }
     };
 
