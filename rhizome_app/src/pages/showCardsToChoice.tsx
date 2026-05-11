@@ -1,14 +1,16 @@
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import type { IShowCardsToChoice } from "../interfaces/components/IShowCardsToChoice";
 import BackOfCard from "../components/backOfCard";
+import Button from "../components/button";
+import CardModal from "../components/cardModal";
 
 function ShowCardsToChoice(props: IShowCardsToChoice) {
     const { nameLider, nameAdvisor, showToLider, cardsId } = props;
 
     // Estado para rastrear o ID da carta que o jogador clicou
     const [flippedCardId, setFlippedCardId] = useState<string | null>(null);
-
+    const [showModal, setShowModal] = useState(false);
     const displayName = showToLider ? nameLider : nameAdvisor;
     const totalCards = cardsId.length;
 
@@ -32,10 +34,14 @@ function ShowCardsToChoice(props: IShowCardsToChoice) {
         if (!flippedCardId) {
             setFlippedCardId(id);
             console.log(`Roteamento: A carta selecionada foi a de ID -> ${id}`);
+            setTimeout(() => {
+                setShowModal(true);
+            }, 600);
         }
     };
 
     return (
+        <>
         <div className="w-full flex flex-col h-full pb-15 relative">
             <div className="w-full h-full bg-[#F6F7EF] rounded-3xl  shadow-2xl flex items-start pt-6 justify-center relative perspective-[1000px]">
                 {cardsId.map((id, index) => {
@@ -74,22 +80,15 @@ function ShowCardsToChoice(props: IShowCardsToChoice) {
 
                             {/* ====== FRENTE DA CARTA (A Div Genérica da Proposta) ====== */}
                             <div
-                                className="absolute w-full h-full rounded-2xl bg-[#F8FAFC] shadow-2xl flex flex-col items-center justify-center p-4 border-4 border-[#78C6A3]"
+                                className="absolute w-full h-full rounded-2xl bg-[#F8FAFC] shadow-2xl flex flex-col items-center justify-center border-4 border-[#78C6A3]"
                                 style={{
                                     backfaceVisibility: "hidden",
                                     WebkitBackfaceVisibility: "hidden",
-                                    transform: "rotateY(180deg)", // Já fica virada de costas esperando o giro do pai
+                                    transform: "rotateY(180deg)",
                                 }}>
-                                <h2 className="text-[#1E293B] font-bold text-center text-xl">Projeto Revelado</h2>
-                                <p className="text-xs text-[#64748B] text-center mt-4 font-medium">
-                                    ID Capturado:
-                                    <br /> {id}
-                                </p>
-                                <p className="text-[10px] text-[#A9BCCD] text-center mt-6 uppercase tracking-widest">
-                                    Componente da
-                                    <br />
-                                    frente entra aqui
-                                </p>
+                                <h2 className="text-[#1E293B] font-bold text-center px-4">
+                                    Abrindo documento...
+                                </h2>
                             </div>
                         </motion.div>
                     );
@@ -108,6 +107,21 @@ function ShowCardsToChoice(props: IShowCardsToChoice) {
                 </motion.h1>
             </div>
         </div>
+        <AnimatePresence>
+                {showModal && (
+                    <div className="absolute inset-0 z-[2000]">
+                        <CardModal 
+                            title="Corredores Agroecológicos Populares"
+                            description="Criação de redes agroecológicas geridas por cooperativas camponesas para abastecimento regional de alimentos sem intermediação de grandes redes varejistas. O projeto integra reflorestamento comunitário e soberania alimentar."
+                        >
+                            {/* Ajustei pra ter um botão de rejeitar e um de aprovar pra ficar realista */}
+                            <Button text="Rejeitar" color="salmon" onClickButtonChildren={()=>{}} />
+                            <Button text="Aprovar" color="darkBlue" onClickButtonChildren={()=>{}} />
+                        </CardModal>
+                    </div>
+                )}
+        </AnimatePresence>
+    </>
     );
 }
 

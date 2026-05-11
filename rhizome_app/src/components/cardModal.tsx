@@ -8,14 +8,14 @@ function CardModal(props: ICardModal) {
     return (
         <>
             <motion.div
-                className="absolute z-1000 inset-0 bg-black/40 backdrop-blur-sm"
+                className="absolute z-50 inset-0 bg-black/50  backdrop-blur-xl"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.2 }}
             />
 
-            <div className="absolute z-1001 flex justify-center items-center w-full h-full px-4 ">
+            <div className="absolute z-50 flex justify-center items-center w-full h-full px-4 ">
                 <motion.div
                     initial={{ opacity: 0, scale: 0.9, y: 10 }}
                     animate={{ opacity: 1, scale: 1, y: 0 }}
