@@ -1,3 +1,3 @@
-export interface IAlertModal{
-    text: string
+export interface IAlertModal {
+    text: string;
 }
