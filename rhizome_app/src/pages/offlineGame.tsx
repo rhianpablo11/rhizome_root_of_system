@@ -6,7 +6,10 @@ import ShowPlayerFunction from "./showPlayerFunction";
 import HeaderGamingPoints from "../components/headerGamingPoints";
 import AlertModal from "../components/alertModal";
 import PlenaryTimer from "../components/plenaryTimer";
+import CardModal from "../components/cardModal";
 import ShowCardsToChoice from "./showCardsToChoice";
+
+
 
 function OfflineGame() {
     const [stateOfGame, setStateOfGame] = useState<
