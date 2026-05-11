@@ -33,7 +33,7 @@ function ShowPlayerFunction(props: IShowPlayerFunction) {
     return (
         <div className="w-full flex flex-col items-center h-full">
             <div className="relative w-full h-112.5 flex justify-center items-center">
-                <div className="absolute bottom-0 w-full h-full rounded-xl bg-[#F8FAFC] rounded-b-2xl shadow-xl flex flex-col items-center px-3 justify-end pb-2 transition-all">
+                <div className="absolute bottom-0 w-full h-full rounded-xl bg-[#F9F9F1] rounded-b-2xl shadow-xl flex flex-col items-center px-3 justify-end pb-2 transition-all">
                     <h2 className="text-3xl font-bold text-[#1E293B]">{playerRoleText}</h2>
                     {isRevealed && (
                         <motion.div
@@ -65,7 +65,7 @@ function ShowPlayerFunction(props: IShowPlayerFunction) {
                 </div>
 
                 <motion.div
-                    className="absolute top-0 w-full h-full bg-[#F8FAFC] rounded-xl shadow-2xl flex flex-col items-center bg-cover bg-center cursor-grab active:cursor-grabbing border-4 border-white"
+                    className="absolute top-0 w-full h-full bg-[#F9F9F1] rounded-xl shadow-2xl flex flex-col items-center bg-cover bg-center cursor-grab active:cursor-grabbing border-4 border-[#F9F9F1]"
                     style={{ backgroundImage: `url(${cardBg})` }}
                     // CONFIGURAÇÕES DE FÍSICA DO ARRASTE
                     drag="y" // Permite arrastar apenas para cima e para baixo
@@ -102,7 +102,7 @@ function ShowPlayerFunction(props: IShowPlayerFunction) {
                 </motion.div>
             </div>
 
-            <div className="w-full px-10 fixed bottom-8">
+            <div className="w-full px-10 fixed bottom-3">
                 {isRevealed && (
                     <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
                         <Button
