@@ -1,3 +1,3 @@
 export interface ILogoType {
-    localOfUse: "offlinePage" | "mainMenu";
+    localOfUse: "offlinePage" | "mainMenu" | "headerGamingRunning";
 }

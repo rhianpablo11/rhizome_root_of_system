@@ -3,6 +3,7 @@ import bg from "../assets/bg.png";
 import LogoType from "../components/logoType";
 import SelectNameOfPlayers from "./selectNameOfPlayers";
 import ShowPlayerFunction from "./showPlayerFunction";
+import HeaderGamingPoints from "../components/headerGamingPoints";
 
 function OfflineGame() {
     const [stateOfGame, setStateOfGame] = useState<"selectPlayers" | "showFunctionPlayers">("showFunctionPlayers");
@@ -73,9 +74,10 @@ function OfflineGame() {
             }}>
             <div className="w-full h-full flex flex-col backdrop-blur-[3px]">
                 <div className="shrink-0">
-                    <LogoType localOfUse="offlinePage" />
+                    {/* <LogoType localOfUse="offlinePage" />  */}
+                    <HeaderGamingPoints pointsCommunity={1} pointsLobby={5} idSession="920x" />
                 </div>
-                <div className="flex-1 overflow-hidden pt-4 px-4 w-full flex flex-col">{componentToShow()}</div>
+                <div className="flex-1 overflow-hidden pt-5 px-4 w-full flex flex-col">{componentToShow()}</div>
             </div>
         </div>
     );
