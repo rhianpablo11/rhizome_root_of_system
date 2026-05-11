@@ -6,11 +6,12 @@ import ShowPlayerFunction from "./showPlayerFunction";
 import HeaderGamingPoints from "../components/headerGamingPoints";
 import AlertModal from "../components/alertModal";
 import PlenaryTimer from "../components/plenaryTimer";
+import ShowCardsToChoice from "./showCardsToChoice";
 
 function OfflineGame() {
     const [stateOfGame, setStateOfGame] = useState<
-        "selectPlayers" | "showFunctionPlayers" | "alert_test_show" | "plenary_timer_test_show"
-    >("plenary_timer_test_show");
+        "selectPlayers" | "showFunctionPlayers" | "alert_test_show" | "plenary_timer_test_show" | 'showCardToChoice'
+    >("showCardToChoice");
 
     const listPlayersMock = [
         {
@@ -75,6 +76,13 @@ function OfflineGame() {
             return <AlertModal text={"Já ocorreram 3 votações reprovadas! Uma carta aleatoria vai ser aprovada!"} />;
         } else if (stateOfGame == "plenary_timer_test_show") {
             return <PlenaryTimer onFinish={handleOnFinishPlenaryTimer} />;
+        } else if(stateOfGame == 'showCardToChoice'){
+            return(
+                <ShowCardsToChoice nameAdvisor="Joao"
+                                   nameLider="Henrique"
+                                   showToLider={true}
+                                   cardsId={['c000', 'c200', 'c500']} />
+            )
         }
     };
 
