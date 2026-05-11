@@ -5,9 +5,12 @@ import SelectNameOfPlayers from "./selectNameOfPlayers";
 import ShowPlayerFunction from "./showPlayerFunction";
 import HeaderGamingPoints from "../components/headerGamingPoints";
 import AlertModal from "../components/alertModal";
+import PlenaryTimer from "../components/plenaryTimer";
 
 function OfflineGame() {
-    const [stateOfGame, setStateOfGame] = useState<"selectPlayers" | "showFunctionPlayers" | "alert_test_show">("alert_test_show");
+    const [stateOfGame, setStateOfGame] = useState<
+        "selectPlayers" | "showFunctionPlayers" | "alert_test_show" | "plenary_timer_test_show"
+    >("plenary_timer_test_show");
 
     const listPlayersMock = [
         {
@@ -56,6 +59,10 @@ function OfflineGame() {
         console.log("ola terminei");
     };
 
+    const handleOnFinishPlenaryTimer = () => {
+        console.log("ola terminei");
+    };
+
     // logical of showing components in the offline game page, like the game itself, the choices, etc.
     const componentToShow = () => {
         if (stateOfGame == "selectPlayers") {
@@ -64,10 +71,10 @@ function OfflineGame() {
             return (
                 <ShowPlayerFunction listPlayers={listPlayersMock} onFinish={handleOnFinishPlayersSeeYoursFunctions} />
             );
-        } else if(stateOfGame == 'alert_test_show'){
-            return(
-                <AlertModal text={'Já ocorreram 3 votações reprovadas! Uma carta aleatoria vai ser aprovada!'} />
-            )
+        } else if (stateOfGame == "alert_test_show") {
+            return <AlertModal text={"Já ocorreram 3 votações reprovadas! Uma carta aleatoria vai ser aprovada!"} />;
+        } else if (stateOfGame == "plenary_timer_test_show") {
+            return <PlenaryTimer onFinish={handleOnFinishPlenaryTimer} />;
         }
     };
 
