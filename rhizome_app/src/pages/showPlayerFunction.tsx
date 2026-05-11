@@ -102,7 +102,7 @@ function ShowPlayerFunction(props: IShowPlayerFunction) {
                 </motion.div>
             </div>
 
-            <div className="w-full px-10 fixed bottom-8">
+            <div className="w-full px-10 fixed bottom-3">
                 {isRevealed && (
                     <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
                         <Button

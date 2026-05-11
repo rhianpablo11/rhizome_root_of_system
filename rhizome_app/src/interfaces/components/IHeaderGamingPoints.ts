@@ -1,5 +1,5 @@
-export interface IHeaderGamingPoints{
-    pointsCommunity: number
-    pointsLobby: number
-    idSession: string
+export interface IHeaderGamingPoints {
+    pointsCommunity: number;
+    pointsLobby: number;
+    idSession: string;
 }
