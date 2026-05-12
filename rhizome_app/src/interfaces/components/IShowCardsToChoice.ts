@@ -3,4 +3,6 @@ export interface IShowCardsToChoice {
     nameAdvisor: string;
     showToLider: boolean; //false is for show to Advisor
     cardsId: string[];
+    onLiderVoted?: (remainingCards: string[]) => void;
+    onAdvisorVoted?: (approvedCardId: string) => void;
 }

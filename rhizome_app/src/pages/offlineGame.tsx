@@ -65,6 +65,14 @@ function OfflineGame() {
         console.log("ola terminei");
     };
 
+    const LiderVoted = (remainingCards: string[]) =>{
+        console.log(remainingCards)
+    } 
+
+    const AdvisorVoted = (approvedCardId: string) =>{
+        console.log(approvedCardId)
+    }
+
     // logical of showing components in the offline game page, like the game itself, the choices, etc.
     const componentToShow = () => {
         if (stateOfGame == "selectPlayers") {
@@ -82,8 +90,10 @@ function OfflineGame() {
                 <ShowCardsToChoice
                     nameAdvisor="Joao"
                     nameLider="Henrique"
-                    showToLider={true}
+                    showToLider={false}
                     cardsId={["c000", "c200", "c234"]}
+                    onAdvisorVoted={AdvisorVoted}
+                    onLiderVoted={LiderVoted}
                 />
             );
         }

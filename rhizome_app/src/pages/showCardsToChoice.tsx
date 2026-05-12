@@ -7,7 +7,7 @@ import CardModal from "../components/cardModal";
 import bgCardFront from "../assets/card_info.png";
 
 function ShowCardsToChoice(props: IShowCardsToChoice) {
-    const { nameLider, nameAdvisor, showToLider, cardsId } = props;
+    const { nameLider, nameAdvisor, showToLider, cardsId, onLiderVoted, onAdvisorVoted } = props;
 
     // Estado para rastrear o ID da carta que o jogador clicou
     const [flippedCardId, setFlippedCardId] = useState<string | null>(null);
@@ -32,34 +32,50 @@ function ShowCardsToChoice(props: IShowCardsToChoice) {
     };
 
     const handleCardClick = (id: string) => {
-        // Bloqueia o clique se alguma carta já estiver virada
         if (!flippedCardId) {
             setFlippedCardId(id);
             console.log(`Roteamento: A carta selecionada foi a de ID -> ${id}`);
             setTimeout(() => {
                 setShowModal(true);
-            }, 300);
-        } else {
+            }, 200);
+        } 
+    };
+
+    const handleCloseModalAndFlipBack = () => {
+        setShowModal(false);
+        // Espera o modal sumir pra começar a girar a carta de volta
+        setTimeout(() => {
             setFlippedCardId(null);
-            console.log(`Roteamento: A carta selecionada foi a de ID -> ${id}`);
-            setTimeout(() => {
-                setShowModal(false);
-            }, 600);
-        }
+        }, 0); 
     };
 
     const AproveCardByAdvisor = (id: string) => {
-        console.log("id");
+        setShowModal(false);
+        
+        setTimeout(() => {
+            setFlippedCardId(null);
+            
+            // Avisa o componente Pai (Front) que a plenária vai começar com esse ID
+            if (onAdvisorVoted) {
+                onAdvisorVoted(id);
+            }
+        }, 300);
     };
 
     const RemoveCardByLider = (id: string) => {
-        const cardsFiltered = cardsList.filter((n) => n != id);
-        console.log(cardsFiltered);
-        setCardsList(cardsFiltered);
-        setFlippedCardId(null);
+        setShowModal(false);
+        
         setTimeout(() => {
-            setShowModal(false);
-        }, 600);
+            const cardsFiltered = cardsList.filter((n) => n !== id);
+            console.log("Cartas restantes:", cardsFiltered);
+            setCardsList(cardsFiltered);
+            setFlippedCardId(null); // Tira a seleção
+            
+            // Avisa o componente Pai (Front) quais cartas sobraram pra passar pro Conselheiro
+            if (onLiderVoted) {
+                onLiderVoted(cardsFiltered);
+            }
+        }, 300);
 
         // avisar no front q o Lider votou
     };
@@ -131,7 +147,7 @@ function ShowCardsToChoice(props: IShowCardsToChoice) {
             {showToLider ? (
                 <>
                     <AnimatePresence>
-                        {showModal && (
+                        {showModal && flippedCardId && (
                             <div className="absolute inset-0 z-[2000]">
                                 <CardModal
                                     title="Corredores Agroecológicos Populares"
@@ -139,16 +155,12 @@ function ShowCardsToChoice(props: IShowCardsToChoice) {
                                     <Button
                                         text="Manter"
                                         color="salmon"
-                                        onClickButtonChildren={() => {
-                                            handleCardClick("c200");
-                                        }}
+                                        onClickButtonChildren={handleCloseModalAndFlipBack}
                                     />
                                     <Button
                                         text="Remover"
                                         color="darkBlue"
-                                        onClickButtonChildren={() => {
-                                            RemoveCardByLider("c200");
-                                        }}
+                                        onClickButtonChildren={() => RemoveCardByLider(flippedCardId)}
                                     />
                                 </CardModal>
                             </div>
@@ -166,16 +178,12 @@ function ShowCardsToChoice(props: IShowCardsToChoice) {
                                     <Button
                                         text="Cancelar"
                                         color="salmon"
-                                        onClickButtonChildren={() => {
-                                            handleCardClick("c200");
-                                        }}
+                                        onClickButtonChildren={handleCloseModalAndFlipBack}
                                     />
                                     <Button
                                         text="Plenaria"
                                         color="darkBlue"
-                                        onClickButtonChildren={() => {
-                                            AproveCardByAdvisor("c200");
-                                        }}
+                                        onClickButtonChildren={() => AproveCardByAdvisor(flippedCardId)}
                                     />
                                 </CardModal>
                             </div>
