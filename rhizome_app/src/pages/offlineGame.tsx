@@ -8,11 +8,17 @@ import AlertModal from "../components/alertModal";
 import PlenaryTimer from "../components/plenaryTimer";
 import CardModal from "../components/cardModal";
 import ShowCardsToChoice from "./showCardsToChoice";
+import ChoiceAdvisorForGovernement from "./choiceAdvisorForGovernement";
 
 function OfflineGame() {
     const [stateOfGame, setStateOfGame] = useState<
-        "selectPlayers" | "showFunctionPlayers" | "alert_test_show" | "plenary_timer_test_show" | "showCardToChoice"
-    >("showCardToChoice");
+        | "selectPlayers"
+        | "showFunctionPlayers"
+        | "alert_test_show"
+        | "plenary_timer_test_show"
+        | "showCardToChoice"
+        | "choiceAdvisor"
+    >("choiceAdvisor");
 
     const listPlayersMock = [
         {
@@ -96,6 +102,8 @@ function OfflineGame() {
                     onLiderVoted={LiderVoted}
                 />
             );
+        } else if (stateOfGame == "choiceAdvisor") {
+            return <ChoiceAdvisorForGovernement nameLider="Robertinho" playersList={listPlayersMock} />;
         }
     };
 
