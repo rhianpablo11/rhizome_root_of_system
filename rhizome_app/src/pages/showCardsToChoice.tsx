@@ -116,17 +116,34 @@ function ShowCardsToChoice(props: IShowCardsToChoice) {
                                 // preserve-3d faz a frente e as costas da carta existirem no mesmo espaço 3D
                                 style={{ transformStyle: "preserve-3d" }}>
                                 {/* ====== COSTAS DA CARTA (O que o jogador vê primeiro) ====== */}
-                                <BackOfCard />
+                                <motion.div
+                                    className="w-full h-full relative"
+                                    style={{ transformStyle: "preserve-3d" }}
+                                    // Se nenhuma carta foi virada, ela flutua de 0px para -12px e volta
+                                    animate={!flippedCardId ? { y: [0, -5, 0] } : { y: 0 }}
+                                    transition={{
+                                        duration: 3.5, // Bem suave
+                                        repeat: !flippedCardId ? Infinity : 0, // Repete para sempre até alguém clicar
+                                        ease: "easeInOut",
+                                        // O index * 0.4 atrasa o início da flutuação de cada carta. 
+                                        // Isso faz elas flutuarem em momentos diferentes (mais natural)
+                                        delay: index * 0.3, 
+                                    }}
+                                >
+                                    {/* ====== COSTAS DA CARTA ====== */}
+                                    <BackOfCard />
 
-                                {/* ====== FRENTE DA CARTA (A Div Genérica da Proposta) ====== */}
-                                <div
-                                    className="absolute w-full h-full rounded-2xl bg-[#F8FAFC] shadow-2xl flex flex-col items-center justify-center  bg-cover bg-center bg-no-repeat"
-                                    style={{
-                                        backfaceVisibility: "hidden",
-                                        WebkitBackfaceVisibility: "hidden",
-                                        transform: "rotateY(180deg)",
-                                        backgroundImage: `url("${bgCardFront}")`,
-                                    }}></div>
+                                    {/* ====== FRENTE DA CARTA ====== */}
+                                    <div
+                                        className="absolute w-full h-full rounded-2xl bg-[#F8FAFC] shadow-2xl flex flex-col items-center justify-center bg-cover bg-center bg-no-repeat"
+                                        style={{
+                                            backfaceVisibility: "hidden",
+                                            WebkitBackfaceVisibility: "hidden",
+                                            transform: "rotateY(180deg)",
+                                            backgroundImage: `url("${bgCardFront}")`,
+                                        }}
+                                    ></div>
+                                </motion.div>
                             </motion.div>
                         );
                     })}
