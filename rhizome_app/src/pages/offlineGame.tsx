@@ -6,11 +6,19 @@ import ShowPlayerFunction from "./showPlayerFunction";
 import HeaderGamingPoints from "../components/headerGamingPoints";
 import AlertModal from "../components/alertModal";
 import PlenaryTimer from "../components/plenaryTimer";
+import CardModal from "../components/cardModal";
+import ShowCardsToChoice from "./showCardsToChoice";
+import ChoiceAdvisorForGovernement from "./choiceAdvisorForGovernement";
 
 function OfflineGame() {
     const [stateOfGame, setStateOfGame] = useState<
-        "selectPlayers" | "showFunctionPlayers" | "alert_test_show" | "plenary_timer_test_show"
-    >("plenary_timer_test_show");
+        | "selectPlayers"
+        | "showFunctionPlayers"
+        | "alert_test_show"
+        | "plenary_timer_test_show"
+        | "showCardToChoice"
+        | "choiceAdvisor"
+    >("choiceAdvisor");
 
     const listPlayersMock = [
         {
@@ -63,6 +71,14 @@ function OfflineGame() {
         console.log("ola terminei");
     };
 
+    const LiderVoted = (remainingCards: string[]) => {
+        console.log(remainingCards);
+    };
+
+    const AdvisorVoted = (approvedCardId: string) => {
+        console.log(approvedCardId);
+    };
+
     // logical of showing components in the offline game page, like the game itself, the choices, etc.
     const componentToShow = () => {
         if (stateOfGame == "selectPlayers") {
@@ -75,12 +91,25 @@ function OfflineGame() {
             return <AlertModal text={"Já ocorreram 3 votações reprovadas! Uma carta aleatoria vai ser aprovada!"} />;
         } else if (stateOfGame == "plenary_timer_test_show") {
             return <PlenaryTimer onFinish={handleOnFinishPlenaryTimer} />;
+        } else if (stateOfGame == "showCardToChoice") {
+            return (
+                <ShowCardsToChoice
+                    nameAdvisor="Joao"
+                    nameLider="Henrique"
+                    showToLider={false}
+                    cardsId={["c000", "c200", "c234"]}
+                    onAdvisorVoted={AdvisorVoted}
+                    onLiderVoted={LiderVoted}
+                />
+            );
+        } else if (stateOfGame == "choiceAdvisor") {
+            return <ChoiceAdvisorForGovernement nameLider="Robertinho" playersList={listPlayersMock} />;
         }
     };
 
     return (
         <div
-            className="w-full h-dvh overflow-hidden bg-cover bg-no-repeat"
+            className="w-full h-dvh overflow-hidden bg-cover bg-center bg-no-repeat"
             style={{
                 backgroundImage: `url("${bg}")`,
             }}>

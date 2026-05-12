@@ -38,6 +38,7 @@ function PlenaryTimer(props: IPlenaryTimer) {
                 </h1>
                 <div className="pb-5 w-full px-11 pt-4">
                     <Button
+                        usesOn="commonGame"
                         text={"Pular plenaria"}
                         color={"darkBlue"}
                         onClickButtonChildren={handleButtonClickFather}
