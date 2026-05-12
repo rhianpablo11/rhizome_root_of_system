@@ -9,8 +9,6 @@ import PlenaryTimer from "../components/plenaryTimer";
 import CardModal from "../components/cardModal";
 import ShowCardsToChoice from "./showCardsToChoice";
 
-
-
 function OfflineGame() {
     const [stateOfGame, setStateOfGame] = useState<
         "selectPlayers" | "showFunctionPlayers" | "alert_test_show" | "plenary_timer_test_show" | "showCardToChoice"
@@ -84,8 +82,8 @@ function OfflineGame() {
                 <ShowCardsToChoice
                     nameAdvisor="Joao"
                     nameLider="Henrique"
-                    showToLider={false}
-                    cardsId={["c000", "c200"]}
+                    showToLider={true}
+                    cardsId={["c000", "c200", "c234"]}
                 />
             );
         }
