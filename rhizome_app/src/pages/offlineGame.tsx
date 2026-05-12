@@ -18,7 +18,7 @@ function OfflineGame() {
         | "plenary_timer_test_show"
         | "showCardToChoice"
         | "choiceAdvisor"
-    >("choiceAdvisor");
+    >("showCardToChoice");
 
     const listPlayersMock = [
         {
