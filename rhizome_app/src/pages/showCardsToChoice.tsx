@@ -125,11 +125,10 @@ function ShowCardsToChoice(props: IShowCardsToChoice) {
                                         duration: 3.5, // Bem suave
                                         repeat: !flippedCardId ? Infinity : 0, // Repete para sempre até alguém clicar
                                         ease: "easeInOut",
-                                        // O index * 0.4 atrasa o início da flutuação de cada carta. 
+                                        // O index * 0.4 atrasa o início da flutuação de cada carta.
                                         // Isso faz elas flutuarem em momentos diferentes (mais natural)
-                                        delay: index * 0.3, 
-                                    }}
-                                >
+                                        delay: index * 0.3,
+                                    }}>
                                     {/* ====== COSTAS DA CARTA ====== */}
                                     <BackOfCard />
 
@@ -141,8 +140,7 @@ function ShowCardsToChoice(props: IShowCardsToChoice) {
                                             WebkitBackfaceVisibility: "hidden",
                                             transform: "rotateY(180deg)",
                                             backgroundImage: `url("${bgCardFront}")`,
-                                        }}
-                                    ></div>
+                                        }}></div>
                                 </motion.div>
                             </motion.div>
                         );
