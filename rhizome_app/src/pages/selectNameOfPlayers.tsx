@@ -34,11 +34,17 @@ function SelectNameOfPlayers() {
             </div>
             <div className="flex flex-col w-full gap-y-2 fixed bottom-4 left-0 px-10">
                 <Button
+                    usesOn="commonGame"
                     onClickButtonChildren={handleOnClickFatherAddPlayer}
                     color="darkBlue"
                     text="Adicionar Jogador"
                 />
-                <Button onClickButtonChildren={handleOnClickFatherStartGame} color="salmon" text="Iniciar Batalha" />
+                <Button
+                    usesOn="commonGame"
+                    onClickButtonChildren={handleOnClickFatherStartGame}
+                    color="salmon"
+                    text="Iniciar Batalha"
+                />
             </div>
         </div>
     );

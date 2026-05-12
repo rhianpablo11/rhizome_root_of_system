@@ -153,11 +153,13 @@ function ShowCardsToChoice(props: IShowCardsToChoice) {
                                     title="Corredores Agroecológicos Populares"
                                     description="Criação de redes agroecológicas geridas por cooperativas camponesas para abastecimento regional de alimentos sem intermediação de grandes redes varejistas. O projeto integra reflorestamento comunitário e soberania alimentar.">
                                     <Button
+                                        usesOn="commonGame"
                                         text="Manter"
                                         color="salmon"
                                         onClickButtonChildren={handleCloseModalAndFlipBack}
                                     />
                                     <Button
+                                        usesOn="commonGame"
                                         text="Remover"
                                         color="darkBlue"
                                         onClickButtonChildren={() => RemoveCardByLider(flippedCardId)}
@@ -176,11 +178,13 @@ function ShowCardsToChoice(props: IShowCardsToChoice) {
                                     title="Corredores Agroecológicos Populares"
                                     description="Criação de redes agroecológicas geridas por cooperativas camponesas para abastecimento regional de alimentos sem intermediação de grandes redes varejistas. O projeto integra reflorestamento comunitário e soberania alimentar.">
                                     <Button
+                                        usesOn="commonGame"
                                         text="Cancelar"
                                         color="salmon"
                                         onClickButtonChildren={handleCloseModalAndFlipBack}
                                     />
                                     <Button
+                                        usesOn="commonGame"
                                         text="Plenaria"
                                         color="darkBlue"
                                         onClickButtonChildren={() => AproveCardByAdvisor(flippedCardId)}

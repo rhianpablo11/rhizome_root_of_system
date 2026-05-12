@@ -106,6 +106,7 @@ function ShowPlayerFunction(props: IShowPlayerFunction) {
                 {isRevealed && (
                     <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
                         <Button
+                            usesOn="commonGame"
                             onClickButtonChildren={handleOnClickFatherNextPlayer}
                             color="salmon"
                             text={currentIndex === listPlayers.length - 1 ? "Iniciar Batalha" : "Próximo jogador"}

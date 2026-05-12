@@ -14,7 +14,12 @@ function AlertModal(props: IAlertModal) {
                 <h1 className="text-[#1E293B] font-semibold text-4xl pt-5">Alerta</h1>
                 <h1 className="text-[#1E293B] font-medium text-xl pt-1 px-5">{text}</h1>
                 <div className="pb-5 w-full px-11 pt-4">
-                    <Button text={"Revelar carta"} color={"darkBlue"} onClickButtonChildren={handleButtonClickFather} />
+                    <Button
+                        usesOn="commonGame"
+                        text={"Revelar carta"}
+                        color={"darkBlue"}
+                        onClickButtonChildren={handleButtonClickFather}
+                    />
                 </div>
             </div>
         </>
