@@ -23,8 +23,8 @@ function ChoiceAdvisorForGovernement(props: IChoiceAdvisorForGovernement) {
             } else {
                 setButtonsDisable(true);
             }
-        }else{
-            setButtonsDisable(true)
+        } else {
+            setButtonsDisable(true);
         }
     };
 
