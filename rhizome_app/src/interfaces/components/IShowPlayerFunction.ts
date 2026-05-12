@@ -3,7 +3,7 @@ export interface IShowPlayerFunction {
     onFinish: () => void;
 }
 
-interface IPlayerData {
+export interface IPlayerData {
     name: string;
     playerRole: "community" | "lobby";
 }
