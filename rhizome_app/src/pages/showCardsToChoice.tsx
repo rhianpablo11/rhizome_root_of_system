@@ -38,7 +38,7 @@ function ShowCardsToChoice(props: IShowCardsToChoice) {
             setTimeout(() => {
                 setShowModal(true);
             }, 200);
-        } 
+        }
     };
 
     const handleCloseModalAndFlipBack = () => {
@@ -46,15 +46,15 @@ function ShowCardsToChoice(props: IShowCardsToChoice) {
         // Espera o modal sumir pra começar a girar a carta de volta
         setTimeout(() => {
             setFlippedCardId(null);
-        }, 0); 
+        }, 0);
     };
 
     const AproveCardByAdvisor = (id: string) => {
         setShowModal(false);
-        
+
         setTimeout(() => {
             setFlippedCardId(null);
-            
+
             // Avisa o componente Pai (Front) que a plenária vai começar com esse ID
             if (onAdvisorVoted) {
                 onAdvisorVoted(id);
@@ -64,13 +64,13 @@ function ShowCardsToChoice(props: IShowCardsToChoice) {
 
     const RemoveCardByLider = (id: string) => {
         setShowModal(false);
-        
+
         setTimeout(() => {
             const cardsFiltered = cardsList.filter((n) => n !== id);
             console.log("Cartas restantes:", cardsFiltered);
             setCardsList(cardsFiltered);
             setFlippedCardId(null); // Tira a seleção
-            
+
             // Avisa o componente Pai (Front) quais cartas sobraram pra passar pro Conselheiro
             if (onLiderVoted) {
                 onLiderVoted(cardsFiltered);

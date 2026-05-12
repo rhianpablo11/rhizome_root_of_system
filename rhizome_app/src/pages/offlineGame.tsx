@@ -65,13 +65,13 @@ function OfflineGame() {
         console.log("ola terminei");
     };
 
-    const LiderVoted = (remainingCards: string[]) =>{
-        console.log(remainingCards)
-    } 
+    const LiderVoted = (remainingCards: string[]) => {
+        console.log(remainingCards);
+    };
 
-    const AdvisorVoted = (approvedCardId: string) =>{
-        console.log(approvedCardId)
-    }
+    const AdvisorVoted = (approvedCardId: string) => {
+        console.log(approvedCardId);
+    };
 
     // logical of showing components in the offline game page, like the game itself, the choices, etc.
     const componentToShow = () => {
