@@ -67,6 +67,8 @@ function OfflineGame() {
     const [pointsLobby, setPointsLobby] = useState(0);
     const [playersName, setPlayersName] = useState<string[]>([]);
     const [playersData, setPlayersData] = useState<IPlayerData[]>([]);
+    const [currentLeaderIndex, setCurrentLeaderIndex] = useState(0)
+    const [rejectionCount, setRejectionCount] = useState(0)
 
     const generateSessionId = (): string => {
         const characters = "ABCDEFGHIJKLMNPQRSTUVWXYZ123456789";
@@ -118,7 +120,48 @@ function OfflineGame() {
 
     const handleOnFinishPlayersSeeYoursFunctions = () => {
         console.log("ola terminei");
+        setStateOfGame('choiceAdvisor')
     };
+
+    const rotateLeader = () =>{
+        setCurrentLeaderIndex((prevIndex)=>(prevIndex + 1) % playersData.length)
+    }
+
+    const ChoiceGovernament = () =>{
+        const currentLeader = playersData[currentLeaderIndex]
+        //select advisors list
+        const availableAdvisors = playersData.filter(player => player.id !== currentLeader?.id);
+        return availableAdvisors
+    }
+
+    const handleGovernmentApproved = (advisorId: string) => {
+        // Zera o termômetro do caos
+        setRejectionCount(0);
+        setStateOfGame('showCardToChoice')
+    };
+
+    const handleGovernmentRejected = () => {
+        const newCount = rejectionCount + 1;
+
+        if (newCount >= 3) {
+            console.log('O CAOS SE INSTAUROU! 3 reprovações seguidas.');
+            
+            setRejectionCount(0);
+            
+            rotateLeader();
+
+            // TODO: Mudar o estado para abrir o "Componente de Alerta" 
+            // e depois rodar a função de pegar uma carta aleatória do baralho e aplicar direto!
+            
+        } else {
+            console.log(`Governo rejeitado. Estamos em ${newCount}/3 pro caos.`);
+            
+            setRejectionCount(newCount);
+            
+            rotateLeader();
+        }
+    };
+
 
     const handleOnFinishPlenaryTimer = () => {
         console.log("ola terminei");
@@ -154,7 +197,10 @@ function OfflineGame() {
                 />
             );
         } else if (stateOfGame == "choiceAdvisor") {
-            return <ChoiceAdvisorForGovernement nameLider="Robertinho" playersList={listPlayersMock} />;
+            return <ChoiceAdvisorForGovernement nameLider={playersData[currentLeaderIndex].name}
+                                                playersList={ChoiceGovernament()}
+                                                aprovedGroup={handleGovernmentApproved}
+                                                reprovedGroup={handleGovernmentRejected} />;
         }
     };
 

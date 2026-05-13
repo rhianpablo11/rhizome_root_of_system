@@ -3,23 +3,19 @@ import Button from "../components/button";
 import type { IChoiceAdvisorForGovernement } from "../interfaces/components/IChoiceAdvisorForGovernement";
 
 function ChoiceAdvisorForGovernement(props: IChoiceAdvisorForGovernement) {
-    const { nameLider, playersList } = props;
+    const { nameLider, playersList, aprovedGroup, reprovedGroup} = props;
     const [buttonsDisable, setButtonsDisable] = useState(true);
+    const [nameAdvisorSelected, setNameAdvisorSelected] = useState('')
 
     const justNames: string[] = playersList.map((player) => player.name);
-    const aprovedGroup = () => {
-        console.log("");
-    };
-
-    const reprovedGroup = () => {
-        console.log("");
-    };
+    
 
     const advisorSelected = (name?: string) => {
         console.log(name);
         if (name) {
             if (justNames.includes(name)) {
                 setButtonsDisable(false);
+                setNameAdvisorSelected(name)
             } else {
                 setButtonsDisable(true);
             }
@@ -45,7 +41,7 @@ function ChoiceAdvisorForGovernement(props: IChoiceAdvisorForGovernement) {
                         disable={buttonsDisable}
                         text="Governo Aprovado"
                         color="darkBlue"
-                        onClickButtonChildren={aprovedGroup}
+                        onClickButtonChildren={()=>aprovedGroup(nameAdvisorSelected)}
                         usesOn="commonGame"
                     />
                     <Button
