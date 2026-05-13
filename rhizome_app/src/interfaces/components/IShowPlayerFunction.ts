@@ -6,4 +6,5 @@ export interface IShowPlayerFunction {
 export interface IPlayerData {
     name: string;
     playerRole: "community" | "lobby";
+    id?: string;
 }
