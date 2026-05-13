@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { use, useState } from "react";
 import bg from "../assets/bg.png";
 import LogoType from "../components/logoType";
 import SelectNameOfPlayers from "./selectNameOfPlayers";
@@ -9,6 +9,50 @@ import PlenaryTimer from "../components/plenaryTimer";
 import CardModal from "../components/cardModal";
 import ShowCardsToChoice from "./showCardsToChoice";
 import ChoiceAdvisorForGovernement from "./choiceAdvisorForGovernement";
+import type { IPlayerData } from "../interfaces/components/IShowPlayerFunction";
+
+const listPlayersMock = [
+    {
+        name: "Rhian Pablo",
+        playerRole: "community",
+    },
+    {
+        name: "marcio Roberto",
+        playerRole: "lobby",
+    },
+    {
+        name: "Gabriel Santos",
+        playerRole: "community",
+    },
+    {
+        name: "Viviane",
+        playerRole: "lobby",
+    },
+    {
+        name: "Pedro Joaquim",
+        playerRole: "community",
+    },
+    {
+        name: "Pedro Ricardo",
+        playerRole: "lobby",
+    },
+    {
+        name: "Roberto Fernandez",
+        playerRole: "lobby",
+    },
+    {
+        name: "Julio Balestrin",
+        playerRole: "community",
+    },
+    {
+        name: "Renato Cariani",
+        playerRole: "lobby",
+    },
+    {
+        name: "Igor Fina",
+        playerRole: "lobby",
+    },
+];
 
 function OfflineGame() {
     const [stateOfGame, setStateOfGame] = useState<
@@ -18,50 +62,59 @@ function OfflineGame() {
         | "plenary_timer_test_show"
         | "showCardToChoice"
         | "choiceAdvisor"
-    >("showCardToChoice");
+    >("selectPlayers");
+    const [pointsComunity, setPointsComunity] = useState(0);
+    const [pointsLobby, setPointsLobby] = useState(0);
+    const [playersName, setPlayersName] = useState<string[]>([]);
+    const [playersData, setPlayersData] = useState<IPlayerData[]>([]);
 
-    const listPlayersMock = [
-        {
-            name: "Rhian Pablo",
-            playerRole: "community",
-        },
-        {
-            name: "marcio Roberto",
-            playerRole: "lobby",
-        },
-        {
-            name: "Gabriel Santos",
-            playerRole: "community",
-        },
-        {
-            name: "Viviane",
-            playerRole: "lobby",
-        },
-        {
-            name: "Pedro Joaquim",
-            playerRole: "community",
-        },
-        {
-            name: "Pedro Ricardo",
-            playerRole: "lobby",
-        },
-        {
-            name: "Roberto Fernandez",
-            playerRole: "lobby",
-        },
-        {
-            name: "Julio Balestrin",
-            playerRole: "community",
-        },
-        {
-            name: "Renato Cariani",
-            playerRole: "lobby",
-        },
-        {
-            name: "Igor Fina",
-            playerRole: "lobby",
-        },
-    ];
+    const generateSessionId = (): string => {
+        const characters = "ABCDEFGHIJKLMNPQRSTUVWXYZ123456789";
+        let sessionId = "";
+
+        for (let i = 0; i < 5; i++) {
+            sessionId += characters.charAt(Math.floor(Math.random() * characters.length));
+        }
+
+        return sessionId;
+    };
+
+    const generatePlayersFunction = (playersName: string[]): IPlayerData[] => {
+        const totalPlayers = playersName.length;
+
+        let lobbyCount = 2;
+        if (totalPlayers >= 7) lobbyCount = 3;
+        if (totalPlayers >= 9) lobbyCount = 4;
+
+        const communityCount = totalPlayers - lobbyCount;
+
+        const roles: Array<"community" | "lobby"> = [
+            ...Array(communityCount).fill("community"),
+            ...Array(lobbyCount).fill("lobby"),
+        ];
+
+        // algorithm of Fisher-Yates for embaralhar
+        for (let i = roles.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [roles[i], roles[j]] = [roles[j], roles[i]];
+        }
+
+        // Distribui as cartas embaralhadas para os nomes e gera um ID único
+        return playersName.map((name, index) => {
+            return {
+                // crypto.randomUUID() nativo do JS
+                id: crypto.randomUUID(),
+                name: name,
+                playerRole: roles[index],
+            };
+        });
+    };
+
+    const finishedChoicesOfNamesPlayers = () => {
+        console.log("ola mundo");
+        setPlayersData(generatePlayersFunction(playersName));
+        setStateOfGame("showFunctionPlayers");
+    };
 
     const handleOnFinishPlayersSeeYoursFunctions = () => {
         console.log("ola terminei");
@@ -82,11 +135,9 @@ function OfflineGame() {
     // logical of showing components in the offline game page, like the game itself, the choices, etc.
     const componentToShow = () => {
         if (stateOfGame == "selectPlayers") {
-            return <SelectNameOfPlayers />;
+            return <SelectNameOfPlayers playersNameSet={setPlayersName} startGame={finishedChoicesOfNamesPlayers} />;
         } else if (stateOfGame == "showFunctionPlayers") {
-            return (
-                <ShowPlayerFunction listPlayers={listPlayersMock} onFinish={handleOnFinishPlayersSeeYoursFunctions} />
-            );
+            return <ShowPlayerFunction listPlayers={playersData} onFinish={handleOnFinishPlayersSeeYoursFunctions} />;
         } else if (stateOfGame == "alert_test_show") {
             return <AlertModal text={"Já ocorreram 3 votações reprovadas! Uma carta aleatoria vai ser aprovada!"} />;
         } else if (stateOfGame == "plenary_timer_test_show") {
@@ -115,8 +166,15 @@ function OfflineGame() {
             }}>
             <div className="w-full h-full flex flex-col backdrop-blur-[3px]">
                 <div className="shrink-0">
-                    {/* <LogoType localOfUse="offlinePage" />  */}
-                    <HeaderGamingPoints pointsCommunity={1} pointsLobby={5} idSession="920x" />
+                    {stateOfGame == "selectPlayers" ? (
+                        <LogoType localOfUse="offlinePage" />
+                    ) : (
+                        <HeaderGamingPoints
+                            pointsCommunity={pointsComunity}
+                            pointsLobby={pointsLobby}
+                            idSession={generateSessionId()}
+                        />
+                    )}
                 </div>
                 <div className="flex-1 overflow-hidden pt-5 px-4 w-full flex flex-col">{componentToShow()}</div>
             </div>
