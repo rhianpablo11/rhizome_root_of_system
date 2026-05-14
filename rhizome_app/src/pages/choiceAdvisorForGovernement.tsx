@@ -6,12 +6,12 @@ function ChoiceAdvisorForGovernement(props: IChoiceAdvisorForGovernement) {
     const { nameLider, playersList, aprovedGroup, reprovedGroup } = props;
     const [buttonsDisable, setButtonsDisable] = useState(true);
     const [nameAdvisorSelected, setNameAdvisorSelected] = useState<string | null>("");
-    const [clicked, setClicked] = useState(false)
+    const [clicked, setClicked] = useState(false);
     const justNames: string[] = playersList.map((player) => player.name);
 
     const advisorSelected = (name?: string) => {
         console.log(name);
-        
+
         if (name) {
             if (justNames.includes(name)) {
                 setButtonsDisable(false);
@@ -20,7 +20,7 @@ function ChoiceAdvisorForGovernement(props: IChoiceAdvisorForGovernement) {
                 setButtonsDisable(true);
             }
         } else {
-            setNameAdvisorSelected(null)
+            setNameAdvisorSelected(null);
             setButtonsDisable(true);
         }
     };
@@ -34,7 +34,12 @@ function ChoiceAdvisorForGovernement(props: IChoiceAdvisorForGovernement) {
                 </div>
                 <div className="w-full flex flex-col mt-3 overflow-y-auto gap-y-2">
                     {justNames.map((name, index) => (
-                        <Button text={name} usesOn="selectAdvisor" onClickButtonChildren={advisorSelected} clicked={nameAdvisorSelected == name ? true : false}/>
+                        <Button
+                            text={name}
+                            usesOn="selectAdvisor"
+                            onClickButtonChildren={advisorSelected}
+                            clicked={nameAdvisorSelected == name ? true : false}
+                        />
                     ))}
                 </div>
                 <div className="fixed bottom-3 w-full px-8 flex flex-col gap-y-2">
@@ -42,7 +47,9 @@ function ChoiceAdvisorForGovernement(props: IChoiceAdvisorForGovernement) {
                         disable={buttonsDisable}
                         text="Governo Aprovado"
                         color="darkBlue"
-                        onClickButtonChildren={() => { aprovedGroup(nameAdvisorSelected)}}
+                        onClickButtonChildren={() => {
+                            aprovedGroup(nameAdvisorSelected);
+                        }}
                         usesOn="commonGame"
                     />
                     <Button

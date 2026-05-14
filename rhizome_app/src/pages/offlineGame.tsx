@@ -26,9 +26,9 @@ function OfflineGame() {
     const [playersName, setPlayersName] = useState<string[]>([]);
     const [playersData, setPlayersData] = useState<IPlayerData[]>([]);
     const [currentLeaderIndex, setCurrentLeaderIndex] = useState(0);
-    const [currentAdvisor, setCurrentAdvisor] = useState<string | null>(null)
+    const [currentAdvisor, setCurrentAdvisor] = useState<string | null>(null);
     const [rejectionCount, setRejectionCount] = useState(0);
-    const [leaderVoted, setLeaderVoted] = useState(false)
+    const [leaderVoted, setLeaderVoted] = useState(false);
     const [sessionId] = useState(() => {
         const characters = "ABCDEFGHIJKLMNPQRSTUVWXYZ123456789";
         let sessionId = "";
@@ -96,12 +96,11 @@ function OfflineGame() {
     // o id ta sendo o proprio nome
     const handleGovernmentApproved = (advisorId: string | null) => {
         // Zera o termômetro do caos
-        if(advisorId != null){
+        if (advisorId != null) {
             setRejectionCount(0);
             setStateOfGame("showCardToChoice");
-            setCurrentAdvisor(advisorId)
+            setCurrentAdvisor(advisorId);
         }
-        
     };
 
     const handleGovernmentRejected = () => {
@@ -133,14 +132,14 @@ function OfflineGame() {
 
     const handleOnFinishPlenaryTimer = () => {
         console.log("ola terminei");
-        rotateLeader()
-        setLeaderVoted(false)
-        setStateOfGame('choiceAdvisor')
+        rotateLeader();
+        setLeaderVoted(false);
+        setStateOfGame("choiceAdvisor");
     };
 
     const LiderVoted = (remainingCards: string[]) => {
         console.log(remainingCards);
-        setLeaderVoted(true)
+        setLeaderVoted(true);
     };
 
     const AdvisorVoted = (approvedCardId: string) => {
@@ -160,19 +159,19 @@ function OfflineGame() {
         } else if (stateOfGame == "plenary_timer_test_show") {
             return <PlenaryTimer onFinish={handleOnFinishPlenaryTimer} />;
         } else if (stateOfGame == "showCardToChoice") {
-            if(currentAdvisor != null){
-                if(leaderVoted){
+            if (currentAdvisor != null) {
+                if (leaderVoted) {
                     return (
-                                    <ShowCardsToChoice
-                                        nameAdvisor={currentAdvisor}
-                                        nameLider={playersData[currentLeaderIndex].name}
-                                        showToLider={!leaderVoted}
-                                        cardsId={["c000", "c200", "c234"]}
-                                        onAdvisorVoted={AdvisorVoted}
-                                        onLiderVoted={LiderVoted}
-                                    />
-                                );
-                } else{
+                        <ShowCardsToChoice
+                            nameAdvisor={currentAdvisor}
+                            nameLider={playersData[currentLeaderIndex].name}
+                            showToLider={!leaderVoted}
+                            cardsId={["c000", "c200", "c234"]}
+                            onAdvisorVoted={AdvisorVoted}
+                            onLiderVoted={LiderVoted}
+                        />
+                    );
+                } else {
                     return (
                         <ShowCardsToChoice
                             nameAdvisor={currentAdvisor}
@@ -184,9 +183,7 @@ function OfflineGame() {
                         />
                     );
                 }
-                
             }
-            
         } else if (stateOfGame == "choiceAdvisor") {
             return (
                 <ChoiceAdvisorForGovernement

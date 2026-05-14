@@ -4,5 +4,5 @@ export interface IButton {
     usesOn: "commonGame" | "selectAdvisor";
     onClickButtonChildren: (name?: string) => void;
     disable?: boolean;
-    clicked?: boolean
+    clicked?: boolean;
 }
