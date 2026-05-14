@@ -11,49 +11,6 @@ import ShowCardsToChoice from "./showCardsToChoice";
 import ChoiceAdvisorForGovernement from "./choiceAdvisorForGovernement";
 import type { IPlayerData } from "../interfaces/components/IShowPlayerFunction";
 
-const listPlayersMock = [
-    {
-        name: "Rhian Pablo",
-        playerRole: "community",
-    },
-    {
-        name: "marcio Roberto",
-        playerRole: "lobby",
-    },
-    {
-        name: "Gabriel Santos",
-        playerRole: "community",
-    },
-    {
-        name: "Viviane",
-        playerRole: "lobby",
-    },
-    {
-        name: "Pedro Joaquim",
-        playerRole: "community",
-    },
-    {
-        name: "Pedro Ricardo",
-        playerRole: "lobby",
-    },
-    {
-        name: "Roberto Fernandez",
-        playerRole: "lobby",
-    },
-    {
-        name: "Julio Balestrin",
-        playerRole: "community",
-    },
-    {
-        name: "Renato Cariani",
-        playerRole: "lobby",
-    },
-    {
-        name: "Igor Fina",
-        playerRole: "lobby",
-    },
-];
-
 function OfflineGame() {
     const [stateOfGame, setStateOfGame] = useState<
         | "selectPlayers"
@@ -62,15 +19,17 @@ function OfflineGame() {
         | "plenary_timer_test_show"
         | "showCardToChoice"
         | "choiceAdvisor"
+        | "showChaosCard"
     >("selectPlayers");
     const [pointsComunity, setPointsComunity] = useState(0);
     const [pointsLobby, setPointsLobby] = useState(0);
     const [playersName, setPlayersName] = useState<string[]>([]);
     const [playersData, setPlayersData] = useState<IPlayerData[]>([]);
-    const [currentLeaderIndex, setCurrentLeaderIndex] = useState(0)
-    const [rejectionCount, setRejectionCount] = useState(0)
-
-    const generateSessionId = (): string => {
+    const [currentLeaderIndex, setCurrentLeaderIndex] = useState(0);
+    const [currentAdvisor, setCurrentAdvisor] = useState<string | null>(null)
+    const [rejectionCount, setRejectionCount] = useState(0);
+    const [leaderVoted, setLeaderVoted] = useState(false)
+    const [sessionId] = useState(() => {
         const characters = "ABCDEFGHIJKLMNPQRSTUVWXYZ123456789";
         let sessionId = "";
 
@@ -79,7 +38,7 @@ function OfflineGame() {
         }
 
         return sessionId;
-    };
+    });
 
     const generatePlayersFunction = (playersName: string[]): IPlayerData[] => {
         const totalPlayers = playersName.length;
@@ -120,59 +79,74 @@ function OfflineGame() {
 
     const handleOnFinishPlayersSeeYoursFunctions = () => {
         console.log("ola terminei");
-        setStateOfGame('choiceAdvisor')
+        setStateOfGame("choiceAdvisor");
     };
 
-    const rotateLeader = () =>{
-        setCurrentLeaderIndex((prevIndex)=>(prevIndex + 1) % playersData.length)
-    }
+    const rotateLeader = () => {
+        setCurrentLeaderIndex((prevIndex) => (prevIndex + 1) % playersData.length);
+    };
 
-    const ChoiceGovernament = () =>{
-        const currentLeader = playersData[currentLeaderIndex]
+    const ChoiceGovernament = () => {
+        const currentLeader = playersData[currentLeaderIndex];
         //select advisors list
-        const availableAdvisors = playersData.filter(player => player.id !== currentLeader?.id);
-        return availableAdvisors
-    }
+        const availableAdvisors = playersData.filter((player) => player.id !== currentLeader?.id);
+        return availableAdvisors;
+    };
 
-    const handleGovernmentApproved = (advisorId: string) => {
+    // o id ta sendo o proprio nome
+    const handleGovernmentApproved = (advisorId: string | null) => {
         // Zera o termômetro do caos
-        setRejectionCount(0);
-        setStateOfGame('showCardToChoice')
+        if(advisorId != null){
+            setRejectionCount(0);
+            setStateOfGame("showCardToChoice");
+            setCurrentAdvisor(advisorId)
+        }
+        
     };
 
     const handleGovernmentRejected = () => {
         const newCount = rejectionCount + 1;
 
         if (newCount >= 3) {
-            console.log('O CAOS SE INSTAUROU! 3 reprovações seguidas.');
-            
+            console.log("O CAOS SE INSTAUROU! 3 reprovações seguidas.");
+
             setRejectionCount(0);
-            
+
             rotateLeader();
 
-            // TODO: Mudar o estado para abrir o "Componente de Alerta" 
+            // TODO: Mudar o estado para abrir o "Componente de Alerta"
             // e depois rodar a função de pegar uma carta aleatória do baralho e aplicar direto!
-            
+            setStateOfGame("alert_test_show");
+
+            // Depois de 3.5 segundos lendo o alerta, muda pra tela da carta do caos!
+            setTimeout(() => {
+                setStateOfGame("showChaosCard");
+            }, 3500);
         } else {
             console.log(`Governo rejeitado. Estamos em ${newCount}/3 pro caos.`);
-            
+
             setRejectionCount(newCount);
-            
+
             rotateLeader();
         }
     };
 
-
     const handleOnFinishPlenaryTimer = () => {
         console.log("ola terminei");
+        rotateLeader()
+        setLeaderVoted(false)
+        setStateOfGame('choiceAdvisor')
     };
 
     const LiderVoted = (remainingCards: string[]) => {
         console.log(remainingCards);
+        setLeaderVoted(true)
     };
 
     const AdvisorVoted = (approvedCardId: string) => {
-        console.log(approvedCardId);
+        console.log("Aprovada pelo Conselheiro (ou pelo Caos):", approvedCardId);
+        // Após a aprovação final, provavelmente você vai pra tela de plenária
+        setStateOfGame("plenary_timer_test_show");
     };
 
     // logical of showing components in the offline game page, like the game itself, the choices, etc.
@@ -186,21 +160,54 @@ function OfflineGame() {
         } else if (stateOfGame == "plenary_timer_test_show") {
             return <PlenaryTimer onFinish={handleOnFinishPlenaryTimer} />;
         } else if (stateOfGame == "showCardToChoice") {
+            if(currentAdvisor != null){
+                if(leaderVoted){
+                    return (
+                                    <ShowCardsToChoice
+                                        nameAdvisor={currentAdvisor}
+                                        nameLider={playersData[currentLeaderIndex].name}
+                                        showToLider={!leaderVoted}
+                                        cardsId={["c000", "c200", "c234"]}
+                                        onAdvisorVoted={AdvisorVoted}
+                                        onLiderVoted={LiderVoted}
+                                    />
+                                );
+                } else{
+                    return (
+                        <ShowCardsToChoice
+                            nameAdvisor={currentAdvisor}
+                            nameLider={playersData[currentLeaderIndex].name}
+                            showToLider={!leaderVoted}
+                            cardsId={["c000", "c200", "c234"]}
+                            onAdvisorVoted={AdvisorVoted}
+                            onLiderVoted={LiderVoted}
+                        />
+                    );
+                }
+                
+            }
+            
+        } else if (stateOfGame == "choiceAdvisor") {
             return (
-                <ShowCardsToChoice
-                    nameAdvisor="Joao"
-                    nameLider="Henrique"
-                    showToLider={false}
-                    cardsId={["c000", "c200", "c234"]}
-                    onAdvisorVoted={AdvisorVoted}
-                    onLiderVoted={LiderVoted}
+                <ChoiceAdvisorForGovernement
+                    nameLider={playersData[currentLeaderIndex].name}
+                    playersList={ChoiceGovernament()}
+                    aprovedGroup={handleGovernmentApproved}
+                    reprovedGroup={handleGovernmentRejected}
+                    key={currentLeaderIndex}
                 />
             );
-        } else if (stateOfGame == "choiceAdvisor") {
-            return <ChoiceAdvisorForGovernement nameLider={playersData[currentLeaderIndex].name}
-                                                playersList={ChoiceGovernament()}
-                                                aprovedGroup={handleGovernmentApproved}
-                                                reprovedGroup={handleGovernmentRejected} />;
+        } else if (stateOfGame == "showChaosCard") {
+            // 4. A TELA DO CAOS (Aproveita o seu componente passando apenas 1 carta)
+            return (
+                <ShowCardsToChoice
+                    nameAdvisor="Povo"
+                    nameLider="Caos"
+                    showToLider={false} // Pra ele agir como "conselheiro" e já aprovar a carta direto
+                    cardsId={["cRandom"]} // Puxou só 1 carta do baralho!
+                    onAdvisorVoted={AdvisorVoted}
+                />
+            );
         }
     };
 
@@ -218,7 +225,7 @@ function OfflineGame() {
                         <HeaderGamingPoints
                             pointsCommunity={pointsComunity}
                             pointsLobby={pointsLobby}
-                            idSession={generateSessionId()}
+                            idSession={sessionId}
                         />
                     )}
                 </div>

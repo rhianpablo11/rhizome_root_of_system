@@ -2,11 +2,11 @@ import { useState } from "react";
 import type { IButton } from "../interfaces/components/IButton";
 
 function Button(props: IButton) {
-    const { text, color, onClickButtonChildren, usesOn, disable } = props;
-    const [clicked, setClicked] = useState(false);
+    const { text, color, onClickButtonChildren, usesOn, disable, clicked } = props;
+    //const [clicked, setClicked] = useState(false);
 
     const handleClick = () => {
-        setClicked(!clicked);
+        //setClicked(!clicked);
         if (!clicked) {
             onClickButtonChildren(text);
         } else {
