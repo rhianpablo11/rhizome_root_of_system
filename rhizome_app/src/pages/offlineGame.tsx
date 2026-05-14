@@ -20,6 +20,8 @@ function OfflineGame() {
         | "showCardToChoice"
         | "choiceAdvisor"
         | "showChaosCard"
+        | "defenseTime"
+        | 'defenseTimeLeader'
     >("selectPlayers");
     const [pointsComunity, setPointsComunity] = useState(0);
     const [pointsLobby, setPointsLobby] = useState(0);
@@ -29,6 +31,8 @@ function OfflineGame() {
     const [currentAdvisor, setCurrentAdvisor] = useState<string | null>(null);
     const [rejectionCount, setRejectionCount] = useState(0);
     const [leaderVoted, setLeaderVoted] = useState(false);
+    const [defenseLeader, setDefenseLeader] = useState(true);
+    const [defenseAdvisor, setDefenseAdvisor] = useState(false);
     const [sessionId] = useState(() => {
         const characters = "ABCDEFGHIJKLMNPQRSTUVWXYZ123456789";
         let sessionId = "";
@@ -145,7 +149,14 @@ function OfflineGame() {
     const AdvisorVoted = (approvedCardId: string) => {
         console.log("Aprovada pelo Conselheiro (ou pelo Caos):", approvedCardId);
         // Após a aprovação final, provavelmente você vai pra tela de plenária
-        setStateOfGame("plenary_timer_test_show");
+        setDefenseLeader(true);
+        setStateOfGame("defenseTime");
+    };
+
+    const timeLeaderDefenseEnd = () => {
+        setDefenseLeader(false);
+        setDefenseAdvisor(true);
+        setStateOfGame("defenseTimeLeader");
     };
 
     // logical of showing components in the offline game page, like the game itself, the choices, etc.
@@ -156,8 +167,30 @@ function OfflineGame() {
             return <ShowPlayerFunction listPlayers={playersData} onFinish={handleOnFinishPlayersSeeYoursFunctions} />;
         } else if (stateOfGame == "alert_test_show") {
             return <AlertModal text={"Já ocorreram 3 votações reprovadas! Uma carta aleatoria vai ser aprovada!"} />;
+        } else if (stateOfGame == "defenseTime") {
+            return (
+                <PlenaryTimer
+                    onFinish={timeLeaderDefenseEnd}
+                    advisorDefenseTime={defenseAdvisor}
+                    leaderDefenseTime={defenseLeader}
+                />
+            );
+        } else if (stateOfGame == "defenseTimeLeader") {
+            return (
+                <PlenaryTimer
+                    onFinish={timeLeaderDefenseEnd}
+                    advisorDefenseTime={defenseAdvisor}
+                    leaderDefenseTime={defenseLeader}
+                />
+            );
         } else if (stateOfGame == "plenary_timer_test_show") {
-            return <PlenaryTimer onFinish={handleOnFinishPlenaryTimer} />;
+            return (
+                <PlenaryTimer
+                    onFinish={handleOnFinishPlenaryTimer}
+                    advisorDefenseTime={defenseAdvisor}
+                    leaderDefenseTime={defenseLeader}
+                />
+            );
         } else if (stateOfGame == "showCardToChoice") {
             if (currentAdvisor != null) {
                 if (leaderVoted) {
