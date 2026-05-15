@@ -2,10 +2,11 @@ import type { IAlertModal } from "../interfaces/components/IAlertModal";
 import Button from "./button";
 
 function AlertModal(props: IAlertModal) {
-    const { text } = props;
+    const { text, onSkip, buttonText } = props;
 
     const handleButtonClickFather = () => {
         console.log("clicado");
+        onSkip();
     };
 
     return (
@@ -16,7 +17,7 @@ function AlertModal(props: IAlertModal) {
                 <div className="pb-5 w-full px-11 pt-4">
                     <Button
                         usesOn="commonGame"
-                        text={"Revelar carta"}
+                        text={buttonText}
                         color={"darkBlue"}
                         onClickButtonChildren={handleButtonClickFather}
                     />
