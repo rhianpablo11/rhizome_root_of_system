@@ -1,0 +1,25 @@
+name: Guardião da Master
+
+on:
+  pull_request:
+    branches:
+      - master 
+
+jobs:
+  verify-source-branch:
+    name: 🛡️ Verificar Origem do PR
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checar se a origem é válida
+        run: |
+          # Pega o nome da branch que está tentando entrar na master
+          SOURCE_BRANCH="${{ github.head_ref }}"
+          echo "A branch tentando fazer merge é a: $SOURCE_BRANCH"
+          
+          # Lógica: Se a branch NÃO for 'develop' E NÃO começar com 'hotfix/'
+          if [[ "$SOURCE_BRANCH" != "develop" && "$SOURCE_BRANCH" != hotfix/* ]]; then
+            echo "❌ ACESSO NEGADO: Pull Requests para a master só são permitidos se vierem da 'develop' ou de branches 'hotfix/*'."
+            exit 1 # O 'exit 1' é o que faz o GitHub Actions ficar vermelho (falhar)
+          fi
+          
+          echo "✅ Acesso permitido! Origem válida."
