@@ -22,6 +22,7 @@ function OfflineGame() {
         | "showChaosCard"
         | "defenseTime"
         | "defenseTimeLeader"
+        | "showCardChosen"
     >("selectPlayers");
     const [pointsComunity, setPointsComunity] = useState(0);
     const [pointsLobby, setPointsLobby] = useState(0);
@@ -134,6 +135,11 @@ function OfflineGame() {
         }
     };
 
+    
+    const skipAlert = ( ) =>{
+        setStateOfGame('showChaosCard')
+    }
+
     const handleOnFinishPlenaryTimer = () => {
         console.log("ola terminei");
         rotateLeader();
@@ -146,12 +152,16 @@ function OfflineGame() {
         setLeaderVoted(true);
     };
 
-    const AdvisorVoted = (approvedCardId: string) => {
-        console.log("Aprovada pelo Conselheiro (ou pelo Caos):", approvedCardId);
-        // Após a aprovação final, provavelmente vai pra tela de plenária
+    const initiateTimeForDefenses = () => {
         setDefenseLeader(true);
         setDefenseAdvisor(false);
         setStateOfGame("defenseTimeLeader");
+    };
+
+    const AdvisorVoted = (approvedCardId: string) => {
+        console.log("Aprovada pelo Conselheiro (ou pelo Caos):", approvedCardId);
+        // Após a aprovação final, provavelmente vai pra tela de plenária
+        setStateOfGame("showCardChosen");
     };
 
     const timeLeaderDefenseEnd = () => {
@@ -160,12 +170,11 @@ function OfflineGame() {
         setStateOfGame("defenseTime");
     };
 
-    const timeAdvisorDefenseEnd = () =>{
-        setDefenseAdvisor(false)
-        setDefenseLeader(false)
-        setStateOfGame('plenary_timer_test_show')
-
-    }
+    const timeAdvisorDefenseEnd = () => {
+        setDefenseAdvisor(false);
+        setDefenseLeader(false);
+        setStateOfGame("plenary_timer_test_show");
+    };
 
     // logical of showing components in the offline game page, like the game itself, the choices, etc.
     const componentToShow = () => {
@@ -174,7 +183,7 @@ function OfflineGame() {
         } else if (stateOfGame == "showFunctionPlayers") {
             return <ShowPlayerFunction listPlayers={playersData} onFinish={handleOnFinishPlayersSeeYoursFunctions} />;
         } else if (stateOfGame == "alert_test_show") {
-            return <AlertModal text={"Já ocorreram 3 votações reprovadas! Uma carta aleatoria vai ser aprovada!"} />;
+            return <AlertModal text={"Já ocorreram 3 votações reprovadas! Uma carta aleatoria vai ser aprovada!"} onSkip={skipAlert} />;
         } else if (stateOfGame == "defenseTime") {
             return (
                 <PlenaryTimer
@@ -204,23 +213,27 @@ function OfflineGame() {
                 if (leaderVoted) {
                     return (
                         <ShowCardsToChoice
+                            key="advisor-turn"
                             nameAdvisor={currentAdvisor}
                             nameLider={playersData[currentLeaderIndex].name}
                             showToLider={!leaderVoted}
-                            cardsId={["c000", "c200", "c234"]}
+                            cardsId={["c000", "c200"]}
                             onAdvisorVoted={AdvisorVoted}
                             onLiderVoted={LiderVoted}
+                            state='defense'
                         />
                     );
                 } else {
                     return (
                         <ShowCardsToChoice
+                            key="leader-turn"
                             nameAdvisor={currentAdvisor}
                             nameLider={playersData[currentLeaderIndex].name}
                             showToLider={!leaderVoted}
-                            cardsId={["c000", "c200", "c234"]}
+                            cardsId={["c000", "c200", 'c300']}
                             onAdvisorVoted={AdvisorVoted}
                             onLiderVoted={LiderVoted}
+                            state='defense'
                         />
                     );
                 }
@@ -239,11 +252,25 @@ function OfflineGame() {
             // 4. A TELA DO CAOS (Aproveita o seu componente passando apenas 1 carta)
             return (
                 <ShowCardsToChoice
+                    key="chaos-turn"
                     nameAdvisor="Povo"
                     nameLider="Caos"
                     showToLider={false} // Pra ele agir como "conselheiro" e já aprovar a carta direto
                     cardsId={["cRandom"]} // Puxou só 1 carta do baralho!
-                    onAdvisorVoted={AdvisorVoted}
+                    onAdvisorVoted={handleOnFinishPlenaryTimer}
+                    state='confirm'
+                />
+            );
+        } else if (stateOfGame == "showCardChosen") {
+            return (
+                <ShowCardsToChoice
+                    key={`advisor-choice-${currentLeaderIndex}`}
+                    nameAdvisor="Povo"
+                    nameLider=""
+                    showToLider={false} // Pra ele agir como "conselheiro" e já aprovar a carta direto
+                    cardsId={["cRandom"]} // Puxou só 1 carta do baralho!
+                    onAdvisorVoted={initiateTimeForDefenses}
+                    state='confirm'
                 />
             );
         }
