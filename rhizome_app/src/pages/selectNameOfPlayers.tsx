@@ -1,8 +1,10 @@
 import { useState } from "react";
 import Button from "../components/button";
 import Input from "../components/input";
+import type { ISelectNameOfPlayers } from "../interfaces/components/ISelectNameOfPlayers";
 
-function SelectNameOfPlayers() {
+function SelectNameOfPlayers(props: ISelectNameOfPlayers) {
+    const { playersNameSet, startGame } = props;
     const [playersName, setPlayersName] = useState<string[]>(["", "", "", "", ""]);
 
     const handleOnClickFatherAddPlayer = () => {
@@ -10,13 +12,14 @@ function SelectNameOfPlayers() {
     };
 
     const handleOnClickFatherStartGame = () => {
-        console.log("2");
+        startGame();
     };
 
     const handleUpdatePlayerName = (index: number, newName: string) => {
         const newPlayers = [...playersName];
         newPlayers[index] = newName;
         setPlayersName(newPlayers);
+        playersNameSet(newPlayers);
     };
 
     return (

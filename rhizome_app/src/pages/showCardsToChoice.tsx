@@ -5,9 +5,10 @@ import BackOfCard from "../components/backOfCard";
 import Button from "../components/button";
 import CardModal from "../components/cardModal";
 import bgCardFront from "../assets/card_info.png";
+import cardsData from "../database/cards_data.json";
 
 function ShowCardsToChoice(props: IShowCardsToChoice) {
-    const { nameLider, nameAdvisor, showToLider, cardsId, onLiderVoted, onAdvisorVoted } = props;
+    const { nameLider, nameAdvisor, showToLider, cardsId, onLiderVoted, onAdvisorVoted, state } = props;
 
     // Estado para rastrear o ID da carta que o jogador clicou
     const [flippedCardId, setFlippedCardId] = useState<string | null>(null);
@@ -15,6 +16,10 @@ function ShowCardsToChoice(props: IShowCardsToChoice) {
     const [cardsList, setCardsList] = useState<string[]>(cardsId);
     const displayName = showToLider ? nameLider : nameAdvisor;
     const totalCards = cardsList.length;
+    console.log("CARTAS Q CHEGARAM: " + cardsId);
+    console.log("QUEM MANDA AGORA: " + showToLider);
+
+    const selectedCardInfo = flippedCardId ? cardsData.find((card) => card.id === flippedCardId) : null;
 
     // Lógica Matemática: Calcula a posição e o ângulo de cada carta para formar um Leque
     const getCardTransform = (index: number) => {
@@ -49,17 +54,19 @@ function ShowCardsToChoice(props: IShowCardsToChoice) {
         }, 0);
     };
 
-    const AproveCardByAdvisor = (id: string) => {
-        setShowModal(false);
+    const AproveCardByAdvisor = (id: string | null) => {
+        if (id != null) {
+            setShowModal(false);
 
-        setTimeout(() => {
-            setFlippedCardId(null);
+            setTimeout(() => {
+                setFlippedCardId(null);
 
-            // Avisa o componente Pai (Front) que a plenária vai começar com esse ID
-            if (onAdvisorVoted) {
-                onAdvisorVoted(id);
-            }
-        }, 300);
+                // Avisa o componente Pai (Front) que a plenária vai começar com esse ID
+                if (onAdvisorVoted) {
+                    onAdvisorVoted(id);
+                }
+            }, 300);
+        }
     };
 
     const RemoveCardByLider = (id: string) => {
@@ -125,11 +132,10 @@ function ShowCardsToChoice(props: IShowCardsToChoice) {
                                         duration: 3.5, // Bem suave
                                         repeat: !flippedCardId ? Infinity : 0, // Repete para sempre até alguém clicar
                                         ease: "easeInOut",
-                                        // O index * 0.4 atrasa o início da flutuação de cada carta. 
+                                        // O index * 0.4 atrasa o início da flutuação de cada carta.
                                         // Isso faz elas flutuarem em momentos diferentes (mais natural)
-                                        delay: index * 0.3, 
-                                    }}
-                                >
+                                        delay: index * 0.3,
+                                    }}>
                                     {/* ====== COSTAS DA CARTA ====== */}
                                     <BackOfCard />
 
@@ -141,8 +147,7 @@ function ShowCardsToChoice(props: IShowCardsToChoice) {
                                             WebkitBackfaceVisibility: "hidden",
                                             transform: "rotateY(180deg)",
                                             backgroundImage: `url("${bgCardFront}")`,
-                                        }}
-                                    ></div>
+                                        }}></div>
                                 </motion.div>
                             </motion.div>
                         );
@@ -167,8 +172,10 @@ function ShowCardsToChoice(props: IShowCardsToChoice) {
                         {showModal && flippedCardId && (
                             <div className="absolute inset-0 z-[2000]">
                                 <CardModal
-                                    title="Corredores Agroecológicos Populares"
-                                    description="Criação de redes agroecológicas geridas por cooperativas camponesas para abastecimento regional de alimentos sem intermediação de grandes redes varejistas. O projeto integra reflorestamento comunitário e soberania alimentar.">
+                                    title={selectedCardInfo?.title || "Projeto Desconhecido"}
+                                    description={
+                                        selectedCardInfo?.description || "Descrição não encontrada para esta carta."
+                                    }>
                                     <Button
                                         usesOn="commonGame"
                                         text="Manter"
@@ -186,14 +193,16 @@ function ShowCardsToChoice(props: IShowCardsToChoice) {
                         )}
                     </AnimatePresence>
                 </>
-            ) : (
+            ) : state == "defense" ? (
                 <>
                     <AnimatePresence>
                         {showModal && (
                             <div className="absolute inset-0 z-[2000]">
                                 <CardModal
-                                    title="Corredores Agroecológicos Populares"
-                                    description="Criação de redes agroecológicas geridas por cooperativas camponesas para abastecimento regional de alimentos sem intermediação de grandes redes varejistas. O projeto integra reflorestamento comunitário e soberania alimentar.">
+                                    title={selectedCardInfo?.title || "Projeto Desconhecido"}
+                                    description={
+                                        selectedCardInfo?.description || "Descrição não encontrada para esta carta."
+                                    }>
                                     <Button
                                         usesOn="commonGame"
                                         text="Cancelar"
@@ -202,7 +211,28 @@ function ShowCardsToChoice(props: IShowCardsToChoice) {
                                     />
                                     <Button
                                         usesOn="commonGame"
-                                        text="Plenaria"
+                                        text="Confirmar"
+                                        color="darkBlue"
+                                        onClickButtonChildren={() => AproveCardByAdvisor(flippedCardId)}
+                                    />
+                                </CardModal>
+                            </div>
+                        )}
+                    </AnimatePresence>
+                </>
+            ) : (
+                <>
+                    <AnimatePresence>
+                        {showModal && (
+                            <div className="absolute inset-0 z-[2000]">
+                                <CardModal
+                                    title={selectedCardInfo?.title || "Projeto Desconhecido"}
+                                    description={
+                                        selectedCardInfo?.description || "Descrição não encontrada para esta carta."
+                                    }>
+                                    <Button
+                                        usesOn="commonGame"
+                                        text="Confirmar"
                                         color="darkBlue"
                                         onClickButtonChildren={() => AproveCardByAdvisor(flippedCardId)}
                                     />

@@ -3,11 +3,23 @@ import type { IPlenaryTimer } from "../interfaces/components/IPlenaryTimer";
 import Button from "./button";
 
 function PlenaryTimer(props: IPlenaryTimer) {
-    const { onFinish } = props;
+    const { onFinish, leaderDefenseTime, advisorDefenseTime } = props;
     const [timeLeft, setTimeLeft] = useState(120);
+    const [textButton, setTextButton] = useState("Pular Plenaria");
+    console.log("VALORES Q CHEGOU NA PLENARIA: " + leaderDefenseTime + advisorDefenseTime);
+
+    useEffect(() => {
+        if (leaderDefenseTime || advisorDefenseTime) {
+            setTimeLeft(30);
+            setTextButton("Pular defesa");
+        } else {
+            setTextButton("Pular Plenaria");
+        }
+    }, [leaderDefenseTime, advisorDefenseTime]);
 
     useEffect(() => {
         if (timeLeft <= 0) {
+            setTimeLeft(120);
             onFinish();
         }
 
@@ -32,14 +44,24 @@ function PlenaryTimer(props: IPlenaryTimer) {
     return (
         <>
             <div className="bg-[#F6F7EF] flex flex-col w-full rounded-3xl justify-center items-center shadow-2xl ">
-                <h1 className="text-[#1E293B] font-semibold text-3xl pt-5">Plenaria Iniciada</h1>
+                <h1 className="text-[#1E293B] font-semibold text-3xl pt-5">
+                    {leaderDefenseTime || advisorDefenseTime ? "Tempo de Defesa" : "Plenaria Iniciada"}
+                </h1>
+                {(leaderDefenseTime || advisorDefenseTime) && (
+                    <>
+                        <h1 className="text-[#1E293B] text-lg leading-5">
+                            Hora do {leaderDefenseTime ? "Líder" : "Conselheiro"} se defender
+                        </h1>
+                    </>
+                )}
+
                 <h1 className="text-[#1E293B] font-medium text-6xl pt-1 px-5">
                     {formattedMinutes}:{formattedSeconds}
                 </h1>
                 <div className="pb-5 w-full px-11 pt-4">
                     <Button
                         usesOn="commonGame"
-                        text={"Pular plenaria"}
+                        text={textButton}
                         color={"darkBlue"}
                         onClickButtonChildren={handleButtonClickFather}
                     />
