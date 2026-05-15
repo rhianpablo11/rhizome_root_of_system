@@ -10,8 +10,10 @@ import ShowCardsToChoice from "./showCardsToChoice";
 import ChoiceAdvisorForGovernement from "./choiceAdvisorForGovernement";
 import type { IPlayerData } from "../interfaces/components/IShowPlayerFunction";
 import cardsData from "../database/cards_data.json";
+import { useNavigate } from "react-router";
 
 function OfflineGame() {
+    const navigate = useNavigate()
     const [stateOfGame, setStateOfGame] = useState<
         | "selectPlayers"
         | "showFunctionPlayers"
@@ -228,9 +230,9 @@ function OfflineGame() {
     };
 
     const backToMenu = () => {
-        // Dependendo de como vc configurou seu React Router, pode ser:
-        // navigate("/")
-        window.location.href = "/";
+        
+        navigate("/")
+        //window.location.href = "/";
     };
 
     // logical of showing components in the offline game page, like the game itself, the choices, etc.

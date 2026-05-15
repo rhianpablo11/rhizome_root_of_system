@@ -10,7 +10,7 @@ function PlenaryTimer(props: IPlenaryTimer) {
 
     useEffect(() => {
         if (leaderDefenseTime || advisorDefenseTime) {
-            setTimeLeft(3);
+            setTimeLeft(30);
             setTextButton("Pular defesa");
         } else {
             setTextButton("Pular Plenaria");
@@ -19,7 +19,7 @@ function PlenaryTimer(props: IPlenaryTimer) {
 
     useEffect(() => {
         if (timeLeft <= 0) {
-            setTimeLeft(5);
+            setTimeLeft(120);
             onFinish();
         }
 
