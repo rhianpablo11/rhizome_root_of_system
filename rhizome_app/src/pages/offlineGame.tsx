@@ -24,7 +24,7 @@ function OfflineGame() {
         | "defenseTime"
         | "defenseTimeLeader"
         | "showCardChosen"
-        | 'endGame'
+        | "endGame"
     >("selectPlayers");
     const [pointsComunity, setPointsComunity] = useState(0);
     const [pointsLobby, setPointsLobby] = useState(0);
@@ -49,7 +49,7 @@ function OfflineGame() {
     });
     const [deck, setDeck] = useState<string[]>(() => {
         // Pega todos os IDs do JSON e embaralha com Fisher-Yates
-        const allIds = cardsData.map(c => c.id);
+        const allIds = cardsData.map((c) => c.id);
         for (let i = allIds.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
             [allIds[i], allIds[j]] = [allIds[j], allIds[i]];
@@ -117,10 +117,9 @@ function OfflineGame() {
             const drawn = deck.slice(0, 3);
             setCurrentDrawnCards(drawn);
             setDeck(deck.slice(3));
-            setLeaderVoted(false)
+            setLeaderVoted(false);
             setStateOfGame("showCardToChoice");
             setCurrentAdvisor(advisorId);
-
         }
     };
 
@@ -167,7 +166,6 @@ function OfflineGame() {
         console.log(remainingCards);
         setCurrentDrawnCards(remainingCards);
         setLeaderVoted(true);
-        
     };
 
     const initiateTimeForDefenses = () => {
@@ -197,8 +195,8 @@ function OfflineGame() {
 
     const applyPointsAndCheckWin = (idCardToEvaluate: string) => {
         // Busca a carta inteira no JSON pra saber o TIPO dela
-        const cardInfo = cardsData.find(c => c.id === idCardToEvaluate);
-        
+        const cardInfo = cardsData.find((c) => c.id === idCardToEvaluate);
+
         let newComPoints = pointsComunity;
         let newLobbyPoints = pointsLobby;
 
@@ -248,7 +246,7 @@ function OfflineGame() {
                     <div className="w-full h-full -my-15 flex flex-col items-center justify-center">
                         <AlertModal
                             text={"Já ocorreram 3 votações reprovadas! Uma carta aleatoria vai ser aprovada!"}
-                            buttonText='Revelar carta'
+                            buttonText="Revelar carta"
                             onSkip={skipAlert}
                         />
                     </div>

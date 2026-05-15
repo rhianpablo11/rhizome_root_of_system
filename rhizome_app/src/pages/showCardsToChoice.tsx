@@ -19,9 +19,7 @@ function ShowCardsToChoice(props: IShowCardsToChoice) {
     console.log("CARTAS Q CHEGARAM: " + cardsId);
     console.log("QUEM MANDA AGORA: " + showToLider);
 
-    const selectedCardInfo = flippedCardId 
-        ? cardsData.find((card) => card.id === flippedCardId) 
-        : null;
+    const selectedCardInfo = flippedCardId ? cardsData.find((card) => card.id === flippedCardId) : null;
 
     // Lógica Matemática: Calcula a posição e o ângulo de cada carta para formar um Leque
     const getCardTransform = (index: number) => {
@@ -173,7 +171,9 @@ function ShowCardsToChoice(props: IShowCardsToChoice) {
                             <div className="absolute inset-0 z-[2000]">
                                 <CardModal
                                     title={selectedCardInfo?.title || "Projeto Desconhecido"}
-                                    description={selectedCardInfo?.description || "Descrição não encontrada para esta carta."}>
+                                    description={
+                                        selectedCardInfo?.description || "Descrição não encontrada para esta carta."
+                                    }>
                                     <Button
                                         usesOn="commonGame"
                                         text="Manter"
@@ -198,7 +198,9 @@ function ShowCardsToChoice(props: IShowCardsToChoice) {
                             <div className="absolute inset-0 z-[2000]">
                                 <CardModal
                                     title={selectedCardInfo?.title || "Projeto Desconhecido"}
-                                    description={selectedCardInfo?.description || "Descrição não encontrada para esta carta."}>
+                                    description={
+                                        selectedCardInfo?.description || "Descrição não encontrada para esta carta."
+                                    }>
                                     <Button
                                         usesOn="commonGame"
                                         text="Cancelar"
@@ -223,7 +225,9 @@ function ShowCardsToChoice(props: IShowCardsToChoice) {
                             <div className="absolute inset-0 z-[2000]">
                                 <CardModal
                                     title={selectedCardInfo?.title || "Projeto Desconhecido"}
-                                    description={selectedCardInfo?.description || "Descrição não encontrada para esta carta."}>
+                                    description={
+                                        selectedCardInfo?.description || "Descrição não encontrada para esta carta."
+                                    }>
                                     <Button
                                         usesOn="commonGame"
                                         text="Confirmar"

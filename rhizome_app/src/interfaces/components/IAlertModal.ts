@@ -1,5 +1,5 @@
 export interface IAlertModal {
     text: string;
-    buttonText: string
+    buttonText: string;
     onSkip: () => void;
 }
