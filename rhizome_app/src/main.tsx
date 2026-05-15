@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router";
 import "./index.css";
 import OfflineGame from "./pages/offlineGame";
 import InitialPage from "./pages/initialPage";
+import 'virtual:pwa-register'
 
 createRoot(document.getElementById("root")!).render(
     <StrictMode>
