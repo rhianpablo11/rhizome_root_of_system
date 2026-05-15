@@ -21,7 +21,7 @@ function OfflineGame() {
         | "choiceAdvisor"
         | "showChaosCard"
         | "defenseTime"
-        | 'defenseTimeLeader'
+        | "defenseTimeLeader"
     >("selectPlayers");
     const [pointsComunity, setPointsComunity] = useState(0);
     const [pointsLobby, setPointsLobby] = useState(0);
@@ -148,16 +148,24 @@ function OfflineGame() {
 
     const AdvisorVoted = (approvedCardId: string) => {
         console.log("Aprovada pelo Conselheiro (ou pelo Caos):", approvedCardId);
-        // Após a aprovação final, provavelmente você vai pra tela de plenária
+        // Após a aprovação final, provavelmente vai pra tela de plenária
         setDefenseLeader(true);
-        setStateOfGame("defenseTime");
+        setDefenseAdvisor(false);
+        setStateOfGame("defenseTimeLeader");
     };
 
     const timeLeaderDefenseEnd = () => {
         setDefenseLeader(false);
         setDefenseAdvisor(true);
-        setStateOfGame("defenseTimeLeader");
+        setStateOfGame("defenseTime");
     };
+
+    const timeAdvisorDefenseEnd = () =>{
+        setDefenseAdvisor(false)
+        setDefenseLeader(false)
+        setStateOfGame('plenary_timer_test_show')
+
+    }
 
     // logical of showing components in the offline game page, like the game itself, the choices, etc.
     const componentToShow = () => {
@@ -170,7 +178,7 @@ function OfflineGame() {
         } else if (stateOfGame == "defenseTime") {
             return (
                 <PlenaryTimer
-                    onFinish={timeLeaderDefenseEnd}
+                    onFinish={timeAdvisorDefenseEnd}
                     advisorDefenseTime={defenseAdvisor}
                     leaderDefenseTime={defenseLeader}
                 />

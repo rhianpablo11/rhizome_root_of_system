@@ -10,14 +10,16 @@ function PlenaryTimer(props: IPlenaryTimer) {
 
     useEffect(() => {
         if (leaderDefenseTime || advisorDefenseTime) {
-            setTimeLeft(30);
+            setTimeLeft(10);
             setTextButton("Pular defesa");
+        } else{
+            setTextButton('Pular Plenaria')
         }
     }, [leaderDefenseTime, advisorDefenseTime]);
 
     useEffect(() => {
         if (timeLeft <= 0) {
-            setTimeLeft(120)
+            setTimeLeft(20);
             onFinish();
         }
 
@@ -45,6 +47,12 @@ function PlenaryTimer(props: IPlenaryTimer) {
                 <h1 className="text-[#1E293B] font-semibold text-3xl pt-5">
                     {leaderDefenseTime || advisorDefenseTime ? "Tempo de Defesa" : "Plenaria Iniciada"}
                 </h1>
+                {(leaderDefenseTime || advisorDefenseTime) && (
+                    <>
+                        <h1 className="text-[#1E293B] text-lg leading-5">Hora do {leaderDefenseTime ? 'Líder' : 'Conselheiro'} se defender</h1>
+                    </>
+                )}
+                
                 <h1 className="text-[#1E293B] font-medium text-6xl pt-1 px-5">
                     {formattedMinutes}:{formattedSeconds}
                 </h1>
