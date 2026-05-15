@@ -141,9 +141,9 @@ function OfflineGame() {
             setStateOfGame("alert_test_show");
 
             // Depois de 3.5 segundos lendo o alerta, muda pra tela da carta do caos!
-            setTimeout(() => {
-                setStateOfGame("showChaosCard");
-            }, 3500);
+            // setTimeout(() => {
+            //     setStateOfGame("showChaosCard");
+            // }, 3500);
         } else {
             console.log(`Governo rejeitado. Estamos em ${newCount}/3 pro caos.`);
 
