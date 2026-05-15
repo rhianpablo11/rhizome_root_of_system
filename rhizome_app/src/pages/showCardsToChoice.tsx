@@ -54,17 +54,19 @@ function ShowCardsToChoice(props: IShowCardsToChoice) {
         }, 0);
     };
 
-    const AproveCardByAdvisor = (id: string) => {
-        setShowModal(false);
+    const AproveCardByAdvisor = (id: string | null) => {
+        if (id != null) {
+            setShowModal(false);
 
-        setTimeout(() => {
-            setFlippedCardId(null);
+            setTimeout(() => {
+                setFlippedCardId(null);
 
-            // Avisa o componente Pai (Front) que a plenária vai começar com esse ID
-            if (onAdvisorVoted) {
-                onAdvisorVoted(id);
-            }
-        }, 300);
+                // Avisa o componente Pai (Front) que a plenária vai começar com esse ID
+                if (onAdvisorVoted) {
+                    onAdvisorVoted(id);
+                }
+            }, 300);
+        }
     };
 
     const RemoveCardByLider = (id: string) => {

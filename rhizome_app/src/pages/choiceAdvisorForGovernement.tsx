@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Button from "../components/button";
 import type { IChoiceAdvisorForGovernement } from "../interfaces/components/IChoiceAdvisorForGovernement";
 
@@ -6,7 +6,6 @@ function ChoiceAdvisorForGovernement(props: IChoiceAdvisorForGovernement) {
     const { nameLider, playersList, aprovedGroup, reprovedGroup } = props;
     const [buttonsDisable, setButtonsDisable] = useState(true);
     const [nameAdvisorSelected, setNameAdvisorSelected] = useState<string | null>("");
-    const [clicked, setClicked] = useState(false);
     const justNames: string[] = playersList.map((player) => player.name);
 
     const advisorSelected = (name?: string) => {
@@ -35,6 +34,7 @@ function ChoiceAdvisorForGovernement(props: IChoiceAdvisorForGovernement) {
                 <div className="w-full flex flex-col mt-3 overflow-y-auto gap-y-2">
                     {justNames.map((name, index) => (
                         <Button
+                            key={index}
                             text={name}
                             usesOn="selectAdvisor"
                             onClickButtonChildren={advisorSelected}

@@ -72,7 +72,7 @@ function ShowPlayerFunction(props: IShowPlayerFunction) {
                     dragConstraints={{ top: -150, bottom: 0 }} // Limita pra não voar da tela
                     dragElastic={0.1} // Dá aquela resistência de "borracha" no final
                     // LÓGICA: Se arrastar mais que 50px pra cima, revela a carta
-                    onDragEnd={(event, info) => {
+                    onDragEnd={(_event, info) => {
                         if (info.offset.y < -50) {
                             setIsRevealed(true);
                         }

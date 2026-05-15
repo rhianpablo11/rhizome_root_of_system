@@ -17,7 +17,7 @@ function AlertModal(props: IAlertModal) {
                 <div className="pb-5 w-full px-11 pt-4">
                     <Button
                         usesOn="commonGame"
-                        text={"Revelar carta"}
+                        text={buttonText}
                         color={"darkBlue"}
                         onClickButtonChildren={handleButtonClickFather}
                     />

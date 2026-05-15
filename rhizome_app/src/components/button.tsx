@@ -1,4 +1,3 @@
-import { useState } from "react";
 import type { IButton } from "../interfaces/components/IButton";
 
 function Button(props: IButton) {

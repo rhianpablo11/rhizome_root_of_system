@@ -1,4 +1,4 @@
-import { use, useState } from "react";
+import { useState } from "react";
 import bg from "../assets/bg.png";
 import LogoType from "../components/logoType";
 import SelectNameOfPlayers from "./selectNameOfPlayers";
@@ -6,7 +6,6 @@ import ShowPlayerFunction from "./showPlayerFunction";
 import HeaderGamingPoints from "../components/headerGamingPoints";
 import AlertModal from "../components/alertModal";
 import PlenaryTimer from "../components/plenaryTimer";
-import CardModal from "../components/cardModal";
 import ShowCardsToChoice from "./showCardsToChoice";
 import ChoiceAdvisorForGovernement from "./choiceAdvisorForGovernement";
 import type { IPlayerData } from "../interfaces/components/IShowPlayerFunction";
