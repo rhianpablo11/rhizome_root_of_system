@@ -6,7 +6,7 @@ function AlertModal(props: IAlertModal) {
 
     const handleButtonClickFather = () => {
         console.log("clicado");
-        onSkip()
+        onSkip();
     };
 
     return (

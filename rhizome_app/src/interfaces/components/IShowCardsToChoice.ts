@@ -5,5 +5,5 @@ export interface IShowCardsToChoice {
     cardsId: string[];
     onLiderVoted?: (remainingCards: string[]) => void;
     onAdvisorVoted?: (approvedCardId: string) => void;
-    state: 'defense' | 'confirm' 
+    state: "defense" | "confirm";
 }

@@ -185,7 +185,7 @@ function ShowCardsToChoice(props: IShowCardsToChoice) {
                         )}
                     </AnimatePresence>
                 </>
-            ) : state == 'defense' ? (
+            ) : state == "defense" ? (
                 <>
                     <AnimatePresence>
                         {showModal && (
@@ -212,13 +212,12 @@ function ShowCardsToChoice(props: IShowCardsToChoice) {
                 </>
             ) : (
                 <>
-                <AnimatePresence>
+                    <AnimatePresence>
                         {showModal && (
                             <div className="absolute inset-0 z-[2000]">
                                 <CardModal
                                     title="Corredores Agroecológicos Populares"
                                     description="Criação de redes agroecológicas geridas por cooperativas camponesas para abastecimento regional de alimentos sem intermediação de grandes redes varejistas. O projeto integra reflorestamento comunitário e soberania alimentar.">
-                                    
                                     <Button
                                         usesOn="commonGame"
                                         text="Confirmar"

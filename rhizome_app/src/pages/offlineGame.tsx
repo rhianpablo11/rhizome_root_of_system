@@ -135,10 +135,9 @@ function OfflineGame() {
         }
     };
 
-    
-    const skipAlert = ( ) =>{
-        setStateOfGame('showChaosCard')
-    }
+    const skipAlert = () => {
+        setStateOfGame("showChaosCard");
+    };
 
     const handleOnFinishPlenaryTimer = () => {
         console.log("ola terminei");
@@ -183,30 +182,51 @@ function OfflineGame() {
         } else if (stateOfGame == "showFunctionPlayers") {
             return <ShowPlayerFunction listPlayers={playersData} onFinish={handleOnFinishPlayersSeeYoursFunctions} />;
         } else if (stateOfGame == "alert_test_show") {
-            return <AlertModal text={"Já ocorreram 3 votações reprovadas! Uma carta aleatoria vai ser aprovada!"} onSkip={skipAlert} />;
+            return (
+                <>
+                    <div className="w-full h-full -my-15 flex flex-col items-center justify-center">
+                        <AlertModal
+                            text={"Já ocorreram 3 votações reprovadas! Uma carta aleatoria vai ser aprovada!"}
+                            onSkip={skipAlert}
+                        />
+                    </div>
+                </>
+            );
         } else if (stateOfGame == "defenseTime") {
             return (
-                <PlenaryTimer
-                    onFinish={timeAdvisorDefenseEnd}
-                    advisorDefenseTime={defenseAdvisor}
-                    leaderDefenseTime={defenseLeader}
-                />
+                <>
+                    <div className="w-full h-full flex -my-15 flex-col items-center justify-center">
+                        <PlenaryTimer
+                            onFinish={timeAdvisorDefenseEnd}
+                            advisorDefenseTime={defenseAdvisor}
+                            leaderDefenseTime={defenseLeader}
+                        />
+                    </div>
+                </>
             );
         } else if (stateOfGame == "defenseTimeLeader") {
             return (
-                <PlenaryTimer
-                    onFinish={timeLeaderDefenseEnd}
-                    advisorDefenseTime={defenseAdvisor}
-                    leaderDefenseTime={defenseLeader}
-                />
+                <>
+                    <div className="w-full h-full flex -my-15 flex-col items-center justify-center">
+                        <PlenaryTimer
+                            onFinish={timeLeaderDefenseEnd}
+                            advisorDefenseTime={defenseAdvisor}
+                            leaderDefenseTime={defenseLeader}
+                        />
+                    </div>
+                </>
             );
         } else if (stateOfGame == "plenary_timer_test_show") {
             return (
-                <PlenaryTimer
-                    onFinish={handleOnFinishPlenaryTimer}
-                    advisorDefenseTime={defenseAdvisor}
-                    leaderDefenseTime={defenseLeader}
-                />
+                <>
+                    <div className="w-full h-full flex -my-15 flex-col items-center justify-center">
+                        <PlenaryTimer
+                            onFinish={handleOnFinishPlenaryTimer}
+                            advisorDefenseTime={defenseAdvisor}
+                            leaderDefenseTime={defenseLeader}
+                        />
+                    </div>
+                </>
             );
         } else if (stateOfGame == "showCardToChoice") {
             if (currentAdvisor != null) {
@@ -220,7 +240,7 @@ function OfflineGame() {
                             cardsId={["c000", "c200"]}
                             onAdvisorVoted={AdvisorVoted}
                             onLiderVoted={LiderVoted}
-                            state='defense'
+                            state="defense"
                         />
                     );
                 } else {
@@ -230,10 +250,10 @@ function OfflineGame() {
                             nameAdvisor={currentAdvisor}
                             nameLider={playersData[currentLeaderIndex].name}
                             showToLider={!leaderVoted}
-                            cardsId={["c000", "c200", 'c300']}
+                            cardsId={["c000", "c200", "c300"]}
                             onAdvisorVoted={AdvisorVoted}
                             onLiderVoted={LiderVoted}
-                            state='defense'
+                            state="defense"
                         />
                     );
                 }
@@ -258,7 +278,7 @@ function OfflineGame() {
                     showToLider={false} // Pra ele agir como "conselheiro" e já aprovar a carta direto
                     cardsId={["cRandom"]} // Puxou só 1 carta do baralho!
                     onAdvisorVoted={handleOnFinishPlenaryTimer}
-                    state='confirm'
+                    state="confirm"
                 />
             );
         } else if (stateOfGame == "showCardChosen") {
@@ -270,7 +290,7 @@ function OfflineGame() {
                     showToLider={false} // Pra ele agir como "conselheiro" e já aprovar a carta direto
                     cardsId={["cRandom"]} // Puxou só 1 carta do baralho!
                     onAdvisorVoted={initiateTimeForDefenses}
-                    state='confirm'
+                    state="confirm"
                 />
             );
         }
