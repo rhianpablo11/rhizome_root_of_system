@@ -248,6 +248,7 @@ function OfflineGame() {
                     <div className="w-full h-full -my-15 flex flex-col items-center justify-center">
                         <AlertModal
                             text={"Já ocorreram 3 votações reprovadas! Uma carta aleatoria vai ser aprovada!"}
+                            buttonText='Revelar carta'
                             onSkip={skipAlert}
                         />
                     </div>
@@ -257,7 +258,8 @@ function OfflineGame() {
             return (
                 <div className="w-full h-full -my-15 flex flex-col items-center justify-center">
                     <AlertModal
-                        text={`🔥 FIM DE JOGO! ${winningTeam} VENCEU A PARTIDA COM 5 PROJETOS APROVADOS!`}
+                        text={`🔥 Fim de Jogo! ${winningTeam} venceu a partida com 5 projetos aprovados!`}
+                        buttonText="Voltar ao inicio"
                         onSkip={backToMenu}
                     />
                 </div>

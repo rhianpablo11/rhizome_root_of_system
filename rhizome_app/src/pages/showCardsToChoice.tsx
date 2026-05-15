@@ -5,6 +5,7 @@ import BackOfCard from "../components/backOfCard";
 import Button from "../components/button";
 import CardModal from "../components/cardModal";
 import bgCardFront from "../assets/card_info.png";
+import cardsData from "../database/cards_data.json";
 
 function ShowCardsToChoice(props: IShowCardsToChoice) {
     const { nameLider, nameAdvisor, showToLider, cardsId, onLiderVoted, onAdvisorVoted, state } = props;
@@ -17,6 +18,11 @@ function ShowCardsToChoice(props: IShowCardsToChoice) {
     const totalCards = cardsList.length;
     console.log("CARTAS Q CHEGARAM: " + cardsId);
     console.log("QUEM MANDA AGORA: " + showToLider);
+
+    const selectedCardInfo = flippedCardId 
+        ? cardsData.find((card) => card.id === flippedCardId) 
+        : null;
+
     // Lógica Matemática: Calcula a posição e o ângulo de cada carta para formar um Leque
     const getCardTransform = (index: number) => {
         if (totalCards === 3) {
@@ -166,8 +172,8 @@ function ShowCardsToChoice(props: IShowCardsToChoice) {
                         {showModal && flippedCardId && (
                             <div className="absolute inset-0 z-[2000]">
                                 <CardModal
-                                    title="Corredores Agroecológicos Populares"
-                                    description="Criação de redes agroecológicas geridas por cooperativas camponesas para abastecimento regional de alimentos sem intermediação de grandes redes varejistas. O projeto integra reflorestamento comunitário e soberania alimentar.">
+                                    title={selectedCardInfo?.title || "Projeto Desconhecido"}
+                                    description={selectedCardInfo?.description || "Descrição não encontrada para esta carta."}>
                                     <Button
                                         usesOn="commonGame"
                                         text="Manter"
@@ -191,8 +197,8 @@ function ShowCardsToChoice(props: IShowCardsToChoice) {
                         {showModal && (
                             <div className="absolute inset-0 z-[2000]">
                                 <CardModal
-                                    title="Corredores Agroecológicos Populares"
-                                    description="Criação de redes agroecológicas geridas por cooperativas camponesas para abastecimento regional de alimentos sem intermediação de grandes redes varejistas. O projeto integra reflorestamento comunitário e soberania alimentar.">
+                                    title={selectedCardInfo?.title || "Projeto Desconhecido"}
+                                    description={selectedCardInfo?.description || "Descrição não encontrada para esta carta."}>
                                     <Button
                                         usesOn="commonGame"
                                         text="Cancelar"
@@ -216,8 +222,8 @@ function ShowCardsToChoice(props: IShowCardsToChoice) {
                         {showModal && (
                             <div className="absolute inset-0 z-[2000]">
                                 <CardModal
-                                    title="Corredores Agroecológicos Populares"
-                                    description="Criação de redes agroecológicas geridas por cooperativas camponesas para abastecimento regional de alimentos sem intermediação de grandes redes varejistas. O projeto integra reflorestamento comunitário e soberania alimentar.">
+                                    title={selectedCardInfo?.title || "Projeto Desconhecido"}
+                                    description={selectedCardInfo?.description || "Descrição não encontrada para esta carta."}>
                                     <Button
                                         usesOn="commonGame"
                                         text="Confirmar"

@@ -2,7 +2,7 @@ import type { IAlertModal } from "../interfaces/components/IAlertModal";
 import Button from "./button";
 
 function AlertModal(props: IAlertModal) {
-    const { text, onSkip } = props;
+    const { text, onSkip, buttonText } = props;
 
     const handleButtonClickFather = () => {
         console.log("clicado");
