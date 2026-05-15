@@ -10,6 +10,7 @@ import CardModal from "../components/cardModal";
 import ShowCardsToChoice from "./showCardsToChoice";
 import ChoiceAdvisorForGovernement from "./choiceAdvisorForGovernement";
 import type { IPlayerData } from "../interfaces/components/IShowPlayerFunction";
+import cardsData from "../database/cards_data.json";
 
 function OfflineGame() {
     const [stateOfGame, setStateOfGame] = useState<
@@ -23,9 +24,11 @@ function OfflineGame() {
         | "defenseTime"
         | "defenseTimeLeader"
         | "showCardChosen"
+        | 'endGame'
     >("selectPlayers");
     const [pointsComunity, setPointsComunity] = useState(0);
     const [pointsLobby, setPointsLobby] = useState(0);
+    const [winningTeam, setWinningTeam] = useState<string | null>(null);
     const [playersName, setPlayersName] = useState<string[]>([]);
     const [playersData, setPlayersData] = useState<IPlayerData[]>([]);
     const [currentLeaderIndex, setCurrentLeaderIndex] = useState(0);
@@ -44,6 +47,17 @@ function OfflineGame() {
 
         return sessionId;
     });
+    const [deck, setDeck] = useState<string[]>(() => {
+        // Pega todos os IDs do JSON e embaralha com Fisher-Yates
+        const allIds = cardsData.map(c => c.id);
+        for (let i = allIds.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [allIds[i], allIds[j]] = [allIds[j], allIds[i]];
+        }
+        return allIds;
+    });
+    const [currentDrawnCards, setCurrentDrawnCards] = useState<string[]>([]);
+    const [approvedCardId, setApprovedCardId] = useState<string | null>(null);
 
     const generatePlayersFunction = (playersName: string[]): IPlayerData[] => {
         const totalPlayers = playersName.length;
@@ -77,13 +91,11 @@ function OfflineGame() {
     };
 
     const finishedChoicesOfNamesPlayers = () => {
-        console.log("ola mundo");
         setPlayersData(generatePlayersFunction(playersName));
         setStateOfGame("showFunctionPlayers");
     };
 
     const handleOnFinishPlayersSeeYoursFunctions = () => {
-        console.log("ola terminei");
         setStateOfGame("choiceAdvisor");
     };
 
@@ -93,7 +105,6 @@ function OfflineGame() {
 
     const ChoiceGovernament = () => {
         const currentLeader = playersData[currentLeaderIndex];
-        //select advisors list
         const availableAdvisors = playersData.filter((player) => player.id !== currentLeader?.id);
         return availableAdvisors;
     };
@@ -103,8 +114,13 @@ function OfflineGame() {
         // Zera o termômetro do caos
         if (advisorId != null) {
             setRejectionCount(0);
+            const drawn = deck.slice(0, 3);
+            setCurrentDrawnCards(drawn);
+            setDeck(deck.slice(3));
+            setLeaderVoted(false)
             setStateOfGame("showCardToChoice");
             setCurrentAdvisor(advisorId);
+
         }
     };
 
@@ -117,7 +133,9 @@ function OfflineGame() {
             setRejectionCount(0);
 
             rotateLeader();
-
+            const chaosCard = deck[0];
+            setCurrentDrawnCards([chaosCard]);
+            setDeck(deck.slice(1));
             // TODO: Mudar o estado para abrir o "Componente de Alerta"
             // e depois rodar a função de pegar uma carta aleatória do baralho e aplicar direto!
             setStateOfGame("alert_test_show");
@@ -140,15 +158,16 @@ function OfflineGame() {
     };
 
     const handleOnFinishPlenaryTimer = () => {
-        console.log("ola terminei");
-        rotateLeader();
-        setLeaderVoted(false);
-        setStateOfGame("choiceAdvisor");
+        if (approvedCardId) {
+            applyPointsAndCheckWin(approvedCardId);
+        }
     };
 
     const LiderVoted = (remainingCards: string[]) => {
         console.log(remainingCards);
+        setCurrentDrawnCards(remainingCards);
         setLeaderVoted(true);
+        
     };
 
     const initiateTimeForDefenses = () => {
@@ -160,6 +179,7 @@ function OfflineGame() {
     const AdvisorVoted = (approvedCardId: string) => {
         console.log("Aprovada pelo Conselheiro (ou pelo Caos):", approvedCardId);
         // Após a aprovação final, provavelmente vai pra tela de plenária
+        setApprovedCardId(approvedCardId);
         setStateOfGame("showCardChosen");
     };
 
@@ -173,6 +193,47 @@ function OfflineGame() {
         setDefenseAdvisor(false);
         setDefenseLeader(false);
         setStateOfGame("plenary_timer_test_show");
+    };
+
+    const applyPointsAndCheckWin = (idCardToEvaluate: string) => {
+        // Busca a carta inteira no JSON pra saber o TIPO dela
+        const cardInfo = cardsData.find(c => c.id === idCardToEvaluate);
+        
+        let newComPoints = pointsComunity;
+        let newLobbyPoints = pointsLobby;
+
+        if (cardInfo?.type === "COMUNIDADE") {
+            newComPoints += 1;
+            setPointsComunity(newComPoints);
+        } else if (cardInfo?.type === "LOBBY") {
+            newLobbyPoints += 1;
+            setPointsLobby(newLobbyPoints);
+        }
+
+        // VERIFICA SE ALGUÉM BATEU 5 PONTOS
+        if (newComPoints >= 5) {
+            setWinningTeam("A COMUNIDADE");
+            setStateOfGame("endGame");
+        } else if (newLobbyPoints >= 5) {
+            setWinningTeam("O LOBBY (SISTEMA)");
+            setStateOfGame("endGame");
+        } else {
+            // Se ninguém ganhou, roda a mesa e vai pra próxima rodada
+            setApprovedCardId(null);
+            rotateLeader();
+            setLeaderVoted(false);
+            setStateOfGame("choiceAdvisor");
+        }
+    };
+
+    const handleChaosCardVoted = (chaosCardId: string) => {
+        applyPointsAndCheckWin(chaosCardId);
+    };
+
+    const backToMenu = () => {
+        // Dependendo de como vc configurou seu React Router, pode ser:
+        // navigate("/")
+        window.location.href = "/";
     };
 
     // logical of showing components in the offline game page, like the game itself, the choices, etc.
@@ -191,6 +252,15 @@ function OfflineGame() {
                         />
                     </div>
                 </>
+            );
+        } else if (stateOfGame == "endGame") {
+            return (
+                <div className="w-full h-full -my-15 flex flex-col items-center justify-center">
+                    <AlertModal
+                        text={`🔥 FIM DE JOGO! ${winningTeam} VENCEU A PARTIDA COM 5 PROJETOS APROVADOS!`}
+                        onSkip={backToMenu}
+                    />
+                </div>
             );
         } else if (stateOfGame == "defenseTime") {
             return (
@@ -237,7 +307,7 @@ function OfflineGame() {
                             nameAdvisor={currentAdvisor}
                             nameLider={playersData[currentLeaderIndex].name}
                             showToLider={!leaderVoted}
-                            cardsId={["c000", "c200"]}
+                            cardsId={currentDrawnCards}
                             onAdvisorVoted={AdvisorVoted}
                             onLiderVoted={LiderVoted}
                             state="defense"
@@ -250,7 +320,7 @@ function OfflineGame() {
                             nameAdvisor={currentAdvisor}
                             nameLider={playersData[currentLeaderIndex].name}
                             showToLider={!leaderVoted}
-                            cardsId={["c000", "c200", "c300"]}
+                            cardsId={currentDrawnCards}
                             onAdvisorVoted={AdvisorVoted}
                             onLiderVoted={LiderVoted}
                             state="defense"
@@ -276,8 +346,8 @@ function OfflineGame() {
                     nameAdvisor="Povo"
                     nameLider="Caos"
                     showToLider={false} // Pra ele agir como "conselheiro" e já aprovar a carta direto
-                    cardsId={["cRandom"]} // Puxou só 1 carta do baralho!
-                    onAdvisorVoted={handleOnFinishPlenaryTimer}
+                    cardsId={currentDrawnCards} // Puxou só 1 carta do baralho!
+                    onAdvisorVoted={handleChaosCardVoted}
                     state="confirm"
                 />
             );
@@ -288,7 +358,7 @@ function OfflineGame() {
                     nameAdvisor="Povo"
                     nameLider=""
                     showToLider={false} // Pra ele agir como "conselheiro" e já aprovar a carta direto
-                    cardsId={["cRandom"]} // Puxou só 1 carta do baralho!
+                    cardsId={[approvedCardId!]} // Puxou só 1 carta do baralho!
                     onAdvisorVoted={initiateTimeForDefenses}
                     state="confirm"
                 />
