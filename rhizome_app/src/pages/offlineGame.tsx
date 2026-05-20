@@ -263,7 +263,7 @@ function OfflineGame() {
                     />
                 </div>
             );
-        } else if (stateOfGame == "defenseTime") {
+        } else if (stateOfGame == "defenseTime") { //time of defense by advisor
             return (
                 <>
                     <div className="w-full h-full flex -my-15 flex-col items-center justify-center">
@@ -275,7 +275,7 @@ function OfflineGame() {
                     </div>
                 </>
             );
-        } else if (stateOfGame == "defenseTimeLeader") {
+        } else if (stateOfGame == "defenseTimeLeader") { // time of defense by leader
             return (
                 <>
                     <div className="w-full h-full flex -my-15 flex-col items-center justify-center">
@@ -287,7 +287,7 @@ function OfflineGame() {
                     </div>
                 </>
             );
-        } else if (stateOfGame == "plenary_timer_test_show") {
+        } else if (stateOfGame == "plenary_timer_test_show") { //time for plenary discursion
             return (
                 <>
                     <div className="w-full h-full flex -my-15 flex-col items-center justify-center">

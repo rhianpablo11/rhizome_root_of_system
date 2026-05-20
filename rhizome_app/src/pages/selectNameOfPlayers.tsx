@@ -8,6 +8,7 @@ function SelectNameOfPlayers(props: ISelectNameOfPlayers) {
     const [playersName, setPlayersName] = useState<string[]>(["", "", "", "", ""]);
 
     const handleOnClickFatherAddPlayer = () => {
+        if(playersName.length >= 10) return;
         setPlayersName([...playersName, ""]);
     };
 
@@ -41,6 +42,7 @@ function SelectNameOfPlayers(props: ISelectNameOfPlayers) {
                     onClickButtonChildren={handleOnClickFatherAddPlayer}
                     color="darkBlue"
                     text="Adicionar Jogador"
+                    disable={playersName.length >= 10}
                 />
                 <Button
                     usesOn="commonGame"

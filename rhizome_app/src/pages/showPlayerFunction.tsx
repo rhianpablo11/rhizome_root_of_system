@@ -11,7 +11,7 @@ function ShowPlayerFunction(props: IShowPlayerFunction) {
     const [currentIndex, setCurrentIndex] = useState(0);
     const currentPlayer = listPlayers[currentIndex];
     const playerName = currentPlayer.name;
-    const playerRoleText = currentPlayer.playerRole == "community" ? "Comunidade" : "Lobby";
+    const playerRoleText = currentPlayer.playerRole == "community" ? "Comunidade" : "Executivo";
     const lobbyAllies = listPlayers
         .filter((player) => player.playerRole == "lobby" && player.name != currentPlayer.name)
         .map((player) => player.name);
@@ -56,7 +56,7 @@ function ShowPlayerFunction(props: IShowPlayerFunction) {
                                         Seu Objetivo:
                                     </p>
                                     <p className="text-md font-medium text-[#64748B]">
-                                        Descubra o Lobby e proteja o projeto.
+                                        Desmonte a corporação e proteja o projeto.
                                     </p>
                                 </>
                             )}
