@@ -211,10 +211,10 @@ function OfflineGame() {
 
         // VERIFICA SE ALGUÉM BATEU 5 PONTOS
         if (newComPoints >= 5) {
-            setWinningTeam("A COMUNIDADE");
+            setWinningTeam("A comunidade");
             setStateOfGame("endGame");
         } else if (newLobbyPoints >= 5) {
-            setWinningTeam("O LOBBY (SISTEMA)");
+            setWinningTeam("A Corporação");
             setStateOfGame("endGame");
         } else {
             // Se ninguém ganhou, roda a mesa e vai pra próxima rodada
