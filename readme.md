@@ -16,8 +16,8 @@
 O jogo é um embate político e ideológico entre duas facções que dividem a mesma mesa. O objetivo de ambas as facções é ser a primeira a **aprovar 5 cartas (projetos) do seu alinhamento**.
 
 ### 👥 As Facções
-* **A Comunidade (Maioria):** Representam os cidadãos, ativistas e trabalhadores. Eles jogam "no escuro", não sabem quem são os seus aliados e precisam usar a dedução para aprovar 5 projetos do tipo `COMUNIDADE`.
-* **O Lobby / O Sistema (Minoria Infiltrada):** Representam interesses corporativos e a elite econômica. Eles jogam com vantagem: abrem os olhos no início do jogo e sabem exatamente quem são os outros Lobbystas. Precisam manipular os debates e mentir para aprovar 5 projetos do tipo `LOBBY`.
+* **A Comunidade (Maioria):** Representam os cidadãos, ativistas e trabalhadores locais. Eles jogam "no escuro", não sabem quem são os seus aliados e precisam usar a dedução para aprovar 5 projetos sustentáveis do tipo `COMUNIDADE`.
+* **A Corporação (Minoria Infiltrada):** Representam os interesses de megacorporações, do agronegócio predatório e da elite econômica. Eles jogam com vantagem: abrem os olhos no início do jogo e sabem exatamente quem são os outros Executivos. Precisam manipular os debates e mentir para aprovar 5 projetos da Corporação.
 
 ---
 
@@ -32,13 +32,13 @@ Rhizome é jogado em sucessivas rodadas compostas pelas seguintes fases:
    * O **Líder** recebe 3 cartas secretas do app. Ele deve remover 1 e passar o celular para o Conselheiro com as 2 restantes.
    * O **Conselheiro** recebe as 2 cartas do Líder, remove 1 e aprova a carta final.
 5. **Plenária:** Um cronômetro entra em cena para o tempo de defesa. O Líder e o Conselheiro precisam justificar para a mesa por que aquela carta foi aprovada (e se alguém mentiu sobre as cartas que recebeu).
-6. **Pontuação:** O app revela a carta para todos, processa o ponto para a Comunidade ou para o Lobby, e passa a coroa para o próximo Líder.
+6. **Pontuação:** O app revela a carta para todos, processa o ponto para a Comunidade ou para a Corporação, e passa a coroa para o próximo Líder.
 
 ---
 
 ## ⚠️ Regras Gerais e Faixa Etária
 
-* **Número de Jogadores:** 5 a 10 jogadores. (O app balanceia automaticamente a quantidade de Lobbystas dependendo do número de pessoas na mesa).
+* **Número de Jogadores:** 5 a 10 jogadores. (O app balanceia automaticamente a quantidade de Executivos dependendo do número de pessoas na mesa).
 * **Faixa Etária Recomendada:** **14+ anos.** O jogo exige capacidade de argumentação, blefe e lida com temas densos do mundo real (ex: gentrificação, agronegócio, cooperativas, concessões ambientais).
 * **O Celular:** O dispositivo deve sempre ser passado virado para baixo. É estritamente proibido mostrar a tela do seu celular para outro jogador durante as fases secretas.
 
@@ -55,12 +55,14 @@ Cada carta (projeto) possui a seguinte estrutura:
   "id": "c001",
   "title": "Corredores Agroecológicos Populares",
   "description": "Criação de redes agroecológicas geridas por cooperativas camponesas para abastecimento...",
-  "type": "COMUNIDADE", // Define se a carta dá ponto para a Comunidade ou para o Lobby
+  "type": "COMUNIDADE", // Define se a carta dá ponto para a Comunidade ou para a Corporação
   "categorie": "Agricultura",
   "region": "Nordeste"
 }
-
 ```
+
+
+*(Nota técnica para desenvolvedores: o atributo `type` ou a role dos jogadores no código-fonte podem manter a nomenclatura de variáveis legada como `"lobby"` para manter a compatibilidade interna, sendo traduzida na interface visual para os jogadores).*
 
 ---
 
@@ -83,7 +85,6 @@ Siga as instruções abaixo para contribuir ou testar o jogo em sua máquina:
 1. **Clone o repositório**
 ```bash
 git clone https://github.com/rhianpablo11/rhizome_root_of_system.git
-
 ```
 
 
@@ -113,3 +114,5 @@ npm run dev
 ---
 
 **Desenvolvido com ☕, código e reflexão crítica.** 🌿
+
+
