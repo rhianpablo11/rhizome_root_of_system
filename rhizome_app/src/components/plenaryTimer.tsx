@@ -13,6 +13,7 @@ function PlenaryTimer(props: IPlenaryTimer) {
             setTimeLeft(30);
             setTextButton("Pular defesa");
         } else {
+            setTimeLeft(120);
             setTextButton("Pular Plenaria");
         }
     }, [leaderDefenseTime, advisorDefenseTime]);

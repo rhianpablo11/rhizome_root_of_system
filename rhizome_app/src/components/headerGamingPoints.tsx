@@ -33,7 +33,7 @@ function HeaderGamingPoints(props: IHeaderGamingPoints) {
                     </div>
                     <h1 className="font-medium text-xl text-[#1E293B] px-4 leading-none">x</h1>
                     <div className="flex flex-col items-center justify-center">
-                        <h1 className="font-medium text-xl text-[#1E293B] leading-none pb-1">Lobbystas</h1>
+                        <h1 className="font-medium text-xl text-[#1E293B] leading-none pb-1">Corporação</h1>
                         <div className="flex gap-x-2">{renderDots(pointsLobby, "lobby")}</div>
                     </div>
                 </div>
@@ -42,4 +42,4 @@ function HeaderGamingPoints(props: IHeaderGamingPoints) {
     );
 }
 
-export default HeaderGamingPoints;
+export default HeaderGamingPoints;  
