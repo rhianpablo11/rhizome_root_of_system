@@ -1,4 +1,4 @@
-import backOfCard from "../assets/bg_back_card.png";
+import backOfCard from "../assets/bg_back_card.webp";
 
 function BackOfCard() {
     return (

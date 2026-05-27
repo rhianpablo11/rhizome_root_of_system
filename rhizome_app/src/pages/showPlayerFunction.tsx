@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Button from "../components/button";
-import cardBg from "../assets/card_show_player_function.png";
+import cardBg from "../assets/card_show_player_function.webp";
 import type { IShowPlayerFunction } from "../interfaces/components/IShowPlayerFunction";
 
 function ShowPlayerFunction(props: IShowPlayerFunction) {
