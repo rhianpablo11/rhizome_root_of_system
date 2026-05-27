@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import cardInfo from "../assets/card_info.png";
+import cardInfo from "../assets/card_info.webp";
 import type { ICardModal } from "../interfaces/components/ICardModal";
 
 function CardModal(props: ICardModal) {

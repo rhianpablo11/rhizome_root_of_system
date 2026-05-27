@@ -4,7 +4,7 @@ import type { IShowCardsToChoice } from "../interfaces/components/IShowCardsToCh
 import BackOfCard from "../components/backOfCard";
 import Button from "../components/button";
 import CardModal from "../components/cardModal";
-import bgCardFront from "../assets/card_info.png";
+import bgCardFront from "../assets/card_info.webp";
 import cardsData from "../database/cards_data.json";
 
 function ShowCardsToChoice(props: IShowCardsToChoice) {

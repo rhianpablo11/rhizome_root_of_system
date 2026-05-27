@@ -1,5 +1,5 @@
 import { useState } from "react";
-import bg from "../assets/bg.png";
+import bg from "../assets/bg.webp";
 import LogoType from "../components/logoType";
 import SelectNameOfPlayers from "./selectNameOfPlayers";
 import ShowPlayerFunction from "./showPlayerFunction";
