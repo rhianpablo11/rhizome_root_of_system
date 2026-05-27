@@ -39,8 +39,8 @@ export default defineConfig({
         ]
       },
       workbox: {
-        maximumFileSizeToCacheInBytes: 10485760,
-        globPatterns: ['**/*.{js,css,html,png,svg,json,ico}'],
+        maximumFileSizeToCacheInBytes: 26214400,
+        globPatterns: ['**/*.{js,css,html,png,svg,json,ico,webp}'],
         runtimeCaching: [
           {
             urlPattern: ({ request }) => request.destination === 'image',
