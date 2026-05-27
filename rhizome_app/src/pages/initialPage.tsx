@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router";
-import bg from "../assets/bg.png";
+import bg from "../assets/bg.webp";
 import Button from "../components/button";
 import LogoType from "../components/logoType";
 
