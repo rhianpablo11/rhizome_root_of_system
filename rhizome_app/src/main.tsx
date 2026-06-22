@@ -5,6 +5,7 @@ import "./index.css";
 import OfflineGame from "./pages/offlineGame";
 import InitialPage from "./pages/initialPage";
 import 'virtual:pwa-register'
+import OnlineGame from "./pages/onlineGame";
 
 createRoot(document.getElementById("root")!).render(
     <StrictMode>
@@ -17,6 +18,7 @@ createRoot(document.getElementById("root")!).render(
                     </Route> */}
                 </Route>
                 <Route path="/offline" element={<OfflineGame />} />
+                <Route path="/create-room" element={<OnlineGame />} />
             </Routes>
         </BrowserRouter>
     </StrictMode>
