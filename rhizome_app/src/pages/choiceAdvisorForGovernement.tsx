@@ -25,7 +25,7 @@ function ChoiceAdvisorForGovernement(props: IChoiceAdvisorForGovernement) {
         }
     };
 
-    if(onlineGame == false && playersVoting == false){
+    if (onlineGame == false && playersVoting == false) {
         return (
             <>
                 <div className="flex flex-col w-full h-full pb-35 items-center relative">
@@ -51,9 +51,7 @@ function ChoiceAdvisorForGovernement(props: IChoiceAdvisorForGovernement) {
                                     disable={buttonsDisable}
                                     text="Confirmar escolha"
                                     color="darkBlue"
-                                    onClickButtonChildren={() => {
-                                        
-                                    }}
+                                    onClickButtonChildren={() => {}}
                                     usesOn="commonGame"
                                 />
                             </>
@@ -81,8 +79,7 @@ function ChoiceAdvisorForGovernement(props: IChoiceAdvisorForGovernement) {
                 </div>
             </>
         );
-    }
-    else if(onlineGame && playersVoting == false){
+    } else if (onlineGame && playersVoting == false) {
         return (
             <>
                 <div className="flex flex-col w-full h-full pb-35 items-center relative">
@@ -108,9 +105,7 @@ function ChoiceAdvisorForGovernement(props: IChoiceAdvisorForGovernement) {
                                     disable={buttonsDisable}
                                     text="Confirmar escolha"
                                     color="darkBlue"
-                                    onClickButtonChildren={() => {
-                                        
-                                    }}
+                                    onClickButtonChildren={() => {}}
                                     usesOn="commonGame"
                                 />
                             </>
@@ -138,7 +133,7 @@ function ChoiceAdvisorForGovernement(props: IChoiceAdvisorForGovernement) {
                 </div>
             </>
         );
-    } else if(onlineGame && playersVoting){
+    } else if (onlineGame && playersVoting) {
         return (
             <>
                 <div className="flex flex-col w-full h-full pb-35 items-center relative">
@@ -147,12 +142,12 @@ function ChoiceAdvisorForGovernement(props: IChoiceAdvisorForGovernement) {
                         <h1 className="text-[#1F293B] font-semibold text-3xl leading-none">{nameLider} iniciou</h1>
                         <h1 className="text-[#1F293B] text-xl leading-none">Seu conselheiro escolhido foi:</h1>
                     </div>
-                    <div className='px-3 w-full flex'>
+                    <div className="px-3 w-full flex">
                         <div className="w-full flex flex-col mt-3 justify-center overflow-y-auto gap-y-2 bg-[#1e293b] h-10 rounded-xl ">
                             <h1 className="text-white font-normal text-lg pl-3">{advisorName}</h1>
                         </div>
                     </div>
-                    
+
                     <div className="fixed bottom-3 w-full px-8 flex flex-col gap-y-2">
                         <Button
                             text="Governo Aprovado"
@@ -173,7 +168,6 @@ function ChoiceAdvisorForGovernement(props: IChoiceAdvisorForGovernement) {
             </>
         );
     }
-    
 }
 
 export default ChoiceAdvisorForGovernement;

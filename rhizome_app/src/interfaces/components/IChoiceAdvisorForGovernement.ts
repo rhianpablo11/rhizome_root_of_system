@@ -7,5 +7,5 @@ export interface IChoiceAdvisorForGovernement {
     reprovedGroup?: () => void;
     onlineGame: boolean;
     playersVoting: boolean;
-    advisorName?:string
+    advisorName?: string;
 }

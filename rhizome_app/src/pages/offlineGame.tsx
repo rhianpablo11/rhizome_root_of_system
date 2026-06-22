@@ -13,7 +13,7 @@ import cardsData from "../database/cards_data.json";
 import { useNavigate } from "react-router";
 
 function OfflineGame() {
-    const navigate = useNavigate()
+    const navigate = useNavigate();
     const [stateOfGame, setStateOfGame] = useState<
         | "selectPlayers"
         | "showFunctionPlayers"
@@ -230,8 +230,7 @@ function OfflineGame() {
     };
 
     const backToMenu = () => {
-        
-        navigate("/")
+        navigate("/");
         //window.location.href = "/";
     };
 
@@ -263,7 +262,8 @@ function OfflineGame() {
                     />
                 </div>
             );
-        } else if (stateOfGame == "defenseTime") { //time of defense by advisor
+        } else if (stateOfGame == "defenseTime") {
+            //time of defense by advisor
             return (
                 <>
                     <div className="w-full h-full flex -my-15 flex-col items-center justify-center">
@@ -275,7 +275,8 @@ function OfflineGame() {
                     </div>
                 </>
             );
-        } else if (stateOfGame == "defenseTimeLeader") { // time of defense by leader
+        } else if (stateOfGame == "defenseTimeLeader") {
+            // time of defense by leader
             return (
                 <>
                     <div className="w-full h-full flex -my-15 flex-col items-center justify-center">
@@ -287,7 +288,8 @@ function OfflineGame() {
                     </div>
                 </>
             );
-        } else if (stateOfGame == "plenary_timer_test_show") { //time for plenary discursion
+        } else if (stateOfGame == "plenary_timer_test_show") {
+            //time for plenary discursion
             return (
                 <>
                     <div className="w-full h-full flex -my-15 flex-col items-center justify-center">

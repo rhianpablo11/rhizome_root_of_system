@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router";
 import "./index.css";
 import OfflineGame from "./pages/offlineGame";
 import InitialPage from "./pages/initialPage";
-import 'virtual:pwa-register'
+import "virtual:pwa-register";
 import OnlineGame from "./pages/onlineGame";
 import CreateRoom from "./pages/createRoom";
 import InOnTheRoom from "./pages/inOnTheRoom";

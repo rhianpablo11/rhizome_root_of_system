@@ -1,3 +1,3 @@
-export default interface IVotingInfo{
-    playersToVote: number
+export default interface IVotingInfo {
+    playersToVote: number;
 }

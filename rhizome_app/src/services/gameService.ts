@@ -33,7 +33,6 @@ const generatePlayersFunction = (playersName: string[]): IPlayerData[] => {
     });
 };
 
-
 const getCardsIds = (cardsData: ICardsData[]) => {
     // Pega todos os IDs do JSON e embaralha com Fisher-Yates
     const allIds = cardsData.map((c) => c.id);
@@ -42,8 +41,7 @@ const getCardsIds = (cardsData: ICardsData[]) => {
         [allIds[i], allIds[j]] = [allIds[j], allIds[i]];
     }
     return allIds;
-}
-
+};
 
 const ChoiceGovernament = (playersData: IPlayerData[], currentLeaderIndex: number) => {
     const currentLeader = playersData[currentLeaderIndex];
@@ -51,11 +49,4 @@ const ChoiceGovernament = (playersData: IPlayerData[], currentLeaderIndex: numbe
     return availableAdvisors;
 };
 
-
-
-
-
-export {generatePlayersFunction,
-        getCardsIds,
-        ChoiceGovernament
-}
+export { generatePlayersFunction, getCardsIds, ChoiceGovernament };

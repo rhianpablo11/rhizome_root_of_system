@@ -1,8 +1,8 @@
-export default interface ICardsData{
+export default interface ICardsData {
     id: string;
     title: string;
     description: string;
-    type: 'COMUNIDADE' | 'LOBBY';
+    type: "COMUNIDADE" | "LOBBY";
     categorie: string;
     region: string;
 }
