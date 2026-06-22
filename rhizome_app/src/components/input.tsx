@@ -28,8 +28,8 @@ function Input(props: IInput) {
                 />
             </div>
         );
-    } else if(usesOn == 'getNamePlayer'){
-        return(
+    } else if (usesOn == "getNamePlayer") {
+        return (
             <>
                 <input
                     className="w-full h-12 rounded-2xl bg-[#BCBDB8] text-center text-[#1E293B] px-4 outline-none font-light text-2xl placeholder:text-[#64748B]"
@@ -38,8 +38,8 @@ function Input(props: IInput) {
                     onChange={(e) => onChangeText && onChangeText(e.target.value)}
                 />
             </>
-        )
-    } else if(usesOn == 'showPlayersConected'){
+        );
+    } else if (usesOn == "showPlayersConected") {
         return (
             <div className="flex w-full items-center justify-center gap-x-3">
                 <div className="w-12 h-12 rounded-full bg-[#1E293B] shrink-0 flex items-center justify-center">

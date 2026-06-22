@@ -1,3 +1,3 @@
-export interface IOnlineGame{
-    usesOn: 'createRoom'
+export interface IOnlineGame {
+    usesOn: "createRoom";
 }

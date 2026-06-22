@@ -15,8 +15,8 @@ function InitialPage() {
                 }}>
                 <LogoType localOfUse="mainMenu" />
                 <div className="fixed bottom-4 w-full px-4 shadow-2xl">
-                    <div className='flex flex-col items-center justify-center'>
-                        <div className='flex w-full mb-2 gap-x-2 items-center justify-center'>
+                    <div className="flex flex-col items-center justify-center">
+                        <div className="flex w-full mb-2 gap-x-2 items-center justify-center">
                             <Button
                                 text="Criar Sala"
                                 usesOn="commonGame"
@@ -43,7 +43,6 @@ function InitialPage() {
                             }}
                         />
                     </div>
-                    
                 </div>
             </div>
         </>
