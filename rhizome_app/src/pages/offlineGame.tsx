@@ -337,6 +337,8 @@ function OfflineGame() {
                     aprovedGroup={handleGovernmentApproved}
                     reprovedGroup={handleGovernmentRejected}
                     key={currentLeaderIndex}
+                    onlineGame={false}
+                    playersVoting={false}
                 />
             );
         } else if (stateOfGame == "showChaosCard") {

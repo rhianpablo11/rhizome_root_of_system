@@ -30,7 +30,7 @@ function InitialPage() {
                                 usesOn="commonGame"
                                 color="darkBlue"
                                 onClickButtonChildren={() => {
-                                    
+                                    navigate("/join-room");
                                 }}
                             />
                         </div>

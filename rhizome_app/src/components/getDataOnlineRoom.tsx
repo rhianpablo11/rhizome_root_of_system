@@ -1,9 +1,11 @@
+import { useState } from "react";
 import type { IGetDataOnlineRoom } from "../interfaces/components/IGetDataOnlineRoom";
 import Input from "./input";
 
 
 function GetDataOnlineRoom(props: IGetDataOnlineRoom) {
-    const { useOn } = props;
+    const { useOn, setplayerName, setroomID, playerName, roomId } = props;
+
 
     if(useOn == "getNamePlayer") {
         return(
@@ -12,8 +14,8 @@ function GetDataOnlineRoom(props: IGetDataOnlineRoom) {
                     <h1 className="text-[#1E293B] font-semibold text-3xl pt-5">Insira seu nome:</h1>
                     <div className="pb-3 w-full px-5 pt-4">
                         <Input
-                            value={"Jogador 01"}
-                            onChangeText={() => {}}
+                            value={playerName}
+                            onChangeText={setplayerName}
                             usesOn="getNamePlayer"
                             placeholder="Jogador 01"
                         />
@@ -30,7 +32,7 @@ function GetDataOnlineRoom(props: IGetDataOnlineRoom) {
                 <div className="bg-[#F6F7EF] flex flex-col w-full rounded-3xl justify-center items-center shadow-2xl ">
                     <h1 className="text-[#1E293B] font-semibold text-3xl pt-5">O ID da partida é:</h1>
                     <h1 className='text-[#1E293B] font-thin pt-2 text-5xl text-center'>
-                        ux901i
+                        {roomId}
                     </h1>
                     <h1 className="text-[#1E293B] font-medium text-base text-center px-8 pt-4 leading-4">
                         Compartilhe com seus amigos para entrar na sessão
@@ -48,8 +50,8 @@ function GetDataOnlineRoom(props: IGetDataOnlineRoom) {
                     <h1 className="text-[#1E293B] font-semibold text-2xl pt-5">Insira o ID da partida:</h1>
                     <div className="pb-1 w-full px-5 pt-2">
                         <Input
-                            value={"ux901i"}
-                            onChangeText={() => {}}
+                            value={roomId}
+                            onChangeText={setroomID}
                             usesOn="getNamePlayer"
                             placeholder="ux901i"
                         />
@@ -57,8 +59,8 @@ function GetDataOnlineRoom(props: IGetDataOnlineRoom) {
                     <h1 className="text-[#1E293B] font-semibold text-2xl ">Insira seu nome:</h1>
                     <div className="pb-4 w-full px-5 pt-2">
                         <Input
-                            value={"ux901i"}
-                            onChangeText={() => {}}
+                            value={playerName}
+                            onChangeText={setplayerName}
                             usesOn="getNamePlayer"
                             placeholder="ux901i"
                         />

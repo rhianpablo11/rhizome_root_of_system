@@ -1,15 +1,16 @@
+import type IShowPlayersConected from "../interfaces/components/IShowPlayersConected";
 import Button from "./button"
 import Input from "./input"
 import VotingInfo from "./votingInfo";
 
 
-function ShowPlayersConected(){
+function ShowPlayersConected(props: IShowPlayersConected) {
+    const { isAdmin, startGame } = props;
     const playersName = ["Jogador 01", "Jogador 02", "Jogador 03", "Jogador 04", "Jogador 05"];
     return(
         <>
-            <div className="w-full flex flex-col mt-2 pb-42 h-full relative items-center justify-center">
-                <VotingInfo />
-                <div className='w-full flex m-0 pb-1 items-center justify-center'>
+            <div className="w-full flex flex-col mt-2 pb-42 h-full  items-center ">
+                <div className='w-full flex pb-1 pt-4 items-center justify-center'>
                     <h1 className='text-[#1e293b] font-medium text-xl leading-0'>
                         ID da partida:
                     </h1>
@@ -32,13 +33,17 @@ function ShowPlayersConected(){
                     ))}
                 </div>
                 <div className="flex flex-col w-full gap-y-2 fixed bottom-4 left-0 px-10">
-                    <Button
-                        usesOn="commonGame"
-                        onClickButtonChildren={()=>{}}
-                        color="darkBlue"
-                        text="Adicionar Jogador"
-                        disable={false}
-                    />
+                    {isAdmin && (
+                        <>
+                            <Button
+                                usesOn="commonGame"
+                                onClickButtonChildren={startGame}
+                                color="darkBlue"
+                                text="Iniciar o jogo"
+                                disable={false}
+                            />
+                        </>
+                    )}
                     
                 </div>
             </div>
