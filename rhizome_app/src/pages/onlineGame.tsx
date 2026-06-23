@@ -37,6 +37,7 @@ function OnlineGame() {
     const [playersName, setPlayersName] = useState<string[]>([])
     const [myName, setMyName] = useState<string>('')
     const [aliars, setAliars] = useState<string[]>([])
+    const [playersReady, setPlayersReady] = useState<string[]>([]);
     const [myFormattedList, setMyFormattedList] = useState<IPlayerData[]>([]);
     console.log(myPlayerName)
     const handleNetworkMessage = (message: GameMessage) => {
@@ -59,6 +60,24 @@ function OnlineGame() {
                 
                 setAliars(message.payload) //filtrar quem é do mesmo Role que o usuario
                 break; }
+            case 'HAVE_SEE_MY_FUNCTION': {
+                // Apenas o Host se importa com essa contagem!
+                if (isHost) {
+                    const readyPlayerName = message.payload.name;
+                    console.log(`✅ [HOST RECEBEU]: O jogador ${readyPlayerName} está pronto!`);
+                    
+                    setPlayersReady((prev) => {
+                        // Verifica se o cara já não tá na lista para não contar duas vezes
+                        if (prev.includes(readyPlayerName)) return prev;
+                        
+                        const newList = [...prev, readyPlayerName];
+                        // Chama a checagem com a lista atualizada
+                        checkIfAllAreReady(newList);
+                        return newList;
+                    });
+                }
+                break;
+            }
             case 'LEADER_CHOICE_ADVISOR':
                 setStateOfGame("choiceAdvisor");
                 break;
@@ -109,11 +128,48 @@ function OnlineGame() {
 
     const notifyAboutHaveSeeMyFunction = () => {
         console.log('cheguei na função q notifica')
-        sendNetworkMessage({
-            type: 'HAVE_SEE_MY_FUNCTION',
-            isHost: isHost
-        })
+        if (isHost) {
+            // Se eu sou o Host, eu já me coloco na lista de "Prontos"
+            setPlayersReady((prev) => {
+                const newList = [...prev, myPlayerName];
+                checkIfAllAreReady(newList); // Chama a checagem (vamos criar essa função já já!)
+                return newList;
+            });
+        } else {
+            // Se sou Cliente, eu aviso o Host na rede
+            sendNetworkMessage({
+                type: 'HAVE_SEE_MY_FUNCTION',
+                payload: { name: myPlayerName },
+                isHost: false
+            });
+        }
+        
+        // Todo mundo (Cliente e Host) muda a tela para ficar esperando a próxima etapa
+        setStateOfGame("waitToDo");
     }
+
+
+    // 🧠 A Lógica Exclusiva do Host para avançar o jogo
+    const checkIfAllAreReady = (readyList: string[]) => {
+        // Se a quantidade de pessoas prontas for igual ou maior que o total de jogadores na rede...
+        if (readyList.length >= players.length) {
+            console.log("🔥 TODO MUNDO PRONTO! INICIANDO A RODADA!");
+            
+            // Aqui o Host sorteia quem será o Líder inicial!
+            // (Para testar rápido, vamos pegar o primeiro jogador da lista)
+            const initialLeader = players[0].name;
+
+            // O Host manda a ordem para a rede dizendo quem é o Líder e mudando a tela
+            sendNetworkMessage({
+                type: 'LEADER_CHOICE_ADVISOR',
+                payload: { currentLeader: initialLeader },
+                isHost: true
+            });
+            
+            // O Host também muda a própria tela
+            setStateOfGame("choiceAdvisor");
+        }
+    };
 
 
     const componentToRender = () => {
