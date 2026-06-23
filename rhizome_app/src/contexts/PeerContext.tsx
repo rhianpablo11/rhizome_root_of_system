@@ -1,12 +1,7 @@
 // src/contexts/PeerContext.tsx
-import React, { createContext, useContext, useState, useEffect, useRef } from 'react';
+import React, { createContext, useContext, useState, useRef } from 'react';
 import Peer, { DataConnection } from 'peerjs';
-
-// Tipagem das mensagens que vão trafegar na rede
-export interface P2PMessage {
-  type: 'JOIN' | 'LOBBY_UPDATE' | 'START_GAME' | 'VOTE';
-  payload: any;
-}
+import { GameMessage } from '../interfaces/game/INetwork'; // Usando a sua interface oficial!
 
 export interface PlayerInfo {
   peerId: string;
@@ -19,9 +14,10 @@ interface PeerContextData {
   roomId: string | null;
   isHost: boolean;
   players: PlayerInfo[];
+  lastMessage: GameMessage | null; // <--- A PONTE PARA O JOGO!
   createRoom: (playerName: string) => Promise<string>;
   joinRoom: (roomId: string, playerName: string) => Promise<boolean>;
-  broadcast: (message: P2PMessage) => void;
+  broadcast: (message: GameMessage) => void;
 }
 
 const PeerContext = createContext<PeerContextData>({} as PeerContextData);
@@ -31,22 +27,16 @@ export const PeerProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const [roomId, setRoomId] = useState<string | null>(null);
   const [isHost, setIsHost] = useState(false);
   const [players, setPlayers] = useState<PlayerInfo[]>([]);
+  const [lastMessage, setLastMessage] = useState<GameMessage | null>(null);
   
-  // O Host guarda a conexão com todos os clientes
   const connectionsRef = useRef<Map<string, DataConnection>>(new Map());
-  // O Cliente guarda a conexão apenas com o Host
   const hostConnectionRef = useRef<DataConnection | null>(null);
 
-  // ==========================================
-  // LÓGICA DO HOST (Criar Sala)
-  // ==========================================
   const createRoom = (playerName: string): Promise<string> => {
     return new Promise((resolve, reject) => {
-      // Gera um ID aleatório de 4 caracteres para a sala
       const newRoomId = Math.random().toString(36).substring(2, 6).toUpperCase();
       const customPeerId = `rhizome-room-${newRoomId}`;
-      
-      const newPeer = new Peer(customPeerId); // Conecta no servidor gratuito do PeerJS
+      const newPeer = new Peer(customPeerId); 
 
       newPeer.on('open', (id) => {
         setPeer(newPeer);
@@ -56,17 +46,14 @@ export const PeerProvider: React.FC<{ children: React.ReactNode }> = ({ children
         resolve(newRoomId);
       });
 
-      // Host escutando novas conexões
       newPeer.on('connection', (conn) => {
         conn.on('data', (data: any) => {
-          const msg = data as P2PMessage;
+          const msg = data as GameMessage;
           
           if (msg.type === 'JOIN') {
-            // Um novo jogador entrou!
             const newPlayer = { peerId: conn.peer, name: msg.payload.name, isHost: false };
             setPlayers((prev) => {
               const updatedPlayers = [...prev, newPlayer];
-              // O Host avisa todo mundo que a lista atualizou
               broadcastToAll(connectionsRef.current, {
                 type: 'LOBBY_UPDATE',
                 payload: { players: updatedPlayers }
@@ -74,73 +61,64 @@ export const PeerProvider: React.FC<{ children: React.ReactNode }> = ({ children
               return updatedPlayers;
             });
             connectionsRef.current.set(conn.peer, conn);
+          } else {
+            // Se não for JOIN de lobby, repassa para o jogo!
+            setLastMessage(msg);
           }
         });
 
         conn.on('close', () => {
-          // Lógica para quando alguém cai da sala (remover da lista)
           connectionsRef.current.delete(conn.peer);
           setPlayers((prev) => prev.filter(p => p.peerId !== conn.peer));
         });
       });
-
       newPeer.on('error', (err) => reject(err));
     });
   };
 
-  // ==========================================
-  // LÓGICA DO CLIENTE (Entrar na Sala)
-  // ==========================================
   const joinRoom = (roomCode: string, playerName: string): Promise<boolean> => {
     return new Promise((resolve, reject) => {
-      const newPeer = new Peer(); // Cliente ganha um ID dinâmico
+      const newPeer = new Peer(); 
 
       newPeer.on('open', (id) => {
         setPeer(newPeer);
         setIsHost(false);
         setRoomId(roomCode);
 
-        // Disca para o Host
         const hostPeerId = `rhizome-room-${roomCode.toUpperCase()}`;
         const conn = newPeer.connect(hostPeerId);
 
         conn.on('open', () => {
           hostConnectionRef.current = conn;
-          // Manda o nome para o Host
-          conn.send({ type: 'JOIN', payload: { name: playerName } } as P2PMessage);
+          conn.send({ type: 'JOIN', payload: { name: playerName } } as GameMessage);
           resolve(true);
         });
 
-        // Cliente escutando os comandos do Host
         conn.on('data', (data: any) => {
-          const msg = data as P2PMessage;
+          const msg = data as GameMessage;
           if (msg.type === 'LOBBY_UPDATE') {
-            // Atualiza a tela de lobby do cliente com a lista que o Host mandou
             setPlayers(msg.payload.players);
+          } else {
+             // Repassa comandos do Host para a tela do Cliente!
+             setLastMessage(msg);
           }
         });
-
         conn.on('error', (err) => reject(err));
       });
     });
   };
 
-  // Função interna para o Host disparar mensagem para todos
-  const broadcastToAll = (conns: Map<string, DataConnection>, message: P2PMessage) => {
+  const broadcastToAll = (conns: Map<string, DataConnection>, message: GameMessage) => {
     conns.forEach((conn) => conn.send(message));
   };
 
-  // Função genérica de disparo (se for host manda pra todos, se for cliente manda pro host)
-  const broadcast = (message: P2PMessage) => {
-    if (isHost) {
-      broadcastToAll(connectionsRef.current, message);
-    } else if (hostConnectionRef.current) {
-      hostConnectionRef.current.send(message);
-    }
+  const broadcast = (message: GameMessage) => {
+    if (isHost) broadcastToAll(connectionsRef.current, message);
+    else if (hostConnectionRef.current) hostConnectionRef.current.send(message);
   };
 
   return (
-    <PeerContext.Provider value={{ peer, roomId, isHost, players, createRoom, joinRoom, broadcast }}>
+    <PeerContext.Provider value={{ peer, roomId, isHost, players, lastMessage, createRoom, joinRoom, broadcast }}>
       {children}
     </PeerContext.Provider>
   );

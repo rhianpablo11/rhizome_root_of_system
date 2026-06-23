@@ -17,4 +17,5 @@ export interface GameMessage{
     type: MessageType;
     payload?: any;
     senderId?: string;
+    isHost: boolean;
 }

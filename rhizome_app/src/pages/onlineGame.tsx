@@ -8,6 +8,8 @@ import type { IOnlineGame } from "../interfaces/components/IOnlineGame";
 import ChoiceAdvisorForGovernement from "./choiceAdvisorForGovernement";
 import CreateRoom from "./createRoomComponent";
 import AlertModal from "../components/alertModal";
+import { useGameNetwork } from "../hooks/useGameNetwork";
+import type { GameMessage } from "../interfaces/game/INetwork";
 
 function OnlineGame() {
     const [advisorSelected, setAdvisorSelected] = useState<string | null>(null);
@@ -28,19 +30,64 @@ function OnlineGame() {
         | 'waitToDo'
         >("waitingRoom");
 
-    const handleStartGame = () => {
-        console.log("Iniciando o jogo...");
+
+    const handleNetworkMessage = (message: GameMessage) => {
+        // Se a rede mandou mudar o estado do jogo, a interface obedece cegamente:
+        switch (message.type) {
+            case 'START_GAME':
+                setStateOfGame("showPlayerFunction");
+                break;
+            case 'LEADER_CHOICE_ADVISOR':
+                setStateOfGame("choiceAdvisor");
+                break;
+            case 'VOTING_ON_GOVERNMENT':
+                setStateOfGame("votingGovernment");
+                break;
+            case 'WAITING_FOR_GOVERNMENT_ACTION':
+                setStateOfGame("waitToDo");
+                break;
+            // Adicione os outros cases conforme for construindo as telas
+        }
     };
+
+
+    const { sendNetworkMessage, isHost } = useGameNetwork(handleNetworkMessage);
+
+
+    const handleStartGameClick = () => {
+        // Apenas o Host tem permissão para disparar o início do jogo
+        if (isHost) {
+            // Aqui futuramente você chamará o gameService.generatePlayersFunction()
+            
+            // Avisa TODOS os celulares para irem para a tela de papel
+            sendNetworkMessage({ type: 'START_GAME', isHost: true });
+            
+            // O Host muda a própria tela também
+            setStateOfGame("showPlayerFunction");
+        }
+    };
+
 
     const handleAdvisorSelected = (id: string | null) => {
         console.log("Conselheiro selecionado:", id);
+        setAdvisorSelected(id);
+        
+        if (isHost) {
+            sendNetworkMessage({ 
+                type: 'VOTING_ON_GOVERNMENT', 
+                payload: { advisorId: id },
+                isHost: true 
+            });
+            setStateOfGame("votingGovernment");
+        }
     };
+
 
     const componentToRender = () => {
         if(stateOfGame === "waitingRoom") {
             return(
                 <>
-                    <ShowPlayersConected startGame={handleStartGame} isAdmin={isAdmin} />
+                    <ShowPlayersConected startGame={handleStartGameClick} isAdmin={isAdmin} />
                 </>
             );
         } else if(stateOfGame == 'votingGovernment'){
