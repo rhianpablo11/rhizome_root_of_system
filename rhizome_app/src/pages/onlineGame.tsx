@@ -9,8 +9,23 @@ import ChoiceAdvisorForGovernement from "./choiceAdvisorForGovernement";
 import CreateRoom from "./createRoomComponent";
 
 function OnlineGame() {
-    const [advisorSelected, setAdvisorSelected] = useState<String | null>(null);
-    const [stateOfGame, setStateOfGame] = useState<"waitingRoom" | "choiceAdvisor" | "showChaosCard">("waitingRoom");
+    const [advisorSelected, setAdvisorSelected] = useState<string | null>(null);
+    const [isAdmin, setIsAdmin] = useState<boolean>(true);
+    const [stateOfGame, setStateOfGame] = useState<
+        | "waitingRoom"
+        | "choiceAdvisor"
+        | "ShowChaosCard"
+        | "showPlayerFunction"
+        | "votingGovernment"
+        | "alertVotingReproveds"
+        | "alertVotingNotApproveds"
+        | "advisorChoiceCard"
+        | "leaderChoiceCard"
+        | "leaderDefenseTime"
+        | "advisorDefenseTime"
+        | "plenaryTime"
+        >("waitingRoom");
+
     const handleStartGame = () => {
         console.log("Iniciando o jogo...");
     };
@@ -20,7 +35,93 @@ function OnlineGame() {
     };
 
     const componentToRender = () => {
-        return <></>;
+        if(stateOfGame === "waitingRoom") {
+            return(
+                <>
+                    <ShowPlayersConected startGame={handleStartGame} isAdmin={isAdmin} />
+                </>
+            );
+        } else if(stateOfGame == 'votingGovernment'){
+            return(
+                <>
+                    <ChoiceAdvisorForGovernement
+                        nameLider="Joao"
+                        playersList={["ojaf", "kij", "oj", "agjpoa"]}
+                        onlineGame={true}
+                        aprovedGroup={handleAdvisorSelected}
+                        playersVoting={true}
+                        advisorName="Militão"
+                    />
+                </>
+            )
+        } else if(stateOfGame == 'choiceAdvisor'){
+            return(
+                <>
+                    <ChoiceAdvisorForGovernement
+                        nameLider="Joao"
+                        playersList={["ojaf", "kij", "oj", "agjpoa"]}
+                        onlineGame={true}
+                        aprovedGroup={handleAdvisorSelected}
+                        playersVoting={false}
+                        advisorName="Militão"
+                    />
+                </>
+            )
+        } else if(stateOfGame == 'leaderDefenseTime'){
+            return(
+                <>
+                
+                </>
+            )
+        } else if(stateOfGame == 'advisorDefenseTime'){
+            return(
+                <>
+                
+                </>
+            )
+        } else if(stateOfGame == 'leaderChoiceCard'){
+            return(
+                <>
+                
+                </>
+            )
+        } else if(stateOfGame == 'advisorChoiceCard'){
+            return(
+                <>
+                
+                </>
+            )
+        } else if(stateOfGame == 'ShowChaosCard'){
+            return(
+                <>
+                
+                </>
+            )
+        } else if(stateOfGame == 'alertVotingNotApproveds'){
+            return(
+                <>
+                
+                </>
+            )
+        } else if(stateOfGame == 'alertVotingReproveds'){
+            return(
+                <>
+                
+                </>
+            )
+        } else if(stateOfGame == 'plenaryTime'){
+            return(
+                <>
+                
+                </>
+            )
+        } else if(stateOfGame == 'showPlayerFunction'){
+            return(
+                <>
+                
+                </>
+            )
+        }
     };
 
     return (
@@ -35,15 +136,7 @@ function OnlineGame() {
                         <LogoType localOfUse="offlinePage" />
                     </div>
                     <div className="w-full h-full flex justify-center">
-                        {/* <ShowPlayersConected startGame={handleStartGame} isAdmin={true} /> */}
-                        <ChoiceAdvisorForGovernement
-                            nameLider="Joao"
-                            playersList={["ojaf", "kij", "oj", "agjpoa"]}
-                            onlineGame={true}
-                            aprovedGroup={handleAdvisorSelected}
-                            playersVoting={true}
-                            advisorName="Militão"
-                        />
+                        {componentToRender()}
                     </div>
                 </div>
             </div>
