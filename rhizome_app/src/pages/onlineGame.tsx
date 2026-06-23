@@ -10,10 +10,14 @@ import CreateRoom from "./createRoomComponent";
 import AlertModal from "../components/alertModal";
 import { useGameNetwork } from "../hooks/useGameNetwork";
 import type { GameMessage } from "../interfaces/game/INetwork";
+import { generatePlayersFunction, prepareMyPlayerList } from "../services/gameService";
+import { usePeer } from "../contexts/PeerContext";
+import ShowPlayerFunction from "./showPlayerFunction";
+import type { IPlayerData } from "../interfaces/components/IShowPlayerFunction";
 
 function OnlineGame() {
     const [advisorSelected, setAdvisorSelected] = useState<string | null>(null);
-    const [isAdmin, setIsAdmin] = useState<boolean>(true);
+    const { players, roomId, myPlayerName } = usePeer();
     const [stateOfGame, setStateOfGame] = useState<
         | "waitingRoom"
         | "choiceAdvisor"
@@ -29,14 +33,32 @@ function OnlineGame() {
         | "plenaryTime"
         | 'waitToDo'
         >("waitingRoom");
-
-
+    const [myRole, setMyRole] = useState<'community' | 'lobby'>('community')
+    const [playersName, setPlayersName] = useState<string[]>([])
+    const [myName, setMyName] = useState<string>('')
+    const [aliars, setAliars] = useState<string[]>([])
+    const [myFormattedList, setMyFormattedList] = useState<IPlayerData[]>([]);
+    console.log(myPlayerName)
     const handleNetworkMessage = (message: GameMessage) => {
         // Se a rede mandou mudar o estado do jogo, a interface obedece cegamente:
         switch (message.type) {
             case 'START_GAME':
+                { console.log(message)
+                const playersList = message.payload;
+                const myCustomList = prepareMyPlayerList(playersList, myPlayerName);
+                console.log(myCustomList)
+                const myUser = playersList.find((player: any) => player.name === myPlayerName);
+                setMyFormattedList(myCustomList);
+                if (myUser) {
+                    console.log(`🕵️‍♂️ Fui designado como: ${myUser.playerRole}`);
+                    setMyRole(myUser.playerRole);
+                } else {
+                    console.error("Eita, não achei meu nome na lista do Host!");
+                }
                 setStateOfGame("showPlayerFunction");
-                break;
+                
+                setAliars(message.payload) //filtrar quem é do mesmo Role que o usuario
+                break; }
             case 'LEADER_CHOICE_ADVISOR':
                 setStateOfGame("choiceAdvisor");
                 break;
@@ -57,11 +79,13 @@ function OnlineGame() {
     const handleStartGameClick = () => {
         // Apenas o Host tem permissão para disparar o início do jogo
         if (isHost) {
-            // Aqui futuramente você chamará o gameService.generatePlayersFunction()
-            
+            const playerNames = players.map((p) => p.name);
+            console.log(players)
+            const playersFunctions = generatePlayersFunction(playerNames)
             // Avisa TODOS os celulares para irem para a tela de papel
-            sendNetworkMessage({ type: 'START_GAME', isHost: true });
-            
+            sendNetworkMessage({ type: 'START_GAME', payload:playersFunctions, isHost: true });
+            const myCustomList = prepareMyPlayerList(playersFunctions, myPlayerName);
+            setMyFormattedList(myCustomList);
             // O Host muda a própria tela também
             setStateOfGame("showPlayerFunction");
         }
@@ -83,11 +107,20 @@ function OnlineGame() {
     };
 
 
+    const notifyAboutHaveSeeMyFunction = () => {
+        console.log('cheguei na função q notifica')
+        sendNetworkMessage({
+            type: 'HAVE_SEE_MY_FUNCTION',
+            isHost: isHost
+        })
+    }
+
+
     const componentToRender = () => {
         if(stateOfGame === "waitingRoom") {
             return(
                 <>
-                    <ShowPlayersConected startGame={handleStartGameClick} isAdmin={isAdmin} />
+                    <ShowPlayersConected startGame={handleStartGameClick} isAdmin={isHost} />
                 </>
             );
         } else if(stateOfGame == 'votingGovernment'){
@@ -165,9 +198,10 @@ function OnlineGame() {
                 </>
             )
         } else if(stateOfGame == 'showPlayerFunction'){
+            
             return(
                 <>
-                
+                    <ShowPlayerFunction onlineGame={true} listPlayers={myFormattedList} onFinish={notifyAboutHaveSeeMyFunction} />
                 </>
             )
         } else if(stateOfGame == 'waitToDo'){

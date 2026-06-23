@@ -8,22 +8,25 @@ import "virtual:pwa-register";
 import OnlineGame from "./pages/onlineGame";
 import CreateRoom from "./pages/createRoom";
 import InOnTheRoom from "./pages/inOnTheRoom";
+import { PeerProvider } from "./contexts/PeerContext";
 
 createRoot(document.getElementById("root")!).render(
     <StrictMode>
-        <BrowserRouter>
-            <Routes>
-                <Route path="/" element={<InitialPage />}>
-                    {/* <Route path="/" element={<Navbar />}>
-                        <Route index element={<MainMenu />} />
-                        <Route path="/home" element={<Home />} />
-                    </Route> */}
-                </Route>
-                <Route path="/offline" element={<OfflineGame />} />
-                <Route path="/create-room" element={<CreateRoom />} />
-                <Route path="/join-room" element={<InOnTheRoom />} />
-                <Route path="/room/:id" element={<OnlineGame />} />
-            </Routes>
-        </BrowserRouter>
+        <PeerProvider>
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/" element={<InitialPage />}>
+                        {/* <Route path="/" element={<Navbar />}>
+                            <Route index element={<MainMenu />} />
+                            <Route path="/home" element={<Home />} />
+                        </Route> */}
+                    </Route>
+                    <Route path="/offline" element={<OfflineGame />} />
+                    <Route path="/create-room" element={<CreateRoom />} />
+                    <Route path="/join-room" element={<InOnTheRoom />} />
+                    <Route path="/room/:id" element={<OnlineGame />} />
+                </Routes>
+            </BrowserRouter>
+        </PeerProvider>
     </StrictMode>
 );

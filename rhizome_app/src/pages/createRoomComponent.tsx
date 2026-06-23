@@ -3,15 +3,24 @@ import Button from "../components/button";
 import GetDataOnlineRoom from "../components/getDataOnlineRoom";
 import ShowPlayersConected from "../components/showPlayersConecteds";
 import { useNavigate } from "react-router";
+import { usePeer } from "../contexts/PeerContext";
 
 function CreateRoomComponent() {
     const navigate = useNavigate();
     const [playerName, setPlayerName] = useState<string>("sfasa");
     const [playerNameIsSet, setPlayerNameIsSet] = useState<boolean>(false);
     const [roomID, setRoomID] = useState<string>("safsfa");
-    const handleOnClickFatherSetPlayerName = () => {
+    const { createRoom } = usePeer();
+    const handleOnClickFatherSetPlayerName = async () => {
         if (playerName.trim() === "") return;
-        setPlayerNameIsSet(true);
+        try {
+            const realRoomId = await createRoom(playerName);
+            navigate(`/room/${realRoomId}`);
+        } catch (error) {
+            console.log(error)
+            alert("Erro de conexão ao criar a sala.");
+        }
+        
     };
 
     return (
