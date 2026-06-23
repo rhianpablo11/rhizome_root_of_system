@@ -7,6 +7,7 @@ import ShowPlayersConected from "../components/showPlayersConecteds";
 import type { IOnlineGame } from "../interfaces/components/IOnlineGame";
 import ChoiceAdvisorForGovernement from "./choiceAdvisorForGovernement";
 import CreateRoom from "./createRoomComponent";
+import AlertModal from "../components/alertModal";
 
 function OnlineGame() {
     const [advisorSelected, setAdvisorSelected] = useState<string | null>(null);
@@ -24,6 +25,7 @@ function OnlineGame() {
         | "leaderDefenseTime"
         | "advisorDefenseTime"
         | "plenaryTime"
+        | 'waitToDo'
         >("waitingRoom");
 
     const handleStartGame = () => {
@@ -100,13 +102,13 @@ function OnlineGame() {
         } else if(stateOfGame == 'alertVotingNotApproveds'){
             return(
                 <>
-                
+                    <AlertModal text={""} buttonText={""} onSkip={()=>{} } />
                 </>
             )
         } else if(stateOfGame == 'alertVotingReproveds'){
             return(
                 <>
-                
+                    <AlertModal text={""} buttonText={""} onSkip={()=>{} } />
                 </>
             )
         } else if(stateOfGame == 'plenaryTime'){
@@ -119,6 +121,12 @@ function OnlineGame() {
             return(
                 <>
                 
+                </>
+            )
+        } else if(stateOfGame == 'waitToDo'){
+            return(
+                <>
+                    <AlertModal text={""} buttonText={""} onSkip={()=>{} } />
                 </>
             )
         }
