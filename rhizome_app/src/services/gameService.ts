@@ -4,7 +4,7 @@ import type ICardsData from "../interfaces/game/ICardsData";
 // function to generate players with their roles based on the number of players in the game
 const generatePlayersFunction = (playersName: string[]): IPlayerData[] => {
     const totalPlayers = playersName.length;
-
+    console.log(playersName)
     let lobbyCount = 2;
     if (totalPlayers >= 7) lobbyCount = 3;
     if (totalPlayers >= 9) lobbyCount = 4;
@@ -49,4 +49,25 @@ const ChoiceGovernament = (playersData: IPlayerData[], currentLeaderIndex: numbe
     return availableAdvisors;
 };
 
-export { generatePlayersFunction, getCardsIds, ChoiceGovernament };
+
+const prepareMyPlayerList = (officialList: IPlayerData[], myName: string): IPlayerData[] => {
+    // 1. Descobre quem sou eu na lista oficial
+    const me = officialList.find((p) => p.name === myName);
+    
+    if (!me) return []; // Se der erro e não me achar, retorna vazio
+
+    if (me.playerRole === "community") {
+        // A Comunidade joga cega. A lista dela só tem ela mesma.
+        return [me];
+    } else {
+        // O Lobby (Executivo) conhece os parceiros. 
+        // 2. Filtra todo mundo que é do lobby, EXCETO eu mesmo.
+        const allies = officialList.filter((p) => p.playerRole === "lobby" && p.name !== myName);
+        
+        // 3. Retorna a lista colocando EU na posição 0, seguido dos aliados.
+        // Isso garante que o currentIndex do componente caia direto na sua carta!
+        return [me, ...allies];
+    }
+};
+
+export { generatePlayersFunction, getCardsIds, ChoiceGovernament, prepareMyPlayerList };
