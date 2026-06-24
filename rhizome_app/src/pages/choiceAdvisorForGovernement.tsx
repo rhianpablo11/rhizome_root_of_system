@@ -61,8 +61,8 @@ function ChoiceAdvisorForGovernement(props: IChoiceAdvisorForGovernement) {
                                     disable={buttonsDisable}
                                     text="Governo Aprovado"
                                     color="darkBlue"
-                                    onClickButtonChildren={() => {if(aprovedGroup != undefined)
-                                                                    aprovedGroup(nameAdvisorSelected);
+                                    onClickButtonChildren={() => {
+                                        if (aprovedGroup != undefined) aprovedGroup(nameAdvisorSelected);
                                     }}
                                     usesOn="commonGame"
                                 />
@@ -105,7 +105,11 @@ function ChoiceAdvisorForGovernement(props: IChoiceAdvisorForGovernement) {
                                     disable={buttonsDisable}
                                     text="Confirmar escolha"
                                     color="darkBlue"
-                                    onClickButtonChildren={()=>{if(aprovedGroup != undefined ){ aprovedGroup(nameAdvisorSelected)}}}
+                                    onClickButtonChildren={() => {
+                                        if (aprovedGroup != undefined) {
+                                            aprovedGroup(nameAdvisorSelected);
+                                        }
+                                    }}
                                     usesOn="commonGame"
                                 />
                             </>
@@ -115,8 +119,8 @@ function ChoiceAdvisorForGovernement(props: IChoiceAdvisorForGovernement) {
                                     disable={buttonsDisable}
                                     text="Governo Aprovado"
                                     color="darkBlue"
-                                    onClickButtonChildren={() => {if(aprovedGroup != undefined)
-                                        aprovedGroup(nameAdvisorSelected);
+                                    onClickButtonChildren={() => {
+                                        if (aprovedGroup != undefined) aprovedGroup(nameAdvisorSelected);
                                     }}
                                     usesOn="commonGame"
                                 />
@@ -152,8 +156,8 @@ function ChoiceAdvisorForGovernement(props: IChoiceAdvisorForGovernement) {
                         <Button
                             text="Governo Aprovado"
                             color="darkBlue"
-                            onClickButtonChildren={() => {if(aprovedGroup != undefined)
-                                aprovedGroup(nameAdvisorSelected);
+                            onClickButtonChildren={() => {
+                                if (aprovedGroup != undefined) aprovedGroup(nameAdvisorSelected);
                             }}
                             usesOn="commonGame"
                         />

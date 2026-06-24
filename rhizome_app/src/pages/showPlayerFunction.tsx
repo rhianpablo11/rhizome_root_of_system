@@ -18,9 +18,9 @@ function ShowPlayerFunction(props: IShowPlayerFunction) {
     const handleOnClickFatherNextPlayer = () => {
         console.log("Indo para o próximo jogador...");
         setIsRevealed(false);
-        if(onlineGame){
+        if (onlineGame) {
             onFinish();
-        } else{
+        } else {
             if (currentIndex < listPlayers.length - 1) {
                 setTimeout(() => {
                     setCurrentIndex((prevIndex) => prevIndex + 1);
@@ -31,8 +31,6 @@ function ShowPlayerFunction(props: IShowPlayerFunction) {
                 }, 300);
             }
         }
-
-        
     };
 
     if (!listPlayers || listPlayers.length === 0) {
@@ -40,7 +38,7 @@ function ShowPlayerFunction(props: IShowPlayerFunction) {
             <div className="w-full h-full flex flex-col items-center justify-center p-8 text-center">
                 <h2 className="text-white text-3xl font-bold mb-4">Eita! 🕵️‍♂️</h2>
                 <p className="text-white text-xl">
-                    Seu nome não foi encontrado no sorteio do Host. <br/>
+                    Seu nome não foi encontrado no sorteio do Host. <br />
                     Provavelmente o jogo começou antes de você conectar totalmente!
                 </p>
             </div>
@@ -91,7 +89,7 @@ function ShowPlayerFunction(props: IShowPlayerFunction) {
                     // LÓGICA: Se arrastar mais que 50px pra cima, revela a carta
                     onDragEnd={(_event, info) => {
                         if (info.offset.y < -50) {
-                            //COLOCAR FUNÇÃO AQ P AVISAR Q O JOGADOR JA VIU 
+                            //COLOCAR FUNÇÃO AQ P AVISAR Q O JOGADOR JA VIU
                             setIsRevealed(true);
                         }
                     }}
@@ -125,12 +123,14 @@ function ShowPlayerFunction(props: IShowPlayerFunction) {
                     <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
                         {!onlineGame ? (
                             <>
-                            <Button
-                                usesOn="commonGame"
-                                onClickButtonChildren={handleOnClickFatherNextPlayer}
-                                color="salmon"
-                                text={currentIndex === listPlayers.length - 1 ? "Iniciar Batalha" : "Próximo jogador"}
-                            />
+                                <Button
+                                    usesOn="commonGame"
+                                    onClickButtonChildren={handleOnClickFatherNextPlayer}
+                                    color="salmon"
+                                    text={
+                                        currentIndex === listPlayers.length - 1 ? "Iniciar Batalha" : "Próximo jogador"
+                                    }
+                                />
                             </>
                         ) : (
                             <>
@@ -141,7 +141,7 @@ function ShowPlayerFunction(props: IShowPlayerFunction) {
                                     text="Papel visto"
                                 />
                             </>
-                        ) }
+                        )}
                     </motion.div>
                 )}
             </div>

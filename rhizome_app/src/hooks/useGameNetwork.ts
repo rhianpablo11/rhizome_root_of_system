@@ -1,7 +1,7 @@
 // src/hooks/useGameNetwork.ts
-import { useEffect, useRef } from 'react';
-import { usePeer } from '../contexts/PeerContext';
-import type { GameMessage } from '../interfaces/game/INetwork';
+import { useEffect, useRef } from "react";
+import { usePeer } from "../contexts/PeerContext";
+import type { GameMessage } from "../interfaces/game/INetwork";
 
 export const useGameNetwork = (onMessageReceived: (msg: GameMessage) => void) => {
     // Puxa as funções da rede e a "última mensagem" recebida

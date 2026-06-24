@@ -3,12 +3,11 @@ import type IShowPlayersConected from "../interfaces/components/IShowPlayersCone
 import Button from "./button";
 import Input from "./input";
 
-
 function ShowPlayersConected(props: IShowPlayersConected) {
     const { isAdmin, startGame } = props;
     //const playersName = ["Jogador 01", "Jogador 02", "Jogador 03", "Jogador 04", "Jogador 05"];
     const { players, roomId } = usePeer();
-    const playersName = players.map(p => p.name);
+    const playersName = players.map((p) => p.name);
 
     return (
         <>

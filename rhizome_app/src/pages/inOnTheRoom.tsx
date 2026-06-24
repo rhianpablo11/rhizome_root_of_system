@@ -22,14 +22,13 @@ function InOnTheRoom() {
 
         try {
             console.log(`⏳ Tentando conectar na sala ${roomID}...`);
-            
+
             // Dispara o pedido de conexão P2P passando o código da sala e o nome
             await joinRoom(roomID, playerName);
-            
+
             console.log("✅ Conectado com sucesso na sala!");
             // Se a promessa resolver (conectar), ele navega pra sala!
             navigate(`/room/${roomID}`);
-            
         } catch (error) {
             console.error("🚨 ERRO AO ENTRAR NA SALA:", error);
             alert("Falha ao entrar! Verifique se o código da sala está correto e se o Host ainda está conectado.");

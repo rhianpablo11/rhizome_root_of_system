@@ -239,7 +239,13 @@ function OfflineGame() {
         if (stateOfGame == "selectPlayers") {
             return <SelectNameOfPlayers playersNameSet={setPlayersName} startGame={finishedChoicesOfNamesPlayers} />;
         } else if (stateOfGame == "showFunctionPlayers") {
-            return <ShowPlayerFunction onlineGame={false}  listPlayers={playersData} onFinish={handleOnFinishPlayersSeeYoursFunctions} />;
+            return (
+                <ShowPlayerFunction
+                    onlineGame={false}
+                    listPlayers={playersData}
+                    onFinish={handleOnFinishPlayersSeeYoursFunctions}
+                />
+            );
         } else if (stateOfGame == "alert_test_show") {
             return (
                 <>

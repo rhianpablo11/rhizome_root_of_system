@@ -2,7 +2,6 @@ import bg from "../assets/bg.webp";
 
 import LogoType from "../components/logoType";
 
-
 import CreateRoomComponent from "./createRoomComponent";
 
 function CreateRoom() {

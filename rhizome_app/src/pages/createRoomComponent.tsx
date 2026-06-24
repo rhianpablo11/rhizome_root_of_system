@@ -14,16 +14,15 @@ function CreateRoomComponent() {
     const handleOnClickFatherSetPlayerName = async () => {
         if (playerName.trim() === "") return;
         try {
-            setPlayerNameIsSet(true)
-            
+            setPlayerNameIsSet(true);
+
             const realRoomId = await createRoom(playerName);
-            setRoomID(realRoomId)
+            setRoomID(realRoomId);
             navigate(`/room/${realRoomId}`);
         } catch (error) {
-            console.log(error)
+            console.log(error);
             alert("Erro de conexão ao criar a sala.");
         }
-        
     };
 
     return (
