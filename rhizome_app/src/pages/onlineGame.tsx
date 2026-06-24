@@ -10,13 +10,14 @@ import CreateRoom from "./createRoomComponent";
 import AlertModal from "../components/alertModal";
 import { useGameNetwork } from "../hooks/useGameNetwork";
 import type { GameMessage } from "../interfaces/game/INetwork";
-import { ChoiceGovernament, generatePlayersFunction, prepareMyPlayerList } from "../services/gameService";
+import { ChoiceGovernament, generatePlayersFunction, getCardsIds, prepareMyPlayerList } from "../services/gameService";
 import { usePeer } from "../contexts/PeerContext";
 import ShowPlayerFunction from "./showPlayerFunction";
 import type { IPlayerData } from "../interfaces/components/IShowPlayerFunction";
+import cardsData from "../database/cards_data.json";
 
 function OnlineGame() {
-    const [advisorSelected, setAdvisorSelected] = useState<string | null>(null);
+    
     const { players, roomId, myPlayerName } = usePeer();
     const [stateOfGame, setStateOfGame] = useState<
         | "waitingRoom"
@@ -41,7 +42,16 @@ function OnlineGame() {
     const [myFormattedList, setMyFormattedList] = useState<IPlayerData[]>([]);
     const [currentLeaderIndex, setCurrentLeaderIndex] = useState<number>(0)
     const [possibleAdvisors, setPossibleAdvisors] = useState<IPlayerData[]>([])
+    const [advisorSelected, setAdvisorSelected] = useState<string>("");
 
+    const [reprovedGovernmentCount, setReprovedGovernmentCount] = useState<number>(0);
+    const [votesCount, setVotesCount] = useState<{ approved: number; reproved: number; votedPlayers: string[] }>({
+        approved: 0,
+        reproved: 0,
+        votedPlayers: []
+    });
+
+    
     const rotateLeader = () => {
         setCurrentLeaderIndex((prevIndex) => (prevIndex + 1) % players.length);
     };
@@ -53,6 +63,9 @@ function OnlineGame() {
             case 'START_GAME':
                 { console.log(message)
                 const playersList = message.payload;
+                
+                setPlayersName(playersList)
+                
                 const myCustomList = prepareMyPlayerList(playersList, myPlayerName);
                 console.log(myCustomList)
                 const myUser = playersList.find((player: any) => player.name === myPlayerName);
@@ -86,6 +99,7 @@ function OnlineGame() {
                 break;
             }
             case 'LEADER_CHOICE_ADVISOR':
+                setCurrentLeaderIndex(message.payload.currentLeader)    
                 if(isHost){
                     
                     setStateOfGame("choiceAdvisor");
@@ -94,6 +108,13 @@ function OnlineGame() {
                 }
                 
                 break;
+            case 'VOTE_CAST': {
+                if (isHost) {
+                    const { vote, voterName } = message.payload;
+                    handleIncomingVote(vote, voterName);
+                }
+                break;
+            }
             case 'VOTING_ON_GOVERNMENT':
                 setAdvisorSelected(message.payload.advisorId)
                 setStateOfGame("votingGovernment");
@@ -126,7 +147,7 @@ function OnlineGame() {
     };
 
 
-    const handleAdvisorSelected = (id: string | null) => {
+    const handleAdvisorSelected = (id: string | null | undefined) => {
         console.log("Conselheiro selecionado:", id);
         setAdvisorSelected(id);
         
@@ -139,6 +160,9 @@ function OnlineGame() {
             setStateOfGame("votingGovernment");
         }
     };
+
+
+
 
 
     const notifyAboutHaveSeeMyFunction = () => {
@@ -175,12 +199,12 @@ function OnlineGame() {
             console.log('PASSEI POR CA')
             // Aqui o Host sorteia quem será o Líder inicial!
             // (Para testar rápido, vamos pegar o primeiro jogador da lista)
-            const initialLeader = players[0].name;
+            //const initialLeader = players[0].name;
 
             // O Host manda a ordem para a rede dizendo quem é o Líder e mudando a tela
             sendNetworkMessage({
                 type: 'LEADER_CHOICE_ADVISOR',
-                payload: { currentLeader: initialLeader },
+                payload: { currentLeader: currentLeaderIndex },
                 isHost: true
             });
             
@@ -192,7 +216,75 @@ function OnlineGame() {
     };
 
 
+    const handleIncomingVote = (vote: 'approved' | 'reproved', voterName: string) => {
+        setVotesCount((prev) => {
+            // Evita voto duplo
+            if (prev.votedPlayers.includes(voterName)) return prev;
+
+            const newApproved = vote === 'approved' ? prev.approved + 1 : prev.approved;
+            const newReproved = vote === 'reproved' ? prev.reproved + 1 : prev.reproved;
+            const newVotedPlayers = [...prev.votedPlayers, voterName];
+
+            // Verifica se todo mundo já votou
+            if (newVotedPlayers.length === players.length) {
+                console.log(`🗳️ Fim da votação! Aprovados: ${newApproved} | Reprovados: ${newReproved}`);
+                
+                if (newApproved > newReproved) {
+                    console.log("✅ GOVERNO APROVADO!");
+                    // Reseta o contador de Caos
+                    setReprovedGovernmentCount(0);
+                    getCardsIds(cardsData)
+                    // TODO: Mudar estado para Leader Choice Card
+                    sendNetworkMessage({ type: 'LEADER_CHOICE_CARD', 
+                                         payload: {leaderId: currentLeaderIndex,
+                                                   cardId:
+                                         },
+                                         isHost: isHost })
+                    
+                } else {
+                    console.log("❌ GOVERNO REPROVADO!");
+                    const newFailCount = reprovedGovernmentCount + 1;
+                    setReprovedGovernmentCount(newFailCount);
+                    
+                    if (newFailCount >= 3) {
+                        console.log("🔥 CAOS! 3 Governos reprovados!");
+                        // TODO: Implementar lógica de carta de caos forçada
+                    } else {
+                        // Gira o líder e recomeça a rodada!
+                        // TODO: Implementar chamada para a próxima rodada
+                    }
+                }
+            }
+
+            return { approved: newApproved, reproved: newReproved, votedPlayers: newVotedPlayers };
+        });
+    };
+
+
+    const castVote = (voteType: 'approved' | 'reproved') => {
+        console.log(`Meu voto foi: ${voteType}`);
+        
+        // Manda o voto pro Host
+        sendNetworkMessage({
+            type: 'VOTE_CAST',
+            payload: { vote: voteType, voterName: myPlayerName },
+            isHost: isHost
+        });
+
+        // Se eu sou o Host, eu já contabilizo meu próprio voto
+        if (isHost) {
+            handleIncomingVote(voteType, myPlayerName);
+        }
+
+        // Fica esperando o Host apurar as urnas
+        setStateOfGame("waitToDo");
+    };
+
+
     const componentToRender = () => {
+
+        const currentLeaderName = playersName.length > 0 ? playersName[currentLeaderIndex]?.name : "Líder";
+
         if(stateOfGame === "waitingRoom") {
             return(
                 <>
@@ -200,15 +292,20 @@ function OnlineGame() {
                 </>
             );
         } else if(stateOfGame == 'votingGovernment'){
+            console.log(playersName)
+            console.log(currentLeaderIndex)
+            console.log(currentLeaderName)
+            console.log(advisorSelected)
             return(
                 <>
                     <ChoiceAdvisorForGovernement
-                        nameLider="Joao"
-                        playersList={["ojaf", "kij", "oj", "agjpoa"]}
+                        nameLider={currentLeaderName}
+                        playersList={[]}
                         onlineGame={true}
-                        aprovedGroup={handleAdvisorSelected}
+                        aprovedGroup={() => castVote('approved')}
+                        reprovedGroup={() => castVote('reproved')}
                         playersVoting={true}
-                        advisorName="Militão"
+                        advisorName={advisorSelected}
                     />
                 </>
             )
@@ -216,7 +313,7 @@ function OnlineGame() {
             return(
                 <>
                     <ChoiceAdvisorForGovernement
-                        nameLider="Joao"
+                        nameLider={currentLeaderName}
                         playersList={possibleAdvisors}
                         onlineGame={true}
                         aprovedGroup={handleAdvisorSelected}
@@ -282,7 +379,9 @@ function OnlineGame() {
         } else if(stateOfGame == 'waitToDo'){
             return(
                 <>
-                    <AlertModal text={"Está ocorrendo uma operação entre o Lider e o Conselheiro, ou esperando pelo host iniciar a partida, por favor aguarde!"} buttonText={""} onSkip={()=>{} } />
+                    <div className="w-full h-full -my-15 flex flex-col items-center justify-center">
+                        <AlertModal text={"Está ocorrendo uma operação entre o Lider e o Conselheiro, ou esperando pelo host iniciar a partida, por favor aguarde!"} buttonText={""} onSkip={()=>{} } />
+                    </div>
                 </>
             )
         }

@@ -105,7 +105,7 @@ function ChoiceAdvisorForGovernement(props: IChoiceAdvisorForGovernement) {
                                     disable={buttonsDisable}
                                     text="Confirmar escolha"
                                     color="darkBlue"
-                                    onClickButtonChildren={() => {}}
+                                    onClickButtonChildren={()=>{if(aprovedGroup != undefined ){ aprovedGroup(nameAdvisorSelected)}}}
                                     usesOn="commonGame"
                                 />
                             </>
