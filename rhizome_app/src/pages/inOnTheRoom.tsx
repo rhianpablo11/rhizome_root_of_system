@@ -3,13 +3,11 @@ import bg from "../assets/bg.webp";
 import Button from "../components/button";
 import GetDataOnlineRoom from "../components/getDataOnlineRoom";
 import LogoType from "../components/logoType";
-import CreateRoomComponent from "./createRoomComponent";
 import { useNavigate } from "react-router";
 import { usePeer } from "../contexts/PeerContext";
 
 function InOnTheRoom() {
     const [playerName, setPlayerName] = useState<string>("");
-    const [playerNameIsSet, setPlayerNameIsSet] = useState<boolean>(false);
     const [roomID, setRoomID] = useState<string>("");
     const navigate = useNavigate();
     const { joinRoom } = usePeer();

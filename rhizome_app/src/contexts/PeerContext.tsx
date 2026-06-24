@@ -173,6 +173,7 @@ export const PeerProvider: React.FC<{ children: React.ReactNode }> = ({ children
         });
       });
 
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       newPeer.on('error', (err: any) => {
         clearTimeout(timeoutId);
         if (err.type === 'peer-unavailable') {
@@ -200,4 +201,5 @@ export const PeerProvider: React.FC<{ children: React.ReactNode }> = ({ children
   );
 };
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const usePeer = () => useContext(PeerContext);

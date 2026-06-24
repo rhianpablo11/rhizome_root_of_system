@@ -61,8 +61,8 @@ function ChoiceAdvisorForGovernement(props: IChoiceAdvisorForGovernement) {
                                     disable={buttonsDisable}
                                     text="Governo Aprovado"
                                     color="darkBlue"
-                                    onClickButtonChildren={() => {
-                                        aprovedGroup(nameAdvisorSelected);
+                                    onClickButtonChildren={() => {if(aprovedGroup != undefined)
+                                                                    aprovedGroup(nameAdvisorSelected);
                                     }}
                                     usesOn="commonGame"
                                 />
@@ -70,7 +70,7 @@ function ChoiceAdvisorForGovernement(props: IChoiceAdvisorForGovernement) {
                                     disable={buttonsDisable}
                                     text="Governo Reprovado"
                                     color="salmon"
-                                    onClickButtonChildren={reprovedGroup}
+                                    onClickButtonChildren={reprovedGroup || (() => {})}
                                     usesOn="commonGame"
                                 />
                             </>
@@ -115,7 +115,7 @@ function ChoiceAdvisorForGovernement(props: IChoiceAdvisorForGovernement) {
                                     disable={buttonsDisable}
                                     text="Governo Aprovado"
                                     color="darkBlue"
-                                    onClickButtonChildren={() => {
+                                    onClickButtonChildren={() => {if(aprovedGroup != undefined)
                                         aprovedGroup(nameAdvisorSelected);
                                     }}
                                     usesOn="commonGame"
@@ -124,7 +124,7 @@ function ChoiceAdvisorForGovernement(props: IChoiceAdvisorForGovernement) {
                                     disable={buttonsDisable}
                                     text="Governo Reprovado"
                                     color="salmon"
-                                    onClickButtonChildren={reprovedGroup}
+                                    onClickButtonChildren={reprovedGroup || (() => {})}
                                     usesOn="commonGame"
                                 />
                             </>
@@ -138,7 +138,7 @@ function ChoiceAdvisorForGovernement(props: IChoiceAdvisorForGovernement) {
             <>
                 <div className="flex flex-col w-full h-full pb-35 items-center relative">
                     <div className="w-full px-4 flex flex-col items-center justify-center">
-                        <VotingInfo />
+                        <VotingInfo playersToVote={0} />
                         <h1 className="text-[#1F293B] font-semibold text-3xl leading-none">{nameLider} iniciou</h1>
                         <h1 className="text-[#1F293B] text-xl leading-none">Seu conselheiro escolhido foi:</h1>
                     </div>
@@ -152,7 +152,7 @@ function ChoiceAdvisorForGovernement(props: IChoiceAdvisorForGovernement) {
                         <Button
                             text="Governo Aprovado"
                             color="darkBlue"
-                            onClickButtonChildren={() => {
+                            onClickButtonChildren={() => {if(aprovedGroup != undefined)
                                 aprovedGroup(nameAdvisorSelected);
                             }}
                             usesOn="commonGame"
@@ -160,7 +160,7 @@ function ChoiceAdvisorForGovernement(props: IChoiceAdvisorForGovernement) {
                         <Button
                             text="Governo Reprovado"
                             color="salmon"
-                            onClickButtonChildren={reprovedGroup}
+                            onClickButtonChildren={reprovedGroup || (() => {})}
                             usesOn="commonGame"
                         />
                     </div>

@@ -1,15 +1,11 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import bg from "../assets/bg.webp";
-import Button from "../components/button";
-import GetDataOnlineRoom from "../components/getDataOnlineRoom";
 import LogoType from "../components/logoType";
 import ShowPlayersConected from "../components/showPlayersConecteds";
-import type { IOnlineGame } from "../interfaces/components/IOnlineGame";
 import ChoiceAdvisorForGovernement from "./choiceAdvisorForGovernement";
-import CreateRoom from "./createRoomComponent";
 import AlertModal from "../components/alertModal";
 import { useGameNetwork } from "../hooks/useGameNetwork";
-import type { GameMessage, MessageType } from "../interfaces/game/INetwork";
+import type { GameMessage } from "../interfaces/game/INetwork";
 import { ChoiceGovernament, generatePlayersFunction, getCardsIds, prepareMyPlayerList } from "../services/gameService";
 import { usePeer } from "../contexts/PeerContext";
 import ShowPlayerFunction from "./showPlayerFunction";
@@ -44,7 +40,7 @@ function OnlineGame() {
         >("waitingRoom");
     const [myRole, setMyRole] = useState<'community' | 'lobby'>('community')
     const [playersName, setPlayersName] = useState<IPlayerData[]>([])
-    const [myName, setMyName] = useState<string>('')
+
     const [aliars, setAliars] = useState<string[]>([])
     const [playersReady, setPlayersReady] = useState<string[]>([]);
     const [myFormattedList, setMyFormattedList] = useState<IPlayerData[]>([]);
@@ -62,10 +58,17 @@ function OnlineGame() {
         votedPlayers: []
     });
 
+    useEffect(()=>{
+        console.log(myRole)
+        console.log(aliars)
+        console.log(playersReady)
+        console.log(playersConfirmedCard)
+        console.log(votesCount)
+    },[myRole, aliars, playersReady, playersConfirmedCard, votesCount])
     
-    const rotateLeader = () => {
-        setCurrentLeaderIndex((prevIndex) => (prevIndex + 1) % players.length);
-    };
+    // const rotateLeader = () => {
+    //     setCurrentLeaderIndex((prevIndex) => (prevIndex + 1) % players.length);
+    // };
 
     
     const handleNetworkMessage = (message: GameMessage) => {

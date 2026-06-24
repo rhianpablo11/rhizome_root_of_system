@@ -2,7 +2,7 @@ import { usePeer } from "../contexts/PeerContext";
 import type IShowPlayersConected from "../interfaces/components/IShowPlayersConected";
 import Button from "./button";
 import Input from "./input";
-import VotingInfo from "./votingInfo";
+
 
 function ShowPlayersConected(props: IShowPlayersConected) {
     const { isAdmin, startGame } = props;
@@ -34,7 +34,7 @@ function ShowPlayersConected(props: IShowPlayersConected) {
                         <>
                             <Button
                                 usesOn="commonGame"
-                                onClickButtonChildren={startGame}
+                                onClickButtonChildren={startGame || (() => {})}
                                 color="darkBlue"
                                 text="Iniciar o jogo"
                                 disable={false}

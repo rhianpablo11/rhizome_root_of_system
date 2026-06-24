@@ -1,9 +1,7 @@
 import bg from "../assets/bg.webp";
-import Button from "../components/button";
-import GetDataOnlineRoom from "../components/getDataOnlineRoom";
+
 import LogoType from "../components/logoType";
-import ShowPlayersConected from "../components/showPlayersConecteds";
-import type { IOnlineGame } from "../interfaces/components/IOnlineGame";
+
 
 import CreateRoomComponent from "./createRoomComponent";
 
