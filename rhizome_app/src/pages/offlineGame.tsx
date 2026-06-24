@@ -13,7 +13,7 @@ import cardsData from "../database/cards_data.json";
 import { useNavigate } from "react-router";
 
 function OfflineGame() {
-    const navigate = useNavigate()
+    const navigate = useNavigate();
     const [stateOfGame, setStateOfGame] = useState<
         | "selectPlayers"
         | "showFunctionPlayers"
@@ -230,8 +230,7 @@ function OfflineGame() {
     };
 
     const backToMenu = () => {
-        
-        navigate("/")
+        navigate("/");
         //window.location.href = "/";
     };
 
@@ -240,7 +239,13 @@ function OfflineGame() {
         if (stateOfGame == "selectPlayers") {
             return <SelectNameOfPlayers playersNameSet={setPlayersName} startGame={finishedChoicesOfNamesPlayers} />;
         } else if (stateOfGame == "showFunctionPlayers") {
-            return <ShowPlayerFunction listPlayers={playersData} onFinish={handleOnFinishPlayersSeeYoursFunctions} />;
+            return (
+                <ShowPlayerFunction
+                    onlineGame={false}
+                    listPlayers={playersData}
+                    onFinish={handleOnFinishPlayersSeeYoursFunctions}
+                />
+            );
         } else if (stateOfGame == "alert_test_show") {
             return (
                 <>
@@ -263,7 +268,8 @@ function OfflineGame() {
                     />
                 </div>
             );
-        } else if (stateOfGame == "defenseTime") { //time of defense by advisor
+        } else if (stateOfGame == "defenseTime") {
+            //time of defense by advisor
             return (
                 <>
                     <div className="w-full h-full flex -my-15 flex-col items-center justify-center">
@@ -275,7 +281,8 @@ function OfflineGame() {
                     </div>
                 </>
             );
-        } else if (stateOfGame == "defenseTimeLeader") { // time of defense by leader
+        } else if (stateOfGame == "defenseTimeLeader") {
+            // time of defense by leader
             return (
                 <>
                     <div className="w-full h-full flex -my-15 flex-col items-center justify-center">
@@ -287,7 +294,8 @@ function OfflineGame() {
                     </div>
                 </>
             );
-        } else if (stateOfGame == "plenary_timer_test_show") { //time for plenary discursion
+        } else if (stateOfGame == "plenary_timer_test_show") {
+            //time for plenary discursion
             return (
                 <>
                     <div className="w-full h-full flex -my-15 flex-col items-center justify-center">
@@ -337,6 +345,8 @@ function OfflineGame() {
                     aprovedGroup={handleGovernmentApproved}
                     reprovedGroup={handleGovernmentRejected}
                     key={currentLeaderIndex}
+                    onlineGame={false}
+                    playersVoting={false}
                 />
             );
         } else if (stateOfGame == "showChaosCard") {

@@ -8,7 +8,7 @@ function SelectNameOfPlayers(props: ISelectNameOfPlayers) {
     const [playersName, setPlayersName] = useState<string[]>(["", "", "", "", ""]);
 
     const handleOnClickFatherAddPlayer = () => {
-        if(playersName.length >= 10) return;
+        if (playersName.length >= 10) return;
         setPlayersName([...playersName, ""]);
     };
 

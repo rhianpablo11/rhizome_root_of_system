@@ -42,4 +42,4 @@ function HeaderGamingPoints(props: IHeaderGamingPoints) {
     );
 }
 
-export default HeaderGamingPoints;  
+export default HeaderGamingPoints;

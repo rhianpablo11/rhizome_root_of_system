@@ -14,15 +14,35 @@ function InitialPage() {
                     backgroundImage: `url("${bg}")`,
                 }}>
                 <LogoType localOfUse="mainMenu" />
-                <div className="fixed bottom-4 w-full px-6 shadow-2xl">
-                    <Button
-                        text="Novo Jogo"
-                        usesOn="commonGame"
-                        color="salmon"
-                        onClickButtonChildren={() => {
-                            navigate("/offline");
-                        }}
-                    />
+                <div className="fixed bottom-4 w-full px-4 shadow-2xl">
+                    <div className="flex flex-col items-center justify-center">
+                        <div className="flex w-full mb-2 gap-x-2 items-center justify-center">
+                            <Button
+                                text="Criar Sala"
+                                usesOn="commonGame"
+                                color="darkBlue"
+                                onClickButtonChildren={() => {
+                                    navigate("/create-room");
+                                }}
+                            />
+                            <Button
+                                text="Entrar na Sala"
+                                usesOn="commonGame"
+                                color="darkBlue"
+                                onClickButtonChildren={() => {
+                                    navigate("/join-room");
+                                }}
+                            />
+                        </div>
+                        <Button
+                            text="Novo Jogo Offline"
+                            usesOn="commonGame"
+                            color="salmon"
+                            onClickButtonChildren={() => {
+                                navigate("/offline");
+                            }}
+                        />
+                    </div>
                 </div>
             </div>
         </>

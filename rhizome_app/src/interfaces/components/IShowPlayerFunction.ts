@@ -1,6 +1,7 @@
 export interface IShowPlayerFunction {
     listPlayers: IPlayerData[];
     onFinish: () => void;
+    onlineGame: boolean;
 }
 
 export interface IPlayerData {
