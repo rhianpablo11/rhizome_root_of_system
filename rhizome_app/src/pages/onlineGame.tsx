@@ -9,16 +9,17 @@ import ChoiceAdvisorForGovernement from "./choiceAdvisorForGovernement";
 import CreateRoom from "./createRoomComponent";
 import AlertModal from "../components/alertModal";
 import { useGameNetwork } from "../hooks/useGameNetwork";
-import type { GameMessage } from "../interfaces/game/INetwork";
+import type { GameMessage, MessageType } from "../interfaces/game/INetwork";
 import { ChoiceGovernament, generatePlayersFunction, getCardsIds, prepareMyPlayerList } from "../services/gameService";
 import { usePeer } from "../contexts/PeerContext";
 import ShowPlayerFunction from "./showPlayerFunction";
 import type { IPlayerData } from "../interfaces/components/IShowPlayerFunction";
 import cardsData from "../database/cards_data.json";
+import ShowCardsToChoice from "./showCardsToChoice";
 
 function OnlineGame() {
     
-    const { players, roomId, myPlayerName } = usePeer();
+    const { players, roomId, myPlayerName, broadcast } = usePeer();
     const [stateOfGame, setStateOfGame] = useState<
         | "waitingRoom"
         | "choiceAdvisor"
@@ -43,6 +44,7 @@ function OnlineGame() {
     const [currentLeaderIndex, setCurrentLeaderIndex] = useState<number>(0)
     const [possibleAdvisors, setPossibleAdvisors] = useState<IPlayerData[]>([])
     const [advisorSelected, setAdvisorSelected] = useState<string>("");
+    const [cardsOfRound, setCardsOfRound] = useState<string[]>([''])
 
     const [reprovedGovernmentCount, setReprovedGovernmentCount] = useState<number>(0);
     const [votesCount, setVotesCount] = useState<{ approved: number; reproved: number; votedPlayers: string[] }>({
@@ -56,7 +58,7 @@ function OnlineGame() {
         setCurrentLeaderIndex((prevIndex) => (prevIndex + 1) % players.length);
     };
 
-    console.log(myPlayerName)
+    
     const handleNetworkMessage = (message: GameMessage) => {
         // Se a rede mandou mudar o estado do jogo, a interface obedece cegamente:
         switch (message.type) {
@@ -121,6 +123,43 @@ function OnlineGame() {
                 break;
             case 'WAITING_FOR_GOVERNMENT_ACTION':
                 setStateOfGame("waitToDo");
+                break;
+            case 'LEADER_CHOICE_CARD':{
+                const currentLeaderReceived = message.payload.leaderId
+                console.log('LEADER_CHOICE_CARD')
+                console.log(currentLeaderReceived)
+                console.log(playersName)
+                console.log(myPlayerName)
+                console.log(message.payload.cardsId)
+
+                if(playersName[currentLeaderReceived].name == myPlayerName){
+                    setCardsOfRound(message.payload.cardsId)
+                    setStateOfGame("leaderChoiceCard")
+                } else{
+                    setStateOfGame('waitToDo')
+                }
+                break;
+            }
+            case 'ADVISOR_CHOICE_CARD':
+                if(myPlayerName == message.payload.advisorName){
+                    setCardsOfRound(message.payload.cardsRemaining)
+                    setStateOfGame('advisorChoiceCard')
+                } else{
+                    setStateOfGame('waitToDo')
+                }
+                break;
+            case 'SHOW_CHAOS_CARD':
+                console.log('CHEGUEI: SHOW_CHAOS_CARD')
+                if (isHost && !message.isHost) {
+                    broadcast({
+                        type: 'SHOW_CHAOS_CARD',
+                        payload: message.payload,
+                        isHost: true
+                    })
+                }
+                console.log('AAAAA:' + message.payload.cardChoice)
+                setCardsOfRound([message.payload.cardChoice])
+                setStateOfGame('ShowChaosCard')
                 break;
             // Adicione os outros cases conforme for construindo as telas
         }
@@ -233,13 +272,18 @@ function OnlineGame() {
                     console.log("✅ GOVERNO APROVADO!");
                     // Reseta o contador de Caos
                     setReprovedGovernmentCount(0);
-                    getCardsIds(cardsData)
+                    const cardsIdsOfRound = getCardsIds(cardsData)
+                    console.log(cardsIdsOfRound)
+                    setCardsOfRound(cardsIdsOfRound)
                     // TODO: Mudar estado para Leader Choice Card
                     sendNetworkMessage({ type: 'LEADER_CHOICE_CARD', 
                                          payload: {leaderId: currentLeaderIndex,
-                                                   cardId:
+                                                   cardsId: cardsOfRound
                                          },
                                          isHost: isHost })
+                    if(isHost && playersName[currentLeaderIndex].name == myPlayerName){
+                        setStateOfGame("leaderChoiceCard")
+                    }
                     
                 } else {
                     console.log("❌ GOVERNO REPROVADO!");
@@ -279,6 +323,30 @@ function OnlineGame() {
         // Fica esperando o Host apurar as urnas
         setStateOfGame("waitToDo");
     };
+
+
+    const notifyAboutCardChoiceOfLeader = (cardsRemaining: string[]) =>{
+
+        sendNetworkMessage({
+            type: 'ADVISOR_CHOICE_CARD',
+            isHost: isHost,
+            payload: {cardsRemaining: cardsRemaining,
+                      advisorName: advisorSelected
+            }
+        })
+        setStateOfGame('waitToDo')
+    }
+
+    const notifyAboutCardChoiceOfAdvisor = (cardsRemaining: string) =>{
+        sendNetworkMessage({
+            type: 'SHOW_CHAOS_CARD',
+            isHost: isHost,
+            payload: {cardChoice: cardsRemaining}
+        })
+        console.log(`[ADVISOR] Mudando minha tela para mostrar a carta escolhida: ${cardsRemaining}`);
+        setCardsOfRound([cardsRemaining]);
+        setStateOfGame('ShowChaosCard');
+    }
 
 
     const componentToRender = () => {
@@ -330,25 +398,54 @@ function OnlineGame() {
         } else if(stateOfGame == 'advisorDefenseTime'){
             return(
                 <>
-                
+                    
                 </>
             )
         } else if(stateOfGame == 'leaderChoiceCard'){
             return(
                 <>
-                
+                    <ShowCardsToChoice
+                        key="advisor-turn"
+                        nameAdvisor={currentLeaderName}
+                        nameLider={currentLeaderName}
+                        showToLider={true}
+                        cardsId={cardsOfRound}
+                        onAdvisorVoted={()=>{}}
+                        onLiderVoted={notifyAboutCardChoiceOfLeader}
+                        state="defense"
+                    />
                 </>
             )
         } else if(stateOfGame == 'advisorChoiceCard'){
             return(
                 <>
-                
+                    <ShowCardsToChoice
+                        key="advisor-turn"
+                        nameAdvisor={myPlayerName}
+                        nameLider={currentLeaderName}
+                        showToLider={false}
+                        cardsId={cardsOfRound}
+                        onAdvisorVoted={notifyAboutCardChoiceOfAdvisor}
+                        onLiderVoted={()=>{}}
+                        state="defense"
+                    />
                 </>
             )
         } else if(stateOfGame == 'ShowChaosCard'){
+            console.log('EU CONSIGO CHEGAR AQ?')
+            console.log(cardsOfRound)
             return(
                 <>
-                
+                    <ShowCardsToChoice
+                        key={`chaos-card-${cardsOfRound[0]}`}
+                        nameAdvisor={'Povo'}
+                        nameLider={'Povo'}
+                        showToLider={false}
+                        cardsId={cardsOfRound}
+                        onAdvisorVoted={()=>{}}
+                        onLiderVoted={()=>{}}
+                        state="confirm"
+                    />
                 </>
             )
         } else if(stateOfGame == 'alertVotingNotApproveds'){

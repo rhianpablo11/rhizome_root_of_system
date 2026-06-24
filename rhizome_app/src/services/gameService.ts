@@ -40,7 +40,7 @@ const getCardsIds = (cardsData: ICardsData[]) => {
         const j = Math.floor(Math.random() * (i + 1));
         [allIds[i], allIds[j]] = [allIds[j], allIds[i]];
     }
-    return allIds;
+    return allIds.slice(0, 3);
 };
 
 const ChoiceGovernament = (playersData: IPlayerData[], currentLeaderIndex: number) => {
