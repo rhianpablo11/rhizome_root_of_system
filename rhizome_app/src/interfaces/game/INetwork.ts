@@ -14,7 +14,10 @@ export type MessageType =
  | 'PLENARY_DEFENSE'
  | 'WAITING_FOR_GOVERNMENT_ACTION'
  | 'HAVE_SEE_MY_FUNCTION'
- | 'VOTE_CAST'; //fica esperando a proxima ação q ele possa fazer
+ | 'VOTE_CAST'
+ | 'GAME_OVER'
+ | 'UPDATE_SCORE_AND_NEW_ROUND'
+ | 'PLAYER_CONFIRMED_CARD'; //fica esperando a proxima ação q ele possa fazer
 
 
 export interface GameMessage{
