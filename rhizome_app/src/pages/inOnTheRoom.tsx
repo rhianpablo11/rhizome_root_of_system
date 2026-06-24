@@ -3,17 +3,36 @@ import bg from "../assets/bg.webp";
 import Button from "../components/button";
 import GetDataOnlineRoom from "../components/getDataOnlineRoom";
 import LogoType from "../components/logoType";
-import CreateRoomComponent from "./createRoomComponent";
 import { useNavigate } from "react-router";
+import { usePeer } from "../contexts/PeerContext";
 
 function InOnTheRoom() {
     const [playerName, setPlayerName] = useState<string>("");
-    const [playerNameIsSet, setPlayerNameIsSet] = useState<boolean>(false);
     const [roomID, setRoomID] = useState<string>("");
     const navigate = useNavigate();
-    const handleOnClickFatherSetPlayerName = () => {
-        if (playerName.trim() === "") return;
-        navigate(`/room/${roomID}`);
+    const { joinRoom } = usePeer();
+
+    // Transformamos a função em async para esperar o PeerJS conectar
+    const handleOnClickFatherSetPlayerName = async () => {
+        // Trava se o cara não preencher os dois campos
+        if (playerName.trim() === "" || roomID.trim() === "") {
+            alert("Preencha o seu nome e o código da sala!");
+            return;
+        }
+
+        try {
+            console.log(`⏳ Tentando conectar na sala ${roomID}...`);
+
+            // Dispara o pedido de conexão P2P passando o código da sala e o nome
+            await joinRoom(roomID, playerName);
+
+            console.log("✅ Conectado com sucesso na sala!");
+            // Se a promessa resolver (conectar), ele navega pra sala!
+            navigate(`/room/${roomID}`);
+        } catch (error) {
+            console.error("🚨 ERRO AO ENTRAR NA SALA:", error);
+            alert("Falha ao entrar! Verifique se o código da sala está correto e se o Host ainda está conectado.");
+        }
     };
     return (
         <>
