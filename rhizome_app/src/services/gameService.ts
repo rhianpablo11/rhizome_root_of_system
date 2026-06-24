@@ -44,8 +44,12 @@ const getCardsIds = (cardsData: ICardsData[]) => {
 };
 
 const ChoiceGovernament = (playersData: IPlayerData[], currentLeaderIndex: number) => {
+    console.log(playersData)
+    console.log(currentLeaderIndex)
     const currentLeader = playersData[currentLeaderIndex];
+    console.log(currentLeader)
     const availableAdvisors = playersData.filter((player) => player.id !== currentLeader?.id);
+    console.log(availableAdvisors)
     return availableAdvisors;
 };
 

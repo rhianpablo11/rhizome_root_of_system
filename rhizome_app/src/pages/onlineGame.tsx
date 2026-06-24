@@ -10,7 +10,7 @@ import CreateRoom from "./createRoomComponent";
 import AlertModal from "../components/alertModal";
 import { useGameNetwork } from "../hooks/useGameNetwork";
 import type { GameMessage } from "../interfaces/game/INetwork";
-import { generatePlayersFunction, prepareMyPlayerList } from "../services/gameService";
+import { ChoiceGovernament, generatePlayersFunction, prepareMyPlayerList } from "../services/gameService";
 import { usePeer } from "../contexts/PeerContext";
 import ShowPlayerFunction from "./showPlayerFunction";
 import type { IPlayerData } from "../interfaces/components/IShowPlayerFunction";
@@ -34,11 +34,18 @@ function OnlineGame() {
         | 'waitToDo'
         >("waitingRoom");
     const [myRole, setMyRole] = useState<'community' | 'lobby'>('community')
-    const [playersName, setPlayersName] = useState<string[]>([])
+    const [playersName, setPlayersName] = useState<IPlayerData[]>([])
     const [myName, setMyName] = useState<string>('')
     const [aliars, setAliars] = useState<string[]>([])
     const [playersReady, setPlayersReady] = useState<string[]>([]);
     const [myFormattedList, setMyFormattedList] = useState<IPlayerData[]>([]);
+    const [currentLeaderIndex, setCurrentLeaderIndex] = useState<number>(0)
+    const [possibleAdvisors, setPossibleAdvisors] = useState<IPlayerData[]>([])
+
+    const rotateLeader = () => {
+        setCurrentLeaderIndex((prevIndex) => (prevIndex + 1) % players.length);
+    };
+
     console.log(myPlayerName)
     const handleNetworkMessage = (message: GameMessage) => {
         // Se a rede mandou mudar o estado do jogo, a interface obedece cegamente:
@@ -79,9 +86,16 @@ function OnlineGame() {
                 break;
             }
             case 'LEADER_CHOICE_ADVISOR':
-                setStateOfGame("choiceAdvisor");
+                if(isHost){
+                    
+                    setStateOfGame("choiceAdvisor");
+                } else{
+                    setStateOfGame('waitToDo')
+                }
+                
                 break;
             case 'VOTING_ON_GOVERNMENT':
+                setAdvisorSelected(message.payload.advisorId)
                 setStateOfGame("votingGovernment");
                 break;
             case 'WAITING_FOR_GOVERNMENT_ACTION':
@@ -101,6 +115,7 @@ function OnlineGame() {
             const playerNames = players.map((p) => p.name);
             console.log(players)
             const playersFunctions = generatePlayersFunction(playerNames)
+            setPlayersName(playersFunctions)
             // Avisa TODOS os celulares para irem para a tela de papel
             sendNetworkMessage({ type: 'START_GAME', payload:playersFunctions, isHost: true });
             const myCustomList = prepareMyPlayerList(playersFunctions, myPlayerName);
@@ -154,7 +169,10 @@ function OnlineGame() {
         // Se a quantidade de pessoas prontas for igual ou maior que o total de jogadores na rede...
         if (readyList.length >= players.length) {
             console.log("🔥 TODO MUNDO PRONTO! INICIANDO A RODADA!");
-            
+            const advisorAvailables = ChoiceGovernament(playersName, currentLeaderIndex)
+            setPossibleAdvisors(advisorAvailables)
+            console.log(advisorAvailables)
+            console.log('PASSEI POR CA')
             // Aqui o Host sorteia quem será o Líder inicial!
             // (Para testar rápido, vamos pegar o primeiro jogador da lista)
             const initialLeader = players[0].name;
@@ -165,6 +183,8 @@ function OnlineGame() {
                 payload: { currentLeader: initialLeader },
                 isHost: true
             });
+            
+
             
             // O Host também muda a própria tela
             setStateOfGame("choiceAdvisor");
@@ -197,11 +217,10 @@ function OnlineGame() {
                 <>
                     <ChoiceAdvisorForGovernement
                         nameLider="Joao"
-                        playersList={["ojaf", "kij", "oj", "agjpoa"]}
+                        playersList={possibleAdvisors}
                         onlineGame={true}
                         aprovedGroup={handleAdvisorSelected}
                         playersVoting={false}
-                        advisorName="Militão"
                     />
                 </>
             )
@@ -263,7 +282,7 @@ function OnlineGame() {
         } else if(stateOfGame == 'waitToDo'){
             return(
                 <>
-                    <AlertModal text={""} buttonText={""} onSkip={()=>{} } />
+                    <AlertModal text={"Está ocorrendo uma operação entre o Lider e o Conselheiro, ou esperando pelo host iniciar a partida, por favor aguarde!"} buttonText={""} onSkip={()=>{} } />
                 </>
             )
         }
@@ -280,7 +299,7 @@ function OnlineGame() {
                     <div className="w-full flex items-center justify-center mt-4">
                         <LogoType localOfUse="offlinePage" />
                     </div>
-                    <div className="w-full h-full flex justify-center">
+                    <div className="w-full h-full flex px-4 justify-center">
                         {componentToRender()}
                     </div>
                 </div>
