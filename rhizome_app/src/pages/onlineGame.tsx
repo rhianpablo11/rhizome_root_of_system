@@ -185,8 +185,10 @@ function OnlineGame() {
                     });
                 }
                 console.log("AAAAA:" + message.payload.cardChoice);
-                setCardsOfRound([message.payload.cardChoice]);
-                setStateOfGame("ShowChaosCard");
+                if (!isHost || !message.isHost) {  // ✅ Host não reage ao próprio rebote
+                    setCardsOfRound([message.payload.cardChoice]);
+                    setStateOfGame("ShowChaosCard");
+                }
                 break;
 
             case "PLAYER_CONFIRMED_CARD": {
