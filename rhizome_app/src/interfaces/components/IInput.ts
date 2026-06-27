@@ -3,5 +3,6 @@ export interface IInput {
     usesOn: "selectNameOfPlayers" | "getNamePlayer" | "showPlayersConected";
     value?: string;
     isUpper?: Boolean;
+    maxLength?: number;
     onChangeText?: (text: string) => void;
 }

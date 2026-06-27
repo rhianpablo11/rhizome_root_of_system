@@ -1,7 +1,7 @@
 import type { IInput } from "../interfaces/components/IInput";
 
 function Input(props: IInput) {
-    const { placeholder, usesOn, value, isUpper, onChangeText } = props;
+    const { placeholder, usesOn, value, isUpper, maxLength, onChangeText } = props;
     if (usesOn == "selectNameOfPlayers") {
         return (
             <div className="flex w-full items-center justify-center gap-x-3">
@@ -37,6 +37,7 @@ function Input(props: IInput) {
                     className="w-full h-12 rounded-2xl bg-[#BCBDB8] text-center text-[#1E293B] px-4 outline-none font-light text-2xl placeholder:text-[#64748B]"
                     placeholder={placeholder}
                     value={value}
+                    maxLength={maxLength}
                     onChange={(e) =>
                         onChangeText?.(
                             isUpper
