@@ -44,7 +44,7 @@ function GetDataOnlineRoom(props: IGetDataOnlineRoom) {
                 <div className="bg-[#F6F7EF] flex flex-col w-full rounded-3xl justify-center items-center shadow-2xl ">
                     <h1 className="text-[#1E293B] font-semibold text-2xl pt-5">Insira o ID da partida:</h1>
                     <div className="pb-1 w-full px-5 pt-2">
-                        <Input value={roomId} onChangeText={setroomID} usesOn="getNamePlayer" placeholder="ux901i" />
+                        <Input value={roomId} onChangeText={setroomID} usesOn="getNamePlayer" placeholder="ux901i" isUpper={true} />
                     </div>
                     <h1 className="text-[#1E293B] font-semibold text-2xl ">Insira seu nome:</h1>
                     <div className="pb-4 w-full px-5 pt-2">
