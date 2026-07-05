@@ -11,14 +11,22 @@ function InOnTheRoom() {
     const [roomID, setRoomID] = useState<string>("");
     const navigate = useNavigate();
     const { joinRoom } = usePeer();
+    
+    // 🚨 Estado para barrar cliques duplos e dar feedback
+    const [isConnecting, setIsConnecting] = useState(false);
 
-    // Transformamos a função em async para esperar o PeerJS conectar
     const handleOnClickFatherSetPlayerName = async () => {
-        // Trava se o cara não preencher os dois campos
+        // 1. Trava se já estiver rodando
+        if (isConnecting) return;
+
+        // 2. Trava se o cara não preencher os dois campos
         if (playerName.trim() === "" || roomID.trim() === "") {
             alert("Preencha o seu nome e o código da sala!");
             return;
         }
+
+        // 3. Avisa que tá conectando (Isso muda o botão!)
+        setIsConnecting(true);
 
         try {
             console.log(`⏳ Tentando conectar na sala ${roomID}...`);
@@ -32,8 +40,12 @@ function InOnTheRoom() {
         } catch (error) {
             console.error("🚨 ERRO AO ENTRAR NA SALA:", error);
             alert("Falha ao entrar! Verifique se o código da sala está correto e se o Host ainda está conectado.");
+            
+            // 🚨 MUITO IMPORTANTE: Libera o botão pro cara tentar de novo!
+            setIsConnecting(false);
         }
     };
+
     return (
         <>
             <div
@@ -56,19 +68,22 @@ function InOnTheRoom() {
                     </div>
                     <div className="w-full flex flex-col gap-y-3 mb-5 px-6">
                         <Button
-                            text="Continuar"
+                            // 🚨 Texto reativo ao estado!
+                            text={isConnecting ? "Conectando... ⏳" : "Continuar"}
                             usesOn="commonGame"
                             color="salmon"
-                            onClickButtonChildren={() => {
-                                handleOnClickFatherSetPlayerName();
-                            }}
+                            // 🚨 Se a sua interface <Button> aceitar disable, passa ele!
+                            disable={isConnecting} 
+                            onClickButtonChildren={handleOnClickFatherSetPlayerName}
                         />
                         <Button
                             text="Cancelar"
                             usesOn="commonGame"
                             color="darkBlue"
+                            // Trava o cancelar se tiver conectando pra evitar doidera no fluxo
+                            disable={isConnecting}
                             onClickButtonChildren={() => {
-                                navigate("/");
+                                if (!isConnecting) navigate("/");
                             }}
                         />
                     </div>

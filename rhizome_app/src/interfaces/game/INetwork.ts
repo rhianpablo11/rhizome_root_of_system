@@ -17,7 +17,8 @@ export type MessageType =
     | "VOTE_CAST"
     | "GAME_OVER"
     | "UPDATE_SCORE_AND_NEW_ROUND"
-    | "PLAYER_CONFIRMED_CARD"; //fica esperando a proxima ação q ele possa fazer
+    | "PLAYER_CONFIRMED_CARD"  //fica esperando a proxima ação q ele possa fazer
+    | 'HOST_DROPPED';
 
 export interface GameMessage {
     type: MessageType;

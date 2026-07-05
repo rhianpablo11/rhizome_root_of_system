@@ -77,17 +77,33 @@ export const PeerProvider: React.FC<{ children: React.ReactNode }> = ({ children
                     const msg = data as GameMessage;
                     console.log(`📥 [HOST RECEBEU]:`, msg);
 
-                    if (msg.type === "JOIN") {
-                        const newPlayer = { peerId: conn.peer, name: msg.payload.name, isHost: false };
+                    if (msg.type === 'JOIN') {
+                        const playerName = msg.payload.name.trim();
+
                         setPlayers((prev) => {
-                            const updatedPlayers = [...prev, newPlayer];
-                            connsMapBroadcast(connectionsRef.current, {
-                                type: "LOBBY_UPDATE",
-                                payload: { players: updatedPlayers },
-                                isHost: true,
-                            });
-                            return updatedPlayers;
+                        // 🚨 BLINDAGEM ANTI-CLONE: Verifica se o nome ou o ID de rede já existem na lista
+                        const alreadyInRoom = prev.some(
+                            (p) => p.name.toLowerCase() === playerName.toLowerCase() || p.peerId === conn.peer
+                        );
+                        
+                        if (alreadyInRoom) {
+                            console.log(`🚫 [HOST] Tentativa de JOIN duplicada barrada para: ${playerName}`);
+                            return prev; // Retorna a lista original sem alterações, ignorando o clique duplo!
+                        }
+
+                        // Se não for duplicado, segue o fluxo normal de adicionar o jogador
+                        const newPlayer = { peerId: conn.peer, name: playerName, isHost: false };
+                        const updatedPlayers = [...prev, newPlayer];
+                        
+                        connsMapBroadcast(connectionsRef.current, {
+                            type: 'LOBBY_UPDATE',
+                            payload: { players: updatedPlayers },
+                            isHost: true
                         });
+                        
+                        return updatedPlayers;
+                        });
+                        
                         connectionsRef.current.set(conn.peer, conn);
                     } else {
                         setLastMessage(msg);
@@ -167,6 +183,12 @@ export const PeerProvider: React.FC<{ children: React.ReactNode }> = ({ children
                     clearTimeout(timeoutId);
                     reject(err);
                 });
+
+                conn.on('close', () => {
+                    console.log("❌ [CLIENTE] A conexão com o Host foi perdida!");
+                    // Dispara a mensagem internamente para o cliente abortar o jogo
+                    setLastMessage({ type: 'HOST_DROPPED', isHost: false, payload: {} });
+                    });
             });
 
             // eslint-disable-next-line @typescript-eslint/no-explicit-any

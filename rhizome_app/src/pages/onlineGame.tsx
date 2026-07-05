@@ -35,10 +35,11 @@ function OnlineGame() {
         | "plenaryTime"
         | "waitToDo"
         | "gameOver"
+        | 'gameAborted'
     >("waitingRoom");
     const [myRole, setMyRole] = useState<"community" | "lobby">("community");
     const [playersName, setPlayersName] = useState<IPlayerData[]>([]);
-
+    const [initialPlayerCount, setInitialPlayerCount] = useState<number>(0);
     const [aliars, setAliars] = useState<string[]>([]);
     const [playersReady, setPlayersReady] = useState<string[]>([]);
     const [myFormattedList, setMyFormattedList] = useState<IPlayerData[]>([]);
@@ -64,6 +65,18 @@ function OnlineGame() {
         console.log(votesCount);
     }, [myRole, aliars, playersReady, playersConfirmedCard, votesCount]);
 
+    useEffect(() => {
+        // Se a gente não tá na sala de espera, nem na tela de fim de jogo, nem já abortou...
+        if (stateOfGame !== 'waitingRoom' && stateOfGame !== 'gameOver' && stateOfGame !== 'gameAborted') {
+            
+            // Se o array real de jogadores for menor que a quantidade que iniciou a partida
+            if (initialPlayerCount > 0 && players.length < initialPlayerCount) {
+                console.log("🚨 ALGUÉM CAIU DA PARTIDA! Abortando...");
+                setStateOfGame('gameAborted');
+            }
+        }
+    }, [players.length, stateOfGame, initialPlayerCount]);
+
     // const rotateLeader = () => {
     //     setCurrentLeaderIndex((prevIndex) => (prevIndex + 1) % players.length);
     // };
@@ -87,6 +100,7 @@ function OnlineGame() {
                 } else {
                     console.error("Eita, não achei meu nome na lista do Host!");
                 }
+                setInitialPlayerCount(playersList.length);
                 setStateOfGame("showPlayerFunction");
 
                 setAliars(message.payload); //filtrar quem é do mesmo Role que o usuario
@@ -229,6 +243,10 @@ function OnlineGame() {
                 setStateOfGame("gameOver");
                 break;
             }
+            case 'HOST_DROPPED': {
+                setStateOfGame('gameAborted');
+                break;
+            }
             // Adicione os outros cases conforme for construindo as telas
         }
     };
@@ -242,6 +260,7 @@ function OnlineGame() {
             console.log(players);
             const playersFunctions = generatePlayersFunction(playerNames);
             setPlayersName(playersFunctions);
+            setInitialPlayerCount(playersFunctions.length);
             // Avisa TODOS os celulares para irem para a tela de papel
             sendNetworkMessage({ type: "START_GAME", payload: playersFunctions, isHost: true });
             const myCustomList = prepareMyPlayerList(playersFunctions, myPlayerName);
@@ -629,6 +648,16 @@ function OnlineGame() {
                         onSkip={() => {
                             navigate("/");
                         }} // Dá um refresh elegante na página pra reiniciar o app inteiro
+                    />
+                </div>
+            );
+        } else if (stateOfGame === 'gameAborted') {
+            return (
+                <div className="w-full h-full flex flex-col items-center justify-center animate-pulse">
+                    <AlertModal 
+                        text={`🚨 CONEXÃO PERDIDA! Um jogador ou o Host desconectou. Para evitar falhas de consistência na votação, a partida foi encerrada.`} 
+                        buttonText={"Sair da Sala"} 
+                        onSkip={() => navigate("/")} 
                     />
                 </div>
             );
